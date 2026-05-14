@@ -1331,6 +1331,8 @@ The correspondence confirms arrangements for mediation listed for 18 June 2024 a
 </div>
 <div class=postamble><div class=postamble__entry>Exported 202 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
 
+
+
 <script id="report-chatlog-enhancer">
 document.addEventListener("DOMContentLoaded", () => {
   const chatlog = document.querySelector(".chatlog");
@@ -1598,6 +1600,105 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
+  function getMessageContainers(group) {
+    if (!group) return [];
+
+    const directContainers = Array.from(
+      group.querySelectorAll(":scope > .chatlog__messages > .chatlog__message-container")
+    );
+
+    if (directContainers.length) {
+      return directContainers;
+    }
+
+    return Array.from(group.querySelectorAll(".chatlog__message-container"));
+  }
+
+  function getTimestampTextFromContainer(container, fallbackGroup) {
+    const timestamp =
+      (container && (
+        container.querySelector(".chatlog__short-timestamp") ||
+        container.querySelector(".chatlog__timestamp")
+      )) ||
+      (fallbackGroup && fallbackGroup.querySelector(".chatlog__timestamp"));
+
+    return normalizeInlineWhitespace(timestamp ? (timestamp.textContent || "") : "");
+  }
+
+  function removeDuplicateDomIds(root) {
+    if (!root) return;
+
+    if (root.removeAttribute) {
+      root.removeAttribute("id");
+    }
+
+    root.querySelectorAll("[id]").forEach(el => {
+      el.removeAttribute("id");
+    });
+  }
+
+  function createMessageGroupFromContainer(originalGroup, container, originalIndex, splitIndex) {
+    if (splitIndex === 0) {
+      const messages = originalGroup.querySelector(":scope > .chatlog__messages") || originalGroup.querySelector(".chatlog__messages");
+
+      if (messages) {
+        messages.replaceChildren(container);
+      }
+
+      originalGroup.dataset.discordSplitIndex = String(splitIndex);
+      originalGroup.dataset.discordTimestamp = getTimestampTextFromContainer(container, originalGroup);
+      return originalGroup;
+    }
+
+    const newGroup = originalGroup.cloneNode(false);
+    newGroup.removeAttribute("id");
+    newGroup.dataset.discordSplitFrom = originalGroup.id || String(originalIndex);
+    newGroup.dataset.discordSplitIndex = String(splitIndex);
+    newGroup.dataset.discordTimestamp = getTimestampTextFromContainer(container, originalGroup);
+
+    const originalHeader = originalGroup.querySelector(":scope > .chatlog__header") || originalGroup.querySelector(".chatlog__header");
+    if (originalHeader) {
+      const headerClone = originalHeader.cloneNode(true);
+      removeDuplicateDomIds(headerClone);
+      newGroup.appendChild(headerClone);
+    }
+
+    const originalMessages = originalGroup.querySelector(":scope > .chatlog__messages") || originalGroup.querySelector(".chatlog__messages");
+    const messagesClone = originalMessages
+      ? originalMessages.cloneNode(false)
+      : document.createElement("div");
+
+    messagesClone.classList.add("chatlog__messages");
+    removeDuplicateDomIds(messagesClone);
+    messagesClone.appendChild(container);
+    newGroup.appendChild(messagesClone);
+
+    return newGroup;
+  }
+
+  function splitGroupsByMessageContainers(sourceGroups) {
+    const splitGroups = [];
+
+    sourceGroups.forEach((group, originalIndex) => {
+      const containers = getMessageContainers(group);
+
+      if (containers.length <= 1) {
+        if (containers.length === 1) {
+          group.dataset.discordTimestamp = getTimestampTextFromContainer(containers[0], group);
+        }
+        splitGroups.push(group);
+        return;
+      }
+
+      containers.forEach((container, splitIndex) => {
+        splitGroups.push(createMessageGroupFromContainer(group, container, originalIndex, splitIndex));
+      });
+    });
+
+    return splitGroups;
+  }
+
+
   function groupHasMediaOrAttachments(group) {
     if (!group) return false;
     return Boolean(group.querySelector(
@@ -1749,6 +1850,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return filename || "Attachment";
   }
 
+  groups = splitGroupsByMessageContainers(groups);
   groups = mergeAttachmentOnlyContinuations(groups);
 
   groups.sort((a, b) => {
