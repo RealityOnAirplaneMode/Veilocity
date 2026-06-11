@@ -2,10 +2,7 @@
 return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
 function showSpoiler(event,element){if(!element)
 return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
-if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body data-flag-src="Iceland Flag.png"><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / iceland</div></div></div>
-<div class="chatlog">
-
-<div class=chatlog__message-group><div id=chatlog__message-container-1468700737788706989 class=chatlog__message-container data-message-id=1468700737788706989><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, February 5, 2026 12:12 AM"><a href=#chatlog__message-container-1468700737788706989>2/5/2026 12:12 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>CTRL <img
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body data-flag-src="Iceland Flag.png"><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / iceland</div></div></div><div class="chatlog"><div class=chatlog__message-group><div id=chatlog__message-container-1468700737788706989 class=chatlog__message-container data-message-id=1468700737788706989><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Thursday, February 5, 2026 12:12 AM"><a href=#chatlog__message-container-1468700737788706989>2/5/2026 12:12 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>CTRL <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#129504;"
@@ -52,10 +49,7 @@ Um lei&#240; og vi&#240; reynum a&#240; endurskrifa kjarna einhvers, berjumst vi
 
 #CtrlAltDelete #ThekktuSjalfanThig #StafraenAndlegheit #Medvitundartengsl #TruflugTru #Veilocity111 #AndlegtVakning #LaekningMedMedvitund #OfullkomlegaFullkomid #Sjalfskodun #GervigreindOgSol #Endurr&#230;singin #HeimspekiTok #Nutimaviskka #InnriKodi
 
-<a href="ENGLISH - Court.html">Court Archive</a>
-
-<a href="https://vimeo.com/1154295463">https://vimeo.com/1154295463</a></span> <span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:08 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1468700738162135071/The_Code_of_Every_Relationship_Iceland_caption.mp4?ex=6a2b16a7&amp;is=6a29c527&amp;hm=ecd7b2aafbe2b7cd9ea5957065892a14f1bb848b57381cc3af0cb156412b5523&amp;" alt="Video attachment" title="Video: The_Code_of_Every_Relationship_Iceland_caption.mp4 (19.16 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1468700739156054155/The_Code_of_Every_Relationship_Iceland.srt?ex=6a2b16a7&amp;is=6a29c527&amp;hm=381c84568f3a78ca14f6343caa2b4ce20c0b5dd494ff2e478e50b421d971fb1d&amp;"> The_Code_of_Every_Relationship_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>1.52 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1468700739546386472/The_Code_of_Every_Relationship_Iceland_audio.mp3?ex=6a2b16a7&amp;is=6a29c527&amp;hm=cb6ea533b6d2dfe72de29b13c1fd5feac9ea9ccbcab4d75c5e07ad4e2c4d12ff&amp;" alt="Audio attachment" title="Audio: The_Code_of_Every_Relationship_Iceland_audio.mp3 (1.09 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1469299953187688480 class=chatlog__message-container data-message-id=1469299953187688480><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 3:53 PM"><a href=#chatlog__message-container-1469299953187688480>2/6/2026 3:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>L&#246;glegt Gaslj&#243;s <img
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1154295463">https://vimeo.com/1154295463</a></span><span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:08 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> The_Code_of_Every_Relationship_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>1.52 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469299953187688480 class=chatlog__message-container data-message-id=1469299953187688480><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, February 6, 2026 3:53 PM"><a href=#chatlog__message-container-1469299953187688480>2/6/2026 3:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>L&#246;glegt Gaslj&#243;s <img
     loading="lazy"
     class="chatlog__emoji "
     alt="⚖️"
@@ -81,10 +75,7 @@ sem tekur sj&#225;lfsforr&#230;&#240;i &#254;itt, or&#240; fyrir or&#240;.
 
 #LagalegtGaslighting #gaslighting #lagamisnotkun #valdamisnotkun #valdakerfi #kerfisbundi&#240;Gaslighting #sj&#225;lfsforr&#230;&#240;i #seg&#240;usannleikann #ge&#240;heilbrig&#240;isvitund #&#243;r&#233;ttl&#230;tiafhj&#250;pa&#240; #me&#240;vitund #heilunarfer&#240; #sj&#225;lfst&#230;&#240;i #stephencooke #f&#246;lsk&#246;ryggi #f&#233;lagslegums&#246;gn
 
-<a href="ENGLISH - Court.html">Court Archive</a>
-
-<a href="https://vimeo.com/1154273826">https://vimeo.com/1154273826</a></span> <span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:08 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469299953732943979/Legal_Gaslight-Icelandic_Iceland_caption.mp4?ex=6a2b4a77&amp;is=6a29f8f7&amp;hm=991cb56b5d1a4131f539a10749a9aa5fd65c1f3d3f3e78cc60bdf12af3a86aae&amp;" alt="Video attachment" title="Video: Legal_Gaslight-Icelandic_Iceland_caption.mp4 (7.06 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1469299954345574443/Legal_Gaslight-Icelandic_Iceland.srt?ex=6a2b4a77&amp;is=6a29f8f7&amp;hm=356ecb97d6101906586c4f96ebe04c84b1f43ca7c35b938f5279af8cfe65bb15&amp;"> Legal_Gaslight-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>688 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469299954605363310/Legal_Gaslight-Icelandic_Iceland_audio.mp3?ex=6a2b4a77&amp;is=6a29f8f7&amp;hm=36b83b16d217ed1f6774b2a7f7653b12e5478c1af99a057a8cc6a894e5a34c0f&amp;" alt="Audio attachment" title="Audio: Legal_Gaslight-Icelandic_Iceland_audio.mp3 (407.21 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1469306580381073499 class=chatlog__message-container data-message-id=1469306580381073499><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 4:19 PM"><a href=#chatlog__message-container-1469306580381073499>2/6/2026 4:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#222;&#230;gindi eru vopni&#240; <img
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1154273826">https://vimeo.com/1154273826</a></span><span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:08 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Legal_Gaslight-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>688 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469306580381073499 class=chatlog__message-container data-message-id=1469306580381073499><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, February 6, 2026 4:19 PM"><a href=#chatlog__message-container-1469306580381073499>2/6/2026 4:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#222;&#230;gindi eru vopni&#240; <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127917;"
@@ -102,8 +93,7 @@ sem tekur sj&#225;lfsforr&#230;&#240;i &#254;itt, or&#240; fyrir or&#240;.
 
 #me&#240;vitund #samhlj&#243;mur #hei&#240;arleiki #sk&#253;rs&#253;n #sannleikur #me&#240;vitu&#240;&#237;hugun #sj&#225;lfs&#225;byrg&#240; #sj&#225;lfst&#230;&#240;i #fri&#240;urframfirkontroll #lif&#240;reynsla #gagnr&#253;nihugsun #innravinna #vitni #fullveldi #vakning
 
-<a href="https://vimeo.com/1153196501">https://vimeo.com/1153196501</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 11:59 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469306581802811527/Comfort_Is_the_Weapon-Zulu_South_caption.mp4?ex=6a2b50a3&amp;is=6a29ff23&amp;hm=6aab431ca853abd266898cc325c3d4918e4ef01e6a0c5eea2d911e28ea6567ba&amp;" alt="Video attachment" title="Video: Comfort_Is_the_Weapon-Zulu_South_caption.mp4 (121.09 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1469306588576616565/Comfort_Is_the_Weapon-Zulu_South_Africa-.srt?ex=6a2b50a5&amp;is=6a29ff25&amp;hm=0a90c0d3366df7f8ca4d254743bd4de48748f3ed2866035e0e41f071673a9319&amp;"> Comfort_Is_the_Weapon-Zulu_South_Africa-.srt </a></div><div class=chatlog__attachment-generic-size>9.48 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469306589105356997/Comfort_Is_the_Weapon-Zulu_South_A_audio.mp3?ex=6a2b50a5&amp;is=6a29ff25&amp;hm=b5e45df2980be28003cb8c26bff6ac51da1c1e8ae87c73ff6c6ea8907e7c5a80&amp;" alt="Audio attachment" title="Audio: Comfort_Is_the_Weapon-Zulu_South_A_audio.mp3 (5.5 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1469316637659238586 class=chatlog__message-container data-message-id=1469316637659238586><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 4:59 PM"><a href=#chatlog__message-container-1469316637659238586>2/6/2026 4:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#201;G ER S&#193; SEM &#201;G ER <img
+<a href="https://vimeo.com/1153196501">https://vimeo.com/1153196501</a></span><span class=chatlog__edited-timestamp title="Friday, March 27, 2026 11:59 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Comfort_Is_the_Weapon-Zulu_South_Africa-.srt </a></div><div class=chatlog__attachment-generic-size>9.48 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469316637659238586 class=chatlog__message-container data-message-id=1469316637659238586><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, February 6, 2026 4:59 PM"><a href=#chatlog__message-container-1469316637659238586>2/6/2026 4:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#201;G ER S&#193; SEM &#201;G ER <img
     loading="lazy"
     class="chatlog__emoji "
     alt="✝️"
@@ -126,8 +116,7 @@ Jes&#250;s | Yeshua s&#253;nir okkur: Sj&#225;lfsmynd opinberast &#237; gj&#246;
 
 #Yeshua #Fagna&#240;arerindi #Tr&#250;arfer&#240; #Bibl&#237;uv&#237;sd&#243;mur #AndlegBar&#225;tta #Gu&#240;sr&#237;ki #Sj&#225;lfsmynd&#205;Kristi #I&#240;run #EkkiHugsanir&#222;&#237;nar #j&#233;sus
 
-<a href="https://vimeo.com/1153284771">https://vimeo.com/1153284771</a></span> <span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:00 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469316639496601660/We_are_not_the_voice_in_our_head_caption.mp4?ex=6a2b5a01&amp;is=6a2a0881&amp;hm=5d928990ca5c0f460e2d5f56e26da11e8bc9970db210f80d455e77721fda8dd8&amp;" alt="Video attachment" title="Video: We_are_not_the_voice_in_our_head_caption.mp4 (36.26 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1469316641505546445/We_are_not_the_voice_in_our_heads-Hebrew.srt?ex=6a2b5a01&amp;is=6a2a0881&amp;hm=fcfa8091652be547b0018e0f152c988917272899da6757e1b2699cc86c0a92fa&amp;"> We_are_not_the_voice_in_our_heads-Hebrew.srt </a></div><div class=chatlog__attachment-generic-size>3.25 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469316641824182507/We_are_not_the_voice_in_our_heads-_audio.mp3?ex=6a2b5a01&amp;is=6a2a0881&amp;hm=515dd3894836c1c40b5007feb8afa4633131cc72627e879a22dc4b9127fde357&amp;" alt="Audio attachment" title="Audio: We_are_not_the_voice_in_our_heads-_audio.mp3 (2.19 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1469369157110857738 class=chatlog__message-container data-message-id=1469369157110857738><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 8:28 PM"><a href=#chatlog__message-container-1469369157110857738>2/6/2026 8:28 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1153284771">https://vimeo.com/1153284771</a></span><span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:00 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> We_are_not_the_voice_in_our_heads-Hebrew.srt </a></div><div class=chatlog__attachment-generic-size>3.25 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469369157110857738 class=chatlog__message-container data-message-id=1469369157110857738><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, February 6, 2026 8:28 PM"><a href=#chatlog__message-container-1469369157110857738>2/6/2026 8:28 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128220;"
@@ -155,8 +144,7 @@ Sagan bjargar vegna &#254;ess a&#240; Andinn &#237; henni lifir &#225;fram og an
     title="dove"
     src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> #Eil&#237;faN&#250;i&#240; #Veilocity111 #Vakning #Tr&#250; #Sannleikur #Sp&#225;d&#243;mur #Kristsvitund #D&#230;misaga #InnriFri&#240;ur #LifandiOr&#240; #T&#246;lu&#240;Lj&#243;&#240;list #Lj&#243;sfr&#230; #KletturinnSemVi&#240;Sl&#225;um #Gu&#240;Innan&#205; #Eining #MunduHver&#222;&#250;Ert
 
-<a href="https://vimeo.com/1153221298">https://vimeo.com/1153221298</a></span> <span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:00 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469369158352506991/The_Rock_We_Strike-French_France_caption.mp4?ex=6a2ae22a&amp;is=6a2990aa&amp;hm=7a8cbb6882798fdbb29eed0358bf01ec88aadc2a68543f5d4fcf9a8403243a1c&amp;" alt="Video attachment" title="Video: The_Rock_We_Strike-French_France_caption.mp4 (74.01 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1469369162886287483/The_Rock_We_Strike-French_France-Albania.srt?ex=6a2ae22b&amp;is=6a2990ab&amp;hm=c0ced18f39ee745a87c7c5d9f0ad9737b0cd94c667cc7aa8e83964bc3e28f8dc&amp;"> The_Rock_We_Strike-French_France-Albania.srt </a></div><div class=chatlog__attachment-generic-size>6.25 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469369163288936655/The_Rock_We_Strike-French_France-A_audio.mp3?ex=6a2ae22c&amp;is=6a2990ac&amp;hm=935bfff513105a0dbc6032f987b0fd0a37dc9d16e9fad7c3640e1e74e10dcb00&amp;" alt="Audio attachment" title="Audio: The_Rock_We_Strike-French_France-A_audio.mp3 (3.37 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1469625995140006055 class=chatlog__message-container data-message-id=1469625995140006055><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 1:29 PM"><a href=#chatlog__message-container-1469625995140006055>2/7/2026 1:29 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#193;&#240;ur en eldurinn brei&#240;ist &#250;t <img
+<a href="https://vimeo.com/1153221298">https://vimeo.com/1153221298</a></span><span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:00 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> The_Rock_We_Strike-French_France-Albania.srt </a></div><div class=chatlog__attachment-generic-size>6.25 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1469625995140006055 class=chatlog__message-container data-message-id=1469625995140006055><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, February 7, 2026 1:29 PM"><a href=#chatlog__message-container-1469625995140006055>2/7/2026 1:29 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#193;&#240;ur en eldurinn brei&#240;ist &#250;t <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128293;"
@@ -190,8 +178,7 @@ en &#254;a&#240; er starfi&#240; sem breytir &#246;llu. <img
 
 #BeforeTheFireSpreads #TendYourOwnFire #SnuffTheFire #InnraStarf #Sj&#225;lfs&#225;byrg&#240; #Pers&#243;nulegurV&#246;xtur #Me&#240;vitu&#240;Lifun #Sj&#225;lfssko&#240;un #InnriFri&#240;ur #Tilfinninga&#222;roski #SameiginlegL&#230;kning #BetriHeimur #BreytingByrjarMe&#240;&#222;&#233;r #VertuBreytingin #G&#225;ra&#193;hrif #Me&#240;vita&#240;Efni #N&#250;t&#237;maViska
 
-<a href="https://vimeo.com/1153305879">https://vimeo.com/1153305879</a></span> <span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:01 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469625995920281600/Snuff_the_fire_within_before_it__caption.mp4?ex=6a2b289d&amp;is=6a29d71d&amp;hm=4c972df119ca1544fedaec0b8ceedbba713e912e7515d9541133ea4fb3765fba&amp;" alt="Video attachment" title="Video: Snuff_the_fire_within_before_it__caption.mp4 (57.99 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1469625998231474238/Snuff_the_fire_within_before_it_spreads-.srt?ex=6a2b289e&amp;is=6a29d71e&amp;hm=3aee480b959d7d93554cac12bb16f2cc466b1c6928428c41701c871043d1f405&amp;"> Snuff_the_fire_within_before_it_spreads-.srt </a></div><div class=chatlog__attachment-generic-size>5.22 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1469625998499647489/Snuff_the_fire_within_before_it_sp_audio.mp3?ex=6a2b289e&amp;is=6a29d71e&amp;hm=c588bb0e7f371d74d27c0fc4264527b5726a9a6d9c7d5dc93bd63ed3caedfa8f&amp;" alt="Audio attachment" title="Audio: Snuff_the_fire_within_before_it_sp_audio.mp3 (3.48 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1470029914454364241 class=chatlog__message-container data-message-id=1470029914454364241><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, February 8, 2026 4:14 PM"><a href=#chatlog__message-container-1470029914454364241>2/8/2026 4:14 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1153305879">https://vimeo.com/1153305879</a></span><span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:01 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Snuff_the_fire_within_before_it_spreads-.srt </a></div><div class=chatlog__attachment-generic-size>5.22 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1470029914454364241 class=chatlog__message-container data-message-id=1470029914454364241><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, February 8, 2026 4:14 PM"><a href=#chatlog__message-container-1470029914454364241>2/8/2026 4:14 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128165;"
@@ -219,8 +206,7 @@ Hverjum &#254;j&#243;na &#254;au &#237; raun — og hva&#240;a &#243;s&#253;nile
 
 #AndlegBar&#225;tta #Byssuumr&#230;&#240;a #Herkl&#230;&#240;iGu&#240;s #Efesus6 #A&#240;greining #Si&#240;fer&#240;ileg&#193;byrg&#240; #Sannleiksleitandi #Fri&#240;samlegM&#243;tm&#230;li #VakningarKall #Tr&#250;Yfir&#211;tta #Huglei&#240;ingUmRitninguna #FaldarDagskr&#225;r #EkkiHoldOgBl&#243;&#240; #&#211;s&#253;nilegBar&#225;tta #P&#243;lit&#237;skirAndar
 
-<a href="https://vimeo.com/1153879675">https://vimeo.com/1153879675</a></span> <span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:02 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1470029915155071027/Its_Not_the_Gun_Its_the_Spirit_B_caption.mp4?ex=6a2b4f4b&amp;is=6a29fdcb&amp;hm=064400460e4bd3d8948607987d8a43b4662ed3a3aa755197ff967c99c12fb4db&amp;" alt="Video attachment" title="Video: Its_Not_the_Gun_Its_the_Spirit_B_caption.mp4 (26.21 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1470029916635660308/Its_Not_the_Gun_Its_the_Spirit_Behind_It.srt?ex=6a2b4f4b&amp;is=6a29fdcb&amp;hm=045298ea84f8261f877a56f8fd7295d49686620f0008ade6168ef2042a4d55bf&amp;"> Its_Not_the_Gun_Its_the_Spirit_Behind_It.srt </a></div><div class=chatlog__attachment-generic-size>2.1 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1470029917352890378/Its_Not_the_Gun_Its_the_Spirit_Beh_audio.mp3?ex=6a2b4f4c&amp;is=6a29fdcc&amp;hm=da6976d02e94a0a26cad951780a7218043a14d1191e6a3f0f4839b824f6a7f07&amp;" alt="Audio attachment" title="Audio: Its_Not_the_Gun_Its_the_Spirit_Beh_audio.mp3 (1.09 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1485020631232942232 class=chatlog__message-container data-message-id=1485020631232942232><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, March 22, 2026 1:01 AM"><a href=#chatlog__message-container-1485020631232942232>3/22/2026 1:01 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Narsissismi er kerfi&#240; <img
+<a href="https://vimeo.com/1153879675">https://vimeo.com/1153879675</a></span><span class=chatlog__edited-timestamp title="Saturday, March 28, 2026 12:02 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Its_Not_the_Gun_Its_the_Spirit_Behind_It.srt </a></div><div class=chatlog__attachment-generic-size>2.1 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1485020631232942232 class=chatlog__message-container data-message-id=1485020631232942232><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, March 22, 2026 1:01 AM"><a href=#chatlog__message-container-1485020631232942232>3/22/2026 1:01 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Narsissismi er kerfi&#240; <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#129504;"
@@ -252,10 +238,7 @@ Me&#240;vitund ey&#240;ileggur hringr&#225;sina.
 
 #Narsissismi #Kerfisbundi&#240;ofbeldi #Narsiss&#237;skStj&#243;rn #Brj&#243;ttuLykkunni #&#222;vingunarStj&#243;rn #Gasl&#253;sing #SkipulagslegtOfbeldi #Vopnu&#240;Kerfi #L&#246;gfr&#230;&#240;ilegtOfbeldi #StofnanalegBil #S&#225;lfr&#230;&#240;ilegtOfbeldi #&#193;fallavitund #SannleikurinnA&#240;Saga #R&#246;ddEftirlifanda #&#193;byrg&#240; #Greinskilni #Vakning #VelduSk&#253;rleika #EndaHringr&#225;sina
 
-<a href="ENGLISH - Court.html">Court Archive</a>
-
-<a href="https://vimeo.com/1175809698">https://vimeo.com/1175809698</a></span> <span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:09 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1485020608285769941/Narcissism_is_the_System_Iceland_caption.mp4?ex=6a2b2237&amp;is=6a29d0b7&amp;hm=358b41f8f703c5bb392683fff4af9876b0e21dbf4caeedf83b635e7837ffdb09&amp;" alt="Video attachment" title="Video: Narcissism_is_the_System_Iceland_caption.mp4 (424.84 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1485020630351872132/Narcissism_is_the_System_Iceland_caption.srt?ex=6a2b223c&amp;is=6a29d0bc&amp;hm=73a72f0f21a5bf3bbc4a910ff495d664dc4dbf20598494ff60d6b568b98dca4b&amp;"> Narcissism_is_the_System_Iceland_caption.srt </a></div><div class=chatlog__attachment-generic-size>78.8 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1485020630779822291/Narcissism_is_the_System_Iceland_audio.mp3?ex=6a2b223c&amp;is=6a29d0bc&amp;hm=9b17cb88d5098cf84310c724414810eb66be7f1f310d49901cc86384c4db300b&amp;" alt="Audio attachment" title="Audio: Narcissism_is_the_System_Iceland_audio.mp3 (27.3 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490254428245200896 class=chatlog__message-container data-message-id=1490254428245200896><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 11:39 AM"><a href=#chatlog__message-container-1490254428245200896>4/5/2026 11:39 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Himinninn sn&#253;st um skynjun <img
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1175809698">https://vimeo.com/1175809698</a></span><span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:09 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Narcissism_is_the_System_Iceland_caption.srt </a></div><div class=chatlog__attachment-generic-size>78.8 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490254428245200896 class=chatlog__message-container data-message-id=1490254428245200896><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 11:39 AM"><a href=#chatlog__message-container-1490254428245200896>4/5/2026 11:39 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Himinninn sn&#253;st um skynjun <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127780;️"
@@ -268,8 +251,7 @@ Matteus 6:25–26 &#183; Matteus 18:3 &#183; S&#225;lmur 4:8
 
 #Fri&#240;s&#230;ltHugar #Kyrr&#240;arstundir #Kyrr&#240; #Mj&#250;kMe&#240;vitund
 
-<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490254428404711564/All_Dogs_Go_to_Heaven.mp4?ex=6a2b0ed7&amp;is=6a29bd57&amp;hm=58dafc79f4ce52d151ed3c5f851649ecd262e1b5460de40328b53fefa21d9db1&amp;" alt="Video attachment" title="Video: All_Dogs_Go_to_Heaven.mp4 (1.14 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490261238712762399 class=chatlog__message-container data-message-id=1490261238712762399><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:06 PM"><a href=#chatlog__message-container-1490261238712762399>4/5/2026 12:06 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>B&#250;ri&#240; er ekki heimili &#254;itt <img
+<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490261238712762399 class=chatlog__message-container data-message-id=1490261238712762399><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 12:06 PM"><a href=#chatlog__message-container-1490261238712762399>4/5/2026 12:06 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>B&#250;ri&#240; er ekki heimili &#254;itt <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128330;️"
@@ -316,13 +298,12 @@ Treystu &#225; lei&#240;ina.
 
 #TheHunts #TheSparrow #PhrayaNakhonCave ⁠thailand #PrachuapKhiriKhan #DivineSigns #FaithWalk #SpiritualJourney #BreakFree #YouWereMeantToFly #HealingPath #GodIsSpeaking #AwakenedSoul
 
-<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490261240251944970/The_cage_is_not_your_home.mp4?ex=6a2b152f&amp;is=6a29c3af&amp;hm=3d7d9d155c255c8a723188b7a30e9a7888bc6bf4cfcfc26468656cff1a4a2b3c&amp;" alt="Video attachment" title="Video: The_cage_is_not_your_home.mp4 (21.46 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490271722220552273 class=chatlog__message-container data-message-id=1490271722220552273><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:47 PM"><a href=#chatlog__message-container-1490271722220552273>4/5/2026 12:47 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490271722220552273 class=chatlog__message-container data-message-id=1490271722220552273><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 12:47 PM"><a href=#chatlog__message-container-1490271722220552273>4/5/2026 12:47 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127807;"
     title="herb"
-    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> <img
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128065;️"
@@ -353,8 +334,7 @@ Treystu &#225; lei&#240;ina.
 
 #kyrr&#240; #n&#225;tt&#250;ra #f&#243;kus #j&#246;fnun #l&#246;g #&#254;&#246;gn #huglei&#240;sla #r&#243; #n&#225;tt&#250;rumyndband #kyrr&#240;arstundir
 
-<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490271727325024326/When_Stillness_Aligns.mp4?ex=6a2b1ef3&amp;is=6a29cd73&amp;hm=0203c8468747b97a7763694ac55fe38325ffded6404d90b102a8a4a4cb2c05e5&amp;" alt="Video attachment" title="Video: When_Stillness_Aligns.mp4 (89.27 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490318495706255371 class=chatlog__message-container data-message-id=1490318495706255371><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 3:53 PM"><a href=#chatlog__message-container-1490318495706255371>4/5/2026 3:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490318495706255371 class=chatlog__message-container data-message-id=1490318495706255371><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 3:53 PM"><a href=#chatlog__message-container-1490318495706255371>4/5/2026 3:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128167;"
@@ -373,8 +353,7 @@ Treystu &#225; lei&#240;ina.
 
 #N&#225;tt&#250;rustemning #Ferskvatnssund #L&#237;fVi&#240;Vatn #N&#225;tt&#250;ruunnendur #&#218;t&#205;Villta #&#218;tiMe&#240;fer&#240; #Fri&#240;s&#230;l Stemning #VilltSund #N&#225;tt&#250;rul&#230;kningar #L&#237;f&#205;N&#225;tt&#250;runni #Jar&#240;tenging #&#198;vint&#253;rat&#237;mi
 
-<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490318501477613598/Freshwater_therapy.mp4?ex=6a2b4a83&amp;is=6a29f903&amp;hm=ce54a067707dc0d23b7de9acee2ef4d0fbbff557c6ee21e043f240e7f9d77002&amp;" alt="Video attachment" title="Video: Freshwater_therapy.mp4 (93.64 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490333318959595530 class=chatlog__message-container data-message-id=1490333318959595530><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:52 PM"><a href=#chatlog__message-container-1490333318959595530>4/5/2026 4:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Gle&#240;i er l&#230;kningalyf. N&#225;tt&#250;ran er sannleikur. <img
+<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490333318959595530 class=chatlog__message-container data-message-id=1490333318959595530><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 4:52 PM"><a href=#chatlog__message-container-1490333318959595530>4/5/2026 4:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Gle&#240;i er l&#230;kningalyf. N&#225;tt&#250;ran er sannleikur. <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127807;"
@@ -387,9 +366,7 @@ J&#246;r&#240;in er a&#240; breytast, og vi&#240; l&#237;ka. &#222;etta er upplj
     class="chatlog__emoji "
     alt="&#127744;"
     title="cyclone"
-    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
-
-<img
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127926;"
@@ -400,8 +377,7 @@ Kofal&#237;f &#237; B&#250;lgar&#237;u - &#254;ar sem &#233;g fann fyrir fri&#24
 
 #5dshift #N&#253;J&#246;r&#240;in #andlegvakning #n&#225;tt&#250;rugl&#243;i #gl&#243;i ⁠b&#250;lgar&#237;a #&#243;bygg&#240;ir #vakningars&#225;l #kofar&#237;sk&#243;ginum #lj&#243;sverkamenn #sk&#243;gur #n&#225;tt&#250;ra #andleg m&#225;lefni #veira
 
-<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490333325775081574/Joy_is_medicine._Nature_is_truth.mp4?ex=6a2b5851&amp;is=6a2a06d1&amp;hm=f5673d09f3174464ee8d97cea8ef8a7817894435c4803904b2b15ccc715bfd13&amp;" alt="Video attachment" title="Video: Joy_is_medicine._Nature_is_truth.mp4 (112.8 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490388271891480576 class=chatlog__message-container data-message-id=1490388271891480576><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:30 PM"><a href=#chatlog__message-container-1490388271891480576>4/5/2026 8:30 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, Opnir akrar, sk&#253;r hugur <img
+<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490388271891480576 class=chatlog__message-container data-message-id=1490388271891480576><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 8:30 PM"><a href=#chatlog__message-container-1490388271891480576>4/5/2026 8:30 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, Opnir akrar, sk&#253;r hugur <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127926;"
@@ -419,8 +395,7 @@ Fleetwood Mac &#237; bakgrunni, ferskt loft fyrir framan mig og heimur sem bi&#2
 
 #seniorl&#237;f #n&#225;tt&#250;rustemning #fleetwoodmac #fri&#240;s&#230;lar stundir #akurl&#237;f #k&#253;r #landslag #fer&#240;astemning #h&#230;gagangur #hugarstundir #s&#243;larlagsstemning #&#225;stral&#237;a #evr&#243;pa #t&#243;nlistogn&#225;tt&#250;ra #frelsisfer&#240; #&#250;tis&#225;l #r&#243;orka #kyrr&#240;arstundir #skapandifer&#240; #l&#230;kningarlei&#240;
 
-<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490388276509409471/Fleetwood_Mac_Open_Fields_Clear_Mind.mp4?ex=6a2ae2bf&amp;is=6a29913f&amp;hm=f9785687c2c875d3a595f538c52d52fe543a5eedac999746b74c238d58e0555f&amp;" alt="Video attachment" title="Video: Fleetwood_Mac_Open_Fields_Clear_Mind.mp4 (85.4 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490395605229371474 class=chatlog__message-container data-message-id=1490395605229371474><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 9:00 PM"><a href=#chatlog__message-container-1490395605229371474>4/5/2026 9:00 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fri&#240;s&#230;lt skref &#250;t &#225; akur <img
+<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490395605229371474 class=chatlog__message-container data-message-id=1490395605229371474><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 9:00 PM"><a href=#chatlog__message-container-1490395605229371474>4/5/2026 9:00 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fri&#240;s&#230;lt skref &#250;t &#225; akur <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127806;"
@@ -448,8 +423,7 @@ og eina t&#243;nlistin er bl&#237;&#240;ur k&#243;r k&#250;abjalla.
 
 #Vagnsl&#237;f #N&#225;tt&#250;rustemning #K&#250;abj&#246;llur #Fri&#240;s&#230;larStundir #Beitiland #H&#230;gtL&#237;f #L&#237;fUtanRafkerfisins #Morgunnstemning #&#218;ts&#253;ni&#193;B&#253;li #HugvitundarlegtL&#237;f
 
-<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490395610837156072/A_Peaceful_Step_Into_the_Field.mp4?ex=6a2ae993&amp;is=6a299813&amp;hm=a5be8a3f51543c3ee1eca0eff3231deba0586930be65377ab4be4cb7202e9ac2&amp;" alt="Video attachment" title="Video: A_Peaceful_Step_Into_the_Field.mp4 (106.54 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490606762435547166 class=chatlog__message-container data-message-id=1490606762435547166><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, April 6, 2026 10:59 AM"><a href=#chatlog__message-container-1490606762435547166>4/6/2026 10:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dollarinn kastar l&#237;ka galdrum! <img
+<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490606762435547166 class=chatlog__message-container data-message-id=1490606762435547166><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, April 6, 2026 10:59 AM"><a href=#chatlog__message-container-1490606762435547166>4/6/2026 10:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dollarinn kastar l&#237;ka galdrum! <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128184;"
@@ -473,8 +447,7 @@ Of margir berjast innan hringr&#225;sarinnar og &#225;tta sig aldrei &#225; &#25
 
 #dollarabl&#230;&#240;ing #vakning #andleg vakning #fylki #losna&#240;u #sannleiksleitendur #lj&#243;&#240;r&#230;n viska #sj&#243;nr&#230;n fr&#225;s&#246;gn #fyp #foryou #foryous&#237;&#240;a #veirumyndband #dj&#250;par hugsanir #l&#237;fslex&#237;ur #me&#240;vitund #sj&#225;lfsvitund #hugarfarsbreyting #kerfisbundinn sannleikur #heimspeki #myndhverfing #n&#250;t&#237;mad&#230;mis&#246;gn #hugsa&#240;uum&#254;a&#240; #hrunbl&#230;&#240;ingarinnar #innra frelsi #stephencooke
 
-<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490606762662035526/Dollars_Cast_Spells_Too.mp4?ex=6a2b057a&amp;is=6a29b3fa&amp;hm=11d629555a9c39ed7ffbfbddfc371ab64c293e693595261dbbf83dcdfa1ac3bc&amp;" alt="Video attachment" title="Video: Dollars_Cast_Spells_Too.mp4 (1.77 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490938792402485391 class=chatlog__message-container data-message-id=1490938792402485391><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 8:58 AM"><a href=#chatlog__message-container-1490938792402485391>4/7/2026 8:58 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490938792402485391 class=chatlog__message-container data-message-id=1490938792402485391><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 8:58 AM"><a href=#chatlog__message-container-1490938792402485391>4/7/2026 8:58 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128656;"
@@ -500,8 +473,7 @@ Solar power, hot water, heat, and a small space on wheels. Not showing off — j
 
 #Sovereignty #ReclaimYourPeace #OwnYourLife #VanLife #OffGridLiving #IndependentLiving #SolarPower #WaterIsLife #BackToNature #SustainableLiving #SimpleLiving #NatureBoundaries #GodProvides #FaithAndFreedom #LivingInGrace
 
-<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490938796513034240/To_Sovereignty.mp4?ex=6a2ae935&amp;is=6a2997b5&amp;hm=3ab5f04cb116035f70ae3866ebbd5585f4b5b34f127835729c0d9eed5d012337&amp;" alt="Video attachment" title="Video: To_Sovereignty.mp4 (83.29 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490943736627200050 class=chatlog__message-container data-message-id=1490943736627200050><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:18 AM"><a href=#chatlog__message-container-1490943736627200050>4/7/2026 9:18 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sannleikurinn b&#237;&#240;ur &#225; bak vi&#240; spegilinn <img
+<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490943736627200050 class=chatlog__message-container data-message-id=1490943736627200050><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:18 AM"><a href=#chatlog__message-container-1490943736627200050>4/7/2026 9:18 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sannleikurinn b&#237;&#240;ur &#225; bak vi&#240; spegilinn <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#129694;"
@@ -539,9 +511,7 @@ Set 6
 
 #EpsteinSkr&#225; #Epstein #EpsteinM&#225;l #EpsteinRanns&#243;kn #SpegillEpsteins #R&#233;ttl&#230;tiFyrirF&#243;rnarl&#246;mb #&#193;byrg&#240; #Opinber Skr&#225;r #Gagns&#230;i #Afhj&#250;paSannleikann #Ger&#240;uRanns&#243;knir&#222;&#237;nar #SannleikurinnSkiptirM&#225;li #R&#233;ttl&#230;tiSkiptirM&#225;li #St&#246;ndumFyrirSannleikann #Vitund #Leiti&#240;Sannleikans
 
-<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
-<a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490943739953414305/Man_in_the_Mirror.mp4?ex=6a2aedd0&amp;is=6a299c50&amp;hm=70e022ecd2ab9ef7bc71fd51497a92da6e04ec0965e49b16888765d362296d6a&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1490943740494348309/The_Mirror_of_Evil.png?ex=6a2aedd0&amp;is=6a299c50&amp;hm=23bef4d25b86c4cd94308a6ec34697583e438d08fc3a7b0a4fa061b702c85a40&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1468700560256536607/1490943740494348309/The_Mirror_of_Evil.png?ex=6a2aedd0&amp;is=6a299c50&amp;hm=23bef4d25b86c4cd94308a6ec34697583e438d08fc3a7b0a4fa061b702c85a40&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490943742939758752/The_Mirror_of_Evil.mp4?ex=6a2aedd0&amp;is=6a299c50&amp;hm=c673c817e37c0c4ea1522229ffab5d79933136c4d3111b34d5dc10f44919842d&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil.mp4 (90.59 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490965093410668564 class=chatlog__message-container data-message-id=1490965093410668564><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 10:42 AM"><a href=#chatlog__message-container-1490965093410668564>4/7/2026 10:42 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Bjarga&#240;u &#254;&#233;r fr&#225; efa <img
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a><a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490965093410668564 class=chatlog__message-container data-message-id=1490965093410668564><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 10:42 AM"><a href=#chatlog__message-container-1490965093410668564>4/7/2026 10:42 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Bjarga&#240;u &#254;&#233;r fr&#225; efa <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127807;"
@@ -551,7 +521,7 @@ Set 6
     class="chatlog__emoji "
     alt="&#128656;"
     title="minibus"
-    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"> <img
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127754;"
@@ -563,8 +533,7 @@ Af &#254;j&#243;&#240;veginum, inn &#237; hi&#240; &#243;&#254;ekkta.
 
 #Sendib&#237;lal&#237;f #Skildu&#254;a&#240;betra #Vegs&#246;gur #Frelsi&#193;Hj&#243;lum #Fer&#240;al&#246;gRaunverulegtSamtal #Sj&#225;lfsprottinFer&#240;alag #Fl&#246;kkul&#237;f #&#198;vint&#253;riB&#237;&#240;ur #Kvikmyndastemning #Bronson #ODESZA #Algj&#246;rlegaRisafl&#243;&#240;aD&#237;n&#243;saurar #Bjarga&#240;uSj&#225;lfumSj&#225;lfumEfa #AldreiGefstu&#222;v&#237;Upp #TreystuFer&#240;alaginu #Tr&#250;&#205;Hreyfingu #Fl&#230;&#240;i&#193;stand #Af&#222;j&#243;&#240;veginum #Inn &#237;Hi&#240;&#211;&#254;ekkta #Sj&#225;lfstraust
 
-<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1490965095818334348/Save_Yourself_from_Doubt.mp4?ex=6a2b01b3&amp;is=6a29b033&amp;hm=cf8eed8b070ac2abc649aa74fe684c4e02ef7afcaa0f912146e1b961019b7d6a&amp;" alt="Video attachment" title="Video: Save_Yourself_from_Doubt.mp4 (48.43 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1491035099003748456 class=chatlog__message-container data-message-id=1491035099003748456><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 3:21 PM"><a href=#chatlog__message-container-1491035099003748456>4/7/2026 3:21 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
+<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1491035099003748456 class=chatlog__message-container data-message-id=1491035099003748456><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 3:21 PM"><a href=#chatlog__message-container-1491035099003748456>4/7/2026 3:21 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127757;"
@@ -578,8 +547,7 @@ Af &#254;j&#243;&#240;veginum, inn &#237; hi&#240; &#243;&#254;ekkta.
 
 #klavier #vreedsamevibes #hele nuwew&#234;reld #natuurvibes #kalm #esteties #klaviermusiek #vertraag #bewusstoekomblikke #sagtevloei #boomvanlewe
 
-<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1491035102803660902/Flying_free_in_a_whole_new_world.mp4?ex=6a2b42e6&amp;is=6a29f166&amp;hm=91b0d36b378de75c4010d4f063903b4e147f78486cc918e6990b5a0f89a7747b&amp;" alt="Video attachment" title="Video: Flying_free_in_a_whole_new_world.mp4 (62.02 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1497603562778394714 class=chatlog__message-container data-message-id=1497603562778394714><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, April 25, 2026 6:21 PM"><a href=#chatlog__message-container-1497603562778394714>4/25/2026 6:21 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>„A&#240; vera g&#243;&#240;ur hir&#240;ir…“ ≠ mansal <img
+<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1497603562778394714 class=chatlog__message-container data-message-id=1497603562778394714><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Saturday, April 25, 2026 6:21 PM"><a href=#chatlog__message-container-1497603562778394714>4/25/2026 6:21 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>„A&#240; vera g&#243;&#240;ur hir&#240;ir…“ ≠ mansal <img
     loading="lazy"
     class="chatlog__emoji "
     alt="♻️"
@@ -602,9 +570,7 @@ Greinskilni er a&#240; muna muninn.
 
 #Fr&#225;&#211;m&#211;miTilStj&#243;rnunar #SannleikurinnSkiptirM&#225;li #AndlegGreinskilningur #Nau&#240;aStj&#243;rn #Hir&#240;irEkkiEigandi #MinnkaEndurn&#253;taUppreisnargjarn #EkkiL&#237;fbrj&#243;tanlegt #EftirlifandiKerfi&#240; #VinntUppAfKerfinu #Gr&#230;&#240;andiFer&#240;alag #R&#237;sUppFyrirHann #Seg&#240;u&#222;innSannleika #Brj&#243;ttuHringr&#225;sina #InnraLj&#243;s #EndurheimtuS&#246;gu&#222;&#237;na #L&#237;fsdagb&#243;kVan #SeigluH&#225;ttur #SannleikurMe&#240;H&#250;mor #L&#237;fslex&#237;ur #Haltu&#193;FRAM
 
-<a href="https://vimeo.com/1186523017">https://vimeo.com/1186523017</a>
-<a href="https://vimeo.com/1186523052">https://vimeo.com/1186523052</a></span> <span class=chatlog__edited-timestamp title="Saturday, April 25, 2026 6:24 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1497603555375190117/Being_a_Good_Sheppard__trafficking_people.mp4?ex=6a2b6d3f&amp;is=6a2a1bbf&amp;hm=63bc05f1159fe5b281175294b18ae531a8fe78cb7f15156b1a0db6df6b1f31d9&amp;" alt="Video attachment" title="Video: Being_a_Good_Sheppard__trafficking_people.mp4 (3.56 MB)"></video></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1497603558806126612/Exodus_2013-Icelandic_Iceland_caption.mp4?ex=6a2b6d40&amp;is=6a2a1bc0&amp;hm=7f6c995ccae0b7bf487c48c1fcdfbcf01497fedcd976f0df0cf6f426a2098b1b&amp;" alt="Video attachment" title="Video: Exodus_2013-Icelandic_Iceland_caption.mp4 (96.71 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1501501688950030396 class=chatlog__message-container data-message-id=1501501688950030396><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, May 6, 2026 12:31 PM"><a href=#chatlog__message-container-1501501688950030396>5/6/2026 12:31 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Galdrar&#233;ttarh&#246;ld endurr&#230;st <img
+<a href="https://vimeo.com/1186523017">https://vimeo.com/1186523017</a><a href="https://vimeo.com/1186523052">https://vimeo.com/1186523052</a></span><span class=chatlog__edited-timestamp title="Saturday, April 25, 2026 6:24 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1501501688950030396 class=chatlog__message-container data-message-id=1501501688950030396><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, May 6, 2026 12:31 PM"><a href=#chatlog__message-container-1501501688950030396>5/6/2026 12:31 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Galdrar&#233;ttarh&#246;ld endurr&#230;st <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128293;"
@@ -625,8 +591,7 @@ Heilbrig&#240;isgeirinn og l&#246;gfr&#230;&#240;in &#237; reynd - endurr&#230;s
 
 #Heilbrig&#240;isgeirinn #L&#246;gkerfi&#240; #Galdrar&#233;ttarh&#246;ld #N&#250;t&#237;magaldravei&#240;ar #Kerfisbundi&#240;Vald #SpyrjaKerfi&#240; #Sannleiksleit #Vitund #TalaSannleikann #&#193; bak vi&#240; huluna #Me&#240;vitu&#240;Vakning #N&#250;t&#237;masamf&#233;lag #KerfisbundinStj&#243;rn #VakningarKall #FalinnSannleikur
 
-<a href="https://vimeo.com/1189662036">https://vimeo.com/1189662036</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1501501689230921759/Witch_Trials_Rebooted.mp4?ex=6a2b1b2b&amp;is=6a29c9ab&amp;hm=06f903f25c11b714d7d57e42ef320a42af9bccdb4aaabe3a51a87dee0b55e59a&amp;" alt="Video attachment" title="Video: Witch_Trials_Rebooted.mp4 (1.27 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1501501689633439834/Witch_Trials_Rebooted.png?ex=6a2b1b2b&amp;is=6a29c9ab&amp;hm=4bf04d5a3673513ef17027295d9622186d5c94dc32085c71b8badbc755c31fa2&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1468700560256536607/1501501689633439834/Witch_Trials_Rebooted.png?ex=6a2b1b2b&amp;is=6a29c9ab&amp;hm=4bf04d5a3673513ef17027295d9622186d5c94dc32085c71b8badbc755c31fa2&amp;" alt="Image attachment" title="Image: Witch_Trials_Rebooted.png (1.2 MB)" loading=lazy> </a></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1510882293600882728 class=chatlog__message-container data-message-id=1510882293600882728><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 1, 2026 9:46 AM"><a href=#chatlog__message-container-1510882293600882728>6/1/2026 9:46 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Mikilv&#230;g au&#240;ur og frelsisvirkjun <img
+<a href="https://vimeo.com/1189662036">https://vimeo.com/1189662036</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1510882293600882728 class=chatlog__message-container data-message-id=1510882293600882728><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, June 1, 2026 9:46 AM"><a href=#chatlog__message-container-1510882293600882728>6/1/2026 9:46 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Mikilv&#230;g au&#240;ur og frelsisvirkjun <img
     loading="lazy"
     class="chatlog__emoji "
     alt="✝️"
@@ -662,8 +627,7 @@ Ekkert heimsveldi, enginn stj&#243;rnandi, ekkert vald hefur nokkurn t&#237;ma s
 
 #Gn&#230;g&#240;argaldrar #Risast&#243;rAu&#240;ur #AndlegUppf&#230;rsla #Birtingargaldur #Orkuvirkjun #Skammtabreyting #Lj&#243;sk&#243;&#240;ar #Velmegunarlei&#240; #FrelsiOpna&#240; #&#211;endanlegOrka #Rj&#250;faKe&#240;jurnar #Heil&#246;gVirkun #Galdrakast #H&#225;t&#237;&#240;artitringur #Au&#240;arbreyting #OpnaGn&#230;g&#240; #Tr&#250;Yfir&#211;tta #SannleikurinnL&#233;ttLausa #Eil&#237;ftFrelsi #J&#243;hannes836 #SigurOpna&#240;ur #Ke&#240;jurBrotnar #AndlegtFrelsi #OrkuAu&#240;ur #Uppf&#230;r&#240;uN&#250;na #Dulspekingagaldur
 
-<a href="https://vimeo.com/1197255068">https://vimeo.com/1197255068</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1510882295886643291/A_Massive_Wealth__Freedom_Activa_caption.mp4?ex=6a2af48a&amp;is=6a29a30a&amp;hm=a93b6dedb3057705dc14f62a25c6c8d895502b95240fb064a19f4b3fc7793724&amp;" alt="Video attachment" title="Video: A_Massive_Wealth__Freedom_Activa_caption.mp4 (43.45 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1510882298311213166/A_Massive_Wealth__Freedom_Activation-Ice.srt?ex=6a2af48a&amp;is=6a29a30a&amp;hm=e6de88ccee54da068d855c4ffbc08930b2de0c9c02481d898129372dee8e3bfa&amp;"> A_Massive_Wealth__Freedom_Activation-Ice.srt </a></div><div class=chatlog__attachment-generic-size>1.67 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1510882298541768711/A_Massive_Wealth__Freedom_Activati_audio.mp3?ex=6a2af48a&amp;is=6a29a30a&amp;hm=3d4b87fe37484d76961e709b3669500a3c8b61cf044023b5c0157d9da0f9a895&amp;" alt="Audio attachment" title="Audio: A_Massive_Wealth__Freedom_Activati_audio.mp3 (1001.77 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1511025310659776613 class=chatlog__message-container data-message-id=1511025310659776613><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 1, 2026 7:15 PM"><a href=#chatlog__message-container-1511025310659776613>6/1/2026 7:15 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Skeri&#240; me&#240; me&#240;vitund - ekki gleymsku <img
+<a href="https://vimeo.com/1197255068">https://vimeo.com/1197255068</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> A_Massive_Wealth__Freedom_Activation-Ice.srt </a></div><div class=chatlog__attachment-generic-size>1.67 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1511025310659776613 class=chatlog__message-container data-message-id=1511025310659776613><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, June 1, 2026 7:15 PM"><a href=#chatlog__message-container-1511025310659776613>6/1/2026 7:15 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Skeri&#240; me&#240; me&#240;vitund - ekki gleymsku <img
     loading="lazy"
     class="chatlog__emoji "
     alt="✂️"
@@ -718,8 +682,7 @@ er einfaldlega a&#240; hamla vexti ykkar.
 
 #SnyrtumMe&#240;Me&#240;vitund #EkkiGleymsku #AndlegD&#243;mgreind #InnriGar&#240;ur #Me&#240;Me&#240;vitu&#240;Tr&#250; #Vakningu #N&#230;rveruYfirHeilsi&#240;um #A&#240;L&#237;faMinningu #Tr&#250;Me&#240;Skilningi #InnraBarnVakandi #R&#237;kiInnra #Hafi&#240;AfSkilyr&#240;i #Andlegur&#222;roski #V&#246;xturMe&#240;Visku #SannleikurinnAndar #Heilag&#243;&#240;Me&#240;vitund #KenningarJes&#250; #Fagna&#240;arerindi&#240;Huglei&#240;ing #KristsMe&#240;vitund #AndlegurV&#246;xtur
 
-<a href="https://vimeo.com/1197322327">https://vimeo.com/1197322327</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1511025314820653247/Prune-Icelandic_Iceland_caption.mp4?ex=6a2b79bc&amp;is=6a2a283c&amp;hm=810a944b63bec1983dd87d74af19ca81886fa35acd26fac78c45c16b52dbfded&amp;" alt="Video attachment" title="Video: Prune-Icelandic_Iceland_caption.mp4 (86.7 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1511025319031865364/Prune-Icelandic_Iceland.srt?ex=6a2b79bd&amp;is=6a2a283d&amp;hm=c7fdcd582d56e014576ba07a8bc533b711a1f1edd0f8a4c5731510bebe66e90f&amp;"> Prune-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>3.95 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1511025319505694991/Prune-Icelandic_Iceland_audio.mp3?ex=6a2b79bd&amp;is=6a2a283d&amp;hm=93439f96cad3fb7dbf574fe5dcac4fe6083912000a68be412a47aad94aa14a09&amp;" alt="Audio attachment" title="Audio: Prune-Icelandic_Iceland_audio.mp3 (2.11 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1511060537230884985 class=chatlog__message-container data-message-id=1511060537230884985><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 1, 2026 9:35 PM"><a href=#chatlog__message-container-1511060537230884985>6/1/2026 9:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1197322327">https://vimeo.com/1197322327</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Prune-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>3.95 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1511060537230884985 class=chatlog__message-container data-message-id=1511060537230884985><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, June 1, 2026 9:35 PM"><a href=#chatlog__message-container-1511060537230884985>6/1/2026 9:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127756;"
@@ -760,8 +723,7 @@ Dans, b&#230;n, hv&#237;sl sannleikans… &#201;g elska &#254;ig Christian <img
 
 #Fr&#230;Sannleikans #SpegillSpegill #S&#253;nduM&#233;rSannleikann #Fegur&#240;inOgSkr&#237;msli&#240; #DularfullarStefnum&#243;t #Dans&#193;star #&#201;gElska&#222;igChristian #&#201;gElska&#222;igJoshua #F&#246;&#240;ur&#193;st #S&#225;Fr&#230;
 
-<a href="https://vimeo.com/1197472701">https://vimeo.com/1197472701</a></span> <span class=chatlog__edited-timestamp title="Monday, June 1, 2026 10:40 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1511060529592926319/Iceland.mp4?ex=6a2af1c8&amp;is=6a29a048&amp;hm=7260210a03b557bc3e97aa25124544d1052c6d425ae4cc4b0dd99ae50710452d&amp;" alt="Video attachment" title="Video: Iceland.mp4 (149.87 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1511060537008459917/Mirror_Mirror-Icelandic_Iceland.srt?ex=6a2af1ca&amp;is=6a29a04a&amp;hm=bd0fc0261cf0f3ae5319e74906a0883ccfebff5154fbaa9c87f56687911b0992&amp;"> Mirror_Mirror-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>239 bytes</div></div></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1511327954137907200 class=chatlog__message-container data-message-id=1511327954137907200><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 2, 2026 3:17 PM"><a href=#chatlog__message-container-1511327954137907200>6/2/2026 3:17 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1197472701">https://vimeo.com/1197472701</a></span><span class=chatlog__edited-timestamp title="Monday, June 1, 2026 10:40 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Mirror_Mirror-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>239 bytes</div></div></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1511327954137907200 class=chatlog__message-container data-message-id=1511327954137907200><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, June 2, 2026 3:17 PM"><a href=#chatlog__message-container-1511327954137907200>6/2/2026 3:17 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128176;"
@@ -791,8 +753,7 @@ en gn&#230;g&#240; hefur alltaf tilheyrt Gu&#240;i.
 
 #peningar #fj&#225;rm&#225;lakerfi #stj&#243;rnkerfi #vakning #sannleiksleitandi #kerfisvitund #fj&#225;rm&#225;lastj&#243;rnun #hugsa&#240;uum&#254;a&#240; #sj&#243;narhorn #hugarfarsbreyting #f&#233;lagskerfi #valdakerfi #spur&#240;uallt #sannleikurinnyfir&#254;&#230;gindum #vitund #andlegvakning #me&#240;vitund #brj&#243;ttublekkinguna #sameiginlegvakning #hugr&#230;n hugsun #andlegsk&#253;rleiki #&#230;&#240;ra sj&#243;narhorn #innri sannleikur #vekjaheiminn #peningatal #hagfr&#230;&#240;i #au&#240;sblekking #n&#250;t&#237;masamf&#233;lag #kap&#237;talismi #spur&#240;uyfirvald #sannleikurinnskiptir m&#225;li #heimskerfi #samf&#233;lagi&#240;&#237;dag #PeningarEruEkkiGn&#230;g&#240; #Gn&#230;g&#240;arhugsunarh&#225;ttur #Tr&#250;Yfir&#211;tta #Hreystu&#222;&#233;r&#193;Gu&#240; #AndlegtFrelsi #PeningarSannleikur #Gn&#230;g&#240;Fr&#225;Gu&#240;i #Brj&#243;ttuH&#250;lluna #Tr&#250;artal #SannleikurinnAflj&#243;stra&#240;ur
 
-<a href="https://vimeo.com/1197685241">https://vimeo.com/1197685241</a></span> <span class=chatlog__edited-timestamp title="Wednesday, June 3, 2026 9:16 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1511327952737009745/Money_is_a_Verb_Abundance_is_the_caption.mp4?ex=6a2b4217&amp;is=6a29f097&amp;hm=e6f74c3a32f21f1b0d0998e5ab0db412d6556784a3762ec96654ed44c3763d4a&amp;" alt="Video attachment" title="Video: Money_is_a_Verb_Abundance_is_the_caption.mp4 (7.09 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1511327953521479760/Money_is_a_Verb_Abundance_is_the_Source-.srt?ex=6a2b4217&amp;is=6a29f097&amp;hm=2db52c658575a9693c780e1753e00f3bac4fdd51c287b04439908fc89c518f24&amp;"> Money_is_a_Verb_Abundance_is_the_Source-.srt </a></div><div class=chatlog__attachment-generic-size>1.04 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1511327953861087353/Money_is_a_Verb_Abundance_is_the_S_audio.mp3?ex=6a2b4217&amp;is=6a29f097&amp;hm=c028e006038ee2eb333ca3e882f46d2fc8c864600c6ef530c3760a0bb6d1b62a&amp;" alt="Audio attachment" title="Audio: Money_is_a_Verb_Abundance_is_the_S_audio.mp3 (480.14 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1511333884913123470 class=chatlog__message-container data-message-id=1511333884913123470><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 2, 2026 3:41 PM"><a href=#chatlog__message-container-1511333884913123470>6/2/2026 3:41 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>T&#246;lum um kynl&#237;f, elskan (&#254;i&#240; &#254;ekki&#240; lagi&#240;) <img
+<a href="https://vimeo.com/1197685241">https://vimeo.com/1197685241</a></span><span class=chatlog__edited-timestamp title="Wednesday, June 3, 2026 9:16 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Money_is_a_Verb_Abundance_is_the_Source-.srt </a></div><div class=chatlog__attachment-generic-size>1.04 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1511333884913123470 class=chatlog__message-container data-message-id=1511333884913123470><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, June 2, 2026 3:41 PM"><a href=#chatlog__message-container-1511333884913123470>6/2/2026 3:41 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>T&#246;lum um kynl&#237;f, elskan (&#254;i&#240; &#254;ekki&#240; lagi&#240;) <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127926;"
@@ -803,8 +764,7 @@ Karlkyns og kvenleg orka gegna mikilv&#230;gu hlutverki &#237; &#254;v&#237; hve
 
 #T&#246;lumumumumkynl&#237;f #Orkuvitund #N&#250;t&#237;matilhugal&#237;f #Handannvi&#240;girni #KarlkynlegtKvenlegt #&#211;svikinTengsl #Me&#240;vita&#240;L&#237;fsst&#237;ll #MenningarlegSkilyr&#240;ing #InnriVinnsla #Orkujafnv&#230;gi #Me&#240;vitund #Sannleiksleit #N&#250;t&#237;madulspekingur #Vaki&#240; #Dj&#250;parHugsanir
 
-<a href="https://vimeo.com/1197694687">https://vimeo.com/1197694687</a></span> <span class=chatlog__edited-timestamp title="Wednesday, June 3, 2026 9:14 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1511333879640752158/Lets_Talk_About_Sex-Icelandic_Ic_caption.mp4?ex=6a2b479c&amp;is=6a29f61c&amp;hm=c5cee2534a6b0b3f6018040ffd0e502cab81fc3188c4d80bac71d757de250794&amp;" alt="Video attachment" title="Video: Lets_Talk_About_Sex-Icelandic_Ic_caption.mp4 (85.53 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1511333884313342026/Lets_Talk_About_Sex-Icelandic_Iceland.srt?ex=6a2b479d&amp;is=6a29f61d&amp;hm=c0a96220eaac1bf49c3f4bed7525b6b3021ba3c7ae49e4b1cf0c18a2dcf77a4c&amp;"> Lets_Talk_About_Sex-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>5.59 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1511333884628045965/Lets_Talk_About_Sex-Icelandic_Icel_audio.mp3?ex=6a2b479d&amp;is=6a29f61d&amp;hm=8ed64a027c946f624dbce2392fa3f7614ce23b0e60edc484d0e8f990143be7f6&amp;" alt="Audio attachment" title="Audio: Lets_Talk_About_Sex-Icelandic_Icel_audio.mp3 (2.3 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513099082145726524 class=chatlog__message-container data-message-id=1513099082145726524><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 7, 2026 12:35 PM"><a href=#chatlog__message-container-1513099082145726524>6/7/2026 12:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sannleikurinn hefur h&#230;&#240; <img
+<a href="https://vimeo.com/1197694687">https://vimeo.com/1197694687</a></span><span class=chatlog__edited-timestamp title="Wednesday, June 3, 2026 9:14 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Lets_Talk_About_Sex-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>5.59 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513099082145726524 class=chatlog__message-container data-message-id=1513099082145726524><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, June 7, 2026 12:35 PM"><a href=#chatlog__message-container-1513099082145726524>6/7/2026 12:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sannleikurinn hefur h&#230;&#240; <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128330;️"
@@ -821,8 +781,7 @@ Jafnvel Jes&#250;s &#225;tti ekkert heimili &#254;ar - s&#246;nnun &#254;ess a&#
 
 #TalaSannleikinn #StattuSterk #R&#237;sUppYfirIllt #R&#246;ddinSkiptirM&#225;li #HugrekkiTilA&#240;ger&#240;a #Lj&#243;s&#205;Myrkri #Styrkur&#205;Sannleikanum #R&#246;ddFrelsis #SannleikurinnUppYfir&#214;llu #Tala&#193;n&#211;tta #&#211;M&#225;lami&#240;a&#240;urSannleikur #SannleikurinnHefur&#222;yngd #SannleikurinnBer #H&#230;kka&#240;uR&#246;dd&#222;&#237;na #Si&#240;fer&#240;ilegtHugrekki #&#222;&#246;gnEkkiMeira #R&#246;ddSamviskunnar #&#222;oraA&#240;Tala #Tr&#250;OgSannleikur #Ganga&#205;Sannleikanum #Ekki&#218;r&#222;essumHeimi #H&#230;rriJ&#246;r&#240; #AndlegSk&#253;rleiki #&#211;Samningsatri&#240;i #EnginM&#225;lami&#240;lun #Hei&#240;arleikiSkiptirM&#225;li #StattuS&#233;rstakur #Hafna&#240;u&#222;&#246;gn #SannleikurinnT&#243;k #Me&#240;vita&#240;Innihald #Vakna&#240;arRaddir #RaunverulegtTal #Sk&#253;rleikiYfirH&#225;va&#240;a
 
-<a href="https://vimeo.com/1199135391">https://vimeo.com/1199135391</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513099083571527690/Truth_Has_Altitude-Icelandic_Ice_caption.mp4?ex=6a2b1c15&amp;is=6a29ca95&amp;hm=971171fb6ed7d2f5a3db18e3b26153f24d0c3752041891eca21a52a1ba8340e1&amp;" alt="Video attachment" title="Video: Truth_Has_Altitude-Icelandic_Ice_caption.mp4 (29.1 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1513099085337460828/Truth_Has_Altitude-Icelandic_Iceland.srt?ex=6a2b1c15&amp;is=6a29ca95&amp;hm=10baa32d358071f4f1bb6274f89a75ce1ef2415c2be74eaf06860eb6ae9744fc&amp;"> Truth_Has_Altitude-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>1.52 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513099085626736782/Truth_Has_Altitude-Icelandic_Icela_audio.mp3?ex=6a2b1c16&amp;is=6a29ca96&amp;hm=4df0907d5ff35cbe09b6acac0b77fd50a799e0ab1c8e33564700e5477b25b0d2&amp;" alt="Audio attachment" title="Audio: Truth_Has_Altitude-Icelandic_Icela_audio.mp3 (607.27 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513103792604708985 class=chatlog__message-container data-message-id=1513103792604708985><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 7, 2026 12:54 PM"><a href=#chatlog__message-container-1513103792604708985>6/7/2026 12:54 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>H&#248;stens lov... <img
+<a href="https://vimeo.com/1199135391">https://vimeo.com/1199135391</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Truth_Has_Altitude-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>1.52 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513103792604708985 class=chatlog__message-container data-message-id=1513103792604708985><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, June 7, 2026 12:54 PM"><a href=#chatlog__message-container-1513103792604708985>6/7/2026 12:54 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve>H&#248;stens lov... <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127793;"
@@ -833,8 +792,7 @@ De, der s&#229;r fattigdom for andre, vil finde den vokse i deres egen mark.
 
 #S&#229;OgH&#248;ste #SandhedP&#229;&#201;nLine #EnergiGiverAfkast #KarmaEllerKald
 
-<a href="https://vimeo.com/1199138425">https://vimeo.com/1199138425</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513103792764358779/Law_of_the_Harvest-Icelandic_Ice_caption.mp4?ex=6a2b2078&amp;is=6a29cef8&amp;hm=554d202b1d4be31f448df169ef8cab13ea4d9fe20458cff9699e30c2b457898c&amp;" alt="Video attachment" title="Video: Law_of_the_Harvest-Icelandic_Ice_caption.mp4 (592.1 KB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1513103792973811842/Law_of_the_Harvest-Icelandic_Iceland.srt?ex=6a2b2078&amp;is=6a29cef8&amp;hm=1bb53674de25d8111702a3670e978fb344cc9afa0b8831f15941517ce428d65b&amp;"> Law_of_the_Harvest-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>170 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513103793427054632/Law_of_the_Harvest-Icelandic_Icela_audio.mp3?ex=6a2b2078&amp;is=6a29cef8&amp;hm=1cfe9b8800e05ca6a260a0314fae3cba552b379c9867caef984c9b9aad73cde9&amp;" alt="Audio attachment" title="Audio: Law_of_the_Harvest-Icelandic_Icela_audio.mp3 (61.64 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513467247073431604 class=chatlog__message-container data-message-id=1513467247073431604><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 8, 2026 12:58 PM"><a href=#chatlog__message-container-1513467247073431604>6/8/2026 12:58 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>F&#243;lki&#240; er hinn sanni au&#240;ur 23/03/2026 - &#211;GILT</strong>
+<a href="https://vimeo.com/1199138425">https://vimeo.com/1199138425</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Law_of_the_Harvest-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>170 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513467247073431604 class=chatlog__message-container data-message-id=1513467247073431604><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, June 8, 2026 12:58 PM"><a href=#chatlog__message-container-1513467247073431604>6/8/2026 12:58 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>F&#243;lki&#240; er hinn sanni au&#240;ur 23/03/2026 - &#211;GILT</strong>
 
 S&#237;&#240;an &#233;g dr&#243; mig til baka fr&#225; hnattr&#230;num &#225;t&#246;kum hef &#233;g s&#233;&#240; eitthva&#240; sk&#253;rt: f&#243;lki&#240; er hinn sanni au&#240;ur.
 Samt horfum vi&#240; &#225; &#243;tta, h&#230;kkandi kostna&#240; og takmarkanir „halda“ l&#250;mskt fast vi&#240;“ og f&#230;ra &#254;ennan au&#240; &#225; milli.
@@ -848,8 +806,7 @@ Kannski er kominn t&#237;mi til a&#240; vi&#240;urkenna &#254;a&#240; sem vi&#24
 
 #Sannleikurinn #Me&#240;vitund #F&#243;lki&#240;ErAu&#240;ur #Vakni&#240; #Fj&#246;lskyldanFyrst #Fri&#240;urByrjarHeima #AndlegVakning #Sj&#243;narhornsbreyting #KerfisbundinHugsun #N&#250;t&#237;maheimurinn #Veri&#240;Jar&#240;bundin #RaunverulegtSamtal
 
-<a href="https://vimeo.com/1199342747">https://vimeo.com/1199342747</a></span> <span class=chatlog__edited-timestamp title="Monday, June 8, 2026 1:05 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513467242434789416/People_Are_the_Real_Wealth-Icela_caption.mp4?ex=6a2b2175&amp;is=6a29cff5&amp;hm=8c7663986b81654d9c5d6c50dd514791443a52009489292f4bedce86028df0bb&amp;" alt="Video attachment" title="Video: People_Are_the_Real_Wealth-Icela_caption.mp4 (91.14 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1513467246226313277/People_Are_the_Real_Wealth-Icelandic_Ice.srt?ex=6a2b2176&amp;is=6a29cff6&amp;hm=4856ed95e9bfcd683dc0206bcf6e0aaa557b34617a5ae8447f65cc4d4d10efc2&amp;"> People_Are_the_Real_Wealth-Icelandic_Ice.srt </a></div><div class=chatlog__attachment-generic-size>4.95 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513467246687817768/People_Are_the_Real_Wealth-Iceland_audio.mp3?ex=6a2b2176&amp;is=6a29cff6&amp;hm=3e9211f45497b499d2d21be12e5d04becae36d420af2bf4f724ca3a7ece05167&amp;" alt="Audio attachment" title="Audio: People_Are_the_Real_Wealth-Iceland_audio.mp3 (2.13 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513808405658210484 class=chatlog__message-container data-message-id=1513808405658210484><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 9, 2026 11:34 AM"><a href=#chatlog__message-container-1513808405658210484>6/9/2026 11:34 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1199342747">https://vimeo.com/1199342747</a></span><span class=chatlog__edited-timestamp title="Monday, June 8, 2026 1:05 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> People_Are_the_Real_Wealth-Icelandic_Ice.srt </a></div><div class=chatlog__attachment-generic-size>4.95 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513808405658210484 class=chatlog__message-container data-message-id=1513808405658210484><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, June 9, 2026 11:34 AM"><a href=#chatlog__message-container-1513808405658210484>6/9/2026 11:34 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="✨"
@@ -866,8 +823,7 @@ Stundum er &#254;a&#240; sem l&#237;&#240;ur eins og opinberun bara n&#250;t&#23
 
 #Sp&#225;d&#243;mur #Minning #Vakning #N&#250;t&#237;&#240; #Me&#240;vitund #Eining #Opinberun #AndlegViska #Eil&#237;ftN&#250; #Gu&#240;d&#243;mlegurT&#237;mi #InnriS&#253;n #Me&#240;vitund #AndlegFer&#240;alag #DulspekiSannleikur #Tr&#250;rFlug #veilocity111osn
 
-<a href="https://vimeo.com/1199663658">https://vimeo.com/1199663658</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513808406291419176/Prophecy_or_Memory-Icelandic_Ice_caption.mp4?ex=6a2b0db1&amp;is=6a29bc31&amp;hm=0f080cec1d3e17a1a56044d6d9e93f5e1851f58b9e40cbdc462d872e29545440&amp;" alt="Video attachment" title="Video: Prophecy_or_Memory-Icelandic_Ice_caption.mp4 (2.76 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1513808406715039774/Prophecy_or_Memory-Icelandic_Iceland.srt?ex=6a2b0db1&amp;is=6a29bc31&amp;hm=a23dd99a83b69635b641140f7c966dcd1c929ccad60fc580a846b417aebd6bcf&amp;"> Prophecy_or_Memory-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>130 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513808407004713031/Prophecy_or_Memory-Icelandic_Icela_audio.mp3?ex=6a2b0db1&amp;is=6a29bc31&amp;hm=afcfd809b5b1e55e322604e0a931bb8b906eb5c52998e265898f69c6c359e945&amp;" alt="Audio attachment" title="Audio: Prophecy_or_Memory-Icelandic_Icela_audio.mp3 (83.77 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513817896432832562 class=chatlog__message-container data-message-id=1513817896432832562><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 9, 2026 12:11 PM"><a href=#chatlog__message-container-1513817896432832562>6/9/2026 12:11 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1199663658">https://vimeo.com/1199663658</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Prophecy_or_Memory-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>130 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513817896432832562 class=chatlog__message-container data-message-id=1513817896432832562><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, June 9, 2026 12:11 PM"><a href=#chatlog__message-container-1513817896432832562>6/9/2026 12:11 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="☯️"
@@ -893,8 +849,7 @@ Stundum er &#254;a&#240; sem l&#237;&#240;ur eins og opinberun bara n&#250;t&#23
 
 #Vakningarfer&#240;alag #InnraJafnv&#230;gi #YinYang #Me&#240;vita&#240;urV&#246;xtur #AndlegJar&#240;tenging #Sj&#225;lfssamr&#230;mi #Me&#240;vitund #Sam&#250;&#240; #V&#246;xturHugarfar #SannleikurOgHei&#240;arleiki #InnriSt&#246;&#240;ugleiki #Mj&#250;kurV&#246;xtur #N&#230;rveraSkiptirM&#225;li
 
-<a href="https://vimeo.com/1199675390">https://vimeo.com/1199675390</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513817898953609257/Holding_Space-Icelandic_Iceland_caption.mp4?ex=6a2b1688&amp;is=6a29c508&amp;hm=f00aabc5e158c1f5ec7583f1f243121404fdb622670483fd87bba46c0e4783a9&amp;" alt="Video attachment" title="Video: Holding_Space-Icelandic_Iceland_caption.mp4 (53.41 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1513817901247762492/Holding_Space-Icelandic_Iceland.srt?ex=6a2b1689&amp;is=6a29c509&amp;hm=c693ed25f0034960f1418d167f41322de6b711d980708d7e79469c4f11a0709c&amp;"> Holding_Space-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>3.16 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1513817901667188756/Holding_Space-Icelandic_Iceland_audio.mp3?ex=6a2b1689&amp;is=6a29c509&amp;hm=46079078db0c9f7a935729ed5f78db28b3c060991c1fdb9a3509958da8536494&amp;" alt="Audio attachment" title="Audio: Holding_Space-Icelandic_Iceland_audio.mp3 (1.21 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1514337118237757550 class=chatlog__message-container data-message-id=1514337118237757550><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, June 10, 2026 10:35 PM"><a href=#chatlog__message-container-1514337118237757550>6/10/2026 10:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Eig&#240;u &#254;inn fri&#240; <img
+<a href="https://vimeo.com/1199675390">https://vimeo.com/1199675390</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Holding_Space-Icelandic_Iceland.srt </a></div><div class=chatlog__attachment-generic-size>3.16 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1514337118237757550 class=chatlog__message-container data-message-id=1514337118237757550><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, June 10, 2026 10:35 PM"><a href=#chatlog__message-container-1514337118237757550>6/10/2026 10:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Eig&#240;u &#254;inn fri&#240; <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128656;"
@@ -963,8 +918,7 @@ Eig&#240;u &#254;inn fri&#240;. <img
 
 #SedanL&#237;f #L&#225;gmarksL&#237;f #Fj&#225;rhagslegtFrelsi #H&#250;sb&#237;lal&#237;f #HeimiliV&#233;xtSendub&#237;ll #Fl&#246;kkul&#237;f #L&#237;f&#193;Hj&#243;lum #SkuldalaustL&#237;f #FrelsiL&#237;fsst&#237;ll #Lif&#240;u&#222;&#237;numH&#225;tt #L&#237;ti&#240;Heimili&#193;Hj&#243;lum #Sliti&#240;Fr&#225;Kerfinu #L&#237;fsst&#237;llUtanFyrirRafneti&#240; #Fer&#240;al&#246;gFrelsi #MinnkaTilA&#240;Uppf&#230;ra
 
-<a href="https://vimeo.com/1200198763">https://vimeo.com/1200198763</a></span> <span class=chatlog__edited-timestamp title="Wednesday, June 10, 2026 10:43 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1514337114781651034/I_dont_own_a_house_I_own_my_peac_caption.mp4?ex=6a2affd7&amp;is=6a29ae57&amp;hm=9f09f067dd831ef3ffdc57df9865d5d99917f911bdfa48c9b8a7eb26c4443122&amp;" alt="Video attachment" title="Video: I_dont_own_a_house_I_own_my_peac_caption.mp4 (64.46 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1514337117638230076/I_dont_own_a_house_I_own_my_peace-Icelan.srt?ex=6a2affd7&amp;is=6a29ae57&amp;hm=c688c0a5b56fe634b6c18dd1f289ff8d43923d492d5e0f8a310a222176cd10c5&amp;"> I_dont_own_a_house_I_own_my_peace-Icelan.srt </a></div><div class=chatlog__attachment-generic-size>2.99 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1514337117935898704/I_dont_own_a_house_I_own_my_peace-_audio.mp3?ex=6a2affd7&amp;is=6a29ae57&amp;hm=56338a77641c5c2aad2121edc84badc32ec3b79e7c3334b28afa151ddf95f658&amp;" alt="Audio attachment" title="Audio: I_dont_own_a_house_I_own_my_peace-_audio.mp3 (1.43 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1514344492264853574 class=chatlog__message-container data-message-id=1514344492264853574><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, June 10, 2026 11:04 PM"><a href=#chatlog__message-container-1514344492264853574>6/10/2026 11:04 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ef heimurinn gleymdi g&#230;rdeginum <img
+<a href="https://vimeo.com/1200198763">https://vimeo.com/1200198763</a></span><span class=chatlog__edited-timestamp title="Wednesday, June 10, 2026 10:43 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> I_dont_own_a_house_I_own_my_peace-Icelan.srt </a></div><div class=chatlog__attachment-generic-size>2.99 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1514344492264853574 class=chatlog__message-container data-message-id=1514344492264853574><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, June 10, 2026 11:04 PM"><a href=#chatlog__message-container-1514344492264853574>6/10/2026 11:04 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ef heimurinn gleymdi g&#230;rdeginum <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127757;"
@@ -983,19 +937,12 @@ kannski er &#254;a&#240; &#254;a&#240; sem eftir stendur &#254;egar vi&#240; lok
 
 Matteus 6:11 • Matteus 6:12 • Matteus 6:34
 
-#Skuldav&#233;l #Fyrirgef&#240;uSkuldirOkkar #HiminninnErN&#250;na #Tr&#250;&#205;Verk #Sannleikurinn&#205;BeinumSj&#243;num #AndlegVakning #Me&#240;vita&#240;urHagkerfi #Fri&#240;urYfirHagna&#240;i #EndurstillaKerfi&#240; #N&#250; #Matteus611 #Matteus612 #Matteus634 #SannleikurFagna&#240;arerindisins #VekjumMannkyni&#240; #N&#253;jaJ&#246;r&#240;in</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1514344489131577344/If_the_World_Forgot_Yesterday-Ic_caption.mp4?ex=6a2b06b5&amp;is=6a29b535&amp;hm=a2f264e91b053daa951e90250f49aae5f3eeb0dc24aa810aabbba87849314a1b&amp;" alt="Video attachment" title="Video: If_the_World_Forgot_Yesterday-Ic_caption.mp4 (54.6 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468700560256536607/1514344491639902389/If_the_World_Forgot_Yesterday-Icelandic_.srt?ex=6a2b06b5&amp;is=6a29b535&amp;hm=ae7779fcd8dd64af398e643014252ed2284d384457f5d69a9783633079330584&amp;"> If_the_World_Forgot_Yesterday-Icelandic_.srt </a></div><div class=chatlog__attachment-generic-size>3.16 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468700560256536607/1514344492000477225/If_the_World_Forgot_Yesterday-Icel_audio.mp3?ex=6a2b06b6&amp;is=6a29b536&amp;hm=0dd24fab46999e45d37a4d54a56ef53a7d24933f609d5dca832addfcfb483d53&amp;" alt="Audio attachment" title="Audio: If_the_World_Forgot_Yesterday-Icel_audio.mp3 (1.36 MB)"></audio></div></div></div></div></div>
-
-</div>
-<div class=postamble><div class=postamble__entry>Exported 34 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
+#Skuldav&#233;l #Fyrirgef&#240;uSkuldirOkkar #HiminninnErN&#250;na #Tr&#250;&#205;Verk #Sannleikurinn&#205;BeinumSj&#243;num #AndlegVakning #Me&#240;vita&#240;urHagkerfi #Fri&#240;urYfirHagna&#240;i #EndurstillaKerfi&#240; #N&#250; #Matteus611 #Matteus612 #Matteus634 #SannleikurFagna&#240;arerindisins #VekjumMannkyni&#240; #N&#253;jaJ&#246;r&#240;in</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> If_the_World_Forgot_Yesterday-Icelandic_.srt </a></div><div class=chatlog__attachment-generic-size>3.16 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div></div><div class=postamble><div class=postamble__entry>Exported 34 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
 
 <script id="chatlog-date-sorter">
 document.addEventListener("DOMContentLoaded", () => {
   const ALLOWED_DISCORD_CDN_URL =
     "https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512";
-  // Court archive lives beside the current/source HTML file.
-  // Keep this as a relative filename, not file:/// or an absolute path.
-  const LOCAL_COURT_ARCHIVE_HREF = "ENGLISH - Court.html";
-  const LOCAL_COURT_ARCHIVE_LABEL = "Court Archive";
 
   const chatlog = document.querySelector(".chatlog");
   if (!chatlog) return;
@@ -1083,85 +1030,53 @@ document.addEventListener("DOMContentLoaded", () => {
     return /^https?:\/\/cdn\.discordapp\.com\//i.test(value);
   }
 
-  function normalizeText(text) {
-    return (text || "")
-      .replace(/\u00a0/g, " ")
-      .replace(/\s+/g, " ")
-      .trim();
+  function getVimeoId(url) {
+    if (!url) return null;
+
+    const patterns = [
+      /vimeo\.com\/(?:video\/)?(\d+)/i,
+      /player\.vimeo\.com\/video\/(\d+)/i
+    ];
+
+    for (const pattern of patterns) {
+      const match = url.match(pattern);
+      if (match) return match[1];
+    }
+
+    return null;
   }
 
-  function isCourtArchiveLink(anchor) {
-    if (!anchor) return false;
-    const href = (anchor.getAttribute("href") || "").trim().toLowerCase();
-    const text = normalizeText(anchor.textContent || "").toLowerCase();
+  function findVimeoAnchors(content) {
+    if (!content) return [];
 
-    return (
-      href.endsWith(LOCAL_COURT_ARCHIVE_HREF.toLowerCase()) ||
-      text === LOCAL_COURT_ARCHIVE_LABEL.toLowerCase() ||
-      text === "court archive"
-    );
-  }
+    const anchors = Array.from(content.querySelectorAll('a[href]'));
+    const seen = new Set();
+    const results = [];
 
-  function stripDiscordCdnNodes(root) {
-    return;
-  }
+    for (const a of anchors) {
+      const href = (a.getAttribute("href") || "").trim();
+      const vimeoId = getVimeoId(href);
+      if (!vimeoId) continue;
 
-  function removeEmptyMediaRows(root) {
-    root.querySelectorAll(".media-row").forEach(row => {
-      if (!row.children.length) {
-        row.remove();
-      }
-    });
-  }
+      const key = `${vimeoId}|${href}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
 
-  function removeVimeoLinks() {
-    document.querySelectorAll(".chatlog__message-group").forEach(group => {
-      const content = group.querySelector(".chatlog__content");
-      if (!content) return;
-
-      const anchors = Array.from(content.querySelectorAll('a[href]'));
-      anchors.forEach(anchor => {
-        const href = (anchor.getAttribute("href") || "").trim();
-        if (/^(https?:\/\/)?(www\.)?(vimeo\.com|player\.vimeo\.com)\//i.test(href)) {
-          const text = (anchor.textContent || "").trim();
-          if (!text || text === href) {
-            anchor.remove();
-          } else {
-            anchor.replaceWith(document.createTextNode(text));
-          }
-        }
+      results.push({
+        anchor: a,
+        href,
+        vimeoId
       });
+    }
 
-      const preserveBlocks = Array.from(
-        group.querySelectorAll(".chatlog__markdown-preserve, .chatlog__content")
-      );
-
-      preserveBlocks.forEach(block => {
-        const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
-        const textNodes = [];
-        let current;
-        while ((current = walker.nextNode())) {
-          textNodes.push(current);
-        }
-
-        textNodes.forEach(node => {
-          const value = node.nodeValue || "";
-          if (/(https?:\/\/)?(www\.)?(vimeo\.com|player\.vimeo\.com)\//i.test(value)) {
-            const cleaned = value
-              .replace(/(?:https?:\/\/)?(?:www\.)?(?:vimeo\.com|player\.vimeo\.com)\/[^\s<>"']+/gi, "")
-              .replace(/\n{3,}/g, "\n\n")
-              .replace(/[ \t]{2,}/g, " ")
-              .trim();
-
-            node.nodeValue = cleaned;
-          }
-        });
-      });
-    });
+    return results;
   }
 
-  function styleCourtArchiveLinks() {
-    function buildCourtArchiveCard(href) {
+  function replaceCourtArchiveLinks() {
+    const courtUrl =
+      "https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html";
+
+    function buildCourtArchiveCard() {
       const row = document.createElement("div");
       row.className = "media-row court-archive-media-row";
 
@@ -1172,15 +1087,10 @@ document.addEventListener("DOMContentLoaded", () => {
       name.className = "chatlog__attachment-generic-name";
 
       const link = document.createElement("a");
-      link.href = href;
+      link.href = courtUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
       link.textContent = "Court Archive";
-      link.className = "court-archive-card-link";
-
-      const target = href.toLowerCase();
-      if (/^https?:\/\//.test(target)) {
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-      }
 
       name.appendChild(link);
       card.appendChild(name);
@@ -1188,15 +1098,11 @@ document.addEventListener("DOMContentLoaded", () => {
       return row;
     }
 
-    function isCourtArchiveHref(href) {
-      const value = (href || "").trim().toLowerCase();
-      return (
-        value.endsWith(LOCAL_COURT_ARCHIVE_HREF.toLowerCase()) ||
-        value.endsWith("english.html") ||
-        value.includes("court-of-illusions-trafficking") ||
-        value.includes("english%20-%20court.html") ||
-        value.includes("english - court.html")
-      );
+    function normalizeText(value) {
+      return (value || "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
     }
 
     function isCourtOnlyText(value) {
@@ -1204,11 +1110,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!t) return false;
       if (/^Court archive:?$/i.test(t)) return true;
       if (/^Court archive:\s*https?:\/\/\S+$/i.test(t)) return true;
-      if (t === LOCAL_COURT_ARCHIVE_HREF) return true;
-      if (t === LOCAL_COURT_ARCHIVE_LABEL) return true;
-      if (/^file:\/\/\/\S*English\.html$/i.test(t)) return true;
+      if (t === courtUrl) return true;
       if (/^https?:\/\/\S*court-of-illusions-trafficking\S*$/i.test(t)) return true;
-      if (/^https?:\/\/\S*(English%20-%20Court\.html|ENGLISH%20-%20Court\.html)\S*$/i.test(t)) return true;
       return false;
     }
 
@@ -1217,18 +1120,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!content) return;
 
       let foundCourtReference = false;
-      let foundHref = "";
 
       group.querySelectorAll(".court-archive-media-row").forEach(el => el.remove());
 
       const exactCourtAnchors = Array.from(content.querySelectorAll("a[href]")).filter(a => {
         const href = (a.getAttribute("href") || "").replace(/&amp;/g, "&").trim();
-        return isCourtArchiveHref(href);
+        return href === courtUrl;
       });
 
       if (exactCourtAnchors.length) {
         foundCourtReference = true;
-        foundHref = LOCAL_COURT_ARCHIVE_HREF;
         exactCourtAnchors.forEach(a => {
           const parent = a.parentElement;
           if (parent && isCourtOnlyText(parent.textContent || "")) {
@@ -1252,17 +1153,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (/^Court archive:\s*https?:\/\/\S+$/i.test(txt) && /court-of-illusions-trafficking/i.test(txt)) {
           foundCourtReference = true;
-          if (!foundHref) {
-            const match = txt.match(/https?:\/\/\S+/i);
-            if (match) foundHref = match[0];
-          }
           el.remove();
           return;
         }
 
-        if (/^(?:https?:\/\/|file:\/\/\/)\S*(court-of-illusions-trafficking|English\.html|English%20-%20Court\.html|ENGLISH%20-%20Court\.html)\S*$/i.test(txt)) {
+        if (/^https?:\/\/\S*court-of-illusions-trafficking\S*$/i.test(txt)) {
           foundCourtReference = true;
-          foundHref = LOCAL_COURT_ARCHIVE_HREF;
           el.remove();
           return;
         }
@@ -1279,18 +1175,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const value = node.nodeValue || "";
         let nextValue = value;
 
-        if (/Court archive:/i.test(nextValue) || /court-of-illusions-trafficking/i.test(nextValue) || /file:\/\/\/\S*English\.html/i.test(nextValue) || /English\s*-\s*Court\.html/i.test(nextValue)) {
+        if (/Court archive:/i.test(nextValue) || /court-of-illusions-trafficking/i.test(nextValue)) {
           foundCourtReference = true;
-
-          const hrefMatch = nextValue.match(/(?:https?:\/\/|file:\/\/\/)[^\s<>"']*(?:court-of-illusions-trafficking|English\.html|English%20-%20Court\.html|ENGLISH%20-%20Court\.html)[^\s<>"']*/i);
-          if (hrefMatch) {
-            foundHref = LOCAL_COURT_ARCHIVE_HREF;
-          }
-
           nextValue = nextValue
             .replace(/Court archive:\s*/gi, "")
-            .replace(/(?:https?:\/\/|file:\/\/\/)[^\s<>"']*(?:court-of-illusions-trafficking|English\.html|English%20-%20Court\.html|ENGLISH%20-%20Court\.html)[^\s<>"']*/gi, "")
-            .replace(/English\s*-\s*Court\.html/gi, "")
+            .replace(/https?:\/\/[^\s<>"']*court-of-illusions-trafficking[^\s<>"']*/gi, "")
             .replace(/\s{2,}/g, " ");
         }
 
@@ -1307,23 +1196,169 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      if (!foundCourtReference) return;
+      const hadCourt = foundCourtReference;
+      if (!hadCourt) return;
 
-      // Always use the portable same-directory relative target.
-      // Do not preserve discovered hrefs, because they may be absolute file:/// hard paths.
-      const hrefToUse = LOCAL_COURT_ARCHIVE_HREF;
-      const firstMediaRow =
+      const subtitlesRow =
         group.querySelector(".media-row") ||
-        (group.querySelector(".chatlog__attachment-generic")
-          ? group.querySelector(".chatlog__attachment-generic").parentElement
-          : null);
+        (group.querySelector(".chatlog__attachment-generic") ? group.querySelector(".chatlog__attachment-generic").parentElement : null);
 
-      const card = buildCourtArchiveCard(hrefToUse);
+      const card = buildCourtArchiveCard();
 
-      if (firstMediaRow && firstMediaRow.parentElement) {
-        firstMediaRow.insertAdjacentElement("beforebegin", card);
+      if (subtitlesRow && subtitlesRow.parentElement) {
+        subtitlesRow.insertAdjacentElement("beforebegin", card);
       } else {
         content.insertAdjacentElement("afterend", card);
+      }
+    });
+  }
+
+  function stripDiscordCdnNodes(root) {
+    if (!root) return;
+
+    const scope = root.querySelector(".chatlog");
+    if (!scope) return;
+
+    scope.querySelectorAll("[src], [href], source[src]").forEach(el => {
+      const src = el.getAttribute("src");
+      const href = el.getAttribute("href");
+
+      if (isDiscordCdnUrl(src) || isDiscordCdnUrl(href)) {
+        const attachment =
+          el.closest(".chatlog__attachment") ||
+          el.closest(".chatlog__embed") ||
+          el.closest(".chatlog__reference") ||
+          el.closest(".chatlog__attachment-generic");
+
+        if (attachment) {
+          attachment.remove();
+          return;
+        }
+
+        if (el.tagName === "IMG" || el.tagName === "VIDEO" || el.tagName === "SOURCE" || el.tagName === "AUDIO") {
+          el.remove();
+          return;
+        }
+
+        if (el.tagName === "A") {
+          const text = (el.textContent || "").trim();
+          if (!text || isDiscordCdnUrl(text)) {
+            el.remove();
+          } else {
+            el.replaceWith(document.createTextNode(text));
+          }
+        }
+      }
+    });
+
+    scope.querySelectorAll(".chatlog__content, .chatlog__markdown-preserve").forEach(block => {
+      const anchors = Array.from(block.querySelectorAll("a[href]"));
+      anchors.forEach(a => {
+        const href = a.getAttribute("href") || "";
+        if (isDiscordCdnUrl(href)) {
+          const text = (a.textContent || "").trim();
+          if (!text || isDiscordCdnUrl(text)) {
+            a.remove();
+          } else {
+            a.replaceWith(document.createTextNode(text));
+          }
+        }
+      });
+
+      const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      let current;
+      while ((current = walker.nextNode())) {
+        textNodes.push(current);
+      }
+
+      textNodes.forEach(node => {
+        const value = node.nodeValue || "";
+        if (/https?:\/\/cdn\.discordapp\.com\//i.test(value)) {
+          node.nodeValue = value
+            .replace(
+              /https?:\/\/cdn\.discordapp\.com\/[^\s<>"']+/gi,
+              (match) => match === ALLOWED_DISCORD_CDN_URL ? match : ""
+            )
+            .replace(/\s{2,}/g, " ")
+            .trim();
+        }
+      });
+    });
+  }
+
+  function removeEmptyMediaRows(root) {
+    root.querySelectorAll(".media-row").forEach(row => {
+      if (!row.children.length) {
+        row.remove();
+      }
+    });
+  }
+
+  function buildVimeoCard(vimeoId, originalUrl) {
+    const wrap = document.createElement("div");
+    wrap.className = "veilocity-vimeo-card";
+
+    const iframeWrap = document.createElement("div");
+    iframeWrap.className = "veilocity-vimeo-embed";
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://player.vimeo.com/video/${vimeoId}`;
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media");
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.title = "Vimeo video player";
+
+    iframeWrap.appendChild(iframe);
+    wrap.appendChild(iframeWrap);
+
+    const actions = document.createElement("div");
+    actions.className = "veilocity-vimeo-actions";
+
+    const button = document.createElement("a");
+    button.className = "veilocity-vimeo-button";
+    button.href = originalUrl;
+    button.target = "_blank";
+    button.rel = "noopener noreferrer";
+    button.textContent = "Watch on Vimeo";
+
+    actions.appendChild(button);
+    wrap.appendChild(actions);
+
+    return wrap;
+  }
+
+  function enhanceVimeoPosts() {
+    document.querySelectorAll(".chatlog__message-group").forEach(group => {
+      const content = group.querySelector(".chatlog__content");
+      if (!content) return;
+
+      const vimeoItems = findVimeoAnchors(content);
+      if (!vimeoItems.length) return;
+
+      group.querySelectorAll(".veilocity-vimeo-card, .veilocity-vimeo-stack").forEach(el => el.remove());
+
+      vimeoItems.forEach(item => {
+        item.anchor.classList.add("veilocity-vimeo-source-link");
+      });
+
+      const stack = document.createElement("div");
+      stack.className = "veilocity-vimeo-stack";
+
+      vimeoItems.forEach(item => {
+        const card = buildVimeoCard(item.vimeoId, item.href);
+        stack.appendChild(card);
+      });
+
+      const attachments = Array.from(group.querySelectorAll(".chatlog__attachment"));
+      const lastAttachment = attachments.length ? attachments[attachments.length - 1] : null;
+
+      if (lastAttachment) {
+        lastAttachment.insertAdjacentElement("afterend", stack);
+      } else {
+        content.insertAdjacentElement("afterend", stack);
       }
     });
   }
@@ -1345,10 +1380,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const href = (link.getAttribute("href") || "").toLowerCase();
     const text = (link.textContent || "").trim().toLowerCase();
 
-    if (href.endsWith(".srt") || text.endsWith(".srt")) {
-      link.textContent = "Subtitles";
-    } else if (href.endsWith(".mp3") || text.endsWith(".mp3")) {
-      link.textContent = "MP3";
+    if (
+      href.endsWith(".srt") || text.endsWith(".srt") ||
+      href.endsWith(".mp3") || text.endsWith(".mp3")
+    ) {
+      const card = link.closest(".chatlog__attachment-generic");
+      if (card) {
+        card.remove();
+      } else {
+        link.remove();
+      }
     }
   });
 
@@ -1420,19 +1461,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("audio").forEach(audio => {
     const source = audio.querySelector("source");
     const src = (source && source.getAttribute("src")) || audio.getAttribute("src") || "";
-    if (!src.toLowerCase().endsWith(".mp3")) return;
 
-    const wrapper = document.createElement("a");
-    wrapper.className = "mp3-download";
-    wrapper.href = src;
-    wrapper.setAttribute("download", "");
-    wrapper.textContent = "MP3";
+    if (src.toLowerCase().endsWith(".mp3")) {
+      const parent = audio.parentElement;
+      audio.remove();
 
-    const parent = audio.parentElement;
-    audio.replaceWith(wrapper);
-
-    if (parent) {
-      parent.classList.add("media-row");
+      if (parent && !parent.children.length) {
+        parent.remove();
+      }
     }
   });
 
@@ -1444,8 +1480,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  removeVimeoLinks();
-  styleCourtArchiveLinks();
+  replaceCourtArchiveLinks();
+  stripDiscordCdnNodes(document);
+  enhanceVimeoPosts();
+  stripDiscordCdnNodes(document);
   removeEmptyMediaRows(document);
 
   const style = document.createElement("style");
@@ -1754,14 +1792,109 @@ document.addEventListener("DOMContentLoaded", () => {
       text-align: center !important;
     }
 
-    .court-archive-card-link,
-    .court-archive-card-link:link,
-    .court-archive-card-link:visited {
+    .court-archive-media-row {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      gap: 10px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .court-archive-media-row > .chatlog__attachment-generic {
+      width: 140px !important;
+      min-width: 140px !important;
+      max-width: 140px !important;
+      min-height: 0 !important;
+      height: 44px !important;
+      box-sizing: border-box !important;
+    }
+
+    .veilocity-vimeo-source-link {
+      display: none !important;
+    }
+
+    .veilocity-vimeo-stack {
+      display: grid !important;
+      gap: 12px !important;
+      width: min(720px, 100%) !important;
+      max-width: 100% !important;
+      margin-top: 12px !important;
+    }
+
+    .veilocity-vimeo-card {
+      width: 100% !important;
+      max-width: 100% !important;
+      border-radius: 14px !important;
+      overflow: hidden !important;
+      border: 1px solid rgba(110, 88, 64, 0.14) !important;
+      background: rgba(255, 246, 233, 0.85) !important;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.35),
+        0 8px 24px rgba(60, 51, 44, 0.18) !important;
+      box-sizing: border-box !important;
+    }
+
+    .veilocity-vimeo-embed {
+      position: relative !important;
+      width: 100% !important;
+      aspect-ratio: 16 / 9 !important;
+      background: #000 !important;
+    }
+
+    .veilocity-vimeo-embed iframe {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
+      border: 0 !important;
+      background: #000 !important;
+    }
+
+    .veilocity-vimeo-actions {
+      display: flex !important;
+      justify-content: flex-end !important;
+      padding: 10px 12px !important;
+      background: linear-gradient(180deg, rgba(255, 244, 230, 0.95), rgba(244, 228, 205, 0.98)) !important;
+      border-top: 1px solid rgba(110, 88, 64, 0.12) !important;
+    }
+
+    .veilocity-vimeo-button,
+    .veilocity-vimeo-button:link,
+    .veilocity-vimeo-button:visited {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 9px 12px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      background: rgba(250, 239, 223, 0.92) !important;
       color: var(--accent-3) !important;
       -webkit-text-fill-color: var(--accent-3) !important;
       text-decoration: none !important;
-      width: 100% !important;
-      text-align: center !important;
+      font-size: 0.84rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 2px 8px rgba(60, 51, 44, 0.06) !important;
+      white-space: nowrap;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+    }
+
+    .veilocity-vimeo-button:hover,
+    .veilocity-vimeo-button:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .veilocity-vimeo-button:active {
+      transform: translateY(0) !important;
     }
 
     .preamble {
@@ -2150,7 +2283,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .chatlog__message-group .chatlog__attachment-generic,
     .chatlog__message-group .mp3-download,
     .chatlog__message-group .post-return-link,
-    .chatlog__message-group .contact-btn {
+    .chatlog__message-group .contact-btn,
+    .chatlog__message-group .veilocity-vimeo-card,
+    .chatlog__message-group .veilocity-vimeo-stack {
       background: rgba(255, 246, 233, 0.85) !important;
     }
 
@@ -2231,7 +2366,19 @@ document.addEventListener("DOMContentLoaded", () => {
     .contact-btn,
     .contact-btn:hover,
     .contact-btn:focus,
-    .contact-btn:active {
+    .contact-btn:active,
+    .veilocity-vimeo-card,
+    .veilocity-vimeo-card:hover,
+    .veilocity-vimeo-card:focus,
+    .veilocity-vimeo-card:active,
+    .veilocity-vimeo-stack,
+    .veilocity-vimeo-stack:hover,
+    .veilocity-vimeo-stack:focus,
+    .veilocity-vimeo-stack:active,
+    .veilocity-vimeo-button,
+    .veilocity-vimeo-button:hover,
+    .veilocity-vimeo-button:focus,
+    .veilocity-vimeo-button:active {
       filter: none !important;
     }
 
@@ -2341,9 +2488,9 @@ document.addEventListener("DOMContentLoaded", () => {
       <span class="contact-heading">Contact details:</span>
       <div class="contact-links">
         <a class="contact-btn" href="https://patreon.com/StephenChristopherCooke?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer">Patreon</a>
-        <a class="contact-btn" href="https://github.com/veilocity717-blip/Veilocity" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="contact-btn" href="https://www.tiktok.com/@veilocity_rising?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">@veilocity_rising (TikTok)</a>
         <a class="contact-btn" href="https://www.tiktok.com/@veilocity_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">@veilocity (TikTok)</a>
+        <a class="contact-btn" href="https://github.com/veilocity717-blip/Veilocity" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a class="contact-btn" href="mailto:stephencooke.c@gmail.com">Gmail</a>
       </div>
     `;

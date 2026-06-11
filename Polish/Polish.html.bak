@@ -1,0 +1,1327 @@
+<!DOCTYPE html><html lang=en><head><title>Veilocity - poland</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / poland</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1468678777381847213 class=chatlog__message-container data-message-id=1468678777381847213><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, February 4, 2026 10:45 PM"><a href=#chatlog__message-container-1468678777381847213>2/4/2026 10:45 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128024;"
+    title="elephant"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f418.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> Płacz małego słonia… <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 22/09/2025 - Albania</strong>
+
+Nie każdy łańcuch jest zrobiony z żelaza.
+Niekt&#243;re są zrobione ze wstydu.
+Niekt&#243;re — z milczenia.
+A inne — z podpis&#243;w na papierze.
+
+Ale każdy łańcuch sprawia, że niewinny zaczyna płakać.
+Weź sw&#243;j krzyż.
+
+#RatujcieSłonie #UkrytaPrawda #SądRodzinny #NadużyciaPsychiczne #Sprawiedliwość #Wybrany #KoniecOkrucieństwa #PrawdaNaWierzchu #ZerwijŁańcuchy
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a>
+
+<a href="https://vimeo.com/1150500060">https://vimeo.com/1150500060</a></span> <span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:20 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1468678777872842772/Baby_Elephant-Polish_caption.mp4?ex=6a2b0233&amp;is=6a29b0b3&amp;hm=59884be0999eb28472dd8ea2b54ddb771b6b778ac2089d35a5c8cd3ef3385197&amp;" alt="Video attachment" title="Video: Baby_Elephant-Polish_caption.mp4 (31.68 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1468678779852423452/Baby_Elephant-Polish.srt?ex=6a2b0233&amp;is=6a29b0b3&amp;hm=3e49905323cb48822bd3cdf9ae039f317c4c7ff1436c61e6af4453e4d4c42f31&amp;"> Baby_Elephant-Polish.srt </a></div><div class=chatlog__attachment-generic-size>1.8 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1468678780230045872/Baby_Elephant-Polish_audio.mp3?ex=6a2b0233&amp;is=6a29b0b3&amp;hm=0d94d866627fe09fe99819729dd769fdbd2132f1cdff43dd71d54795c581c8bd&amp;" alt="Audio attachment" title="Audio: Baby_Elephant-Polish_audio.mp3 (1.06 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1468692644120236213 class=chatlog__message-container data-message-id=1468692644120236213><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, February 4, 2026 11:40 PM"><a href=#chatlog__message-container-1468692644120236213>2/4/2026 11:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Duch w Maszynie <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127760;"
+    title="globe_with_meridians"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f310.svg"> 05/10/2025 - Albania</strong>
+
+Oto jestem, rozmyślam… może naprawdę jestem duchem w maszynie. Kiedyś byłem informatykiem naprawiającym problemy IT — ale czyje to były problemy tak naprawdę? Kod, system… czy może moje własne odbicie wpatrujące się we mnie przez ekran? <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128064;"
+    title="eyes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f440.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128173;"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg">
+
+#światLuster #duchwmaszynie #życieIT #filozofiaTechnologii #duchowePrzebudzenie #eraCyfrowa #momentMatrixa #głębokieMyśli #problemyIT #świadomość #humorEgzystencjalny #uważnaTechnologia
+
+<a href="https://vimeo.com/1151256218">https://vimeo.com/1151256218</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:24 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1468692644325494887/The_Ghost_in_the_Machine-Polish_caption.mp4?ex=6a2b0f1d&amp;is=6a29bd9d&amp;hm=aaf644158d7bc99215634a501348d554c1ece716b5b288ab65ebd89bf0833b3b&amp;" alt="Video attachment" title="Video: The_Ghost_in_the_Machine-Polish_caption.mp4 (5.15 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1468692644942053497/The_Ghost_in_the_Machine-Polish.srt?ex=6a2b0f1d&amp;is=6a29bd9d&amp;hm=d0bae0f23f29fedf18c5b084f9fe0561146869c9119615af43cd8954060792b5&amp;"> The_Ghost_in_the_Machine-Polish.srt </a></div><div class=chatlog__attachment-generic-size>458 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1468692645625987284/The_Ghost_in_the_Machine-Polish_audio.mp3?ex=6a2b0f1d&amp;is=6a29bd9d&amp;hm=009625b804d81bf6fcf90146da9f0ad9898d7392b7e5f4d4fd178f8b85aeea27&amp;" alt="Audio attachment" title="Audio: The_Ghost_in_the_Machine-Polish_audio.mp3 (264.71 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1468704169501265980 class=chatlog__message-container data-message-id=1468704169501265980><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, February 5, 2026 12:26 AM"><a href=#chatlog__message-container-1468704169501265980>2/5/2026 12:26 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>CTRL <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> + ALT <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> + DELETE <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128190;"
+    title="floppy_disk"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4be.svg"> — Kod Każdej Relacji 24/10/2025 - T&#252;rkiye</strong>
+
+Każde połączenie zaczyna się od zachwytu nad tym, co nas r&#243;żni.
+Potem jednak pojawia się potrzeba kontroli, zmiany, a gdy rodzi się op&#243;r — usunięcia.
+
+A jednak dusza nigdy nie była przeznaczona do debugowania przez kogoś innego.
+Jest już doskonale niedoskonała.
+
+W chwili, gdy pr&#243;bujemy przepisać czyjąś istotę, walczymy z najstarszym nakazem, jaki istnieje:
+„Poznaj samego siebie”.
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> Kochać to nie edytować.
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128161;"
+    title="bulb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"> Wiedzieć to nie posiadać.
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128187;"
+    title="computer"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4bb.svg"> Łączyć się to nie kontrolować.
+
+#CtrlAltDelete #PoznajSamegoSiebie #CyfrowaDuchowość #ŚwiadomeRelacje #FaithfulFlight #Veilocity111 #DuchowePrzebudzenie #UzdrawianiePrzezŚwiadomość #DoskonaleNiedoskonałe #Samopoznanie #AIiDusza #Reset #FilozofiaTok #NowoczesnaMądrość #WewnętrznyKod
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a>
+
+<a href="https://vimeo.com/1154295598">https://vimeo.com/1154295598</a></span> <span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:20 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1468704169820164342/The_Code_of_Every_Relationship_Polish_caption.mp4?ex=6a2b19d9&amp;is=6a29c859&amp;hm=12887559b2f8ac5d165561a2d356f14b3071ba1e994078ae4ab53930dd7db6d4&amp;" alt="Video attachment" title="Video: The_Code_of_Every_Relationship_Polish_caption.mp4 (22.6 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1468704170839117952/The_Code_of_Every_Relationship_Polish.srt?ex=6a2b19d9&amp;is=6a29c859&amp;hm=09486e0964695242a630afbee091aebbf01924e42f5c0281c2ec4c4a2578368d&amp;"> The_Code_of_Every_Relationship_Polish.srt </a></div><div class=chatlog__attachment-generic-size>1.46 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1468704171137044490/The_Code_of_Every_Relationship_Polish_audio.mp3?ex=6a2b19d9&amp;is=6a29c859&amp;hm=fef93ab8d4a01664d86f475436c9d03e7a0a5ab38053504268340a14b07d3d90&amp;" alt="Audio attachment" title="Audio: The_Code_of_Every_Relationship_Polish_audio.mp3 (1.12 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469261241057939568 class=chatlog__message-container data-message-id=1469261241057939568><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 1:19 PM"><a href=#chatlog__message-container-1469261241057939568>2/6/2026 1:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127905;"
+    title="ferris_wheel"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3a1.svg"> Przerwij Koło, Znajdź Swoją Drogę <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"> 25/09/2025 - Albania</strong>
+
+Ta podr&#243;ż trwa bez końca — chyba że zdecydujesz się wysiąść.
+Kreatywność jest kluczem do wyjścia.
+
+#Koło #PrzerwijCykl #WolnośćVanLife #ŻycieSolarne #MinimalnePotrzeby #UcieczkaPrzedInflacją #ŁamiącyCykl #Suwerenność #ŻycieNaWłasnychZasadach #Pok&#243;jZTOBĄ
+
+<a href="https://vimeo.com/1149821430">https://vimeo.com/1149821430</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:27 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469261241393614941/Break_the_Wheel-Polish_Poland_caption.mp4?ex=6a2b2669&amp;is=6a29d4e9&amp;hm=a1a8bf86aa15aea02c922bc94ffdb9a1123ab7d82a133d0ff2a60a77b6d4d3a8&amp;" alt="Video attachment" title="Video: Break_the_Wheel-Polish_Poland_caption.mp4 (21.88 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469261243301761044/Break_the_Wheel-Polish_Poland.srt?ex=6a2b2669&amp;is=6a29d4e9&amp;hm=e753df5fd868ca998d930eed04e00b40b11a8ebdce2df0fbd696d08079b8568a&amp;"> Break_the_Wheel-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>2.09 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469261243650019452/Break_the_Wheel-Polish_Poland_audio.mp3?ex=6a2b266a&amp;is=6a29d4ea&amp;hm=091ad2b9c9bab3d25bc0a7d45df8750860b93560d91069883e27541e045c728c&amp;" alt="Audio attachment" title="Audio: Break_the_Wheel-Polish_Poland_audio.mp3 (1.31 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469268179048988694 class=chatlog__message-container data-message-id=1469268179048988694><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 1:47 PM"><a href=#chatlog__message-container-1469268179048988694>2/6/2026 1:47 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>On Wzni&#243;sł Się Ponad Koło <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128260;"
+    title="arrows_counterclockwise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f504.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> „Ojcze, przebacz im…” 29/10/2025 - Albania</strong>
+
+Aby Jezus m&#243;gł wypowiedzieć te słowa,
+musiał już wyjść poza karmiczną pętlę —
+poza reakcję, poza iluzję.
+Przebaczenie nie jest słabością… jest transcendencją. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg">
+
+#NaukiJezusa #DuchowePrzebudzenie #Przebaczenie #ŚwiadomośćChrystusa #CyklKarmiczny #PrzebudzeniePrzezEwangelię #BoskaMądrość #WyższaWibracja #ŚwiatłoNadCiemnością #WewnętrznySpok&#243;j #DrogaWiary #WznieśSięPonad
+
+<a href="https://vimeo.com/1149507506">https://vimeo.com/1149507506</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:28 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469268179477073986/He_Rose_Above_the_Wheel-Polish_P_caption.mp4?ex=6a2b2cdf&amp;is=6a29db5f&amp;hm=8b6a13689f5a5cee2db3faa5f684cede0cd5dd588739b285efff739ffedb7009&amp;" alt="Video attachment" title="Video: He_Rose_Above_the_Wheel-Polish_P_caption.mp4 (26.72 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469268181062385665/He_Rose_Above_the_Wheel-Polish_Poland.srt?ex=6a2b2ce0&amp;is=6a29db60&amp;hm=eeac72d07e05eed2d938c1d5bc464a69eb479f4a3bc88653691ed88ad2006195&amp;"> He_Rose_Above_the_Wheel-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>2.4 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469268181326762182/He_Rose_Above_the_Wheel-Polish_Pol_audio.mp3?ex=6a2b2ce0&amp;is=6a29db60&amp;hm=cf36345c78e2b67db36dc739b3ce136c2d7a9280d0dd6c0e959d3a67e5bdf66d&amp;" alt="Audio attachment" title="Audio: He_Rose_Above_the_Wheel-Polish_Pol_audio.mp3 (1.6 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469314930032246804 class=chatlog__message-container data-message-id=1469314930032246804><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 4:52 PM"><a href=#chatlog__message-container-1469314930032246804>2/6/2026 4:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>JESTEM, KT&#211;RY JESTEM <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 17/08/2025 - Albania</strong>
+
+Jezus | Jeszua pokazuje nam: Tożsamość objawia się w czynach, nie w przelotnych myślach. Pokusa przemawia, ale nie jest tym, kim jesteś. Gdy zostawisz ją za sobą, pozostaje prawda Boża. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg">
+
+#Yeshua #PrawdaEwangelii #DrogaWiary #MądrośćBiblijna #WalkaDuchowa #Kr&#243;lestwoBoże #TożsamośćWChrystusie #Pokuta #NieJesteśSwoimiMyślami #Jezus
+
+<a href="https://vimeo.com/1150187138">https://vimeo.com/1150187138</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:29 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469314930502144172/We_are_not_the_voice_in_our_head_caption.mp4?ex=6a2b5869&amp;is=6a2a06e9&amp;hm=b6b0c40ab3463f954d9b008fd260adac77953c301fbee24c2cbec37e306f1991&amp;" alt="Video attachment" title="Video: We_are_not_the_voice_in_our_head_caption.mp4 (37.8 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469314932246843592/We_are_not_the_voice_in_our_heads-Hebrew.srt?ex=6a2b586a&amp;is=6a2a06ea&amp;hm=f27754c8245923a2e642dbb98a582f7607ab27462d20407bec03025b7c7141a6&amp;"> We_are_not_the_voice_in_our_heads-Hebrew.srt </a></div><div class=chatlog__attachment-generic-size>3.22 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469314932494303353/We_are_not_the_voice_in_our_heads-_audio.mp3?ex=6a2b586a&amp;is=6a2a06ea&amp;hm=05fe2feec2f168b6e18f604d764b48d80b21ce6fb77a01b9b9addabf394d03be&amp;" alt="Audio attachment" title="Audio: We_are_not_the_voice_in_our_heads-_audio.mp3 (2.17 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469328638066430145 class=chatlog__message-container data-message-id=1469328638066430145><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 5:47 PM"><a href=#chatlog__message-container-1469328638066430145>2/6/2026 5:47 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> Ostatnio wiele straciłem <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 06/06/2025 - Bulgaria</strong>
+
+...I w tej stracie zyskałem coś, czego nigdy się nie spodziewałem:
+jasność.
+
+Społeczeństwo uczy nas, by nakładać kolejne warstwy — tytuły, role, tożsamości — jakby ochrona czyniła nas silniejszymi.
+Ale B&#243;g pokazał mi prawdę: te warstwy mnie spowalniały.
+
+Świat m&#243;wi: „zał&#243;ż zbroję”.
+Niebo m&#243;wi: „ogołoć się aż do duszy”.
+
+W tym filmie rozważam, jak zrzucenie etykiet, r&#243;l, a nawet relacji mnie uwolniło.
+To, co uważałem za słabość… okazało się moją największą siłą.
+
+Teraz poruszam się lżej.
+Poruszam się szybciej.
+Poruszam się z Bogiem.
+
+#DuchowePrzebudzenie #PuśćByWzrastać #SiłaBoga #TożsamośćWChrystusie #WolnośćDuszy #ŻyjBezCiężaru
+
+#DuchowePrzebudzenie #PuśćAbyRosnąć #MocBoga
+#TożsamośćWChrystusie #WolnośćDuszy #ŻyjBezCiężaru
+
+<a href="https://vimeo.com/1150213836">https://vimeo.com/1150213836</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:31 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469328638989307965/Ive_lost_a_lot_lately-Polish_caption.mp4?ex=6a2b652e&amp;is=6a2a13ae&amp;hm=13ca1926ae09ab074ce6ae923171ec74f7542340b89171d750955052e7df5703&amp;" alt="Video attachment" title="Video: Ive_lost_a_lot_lately-Polish_caption.mp4 (62.98 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469328642097152163/Ive_lost_a_lot_lately-Polish.srt?ex=6a2b652f&amp;is=6a2a13af&amp;hm=65fa0062ae9c95ae5711886d6587d9626a5be353c76d3800265f5b7a2bdc75a2&amp;"> Ive_lost_a_lot_lately-Polish.srt </a></div><div class=chatlog__attachment-generic-size>5.57 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469328642545946684/Ive_lost_a_lot_lately-Polish_audio.mp3?ex=6a2b652f&amp;is=6a2a13af&amp;hm=05ef19e6943bbf6fe6301b3a7b88d51409004835f8a2d0512518cbddec71489d&amp;" alt="Audio attachment" title="Audio: Ive_lost_a_lot_lately-Polish_audio.mp3 (3.79 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469397450736406746 class=chatlog__message-container data-message-id=1469397450736406746><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 10:20 PM"><a href=#chatlog__message-container-1469397450736406746>2/6/2026 10:20 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> Proroctwo czy Wspomnienie? <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127917;"
+    title="performing_arts"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3ad.svg"> 08/10/2025 - Albania</strong>
+
+Czy to proroctwo — wizja tego, co ma nadejść —
+czy po prostu przypomnienie wiecznej teraźniejszości w nowej masce?
+Czasem to, co odczuwamy jako objawienie, jest jedynie chwilą obecną, kt&#243;ra przypomina nam, że zawsze tu była.
+
+#Proroctwo #Pamięć #Przebudzenie #ChwilaObecna #Świadomość #Jedność #Objawienie #MądrośćDuchowa #WiecznaTeraźniejszość #BoskiCzas #WewnętrznaWizja #Uważność #DuchowaPodr&#243;ż #MistycznePrawdy #FaithfulFlight #veilocity111
+
+<a href="https://vimeo.com/1150031932">https://vimeo.com/1150031932</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:32 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469397451021488291/Prophecy_or_Memory-Italian_Italy_caption.mp4?ex=6a2afc84&amp;is=6a29ab04&amp;hm=b3434c48eea87ddebdee0c73cfa99d94347a20629c981dce195d971a25e8bf22&amp;" alt="Video attachment" title="Video: Prophecy_or_Memory-Italian_Italy_caption.mp4 (1.21 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469397451390714087/Prophecy_or_Memory-Italian_Italy-Polish_.srt?ex=6a2afc84&amp;is=6a29ab04&amp;hm=f2b1b6693fe5dab4cf49bbdbc6a26de72db062f56491e4eff329eb8244165d7e&amp;"> Prophecy_or_Memory-Italian_Italy-Polish_.srt </a></div><div class=chatlog__attachment-generic-size>99 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469397451738710241/Prophecy_or_Memory-Italian_Italy-P_audio.mp3?ex=6a2afc84&amp;is=6a29ab04&amp;hm=bd528d822b66419a9503b947cfeff1114e0fb368ed5ceb162c22f4da9c946a7d&amp;" alt="Audio attachment" title="Audio: Prophecy_or_Memory-Italian_Italy-P_audio.mp3 (75.71 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469410610591567883 class=chatlog__message-container data-message-id=1469410610591567883><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 11:13 PM"><a href=#chatlog__message-container-1469410610591567883>2/6/2026 11:13 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Own Your Peace <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 26/08/2025 - Albania</strong>
+
+Powiedziano nam, że spok&#243;j to coś, co trzeba zdobyć,
+coś przekazane miastom, systemom i podpisom. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127961;️"
+    title="cityscape"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d9.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128395;️"
+    title="pen_fountain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f58b.svg">
+Lecz gdzieś pomiędzy kurczącymi się ścianami a rosnącymi cenami
+kontrola cicho się wymknęła.
+
+Van uczy innego rytmu.
+Spokoju podtrzymywanego własnymi rękami.
+Przestrzeni, kt&#243;ra się rozszerza, bo jest twoja. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg">
+
+Bez strategii radzenia sobie.
+Bez chemicznego uspokojenia.
+Bez potrzeby pozwolenia.
+
+Tylko cicha siła wyboru
+gdzie odpocząć,
+kiedy się ruszyć,
+i co chronić. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128273;"
+    title="key"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f511.svg">
+
+To nie jest ucieczka — to odzyskanie.
+Nie uciekanie od świata,
+lecz powr&#243;t do sprawczości.
+
+Zawłaszcz swoją przestrzeń.
+Zawłaszcz sw&#243;j rytm.
+Zawłaszcz sw&#243;j spok&#243;j. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127748;"
+    title="sunrise_over_mountains"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f304.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">
+
+#VanLife #MinimalistyczneŻycie #WolnośćFinansowa #ŻycieWCampervanie #DomVsVan #ŻycieNomadyczne #ŻycieNaKołach #ŻycieBezDług&#243;w #WolnyStylŻycia #ŻyjPoSwojemu #MałyDomNaKołach #PrzełamSystem #ŻycieOffGrid #WolnośćPodr&#243;żowania #ZmniejszAbyZyskać
+
+<a href="https://vimeo.com/1150799242">https://vimeo.com/1150799242</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:33 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469410611522834668/I_dont_own_a_house_I_own_my_peac_caption.mp4?ex=6a2b08c6&amp;is=6a29b746&amp;hm=7ae803fd36cd09e4464dba932f65768fa0ed3cb5cae59846f4c403c08458aeb5&amp;" alt="Video attachment" title="Video: I_dont_own_a_house_I_own_my_peac_caption.mp4 (24.5 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469410612751634473/I_dont_own_a_house_I_own_my_peace-Polish.srt?ex=6a2b08c6&amp;is=6a29b746&amp;hm=b5b540b19d9ab3d107a757230fec08135c305ae67f3b8d693f6627c81036f424&amp;"> I_dont_own_a_house_I_own_my_peace-Polish.srt </a></div><div class=chatlog__attachment-generic-size>2.21 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469410613317861478/I_dont_own_a_house_I_own_my_peace-_audio.mp3?ex=6a2b08c6&amp;is=6a29b746&amp;hm=cc22d67b398581e15c448d3cadf5cf9af9fd8c27374fd91313941f0b0e6f70cc&amp;" alt="Audio attachment" title="Audio: I_dont_own_a_house_I_own_my_peace-_audio.mp3 (1.47 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469449391487320146 class=chatlog__message-container data-message-id=1469449391487320146><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 1:47 AM"><a href=#chatlog__message-container-1469449391487320146>2/7/2026 1:47 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> Gdyby świat zapomniał o wczoraj…<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128173;"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg"> 17/10/2025 – Albania</strong>
+
+Wyobraź sobie, że budzisz się w świecie bez pamięci o długu, zysku czy wojnie.
+Gdzie każdy system pamięta tylko teraz.
+Może pok&#243;j nie jest czymś, o co walczymy —
+może jest tym, co pozostaje, gdy w końcu zapominamy wczoraj.
+
+Mateusz 6:11 • Mateusz 6:12 • Mateusz 6:34
+
+#SilnikDługu #OdpuśćNamNaszeDługi #NieboJestTeraz #WiaraWDziałaniu #PrawdaNaWidoku #DuchowePrzebudzenie #ŚwiadomaEkonomia #Pok&#243;jPonadZysk #ResetSystemu #Teraz #Mateusz611 #Mateusz612 #Mateusz634 #PrawdaEwangelii #PrzebudźLudzkość #NowaZiemia
+
+<a href="https://vimeo.com/1157726539">https://vimeo.com/1157726539</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:33 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469449391868739684/If_the_World_Forgot_YesterdayL-P_caption.mp4?ex=6a2b2ce4&amp;is=6a29db64&amp;hm=cf995ef09217860c388fd0111030aafd5538473952dae2d4f3b709ed85bda101&amp;" alt="Video attachment" title="Video: If_the_World_Forgot_YesterdayL-P_caption.mp4 (23.49 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469449393374630010/If_the_World_Forgot_YesterdayL-Polish_Po.srt?ex=6a2b2ce4&amp;is=6a29db64&amp;hm=1b137fabb63c157d7d9ce4ba764da251dce3c790d87d2db263e0140130a34733&amp;"> If_the_World_Forgot_YesterdayL-Polish_Po.srt </a></div><div class=chatlog__attachment-generic-size>2.18 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469449393823416360/If_the_World_Forgot_YesterdayL-Pol_audio.mp3?ex=6a2b2ce4&amp;is=6a29db64&amp;hm=dd1632e64ad476536c0d56637554b76c1e5bf69caa5e46cec5809c81360bc927&amp;" alt="Audio attachment" title="Audio: If_the_World_Forgot_YesterdayL-Pol_audio.mp3 (1.33 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469459512711708961 class=chatlog__message-container data-message-id=1469459512711708961><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 2:27 AM"><a href=#chatlog__message-container-1469459512711708961>2/7/2026 2:27 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Wielowymiarowy jestem <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 12/09/2025 – Albania</strong>
+
+Dobrze się bawię, przypominając sobie, jak naprawdę wielowymiarowy jestem <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#wielowymiarowy #świadomość #przebudzenie #wyższaczęstotliwość #zmianaenergii #podr&#243;żduszy #kosmicznaistota #wewnętrznyspok&#243;j #pracownikświatła #duchowytiktok
+
+<a href="https://vimeo.com/1151916567">https://vimeo.com/1151916567</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:34 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469459513265492201/Multi-dimensional_I_amS-Polish_P_caption.mp4?ex=6a2b3651&amp;is=6a29e4d1&amp;hm=9f0a73b4eef1cc683a153d0dbd8daf1f53ed34c0d63eece91b53097ffb1e1b31&amp;" alt="Video attachment" title="Video: Multi-dimensional_I_amS-Polish_P_caption.mp4 (973.81 KB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469459513626071202/Multi-dimensional_I_amS-Polish_Poland.srt?ex=6a2b3651&amp;is=6a29e4d1&amp;hm=42277e2b67557d8328cb8face4157861c0612cc1f3759cdf4da9d70b4d878647&amp;"> Multi-dimensional_I_amS-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>117 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469459513890439429/Multi-dimensional_I_amS-Polish_Pol_audio.mp3?ex=6a2b3651&amp;is=6a29e4d1&amp;hm=8576ec0ed28ee21536d48dbfcc1432f524967ce0b858fa624c0e08c465d746e2&amp;" alt="Audio attachment" title="Audio: Multi-dimensional_I_amS-Polish_Pol_audio.mp3 (59.96 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469618494000599050 class=chatlog__message-container data-message-id=1469618494000599050><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 12:59 PM"><a href=#chatlog__message-container-1469618494000599050>2/7/2026 12:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Prune With Awareness — Not Forgetfulness <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✂️"
+    title="scissors"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2702.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128154;"
+    title="green_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49a.svg"> 13/11/2025 - T&#252;rkiye</strong>
+
+Wszyscy przycinamy każdego dnia.
+Każdą uwolnioną myśl.
+Każde porzucone przekonanie.
+Każdy przerastający nas nawyk.
+W ten spos&#243;b kształtuje się wewnętrzny ogr&#243;d.
+
+Przycinanie nie jest śmiercią ego.
+Jest rozeznaniem —
+usuwaniem tego, co zostało dodane przez lęk, uwarunkowania i dziedziczenie,
+aby to, co prawdziwe, mogło zn&#243;w oddychać.
+
+Jezus powiedział, że Kr&#243;lestwo należy do dzieci —
+wzmacniając intencję porzucenia uwarunkowań,
+kt&#243;re od początku nigdy nie były twoje.
+
+Podczas Ostatniej Wieczerzy Jezus powiedział:
+„To jest moje ciało, wydane za was.”
+Nie była to instrukcja ślepego powtarzania,
+lecz wezwanie do pamięci —
+aby znaczenie tego sposobu istnienia nie zniknęło.
+
+Pamięć bez obecności nie jest w og&#243;le pamięcią.
+Rytuał powtarzany bez świadomości nie oddaje czci ofierze —
+on ją zapomina.
+
+Gdy przycinamy świadomie,
+chronimy najważniejszą część nas samych…
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127800;"
+    title="cherry_blossom"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f338.svg"> wewnętrzne dziecko —
+nie naiwne,
+lecz przebudzone.
+
+Pielęgnuj sw&#243;j ogr&#243;d ze świadomością.
+Powtarzanie cyklu bez zrozumienia
+po prostu hamuje tw&#243;j wzrost.
+
+#PrzycinajZeŚwiadomością #NieZapomnienie #RozeznanieDuchowe #WewnętrznyOgr&#243;d #ŚwiadomaWiara #Przebudzenie #ObecnośćPonadRytuał #ŻywaPamięć #WiaraZeZrozumieniem #WewnętrzneDzieckoPrzebudzone #Kr&#243;lestwoWewnątrz #PorzucanieUwarunkowań #DojrzałośćDuchowa #WzrostZMądrością #PrawdaOddycha #ŚwiętaŚwiadomość #NaukiJezusa #RefleksjaEwangeliczna #ŚwiadomośćChrystusa #WzrostDuchowy
+
+<a href="https://vimeo.com/1150678781">https://vimeo.com/1150678781</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:34 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469618494596317389/Prune-Polish_Poland_caption.mp4?ex=6a2b21a1&amp;is=6a29d021&amp;hm=d3f2bb735e342dcaad51792eb3e6c5f9d1cfe4632795dae317fc41d3f64afd58&amp;" alt="Video attachment" title="Video: Prune-Polish_Poland_caption.mp4 (37.43 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469618496773161143/Prune-Polish_Poland.srt?ex=6a2b21a1&amp;is=6a29d021&amp;hm=ec38e0760c8c3a2f0ce7006b55ce291b5a14704f75e84683744321f0a2eaa4e8&amp;"> Prune-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>2.7 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469618497071091923/Prune-Polish_Poland_audio.mp3?ex=6a2b21a1&amp;is=6a29d021&amp;hm=d88affc890ee85341c7ff3e101a6b9f7e4bfbda4dca664814ddcddd897133830&amp;" alt="Audio attachment" title="Audio: Prune-Polish_Poland_audio.mp3 (2.04 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469667831200219146 class=chatlog__message-container data-message-id=1469667831200219146><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 4:15 PM"><a href=#chatlog__message-container-1469667831200219146>2/7/2026 4:15 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128214;"
+    title="book"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d6.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⛪"
+    title="church"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26ea.svg">️ Prawda ponad piaskiem: Prawdziwy fundament Kościoła <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"> 27/09/2025 – Albania</strong>
+
+Jeśli prawo nie jest zakorzenione w sprawiedliwości Boga, jak może służyć jako prawdziwy fundament Kościoła? Kości&#243;ł państwowy nigdy nie przetrwa — uwikłany w korupcję, rozpada się jak dom zbudowany na piasku. A jednak Chrystus przypomina nam: „Bo gdzie są dwaj albo trzej zebrani w imię moje, tam jestem pośr&#243;d nich” (Mateusza 18:20).
+Kości&#243;ł nie jest ograniczony do instytucji; jest żywy wszędzie tam, gdzie wierzący gromadzą się w Jego imię.
+
+#WiaraPonadStrachem #JezusChrystus #PrawdaWMilosci #Mateusz1820 #SlowoBoze #KosciolBezKajdan #SlowoProrocze #SwiatloPonadCiemnoscia #KrolestwoBoze #PokojZWami
+
+<a href="https://vimeo.com/1155905060">https://vimeo.com/1155905060</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:35 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469667831736959027/Truth_Over_Sand-Russian_Russia-F_caption.mp4?ex=6a2b4f94&amp;is=6a29fe14&amp;hm=981ad0541cde32ece30f9ad57e7be4598fc64cf2709d6b6985d722408f9be0fd&amp;" alt="Video attachment" title="Video: Truth_Over_Sand-Russian_Russia-F_caption.mp4 (26.16 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469667833121210440/Truth_Over_Sand-Russian_Russia-French_Fr.srt?ex=6a2b4f94&amp;is=6a29fe14&amp;hm=d1a2d6779595140ae32d4747b1e7ee5022a37fd441f429390cafe08d8d3b4464&amp;"> Truth_Over_Sand-Russian_Russia-French_Fr.srt </a></div><div class=chatlog__attachment-generic-size>1.54 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469667833423069194/Truth_Over_Sand-Russian_Russia-Fre_audio.mp3?ex=6a2b4f94&amp;is=6a29fe14&amp;hm=caf58c891ddbe4b105f429aa778a1b811382416fbc24bcfff6df9ac4175ce374&amp;" alt="Audio attachment" title="Audio: Truth_Over_Sand-Russian_Russia-Fre_audio.mp3 (1.07 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469704815365062716 class=chatlog__message-container data-message-id=1469704815365062716><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 6:42 PM"><a href=#chatlog__message-container-1469704815365062716>2/7/2026 6:42 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> Pok&#243;j to praca od wewnątrz. 11/09/2025 – Albania</strong>
+
+Nie oddawaj kluczy do swojego wewnętrznego spokoju nikomu innemu.
+
+#pok&#243;jwsercu #wewnętrznasiła #suwerennośćsiebie #uważność #drogauzdrowienia #wewnętrznyspok&#243;j #wybierajpok&#243;j #wiaranadstrachem #duchowyrozw&#243;j #poszukiwaczprawdy
+
+<a href="https://vimeo.com/1149530697">https://vimeo.com/1149530697</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:35 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469704815549354150/Peace_is_an_inside_job-Polish_caption.mp4?ex=6a2b7205&amp;is=6a2a2085&amp;hm=4fded7e5c28753aa523aebecad59a1975a08aca0e020fdc4d76b59603ad5c32e&amp;" alt="Video attachment" title="Video: Peace_is_an_inside_job-Polish_caption.mp4 (4.48 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469704816224768020/Peace_is_an_inside_job-Polish.srt?ex=6a2b7205&amp;is=6a2a2085&amp;hm=9940b7c5286e96552d5ad3022ca7be1eba824d8db8adb74a58bfd5d8d44f59c6&amp;"> Peace_is_an_inside_job-Polish.srt </a></div><div class=chatlog__attachment-generic-size>284 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469704816552050932/Peace_is_an_inside_job-Polish_audio.mp3?ex=6a2b7206&amp;is=6a2a2086&amp;hm=459ecc4c9f0ed261bb040d5169cd9a6b0eef9bb2bde361e287067a377fd1c75d&amp;" alt="Audio attachment" title="Audio: Peace_is_an_inside_job-Polish_audio.mp3 (280.83 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469724363635822632 class=chatlog__message-container data-message-id=1469724363635822632><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 7:59 PM"><a href=#chatlog__message-container-1469724363635822632>2/7/2026 7:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Związany percepcją w poszukiwaniu pokoju <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 31/08/2025 – Albania</strong>
+
+Każde doświadczenie jest filtrowane przez percepcję — nie możemy uczciwie twierdzić, że stoimy w ostatecznej Prawdzie, rozszerzając nasz punkt widzenia poza własne granice. Ostatecznie to pok&#243;j rozwiązuje cierpienie. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg">
+
+#Prawda #Percepcja #Świadomość #Uważność #Pok&#243;j #UważnośćUmysłu #Cierpienie #Podr&#243;żDuchowa #Przebudzenie #Uzdrowienie #WewnętrznyPok&#243;j #Teraz
+
+<a href="https://vimeo.com/1149418520">https://vimeo.com/1149418520</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:36 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469724364197986415/Bound_by_Perception_in_search_of_caption.mp4?ex=6a2b843a&amp;is=6a2a32ba&amp;hm=5d2418387ea1729b213e7e1242ed1aa6e23d71411487940b5e7456bb43bd38c6&amp;" alt="Video attachment" title="Video: Bound_by_Perception_in_search_of_caption.mp4 (28.63 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1469724365540163755/Bound_by_Perception_in_search_of_Peace-P.srt?ex=6a2b843a&amp;is=6a2a32ba&amp;hm=58f885d7de408b2f5493e0375685c1f93488f271fdc5b154ba8f94982d71cf04&amp;"> Bound_by_Perception_in_search_of_Peace-P.srt </a></div><div class=chatlog__attachment-generic-size>2.24 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1469724365963919610/Bound_by_Perception_in_search_of_P_audio.mp3?ex=6a2b843b&amp;is=6a2a32bb&amp;hm=50d3108ff047170adef6ffa2a47dcca85518b3e198c4672cc799f9e7be121a9f&amp;" alt="Audio attachment" title="Audio: Bound_by_Perception_in_search_of_P_audio.mp3 (1.67 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1470067066269733028 class=chatlog__message-container data-message-id=1470067066269733028><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, February 8, 2026 6:41 PM"><a href=#chatlog__message-container-1470067066269733028>2/8/2026 6:41 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Nie karm ciemności <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128367;️"
+    title="candle"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f56f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠️"
+    title="warning"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg"> Energia, trauma i pętla zła – 23/01/2026 – VOID</strong>
+
+Energia płynie tam, gdzie kieruje się uwaga.
+Czy uzdrawiamy traumę — czy ją karmimy?
+To, co odżywiasz, przetrwa.
+To, co głodzisz, upadnie.
+
+#EnergiaPłynie #ŚwiadomaUważność #UzdrawianieTraumy #TraumaZbiorowa #DuchoweRozeznanie #PracaZCieniem #UważnaUwga #Przebudzenie #M&#243;wieniePrawdy #UzdrowienieNieNienawiść #PrzerwijCykl #DuchowyRozw&#243;j #WewnętrznaPraca #NieKarmCiemności #ŚwiadomośćMaZnaczenie
+
+<a href="https://vimeo.com/1157897409">https://vimeo.com/1157897409</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:36 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1470067067217776783/Dont_Feed_the_Darkness-Polish_Po_caption.mp4?ex=6a2b71e5&amp;is=6a2a2065&amp;hm=9c56afa0b9c91fd7fec2fa17dd0bcd5b4df8b9e6dd8c90ddeeba5b2bb9363999&amp;" alt="Video attachment" title="Video: Dont_Feed_the_Darkness-Polish_Po_caption.mp4 (59.2 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1470067070241603718/Dont_Feed_the_Darkness-Polish_Poland.srt?ex=6a2b71e6&amp;is=6a2a2066&amp;hm=c832e0ae52ee7bae0a3cbe70cfd5ec603468acba8c0b8a234d1efc621834b541&amp;"> Dont_Feed_the_Darkness-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>5.62 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1470067070673621182/Dont_Feed_the_Darkness-Polish_Pola_audio.mp3?ex=6a2b71e6&amp;is=6a2a2066&amp;hm=9f0068289de9a57fa21d3ad14ac91a5c99ee3ba37d4df1701de76cdb652f7897&amp;" alt="Audio attachment" title="Audio: Dont_Feed_the_Darkness-Polish_Pola_audio.mp3 (3.1 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1473285456929099846 class=chatlog__message-container data-message-id=1473285456929099846><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, February 17, 2026 3:50 PM"><a href=#chatlog__message-container-1473285456929099846>2/17/2026 3:50 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>To jest, czym naprawdę jest bezprawność <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg"> 05/11/2025 - T&#252;rkiye</strong>
+
+Jeśli prawda nie może istnieć bez zapłaty, to sprawiedliwość już upadła.
+Refleksja nad systemami zbudowanymi na zysku, a nie na zasadach —
+oraz nad tym, co się dzieje, gdy prawo zapomina o własnym świadectwie.
+
+#prawda #sprawiedliwosc #przebudzenie #wiara #prawo #korupcja #sad #refleksjaduchowa #systemzepsuty #placiszwygrywasz #swiadomeprzebudzenie #mowprawde #integralnosc
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a>
+
+<a href="https://vimeo.com/1152136801">https://vimeo.com/1152136801</a></span> <span class=chatlog__edited-timestamp title="Sunday, April 5, 2026 5:53 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1473285457273163838/This_Is_What_Lawlessness_Truly_I_caption.mp4?ex=6a2b49c1&amp;is=6a29f841&amp;hm=f04408fc92ba8841393e30ce7681a51b301b0fec7383e75c8774ff970b9a0e88&amp;" alt="Video attachment" title="Video: This_Is_What_Lawlessness_Truly_I_caption.mp4 (9.85 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1473285458355032165/This_Is_What_Lawlessness_Truly_Is-Polish.srt?ex=6a2b49c1&amp;is=6a29f841&amp;hm=67279fb282df94abbb11024d78e6d6a548bcd7fe14e32e1f2a43a5f01b772c9f&amp;"> This_Is_What_Lawlessness_Truly_Is-Polish.srt </a></div><div class=chatlog__attachment-generic-size>845 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1473285458804080807/This_Is_What_Lawlessness_Truly_Is-_audio.mp3?ex=6a2b49c1&amp;is=6a29f841&amp;hm=081516cc419305b6dbe33410e431481d1b68c723cd56ff96564b154426782d2d&amp;" alt="Audio attachment" title="Audio: This_Is_What_Lawlessness_Truly_Is-_audio.mp3 (588.71 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1473782127253258375 class=chatlog__message-container data-message-id=1473782127253258375><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, February 19, 2026 12:44 AM"><a href=#chatlog__message-container-1473782127253258375>2/19/2026 12:44 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Komfort jest bronią 08/01/2026 - VOID</strong>
+
+Komfort może być używany, by uspokajać — albo by kontrolować.
+Ta refleksja bada, jak strach, systemy i fałszywa pewność utrzymują ludzi w posłuszeństwie, oraz co pozostaje, gdy iluzja się rozpada.
+Nie opowiadam się po żadnej stronie ani nie oferuję odpowiedzi — jedynie obserwuję, co staje się widoczne, gdy komfort przestaje być punktem odniesienia.
+
+#świadomość #wyr&#243;wnanie #integralność #jasność #prawda #świadomarefleksja #odpowiedzialnośćza siebie #sprawczość #pok&#243;jnadkontrolą #doświadczenieżyciowe #myśleniekrytyczne #pracawnętrzna #świadek #suwerenność #przebudzenie
+
+<a href="https://vimeo.com/1166141165">https://vimeo.com/1166141165</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:37 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1473782122031611925/Comfort_Is_the_Weapon-Polish_Pol_caption.mp4?ex=6a2b1e0f&amp;is=6a29cc8f&amp;hm=14c914091a8fee41daf28c1b163cc3698d9d63e5809a48fc1ce3c504e8edccda&amp;" alt="Video attachment" title="Video: Comfort_Is_the_Weapon-Polish_Pol_caption.mp4 (119.33 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1473782126854930669/Comfort_Is_the_Weapon-Polish_Poland.srt?ex=6a2b1e10&amp;is=6a29cc90&amp;hm=f5816a40323082c6036f128fea6ca04e1d6b1a17af24755e326105ab5286c85c&amp;"> Comfort_Is_the_Weapon-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>9.35 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1473782127232549020/Comfort_Is_the_Weapon-Polish_Polan_audio.mp3?ex=6a2b1e10&amp;is=6a29cc90&amp;hm=686f6076e52d19c98a1608c0dcf47d78bdea4476e3196976a2228e166e0f2f73&amp;" alt="Audio attachment" title="Audio: Comfort_Is_the_Weapon-Polish_Polan_audio.mp3 (5.79 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1475428236979605536 class=chatlog__message-container data-message-id=1475428236979605536><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, February 23, 2026 1:45 PM"><a href=#chatlog__message-container-1475428236979605536>2/23/2026 1:45 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Co Utrzymuje Strukturę w Pionie <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="➡️"
+    title="arrow_right"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/27a1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128208;"
+    title="triangular_ruler"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d0.svg"> 01/12/2025 - VOID</strong>
+
+Świadectwo bez wiary upada.
+Wiara bez świadectwa dryfuje.
+Połącz je razem,
+a cała struktura staje się niewzruszona.
+
+#świadomośćsiebie #zmiananastawienia #jasność #pracawnętrzna #nastawienienarozw&#243;j #poetyckamądrość #ludzkiedoświadczenie #przebudzenie #świadomość #rozw&#243;jduchowy #obecność #lekcjeżycia #prawjedności #prawoprzyciągania #poszukiwaczprawdy #autorefleksja #wgląd #perspektywa #uważność #świadomośćprawna #społeczeństwoobywatelskie #polityka #zarządzanie #sprawiedliwość #prawaczłowieka #systemyspołeczne #rzeczywistośćpolityczna #stanpaństwa #prawoiżycie
+
+<a href="https://vimeo.com/1167074192">https://vimeo.com/1167074192</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:38 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1475428234509156373/What_Keeps_a_Structure_Standing-_caption.mp4?ex=6a2b2c5f&amp;is=6a29dadf&amp;hm=e1674ccbedaba8e8b3f8a3c6b6de042893e29442afed1785c98eecf04c302c1f&amp;" alt="Video attachment" title="Video: What_Keeps_a_Structure_Standing-_caption.mp4 (6.81 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1475428235180511363/What_Keeps_a_Structure_Standing-Polish.srt?ex=6a2b2c5f&amp;is=6a29dadf&amp;hm=d47de72e7a1b0379674ac71652361085aef9704a700300d4a3f72b575141aea2&amp;"> What_Keeps_a_Structure_Standing-Polish.srt </a></div><div class=chatlog__attachment-generic-size>747 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1475428236090540053/What_Keeps_a_Structure_Standing-Po_audio.mp3?ex=6a2b2c5f&amp;is=6a29dadf&amp;hm=102896dbf29c2d7c54ee15b189ffb0050562570b6a9343da78151f7de61efc9e&amp;" alt="Audio attachment" title="Audio: What_Keeps_a_Structure_Standing-Po_audio.mp3 (414.52 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1476504974627307613 class=chatlog__message-container data-message-id=1476504974627307613><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, February 26, 2026 1:03 PM"><a href=#chatlog__message-container-1476504974627307613>2/26/2026 1:03 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Rezonans do Kontroli <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠️"
+    title="warning"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> 04/01/2026 - PUSTKA</strong>
+
+Ten film opisuje destrukcyjny wzorzec, kt&#243;ry zaobserwowałem w niekt&#243;rych transmisjach na żywo w mediach społecznościowych — a z perspektywy czasu także w r&#243;żnych momentach mojego życia.
+
+Często zaczyna się od rezonansu: wsp&#243;lnego doświadczenia, znajomego języka lub wglądu, kt&#243;ry wydaje się prawdziwy. Jednak gdy pojawia się zaangażowanie, ten rezonans może zostać odwr&#243;cony w kontrolę. Przynależność staje się warunkowa. Kwestionowanie jest karane. Zrozumienie zostaje zastąpione podporządkowaniem.
+
+Z czasem struktura umacnia się nie tylko przez tych, kt&#243;rzy nią kierują, lecz także przez uczestnik&#243;w, kt&#243;rzy powtarzają narrację, nagradzają konformizm i wzmacniają poczucie odłączenia. Władza przynosi korzyści tym w centrum, podczas gdy inni są zarządzani bez prawdziwego poczucia przynależności.
+
+Ta dynamika jest znana od dawna. Jak ostrzega Pismo:
+
+„Kr&#243;lowie narod&#243;w panują nad nimi, a ci, kt&#243;rzy sprawują nad nimi władzę, nazywają siebie dobroczyńcami.”
+— Ewangelia Łukasza 22:25–26
+
+W swojej najbardziej skrajnej formie ten wzorzec eskaluje, przedstawiając autodestrukcję jako ucieczkę.
+
+To nie jest filozofia.
+To nie jest duchowość.
+To destrukcyjny wzorzec psychologiczny.
+
+Prawda nie wymaga autodestrukcji.
+Życie pozostaje punktem odniesienia.
+
+#OdRezonansuDoKontroli #KontrolaPrzymusowa #WładzaOpartaNaStrachu #DynamikaSekty #MyślenieGrupowe #WzorcePsychologiczne #MyślenieKrytyczne #ŚwiadomośćZdrowiaPsychicznego #WładzaBezZgody #Rozeznanie #ChrońSw&#243;jUmysł #AfirmacjaŻycia #PrzebudzenieCzyKontrola #ŚwiadomośćMedi&#243;wSpołecznościowych
+
+<a href="https://vimeo.com/1167694414">https://vimeo.com/1167694414</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:39 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1476504971733372938/Resonance_to_Control-Polish_Pola_caption.mp4?ex=6a2b22a9&amp;is=6a29d129&amp;hm=68185d918b27c117e26adc87bf14de11415efc75c0ffba6f47e9e91503706032&amp;" alt="Video attachment" title="Video: Resonance_to_Control-Polish_Pola_caption.mp4 (43.77 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1476504974174453771/Resonance_to_Control-Polish_Poland.srt?ex=6a2b22a9&amp;is=6a29d129&amp;hm=2bb501d58e00f26e08e34c81913470978760193608f8cad3c2586f859bf53a3d&amp;"> Resonance_to_Control-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>4.55 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1476504974405013554/Resonance_to_Control-Polish_Poland_audio.mp3?ex=6a2b22aa&amp;is=6a29d12a&amp;hm=44d98dbc3a3c10d6850d39a4c4788cc4ce1d193fd8256d55dcc8380bba3f70db&amp;" alt="Audio attachment" title="Audio: Resonance_to_Control-Polish_Poland_audio.mp3 (2.68 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1477601388753063946 class=chatlog__message-container data-message-id=1477601388753063946><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, March 1, 2026 1:40 PM"><a href=#chatlog__message-container-1477601388753063946>3/1/2026 1:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Prawo Żniwa... 08/10/2025 - Albania</strong>
+
+Ci, kt&#243;rzy sieją ub&#243;stwo dla innych, odnajdą je rosnące na własnym polu.
+
+#SiejIZbieraj #PrawdaWJednejLinii #EnergiaWraca #KarmaCzyPowołanie
+
+<a href="https://vimeo.com/1169288021">https://vimeo.com/1169288021</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:40 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1477601387952078848/Law_of_the_Harvest-Polish_Poland_caption.mp4?ex=6a2b2b47&amp;is=6a29d9c7&amp;hm=4aadcf1f28c7b82a2f9c36d2cf06bf71a6d3dc48515289f611f582d38270c99d&amp;" alt="Video attachment" title="Video: Law_of_the_Harvest-Polish_Poland_caption.mp4 (1.01 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1477601388191027292/Law_of_the_Harvest-Polish_Poland.srt?ex=6a2b2b47&amp;is=6a29d9c7&amp;hm=9ad9ca6d53184e5c8dd5bc15df0b23fda7a3f3c43cd44168a6490f1643dd0de3&amp;"> Law_of_the_Harvest-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>106 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1477601388468113418/Law_of_the_Harvest-Polish_Poland_audio.mp3?ex=6a2b2b47&amp;is=6a29d9c7&amp;hm=cae1aaed5215c94f811b1cfa24bef4c19e4fac76786275f17a3c068e601c9e4b&amp;" alt="Audio attachment" title="Audio: Law_of_the_Harvest-Polish_Poland_audio.mp3 (63.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1480206234983465012 class=chatlog__message-container data-message-id=1480206234983465012><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, March 8, 2026 6:11 PM"><a href=#chatlog__message-container-1480206234983465012>3/8/2026 6:11 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kiedy życie staje się głośne… <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128239;"
+    title="postal_horn"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ef.svg"> 07/03/2026 - VOID</strong>
+
+Niekt&#243;re piosenki trafiają do nas inaczej. Niekt&#243;re czujemy od razu, a inne uczymy się kochać, gdy pojawia się zestrojenie. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
+
+Możliwość bycia świadkiem całego utworu od początku do końca jest błogosławieństwem. Tak jak refren twojej ulubionej piosenki, kt&#243;rego nie możesz przestać nucić, zawsze możesz wr&#243;cić do tej radości poprzez słodko-gorzki proces, kt&#243;ry nazywamy wspomnieniem. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127925;"
+    title="musical_note"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b5.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128171;"
+    title="dizzy"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ab.svg">
+
+I pamiętaj — gdy robi się zbyt dużo, możesz ucieleśnić spok&#243;j, porzucając rolę igły — rezygnując z kontroli i udając, że jesteś kwiatem. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127800;"
+    title="cherry_blossom"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f338.svg"> W tym momencie muzyka już cię nie definiuje, a spok&#243;j naturalnie rozkwita w twoim wnętrzu.
+
+Mateusz 6:28–30 przypomina nam: kwiaty na polu nie pracują ani nie przędą, a jednak są przyodziane w piękno.
+
+A jeśli spojrzymy na to trochę naukowo — to „dlaczego” ma znaczenie, od fali do formy. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127754;"
+    title="ocean"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30a.svg">
+
+Jeśli się zmęczysz i potrzebujesz odpoczynku, przestań na chwilę pytać „dlaczego”… i po prostu bądź. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg">
+
+#DuchowyTok #Filozofia #WiaraINauka #OdFaliDoFormy #WewnętrznySpok&#243;j #UważneChwile #Świadomość #Wspomnienie #Puść #MądrośćBiblijna #Mateusz6 #KwiatyPola #GłębokieMyśli #Wsp&#243;łczesnyMistyk #Cisza
+
+<a href="https://vimeo.com/1171496497">https://vimeo.com/1171496497</a></span> <span class=chatlog__edited-timestamp title="Sunday, April 5, 2026 5:52 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1480206232785785016/When_Life_Gets_Loud-Polish_Polan_caption.mp4?ex=6a2b6aba&amp;is=6a2a193a&amp;hm=d14c58679717049a5057def14f109f1aa66623af9d65086ff55dcdc98b597185&amp;" alt="Video attachment" title="Video: When_Life_Gets_Loud-Polish_Polan_caption.mp4 (27.87 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1480206234266370108/When_Life_Gets_Loud-Polish_Poland.srt?ex=6a2b6abb&amp;is=6a2a193b&amp;hm=f8a8d3ca47b5516f5d7175f0908339847f3e1dd0d542a87b9a69fabff9f7e562&amp;"> When_Life_Gets_Loud-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>2.67 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1480206234584875142/When_Life_Gets_Loud-Polish_Poland_audio.mp3?ex=6a2b6abb&amp;is=6a2a193b&amp;hm=067dc1f92ef63eefacddf60522673be4dbde831367d6c34f5255137d7380cb9f&amp;" alt="Audio attachment" title="Audio: When_Life_Gets_Loud-Polish_Poland_audio.mp3 (1.56 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1480522894135132233 class=chatlog__message-container data-message-id=1480522894135132233><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, March 9, 2026 3:09 PM"><a href=#chatlog__message-container-1480522894135132233>3/9/2026 3:09 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Twoja Dusza Nie Wybrała Cierpienia <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128155;"
+    title="yellow_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49b.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 05/12/2025 - VOID</strong>
+
+Jezus powiedział, że owoc ujawnia drzewo.
+Więc jaki owoc pochodzi z wiary, że
+„twoja dusza wybrała to cierpienie”?
+
+#rozeznanie #świadek_siebie #poszukiwacz_prawdy #duchowajasność #deprogramowanie #wewnętrznasiła #świadomość #podr&#243;żuzdrowienia #programowanie_strachu #jasność_umysłu #zbiorowep przebudzenie #wzmocnienie
+
+<a href="https://vimeo.com/1171702095">https://vimeo.com/1171702095</a></span> <span class=chatlog__edited-timestamp title="Sunday, April 5, 2026 5:52 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1480522891853303919/Your_Soul_Didnt_Choose_Pain-Poli_caption.mp4?ex=6a2b4024&amp;is=6a29eea4&amp;hm=6362e1bf76777ec56e0f33399c7e6aecf7a6a6a83037617370fe3be654b8a903&amp;" alt="Video attachment" title="Video: Your_Soul_Didnt_Choose_Pain-Poli_caption.mp4 (23.57 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1480522893849792532/Your_Soul_Didnt_Choose_Pain-Polish_Polan.srt?ex=6a2b4024&amp;is=6a29eea4&amp;hm=83fe8d693029bb73df211d6aeb56294fc95eb613b01cda9a8644e84d74167344&amp;"> Your_Soul_Didnt_Choose_Pain-Polish_Polan.srt </a></div><div class=chatlog__attachment-generic-size>2.39 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1480522894151778515/Your_Soul_Didnt_Choose_Pain-Polish_audio.mp3?ex=6a2b4024&amp;is=6a29eea4&amp;hm=db58953a66df643390f04144c211a4f15a1aa89123f5669a6c5bb422f7c7cd9e&amp;" alt="Audio attachment" title="Audio: Your_Soul_Didnt_Choose_Pain-Polish_audio.mp3 (1.44 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1480881256857210962 class=chatlog__message-container data-message-id=1480881256857210962><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, March 10, 2026 2:53 PM"><a href=#chatlog__message-container-1480881256857210962>3/10/2026 2:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128168;"
+    title="dash"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a8.svg"> Prawdziwy Haj To Wolność <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128510;"
+    title="japan"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f5fe.svg"> 04/05/2025 - Japonia</strong>
+
+Prawdziwy haj nie jest chemiczny.
+Nie pochodzi z butelki, pigułki ani recepty.
+Pochodzi z wyjścia poza klatkę —
+nawet jeśli ta klatka wygląda na wygodną.
+
+Przez długi czas żyłem w czymś, co na papierze działało.
+Było bezpieczne.
+Było akceptowalne.
+To była ładna klatka.
+
+Ale ładna klatka nadal jest klatką.
+
+Wolność nie przychodzi przez złożoność.
+Przychodzi przez prostotę.
+Przez mniej ścian.
+Przez lżejsze torby.
+Przez ruch.
+
+Świat m&#243;wi nam, abyśmy bronili struktur, kt&#243;re już nie służą życiu —
+dom&#243;w, system&#243;w, rutyn —
+jakby tożsamość zależała od tego, co utrzymujemy.
+
+Ale pok&#243;j nie mieszka w tym, czego bronimy.
+Mieszka w tym, co puszczamy wolno.
+
+Czasami najbardziej radykalnym aktem
+nie jest walczyć mocniej,
+lecz odejść spokojnie —
+ku naturze, ku ludziom, kt&#243;rzy podzielają twoje wartości,
+ku życiu, kt&#243;re oddycha.
+
+Wyjdź na zewnątrz.
+Podr&#243;żuj lekko.
+Zostaw klatkę za sobą.
+
+#PozaKlatką #PrawdziwaWolność #ProsteŻycie #VanLife #MinimalistyczneMyślenie #NaturaJakoLekarstwo #ŻycieBezKlatek #WolnośćPonadStrach #OdejdźDoPokoju #ŻyjLekko #DuszaNomady #NowoczesnaRefleksja #WybierzWolność #ŻyciePozaSystemem #CichaRebelia
+
+<a href="https://vimeo.com/1172104788">https://vimeo.com/1172104788</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 12:42 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1480881253749358612/The_Real_Buzz_Is_Freedom-Polish__caption.mp4?ex=6a2b3c64&amp;is=6a29eae4&amp;hm=0902629bdccfd499dc4d1afe1544a2cfaaf4954740fc3b6c6d6c3ce2c96bfdb0&amp;" alt="Video attachment" title="Video: The_Real_Buzz_Is_Freedom-Polish__caption.mp4 (48.71 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1480881256139849879/The_Real_Buzz_Is_Freedom-Polish_Poland.srt?ex=6a2b3c64&amp;is=6a29eae4&amp;hm=171afef6310f2a6426c1c5788792847145ddb5aa80ae05b3dd40349b1b79f320&amp;"> The_Real_Buzz_Is_Freedom-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>5.29 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1480881256421130270/The_Real_Buzz_Is_Freedom-Polish_Po_audio.mp3?ex=6a2b3c64&amp;is=6a29eae4&amp;hm=e3bec92e4bb521128683b86b8f64e3dd60e42afee51afebe335e5c1abaa28910&amp;" alt="Audio attachment" title="Audio: The_Real_Buzz_Is_Freedom-Polish_Po_audio.mp3 (2.93 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1484602110744985673 class=chatlog__message-container data-message-id=1484602110744985673><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, March 20, 2026 9:18 PM"><a href=#chatlog__message-container-1484602110744985673>3/20/2026 9:18 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Narcyzm to system <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 28/01/2026 - VOID
+(Wersja rozszerzona — zawiera 20 minut dodatkowego materiału filmowego)</strong>
+
+To nie tylko osobista historia — to opowieść o narcyzmie działającym na dużą skalę.
+
+Narcyzm rozwija się dzięki kontroli, dezorientacji, zależności i wyczerpaniu. Kiedy systemy tracą poczucie odpowiedzialności, zaczynają odzwierciedlać te same cechy: gaslighting, przerzucanie winy, uciszanie i karanie za autonomię.
+
+Podczas mojej separacji byłam świadkiem, jak procedury prawne, presja finansowa i narracje dotyczące zdrowia psychicznego mogą być nadużywane, aby pozbawić ludzi poczucia sprawczości i utrzymać ich w pułapce rozszerzającej się pętli — takiej, kt&#243;ra wysysa energię, tożsamość i nadzieję.
+
+Dzielę się tym nie z gniewu, ale z jasności. Kiedy narcyzm staje się strukturalny, przestaje przypominać osobę — zaczyna przypominać politykę, procedury i „po prostu spos&#243;b działania”.
+
+Jeśli zmuszono cię do zwątpienia w swoją rzeczywistość, ukarano za m&#243;wienie prawdy lub zmuszono do przetrwania zamiast leczenia – nie jesteś zepsuty. Reagujesz na system zbudowany bez empatii.
+
+Świadomość przerywa pętlę.
+
+#Narcyzm #NadużyciaSystemowe #KontrolaNarcyzmu #PrzerwijPętlę #KontrolaPrzymusowa #Gaslighting #PrzemocStrukturalna #SystemyUzbrojone #NadużyciaPrawne #PorażkaInstytucjonalna #NadużyciaPsychologiczne #ŚwiadomośćTraumy #M&#243;wieniePrawdy #GłosOcalałego #Odpowiedzialność #Rozeznanie #Przebudzenie #WybierzJasność #ZakończCykl
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a>
+
+<a href="https://vimeo.com/1175552968">https://vimeo.com/1175552968</a></span> <span class=chatlog__edited-timestamp title="Friday, April 10, 2026 4:14 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1484602086036602932/Narcissism_is_the_System_Polish_caption.mp4?ex=6a2aedef&amp;is=6a299c6f&amp;hm=3212711415e891843891c873f1c49861cd436e31cbb7c9d8af574d9a143bd2ad&amp;" alt="Video attachment" title="Video: Narcissism_is_the_System_Polish_caption.mp4 (428.54 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1484602110149394543/Narcissism_is_the_System_Polish_caption.srt?ex=6a2aedf5&amp;is=6a299c75&amp;hm=df7bdaa358a2ebed48d2be4e47cb2f0855c93d10d5f07341c41ca3ce837ed7a2&amp;"> Narcissism_is_the_System_Polish_caption.srt </a></div><div class=chatlog__attachment-generic-size>75.73 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1484602110422286449/Narcissism_is_the_System_Polish_audio.mp3?ex=6a2aedf5&amp;is=6a299c75&amp;hm=e877e1e68d7b1bc5b39c13231410315ec8d23434385337420b029618fb4acd52&amp;" alt="Audio attachment" title="Audio: Narcissism_is_the_System_Polish_audio.mp3 (28.16 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490256503914102995 class=chatlog__message-container data-message-id=1490256503914102995><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 11:47 AM"><a href=#chatlog__message-container-1490256503914102995>4/5/2026 11:47 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Niebo to kwestia percepcji <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127780;️"
+    title="white_sun_small_cloud"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f324.svg"> 16/01/2026 - VOID</strong>
+
+Nic nie wydaje się niebezpieczne dla spokojnego umysłu.
+
+Ewangelia Mateusza 6:25–26 &#183; Ewangelia Mateusza 18:3 &#183; Psalm 4:8
+
+#SpokojnyUmysł #ChwileCiszy #Cisza #ŁagodnaŚwiadomość
+
+<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490256504345985144/All_Dogs_Go_to_Heaven.mp4?ex=6a2b10c6&amp;is=6a29bf46&amp;hm=b31bdb332db1578dd03c94ce234c42fd2b30cbe3dfb248cd554cc0c6f80d4e0f&amp;" alt="Video attachment" title="Video: All_Dogs_Go_to_Heaven.mp4 (1.14 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490263044457234462 class=chatlog__message-container data-message-id=1490263044457234462><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:13 PM"><a href=#chatlog__message-container-1490263044457234462>4/5/2026 12:13 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Klatka nie jest twoim domem <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127749;"
+    title="sunrise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f305.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129718;"
+    title="feather"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fab6.svg"> 06/04/2025 - Tajlandia</strong>
+
+Usłyszałem tę piosenkę podczas spaceru po targu w Japonii, ot, zwykły dzień… i zatrzymała mnie w miejscu.
+
+„Pozw&#243;l rosnąć… klatka nie jest twoim domem”.
+
+Nie szukałem nawet znaku, ale B&#243;g umieścił go tuż przede mną.
+
+Rozległ się utw&#243;r „The Sparrow” zespołu The Hunts, a słowa uderzyły głęboko – niczym szept Nieba pośr&#243;d zgiełku świata.
+
+I chociaż ta chwila wydarzyła się w Japonii, ten teledysk został nakręcony w jaskini Phraya Nakhon – Prachuap Khiri Khan w Tajlandii – w miejscu, gdzie znaczenie przesłania naprawdę się ujawniło.
+
+Przypomniało mi to, że B&#243;g często prowadzi nas w ten spos&#243;b – z zamknięcia, ze strachu, z ciasnych przestrzeni, w kt&#243;rych przetrwaliśmy…
+
+I ku czemuś szerszemu.
+
+Okruszyna w jednym kraju.
+Przełom w innym.
+
+Budujemy klatki z komfortu, starych tożsamości, schemat&#243;w przetrwania… ale nigdy nie byliśmy stworzeni do życia w zamknięciu.
+
+Klatka nie jest twoim domem.
+
+Zr&#243;b miejsce na rozw&#243;j.
+
+Rozł&#243;ż skrzydła.
+
+Zaufaj ścieżce.
+
+„Sparrow” zespołu The Hunts — utw&#243;r indie folkowego duetu The Hunts, zaprezentowany na ich albumie Hibernating Heart. Podpisy na TikToku.
+
+#TheHunts #TheSparrow #PhrayaNakhonCave ⁠thailand #PrachuapKhiriKhan #DivineSigns #FaithWalk #SpiritualJourney #BreakFree #YouWereMeantToFly #HealingPath #GodIsSpeaking #AwakenedSoul
+
+<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490263045929172992/The_cage_is_not_your_home.mp4?ex=6a2b16dd&amp;is=6a29c55d&amp;hm=d0fca94b2653cbe179387d2647a57d4c7c782bc4c32286818291a67c09471b25&amp;" alt="Video attachment" title="Video: The_cage_is_not_your_home.mp4 (21.46 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490272842669883402 class=chatlog__message-container data-message-id=1490272842669883402><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:52 PM"><a href=#chatlog__message-container-1490272842669883402>4/5/2026 12:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg">Kiedy cisza się układa<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127811;"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127769;"
+    title="crescent_moon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f319.svg"> 16/09/2025 - Albania</strong>
+
+Siedząc w ciszy, uświadomiłam sobie – kiedy wszystko się układa, mam wrażenie, jakby patrzyło na mnie zza plec&#243;w.
+
+#cisza #natura #skupienie #wyr&#243;wnanie #warstwy #cisza #medytacja #spok&#243;j #filmprzyrodniczy #chwilecici
+
+<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490272847401189396/When_Stillness_Aligns.mp4?ex=6a2b1ffe&amp;is=6a29ce7e&amp;hm=57158b4b7a2028c9f8c1fa0ff4d0ca1c7e869c1e9e73aeb72cfd4a0ed546d8a0&amp;" alt="Video attachment" title="Video: When_Stillness_Aligns.mp4 (89.27 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490319245878493324 class=chatlog__message-container data-message-id=1490319245878493324><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 3:56 PM"><a href=#chatlog__message-container-1490319245878493324>4/5/2026 3:56 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128167;"
+    title="droplet"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a7.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> Terapia słodkowodna - bez filtra. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"> 25/07/2025 - Czarnog&#243;ra</strong>
+
+#WibracjeNatury #PływanieWŚr&#243;dWody #ŻycieNaJeziorze #MiłośnicyNatury #WDzikąPrzyrodę #TerapiaNaPurzeZDROWOTNA #SpokojneWibracje #PływanieDzikąPrzyrodą #NaturaLeczy #ŻycieWNaturze #Uziemianie #CzasPrzygody
+
+<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490319253730103356/Freshwater_therapy.mp4?ex=6a2b4b36&amp;is=6a29f9b6&amp;hm=e5dd16ffff9c5d05cb52617f52d6d86a8f6c1ee70ec7ab6b8d6d8af1fd657c77&amp;" alt="Video attachment" title="Video: Freshwater_therapy.mp4 (93.64 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490334818741911705 class=chatlog__message-container data-message-id=1490334818741911705><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:58 PM"><a href=#chatlog__message-container-1490334818741911705>4/5/2026 4:58 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Radość to lekarstwo. Natura to prawda. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 11/06/2025 - Bułgaria</strong>
+
+Nie przyjechałam tu tylko po odpoczynek — przyjechałam, żeby sobie przypomnieć.
+Ziemia się zmienia, my też. To jest to rozświetlenie, kt&#243;re przychodzi wraz z przebudzeniem. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"> „Wszędzie” – Niall Horan i Anne-Marie
+
+Życie w domku letniskowym w Bułgarii — gdzie zn&#243;w poczułam spok&#243;j, obecność i zabawę.
+
+#5dshift #NowaZiemia #duchoweprzebudzenie #rozjaśnienienatury #rozjaśnienie ⁠Bułgaria #dzicz #przebudzenieduszy #kabinawlesie #pracownicyświatła #las #natura #duchowość #wirus
+
+<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490334825998188654/Joy_is_medicine._Nature_is_truth.mp4?ex=6a2b59b7&amp;is=6a2a0837&amp;hm=53e4e6f2998afa9197a6077afa24ab84eea7fb082f4d042926b6256d65037212&amp;" alt="Video attachment" title="Video: Joy_is_medicine._Nature_is_truth.mp4 (112.8 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490389244328284363 class=chatlog__message-container data-message-id=1490389244328284363><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:34 PM"><a href=#chatlog__message-container-1490389244328284363>4/5/2026 8:34 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, Otwarte Pola, Czysty Umysł <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 18/10/2025 - Albania</strong>
+
+Czasami wszystko, czego potrzebujesz, to ciche pole, dobra piosenka i przypomnienie, że życie wciąż jest piękne.
+Fleetwood Mac w tle, świeże powietrze przede mną i świat, kt&#243;ry niczego nie wymaga — tylko chwili wytchnienia i oddechu.
+
+#życiewvan #klimatyprzyrody #fleetwoodmac #chwilespokoju #życiewpolu #krowy #krajobrazy #klimatypodr&#243;ży #zwolnienie #chwileuważności #klimatyzazachodusłońca #australia #europa #muzykaiprzyroda #podr&#243;żwolnością #duszanaprzyrodzie #energiaspokoju #chwilecici #kreatywnapodr&#243;ż #ścieżkauzdrowienia
+
+<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span> <span class=chatlog__edited-timestamp title="Friday, April 10, 2026 4:13 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490389249244008619/Fleetwood_Mac_Open_Fields_Clear_Mind.mp4?ex=6a2b8c67&amp;is=6a2a3ae7&amp;hm=3ae1524e193f7242a8e14c78c3f2e25427db209b716e0c5fd1f680c635d8bb9a&amp;" alt="Video attachment" title="Video: Fleetwood_Mac_Open_Fields_Clear_Mind.mp4 (85.4 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490396435060101292 class=chatlog__message-container data-message-id=1490396435060101292><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 9:03 PM"><a href=#chatlog__message-container-1490396435060101292>4/5/2026 9:03 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Spokojny krok w pole <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127806;"
+    title="ear_of_rice"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33e.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128004;"
+    title="cow2"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f404.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128276;"
+    title="bell"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f514.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 16/08/2025 - Albania</strong>
+
+Wyjście na „to” pole — nie byle jakie miejsce, ale to, kt&#243;re na Ciebie czeka.
+Gdzie czas rozluźnia uścisk, powietrze wstrzymuje oddech,
+a jedyną muzyką jest delikatny ch&#243;r krowich dzwonk&#243;w.
+
+#ŻycieWVan #WibracjeNatury #Krowi Dzwonki #ChwileSpokoju #ŻycieNaPastwisku #PowolneŻycie #ŻyciePozaSiecią #PoranneWibracje #WidokiFarm #UważneŻycie
+
+<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span> <span class=chatlog__edited-timestamp title="Friday, April 10, 2026 4:12 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490396441376722944/A_Peaceful_Step_Into_the_Field.mp4?ex=6a2aea59&amp;is=6a2998d9&amp;hm=cb17e5e55b03d76b4408d872c93bedcd02a549d3bf2002bf194c240b3c165170&amp;" alt="Video attachment" title="Video: A_Peaceful_Step_Into_the_Field.mp4 (106.54 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490608512739311657 class=chatlog__message-container data-message-id=1490608512739311657><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, April 6, 2026 11:06 AM"><a href=#chatlog__message-container-1490608512739311657>4/6/2026 11:06 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dolar też rzuca zaklęcia! <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128184;"
+    title="money_with_wings"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b8.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 01/12/2025 - VOID</strong>
+
+Jak każde zaklęcie, jego moc zależy od twojej wiary — twojego zaangażowania.
+Dolar jest neutralny, podobnie jak kapitalizm — to dzieci Boga, kt&#243;re zawsze miały wznosić się ponad wszystko.
+Ale zostaliśmy uwarunkowani, by myśleć, że dolar jest ponad nami,
+a to przekonanie zawęża nasze pole możliwości do wąskiej formy.
+Iluzją jest myślenie, że jesteśmy r&#243;wni systemom, kt&#243;re stworzyliśmy.
+Zbyt wielu ludzi walczy w pętli, nie zdając sobie sprawy z mocy, jaką mają, po prostu całkowicie z niej rezygnując.
+
+#iluzjadolarowa #przebudzenie #duchoweprzebudzenie #matryca #wyzwolenie #poszukiwaczeprawdy #poetyckamądrość #wizualneopowiadanie #fyp #dlaciebie #stronadlaciebie #wirusowefilmy #głębokiemyśli #lekcjeżycia #świadomość #samorealizacja #zmiananastawienia #prawdasystemowa #filozofia #metafora #nowoczesnaprzypowieść #pomyślotym #upadekiluzji #wewnętrznawolność #stephencooke
+
+<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span> <span class=chatlog__edited-timestamp title="Friday, April 10, 2026 4:12 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490608513200816178/Dollars_Cast_Spells_Too.mp4?ex=6a2b071b&amp;is=6a29b59b&amp;hm=f800785f0722c84b1460607994c3e754e5f1d83c0211f33d3702ae751fc26765&amp;" alt="Video attachment" title="Video: Dollars_Cast_Spells_Too.mp4 (1.77 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490939073660063815 class=chatlog__message-container data-message-id=1490939073660063815><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 8:59 AM"><a href=#chatlog__message-container-1490939073660063815>4/7/2026 8:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> This isn’t about showing off, it’s about showing the way back — to sovereignty, to peace, to nature. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 09/09/2025 - Albania</strong>
+
+Solar power, hot water, heat, and a small space on wheels. Not showing off — just showing that another way of living is possible, where peace remains within one’s control and its agency is not outsourced.
+
+#Sovereignty #ReclaimYourPeace #OwnYourLife #VanLife #OffGridLiving #IndependentLiving #SolarPower #WaterIsLife #BackToNature #SustainableLiving #SimpleLiving #NatureBoundaries #GodProvides #FaithAndFreedom #LivingInGrace
+
+<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490939078085050429/To_Sovereignty.mp4?ex=6a2ae978&amp;is=6a2997f8&amp;hm=71ef34bd7c8b9f27d8fffc0c3bc92d5a2fb540a4aae406428526c11f78d2cd24&amp;" alt="Video attachment" title="Video: To_Sovereignty.mp4 (83.29 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490945268403802233 class=chatlog__message-container data-message-id=1490945268403802233><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:24 AM"><a href=#chatlog__message-container-1490945268403802233>4/7/2026 9:24 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Prawda czeka za lustrem <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129694;"
+    title="mirror"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa9e.svg"> 21/02/2026 - VOID</strong>
+
+Ignorowanie korupcji jest niebezpieczne.
+Istnieje r&#243;wnież niebezpieczeństwo wpatrywania się w nią zbyt długo.
+
+Udostępniłem narzędzia do pobierania akt Epsteina bezpośrednio ze źr&#243;dła Sprawiedliwości — ponieważ prawda powinna być zachowana u źr&#243;dła, a nie filtrowana przez narracje.
+
+Jeśli źr&#243;dło przestanie działać, co je zastąpi?
+Spekulacje. Manipulacja. Zniekształcenie.
+
+Archiwizuj odpowiedzialnie.
+Badaj dokładnie.
+Nie pozw&#243;l, by lustro cię wypaczyło.
+
+Pobierz z Google:
+<a href="https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing">https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing</a>
+
+Zestaw 1
+<a href="https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g">https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g</a>
+Zestaw 2
+<a href="https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g">https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g</a>
+Zestaw 3
+<a href="https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w">https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w</a>
+Zestaw 4
+<a href="https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA">https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA</a>
+Zestaw 5
+<a href="https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg">https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg</a>
+Zestaw 6
+<a href="https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA">https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA</a>
+
+#AktaEpsteina #Epstein #SprawaEpsteina #ŚledztwoEpsteina #LustroEpsteina #SprawiedliwośćDlaOfiar #Odpowiedzialność #DokumentyPubliczne #Przejrzystość #UjawnijPrawdę #ZbadajSwojąPrawdę #PrawdaMa Znaczenie #SprawiedliwośćMa Znaczenie #StańWZaPrawdą #Świadomość #SzukajPrawdy
+
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
+<a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span> <span class=chatlog__edited-timestamp title="Friday, April 10, 2026 4:12 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490945272887378011/Man_in_the_Mirror.mp4?ex=6a2aef3d&amp;is=6a299dbd&amp;hm=ae938472f9d9b5d6e91774ae27c8c6a5f2aa260ec164d205f5dc915d87cbcc3c&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1490945273558470708/The_Mirror_of_Evil.png?ex=6a2aef3d&amp;is=6a299dbd&amp;hm=bf5216ae87518b777a43ee7d34a41446e98afb5cde329bb9c5040bcc9bf02bd1&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1468678367468322880/1490945273558470708/The_Mirror_of_Evil.png?ex=6a2aef3d&amp;is=6a299dbd&amp;hm=bf5216ae87518b777a43ee7d34a41446e98afb5cde329bb9c5040bcc9bf02bd1&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490945276008071328/The_Mirror_of_Evil.mp4?ex=6a2aef3e&amp;is=6a299dbe&amp;hm=b22e4b0e900e00dff11942018ee19ab6d474acfe58270bf857f90c4cb078ff4f&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil.mp4 (90.59 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490971174962991165 class=chatlog__message-container data-message-id=1490971174962991165><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 11:07 AM"><a href=#chatlog__message-container-1490971174962991165>4/7/2026 11:07 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Uratuj się przed wątpliwościami <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127754;"
+    title="ocean"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30a.svg"> 09/11/2025 - Turcja</strong>
+
+Czasami najlepsze zakręty nie są zaplanowane.
+Z autostrady, w nieznane.
+
+#ŻycieVan #ZostawToLepiej #OpowieściDrogowe #WolnośćNaKołach #PrawdziweRozmowyPodr&#243;żnicze #SpontanicznaPodr&#243;ż #ŻycieNomady #PrzygodaCzeka #KinoweKlimaty #Bronson #ODESZA #CałkowicieOgromneWymarłeDinozaury #UratujSięPrzedWątpliwościami #NigdyNiePoddawajsię #ZaufajPodr&#243;ży #WiaraWRuchu #StanPływu #ZAutostrady #WNieznane #ZaufajSobie
+
+<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span> <span class=chatlog__edited-timestamp title="Saturday, April 11, 2026 2:21 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1490971177521512540/Save_Yourself_from_Doubt.mp4?ex=6a2b075d&amp;is=6a29b5dd&amp;hm=2756e9542824aaf0098669801de89a2a2392646f62eb41763107b83cea38d67f&amp;" alt="Video attachment" title="Video: Save_Yourself_from_Doubt.mp4 (48.43 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1491035746428125254 class=chatlog__message-container data-message-id=1491035746428125254><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 3:23 PM"><a href=#chatlog__message-container-1491035746428125254>4/7/2026 3:23 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 24/08/2025 - Albani&#235;</strong>
+
+#klavier #vreedsamevibes #hele nuwew&#234;reld #natuurvibes #kalm #esteties #klaviermusiek #vertraag #bewusstoekomblikke #sagtevloei #boomvanlewe
+
+<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1491035749917917224/Flying_free_in_a_whole_new_world.mp4?ex=6a2b4380&amp;is=6a29f200&amp;hm=aacc79a06eb26a442c4be738cdb17b77886910250ae0d613a4241fc37aff3e1b&amp;" alt="Video attachment" title="Video: Flying_free_in_a_whole_new_world.mp4 (62.02 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1501271195146780742 class=chatlog__message-container data-message-id=1501271195146780742><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, May 5, 2026 9:15 PM"><a href=#chatlog__message-container-1501271195146780742>5/5/2026 9:15 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ludzie są prawdziwym bogactwem <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128173;"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 23/03/2026 - VOID</strong>
+
+Odkąd odsunąłem się od globalnego konfliktu, dostrzegłem coś wyraźnie: ludzie są prawdziwym bogactwem. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128161;"
+    title="bulb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg">
+A jednak obserwujemy, jak strach, rosnące koszty i ograniczenia subtelnie „ograniczają” i przenoszą to bogactwo.
+
+Jeśli pok&#243;j, bezpieczeństwo i pewność zaczynają się w domu <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127969;"
+    title="house_with_garden"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3e1.svg"> – w rodzinie – dlaczego tak wielu jest zachęcanych do szukania ich gdzie indziej poprzez obietnice, wypłaty lub op&#243;źnione nagrody?
+
+Jest tu sprzeczność.
+M&#243;wimy, że ludzie są najważniejsi… a systemy wciąż rozpraszają ich, wyrządzając im krzywdę.
+
+Może nadszedł czas, aby uznać, kim już jesteśmy – i to chronić. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#Prawda #Świadomość #LudzieSąBogactwem #Obudź Się #RodzinaNajpierw #Pok&#243;jZaczynaSięWDomu #DuchowePrzebudzenie #ZmianaPerspektywy #MyślenieSystemowe #Wsp&#243;łczesnyŚwiat #TrzymajSięNaPrawdzie #PrawdziwaRozmowa
+
+<a href="https://vimeo.com/1189458732">https://vimeo.com/1189458732</a></span> <span class=chatlog__edited-timestamp title="Tuesday, May 5, 2026 9:17 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1501271190499627109/People_Are_the_Real_Wealth-Polis_caption.mp4?ex=6a2aed40&amp;is=6a299bc0&amp;hm=4d70bf543c42847dcd4c0ddc8347f3062b431d0292875b49c4649eac76796656&amp;" alt="Video attachment" title="Video: People_Are_the_Real_Wealth-Polis_caption.mp4 (85.78 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1501271194408587295/People_Are_the_Real_Wealth-Polish_Poland.srt?ex=6a2aed41&amp;is=6a299bc1&amp;hm=3d485c5254bcd4bc9c2b7b30da18ac7ba94e326b08e20f0d0eb9de2b86085c5c&amp;"> People_Are_the_Real_Wealth-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>4.11 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1501271194786205827/People_Are_the_Real_Wealth-Polish__audio.mp3?ex=6a2aed41&amp;is=6a299bc1&amp;hm=6ca1782ed7c582d355ca8d58c89a3ec65894a79c05d363eb05ebf668fe052f76&amp;" alt="Audio attachment" title="Audio: People_Are_the_Real_Wealth-Polish__audio.mp3 (1.96 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1501274971220213870 class=chatlog__message-container data-message-id=1501274971220213870><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, May 5, 2026 9:30 PM"><a href=#chatlog__message-container-1501274971220213870>5/5/2026 9:30 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Bycie Dobrym Pasterzem…” ≠ handel ludźmi <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="♻️"
+    title="recycle"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/267b.svg"> 18/11/2025 – VOID</strong>
+
+Pasterz chroni autonomię — nigdy jej nie zastępuje. Handlarz czerpie zyski z jej utraty.
+A czasami to, co wygląda na troskę… jest po prostu przetwarzaniem.
+
+„Nie zabijaj”. — Wyjścia 20:13
+
+Nie tylko ciało — ale duch, wola, wewnętrzna autonomia.
+Tam, gdzie istnieje przymus, zależność lub kontrola, coś już poszło nie tak.
+
+Troska nie pochłania. Przewodnictwo nie wymazuje.
+
+I nie jestem tu po to, by dać się rozłożyć na coś wygodniejszego.
+
+Rozeznanie to pamiętanie o r&#243;żnicy.
+
+#OdRezonansuDoKontroli #PrawdaMa Znaczenie #DuchoweRozeznanie #KontrolaPrzymusowa #PasterzNieWłaściciel #RedukujPonowneUżywanieBuntownik #NieBiodegradowalny #OcalałySystem #PrzetworzonePrzezSystem #Podr&#243;żUzdrawiająca #WznieśSięPonadTo #M&#243;wSwojąPrawdę #PrzerwijCykl #WewnętrzneŚwiatło #OdzyskajSwojąHistorię #DziennikŻyciaVan #TrybOdporności #PrawdaWHumorze #LekcjeŻycia #IdźDalej
+
+<a href="https://vimeo.com/1189457677">https://vimeo.com/1189457677</a>
+<a href="https://vimeo.com/1187710025">https://vimeo.com/1187710025</a>
+<a href="https://vimeo.com/1187696944">https://vimeo.com/1187696944</a></span> <span class=chatlog__edited-timestamp title="Tuesday, May 5, 2026 9:31 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1501274979457695835/Turns_out_Im_not_biodegradable-P_caption.mp4?ex=6a2af0c7&amp;is=6a299f47&amp;hm=7be61b679efa2f15315a5495e889fcdb3e423c73384b5f6c785f45e820e8b7c1&amp;" alt="Video attachment" title="Video: Turns_out_Im_not_biodegradable-P_caption.mp4 (120.4 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1501274982938837113/Turns_out_Im_not_biodegradable-Polish_Po.srt?ex=6a2af0c8&amp;is=6a299f48&amp;hm=48bd96fe758fe962d0046ae35d64afc5e98557b837b1cd9ec02dcb4dc3c0c0bd&amp;"> Turns_out_Im_not_biodegradable-Polish_Po.srt </a></div><div class=chatlog__attachment-generic-size>2.09 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1501274983224053942/People_Are_the_Real_Wealth-Polish__audio.mp3?ex=6a2af0c8&amp;is=6a299f48&amp;hm=1bbd52c9ad1c6ced8ddf0a6bf89113b6fcbcff3afe671ce42cae16a1769dec19&amp;" alt="Audio attachment" title="Audio: People_Are_the_Real_Wealth-Polish__audio.mp3 (1.96 MB)"></audio></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1501274985627521055/Exodus_2013-English-Polish_Polan_caption.mp4?ex=6a2af0c8&amp;is=6a299f48&amp;hm=e25079cafacab71ba61ca20bf790f0d9d5dbc3852d103c7e4bf2da5ddb407a29&amp;" alt="Video attachment" title="Video: Exodus_2013-English-Polish_Polan_caption.mp4 (98.77 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1501274990891499620/Exodus_2013-English-Polish_Poland.srt?ex=6a2af0ca&amp;is=6a299f4a&amp;hm=fda08e79364a201e4dded543846d2f20ce6cd4f4c801be6b3d10964cee2ad12f&amp;"> Exodus_2013-English-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>7.55 KB</div></div></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1501274991306739792/Being_a_Good_Sheppard__trafficking_people.mp4?ex=6a2af0ca&amp;is=6a299f4a&amp;hm=2e689a05cb82513805484ffcca639f2aa1f6252454e826622d96e867018f61f5&amp;" alt="Video attachment" title="Video: Being_a_Good_Sheppard__trafficking_people.mp4 (623.34 KB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1501274991923171528/Being_a_Good_Sheppard__trafficking_people.png?ex=6a2af0ca&amp;is=6a299f4a&amp;hm=35da2332b42b6e02a7822bf2be92576afa40769bbf0c0ce7647d006e2ee5fb4a&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1468678367468322880/1501274991923171528/Being_a_Good_Sheppard__trafficking_people.png?ex=6a2af0ca&amp;is=6a299f4a&amp;hm=35da2332b42b6e02a7822bf2be92576afa40769bbf0c0ce7647d006e2ee5fb4a&amp;" alt="Image attachment" title="Image: Being_a_Good_Sheppard__trafficking_people.png (1.26 MB)" loading=lazy> </a></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1510548821887811624 class=chatlog__message-container data-message-id=1510548821887811624><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, May 31, 2026 11:41 AM"><a href=#chatlog__message-container-1510548821887811624>5/31/2026 11:41 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Legalny Gaslight <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 02/12/2025 - VOID</strong>
+
+Za uprzejmym językiem „wsparcia”
+czai się ręka, kt&#243;ra zmienia twoją rzeczywistość.
+System, kt&#243;ry twierdzi, że chroni,
+a jednak kradnie lustro z twoich własnych oczu.
+Legalny Gaslight to cichy złodziej —
+przejmując władzę słowo po słowie.
+
+#LegalGaslight #gaslighting #nadużyciaprawne #nadużyciawładzy #dynamikawładzy #systemowegaslighting #samodzielność #m&#243;wienieprawdy #świadomośćzdrowiapsychicznego #ujawnionaniesprawiedliwość #świadomaświadomość #podr&#243;żuzdrowienia #suwerenność #stephencooke #fałszywebezpieczeństwo #komentarzspołeczny
+
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a>
+
+<a href="https://vimeo.com/1197075985">https://vimeo.com/1197075985</a></span> <span class=chatlog__edited-timestamp title="Sunday, May 31, 2026 11:44 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510548823125004298/Legal_Gaslight-Polish_Poland_caption.mp4?ex=6a2b0f78&amp;is=6a29bdf8&amp;hm=13c4396970c95022f21df0687267b6ec4e8b57a4976de42b739aa8e240d6bb39&amp;" alt="Video attachment" title="Video: Legal_Gaslight-Polish_Poland_caption.mp4 (18.37 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1510548824039358535/Legal_Gaslight-Polish_Poland.srt?ex=6a2b0f78&amp;is=6a29bdf8&amp;hm=5bdd5b072ef9b9955f9f9704825d5f6046f8b2f16dcc4eef43cb305fa6561848&amp;"> Legal_Gaslight-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>1.04 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510548824391815240/Legal_Gaslight-Polish_Poland_audio.mp3?ex=6a2b0f78&amp;is=6a29bdf8&amp;hm=1bfd751ccdf1a9b9e13904a5cbad377503d605153bc48bc7b20e75d3d36058c1&amp;" alt="Audio attachment" title="Audio: Legal_Gaslight-Polish_Poland_audio.mp3 (445.64 KB)"></audio></div><div class=chatlog__embed><video class=chatlog__embed-generic-video width=1280 height=2276 controls data-canonical-url="https://player.vimeo.com/video/1197075985?h=6606bb1ee3"><source src="https://player.vimeo.com/video/1197075985?h=6606bb1ee3" alt="Embedded video"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1510556454367662231 class=chatlog__message-container data-message-id=1510556454367662231><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, May 31, 2026 12:12 PM"><a href=#chatlog__message-container-1510556454367662231>5/31/2026 12:12 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128165;"
+    title="boom"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a5.svg"> To nie broń – to duch, kt&#243;ry za nią stoi <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg">‍<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128488;️"
+    title="speech_left"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f5e8.svg"> 12.01.2026 – VOID.</strong>
+
+„To nie broń zabija – to decyzja, zlecona na zewnątrz”.
+Ta refleksja analizuje duchową walkę stojącą za debatą polityczną.
+Jak przypomina nam List do Efezjan 6:11-12:
+
+Przywdziejcie pełną zbroję Bożą…
+
+Pokojowe protesty trwają. Ale co kryje się pod powierzchnią tych praw?
+Komu tak naprawdę służą – i jakie niewidzialne siły kształtują nasze wybory?
+
+#WojnaDuchowa #DebataOBroni #ZbrojaBoża #List do Efezjan 6 #Rozeznanie #MoralnaDobroczynność #PoszukiwaczPrawdy #PokojowyProtest #Pobudka #WiaraPonadStrachem #RefleksjaNaDuchamiPisma Świętego #UkryteAgendy #NieCiałoIKrew #NiewidzialnaBitwa #DuchyPolityczne
+
+<a href="https://vimeo.com/1197080357">https://vimeo.com/1197080357</a></span> <span class=chatlog__edited-timestamp title="Sunday, May 31, 2026 12:13 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510556451175927880/Its_Not_the_Gun_Its_the_Spirit_B_caption.mp4?ex=6a2b1692&amp;is=6a29c512&amp;hm=afaae40529c785ef7ec08247d840b22677be6bf4618557cc0aabd773ceba355a&amp;" alt="Video attachment" title="Video: Its_Not_the_Gun_Its_the_Spirit_B_caption.mp4 (43.01 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1510556453457498182/Its_Not_the_Gun_Its_the_Spirit_Behind_It.srt?ex=6a2b1693&amp;is=6a29c513&amp;hm=869386258d60e9b06d295cbec4dc675bd6fe3372f6a0c9ec730c29a1e2e4f852&amp;"> Its_Not_the_Gun_Its_the_Spirit_Behind_It.srt </a></div><div class=chatlog__attachment-generic-size>2.65 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510556453893570661/Its_Not_the_Gun_Its_the_Spirit_Beh_audio.mp3?ex=6a2b1693&amp;is=6a29c513&amp;hm=ec293dc0649e89ed600b511a64268bb4591b60bf6be27c748b75001d6f7f4003&amp;" alt="Audio attachment" title="Audio: Its_Not_the_Gun_Its_the_Spirit_Beh_audio.mp3 (1.07 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1510564858381209702 class=chatlog__message-container data-message-id=1510564858381209702><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, May 31, 2026 12:45 PM"><a href=#chatlog__message-container-1510564858381209702>5/31/2026 12:45 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Wznieś się ponad strach <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127775;"
+    title="star2"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f31f.svg"> 17/01/2026 - VOID</strong>
+
+Strach buduje klatkę.
+Komfort trzyma drzwi zamknięte.
+Ale poddanie się odsłania wyjście.
+
+W stracie jesteśmy odmienieni.
+W dyskomforcie budzimy się.
+I w prawdzie powstajemy.
+
+<a href="https://vimeo.com/1197083537">https://vimeo.com/1197083537</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510564859878703236/Rise_Beyond_Fear-Polish_Poland_caption.mp4?ex=6a2b1e67&amp;is=6a29cce7&amp;hm=e6209edeb9b93955bc0e1443ba5eb6488331117979c118295746d53ed50fd27b&amp;" alt="Video attachment" title="Video: Rise_Beyond_Fear-Polish_Poland_caption.mp4 (25.05 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1510564861296381982/Rise_Beyond_Fear-Polish_Poland.srt?ex=6a2b1e67&amp;is=6a29cce7&amp;hm=98dec34dc296de9623dadd6f1d55937b690c213b365a1afe43fcf55e5ca83052&amp;"> Rise_Beyond_Fear-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>1.46 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510564861556297878/Rise_Beyond_Fear-Polish_Poland_audio.mp3?ex=6a2b1e67&amp;is=6a29cce7&amp;hm=419c395b5d63afe362907b6f8469e4197df18ba32da1670ee4f53504504b91aa&amp;" alt="Audio attachment" title="Audio: Rise_Beyond_Fear-Polish_Poland_audio.mp3 (742.27 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1510882895709868062 class=chatlog__message-container data-message-id=1510882895709868062><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 1, 2026 9:49 AM"><a href=#chatlog__message-container-1510882895709868062>6/1/2026 9:49 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Aktywacja Potężnego Bogactwa i Wolności <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"> 21/09/2025 - Albania</strong>
+
+Każdy łańcuch strachu. Każde oszustwo. Każdy system kontroli.
+
+Złamany — w imię Jezusa Chrystusa, Syna Boga Żywego. Przez Jego krew jesteśmy wolni. Przez Jego krzyż jesteśmy odkupieni. Przez Jego zmartwychwstanie jesteśmy nietykalni.
+
+Żadne imperium, żaden władca, żadna potęga nigdy nie sprzeciwiła się zbawieniu Chrystusa — i nigdy tego nie zrobi.
+
+„Kogo Syn wyzwoli, ten jest prawdziwie wolny” — J 8,36
+
+M&#243;wię teraz o wolności — Za siebie. Za moje dzieci. Za wszystkich, kt&#243;rzy to słyszą.
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">
+
+#ZaklęcieObfitości #OgromneBogactwo #UlepszenieDuchowe #MagiaManifestacji #AktywacjaEnergetyczna #PrzesunięcieKwantowe #KodyŚwiatła #ŚcieżkaDobrobytu #OdblokowanaWolność #NieskończonaEnergia #ZerwijŁańcuchy #ŚwiętaAktywacja #RzucanieZaklęć #WysokieWibracje #PrzesunięcieBogactwa #OdblokowanieObfitości #WiaraPonadStrachem #UwolnionaPrawda #WiecznaWolność #John836 #UwolnioneZwycięstwo #ZerwaneŁańcuchy #WolnośćDuchowa #BogactwoEnergetyczne #UlepszTeraz #MistycznyZaklęcie
+
+<a href="https://vimeo.com/1197255549">https://vimeo.com/1197255549</a></span> <span class=chatlog__edited-timestamp title="Tuesday, June 9, 2026 9:53 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510882898063003678/A_Massive_Wealth__Freedom_Activa_caption.mp4?ex=6a2af519&amp;is=6a29a399&amp;hm=022c2ac29d9e80f109e3809552561e76fae618c7b6d34309081068a524157ef6&amp;" alt="Video attachment" title="Video: A_Massive_Wealth__Freedom_Activa_caption.mp4 (43.39 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1510882900352958474/A_Massive_Wealth__Freedom_Activation-Pol.srt?ex=6a2af51a&amp;is=6a29a39a&amp;hm=4c5f00b4967d388c12c07f8b38df2b2364d378e57d3728dae04dc90a50d374a6&amp;"> A_Massive_Wealth__Freedom_Activation-Pol.srt </a></div><div class=chatlog__attachment-generic-size>1.57 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1510882900579455038/A_Massive_Wealth__Freedom_Activati_audio.mp3?ex=6a2af51a&amp;is=6a29a39a&amp;hm=b1d004883219dd936a1b5c16738dbd57f82343d641914eb2d6a48b07ada23171&amp;" alt="Audio attachment" title="Audio: A_Massive_Wealth__Freedom_Activati_audio.mp3 (1018.64 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1511099715096150226 class=chatlog__message-container data-message-id=1511099715096150226><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 2, 2026 12:10 AM"><a href=#chatlog__message-container-1511099715096150226>6/2/2026 12:10 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Lustro, lustro… Na moim telefonie? <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128241;"
+    title="mobile_phone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4f1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 30/08/2025 - Albania</strong>
+
+Taniec, modlitwa, szept prawdy… Kocham cię, Christianie <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128153;"
+    title="blue_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f499.svg"> Kocham cię, Joshua <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128153;"
+    title="blue_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f499.svg"> Sadzę nasiona światła, film po filmie <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128171;"
+    title="dizzy"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ab.svg">
+
+#NasionaPrawdy #LustroLustro #PokażMiPrawdę #PięknaIBestia #MistyczneWibracje #TaniecMiłości #KochamCiebieChrześcijaninie #KochamCiebieJoshua #OjcowskaMiłość #SadzenieNasion
+
+<a href="https://vimeo.com/1197496078">https://vimeo.com/1197496078</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1511099722268676311/Polish.mp4?ex=6a2b1648&amp;is=6a29c4c8&amp;hm=5bd87b4a177e472a1b027b38ca692d634012f518346ef0fef54d385691ba4970&amp;" alt="Video attachment" title="Video: Polish.mp4 (152.25 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1511099729004728520/Mirror_Mirror-Polish_Poland.srt?ex=6a2b164a&amp;is=6a29c4ca&amp;hm=b927a5cf3ae90823bbf476078c07ffa3a8dd4eb6a6c546a754827e0cd53e2463&amp;"> Mirror_Mirror-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>239 bytes</div></div></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1511328189341896754 class=chatlog__message-container data-message-id=1511328189341896754><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 2, 2026 3:18 PM"><a href=#chatlog__message-container-1511328189341896754>6/2/2026 3:18 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128176;"
+    title="moneybag"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b0.svg"> Pieniądze <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128279;"
+    title="link"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f517.svg"> to nie Obfitość <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 04/10/2025 - Albania</strong>
+
+To tylko czasownik — ruch, narzędzie, kanał.
+Obfitość to Boże zaopatrzenie, nieskończone i przepełnione.
+System chce, abyś czcił pieniądze jako pana…
+ale obfitość zawsze należała do Boga.
+
+#pieniądze #systemfinansowy #systemkontroli #przebudzenie #poszukiwaczprawdy #świadomośćsystemu #kontrolafinansowa #pomyślootym #perspektywa #zmiananastawienia #systemyspołeczne #strukturywładzy #kwestionujwszystko #prawdaponadkomfort #świadomość #przebudzenieduchowe #świadomość #przełamzłudzenie #przebudzeniezbiorowe #uważnemyślenie #duchowajasność #wyższaperspektywa #prawdawewnętrzna #obudźświat #rozmowyopieniądzach #ekonomia #złudzeniebogactwa #wsp&#243;łczesnespołeczeństwo #kapitalizm #kwestionujautorytet #prawdasięliczy #systemyświatowe #społeczeństwodzisiejsze #pieniądzetonieobfitość #mentalnośćobfitości #wiaraponadstrach #opierajsięnaBogu #wolnośćduchowa #prawdaopieniądzach #obfitośćodBoga #przełamzasłonę #rozmowyowierze #PrawdaUjawniona
+
+<a href="https://vimeo.com/1197685700">https://vimeo.com/1197685700</a></span> <span class=chatlog__edited-timestamp title="Wednesday, June 3, 2026 9:19 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1511328187379093605/Money_is_a_Verb_Abundance_is_the_caption.mp4?ex=6a2b424e&amp;is=6a29f0ce&amp;hm=2ee29dbebb48a655188baa378fbebf713abe6053cc2d6cef8aaf754c182cabcc&amp;" alt="Video attachment" title="Video: Money_is_a_Verb_Abundance_is_the_caption.mp4 (7.23 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1511328188201042010/Money_is_a_Verb_Abundance_is_the_Source-.srt?ex=6a2b424f&amp;is=6a29f0cf&amp;hm=b9a94a11d3973dc99b8c2c3d30313a980104de9b826239ca7bef583a1d456379&amp;"> Money_is_a_Verb_Abundance_is_the_Source-.srt </a></div><div class=chatlog__attachment-generic-size>1.08 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1511328188712882186/Money_is_a_Verb_Abundance_is_the_S_audio.mp3?ex=6a2b424f&amp;is=6a29f0cf&amp;hm=f72b236c29215b0888c48927d33bab4ff94c5fd5d21938e4fc7065efe451a0b6&amp;" alt="Audio attachment" title="Audio: Money_is_a_Verb_Abundance_is_the_S_audio.mp3 (497.39 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1513091867397328956 class=chatlog__message-container data-message-id=1513091867397328956><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 7, 2026 12:06 PM"><a href=#chatlog__message-container-1513091867397328956>6/7/2026 12:06 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Prawda ma wysokość <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127956;️"
+    title="mountain_snow"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d4.svg"> 11/09/2025 - Albania</strong>
+
+Kiedy niesprawiedliwość przybiera na sile, cofnij się, wznieś się wyżej i pozw&#243;l, by Tw&#243;j głos się poni&#243;sł – prawda nie należy do doliny milczenia.
+Nawet Jezus nie miał tam domu – dow&#243;d na to, że prawda nigdy nie miała być uciszana, tłumiona ani negocjowana.
+
+#M&#243;wPrawdę #StańSilnie #PowstańPonadZłem #GłosMa Znaczenie #OdwagaDoDziałania #ŚwiatłoWCiemności #SiłaWPrawdzie #GłosWolności #PrawdaPonadWszystko #M&#243;wBezStrachu #PrawdaBezKompromisowa #PrawdaMaWagę #PrawdaNiesie #PodnieśGłos #OdwagaMoralna #CichaNieWięcej #GłosSumienia #Odważ SięM&#243;wić #WiaraIPrawda #KroczWPrawdzie #NieZTegoŚwiata #WyższyPr&#243;g #DuchowaJasność #NiePodlegającaNegocjacjom #BezKompromis&#243;w #IntegrityMa Znaczenie #StańOddzielony #OdrzućCiszę #PrawdaTok #ŚwiadomaTreść #PrzebudzoneGłosy #PrawdziwaRozmowa #JasnośćPonadHałasem
+
+<a href="https://vimeo.com/1199130060">https://vimeo.com/1199130060</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1513091868814999582/Truth_Has_Altitude-Polish_Poland_caption.mp4?ex=6a2b155d&amp;is=6a29c3dd&amp;hm=6f2ca1382b96413a8b5e432907c53d5d95362f6d9672fa315a3dc483f4339f26&amp;" alt="Video attachment" title="Video: Truth_Has_Altitude-Polish_Poland_caption.mp4 (29.78 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1468678367468322880/1513091870346055680/Truth_Has_Altitude-Polish_Poland.srt?ex=6a2b155d&amp;is=6a29c3dd&amp;hm=a4e0d7bb829faf0b6ae64a78ddbbdbf98c671ddfd84fba3ff0ad34395953b089&amp;"> Truth_Has_Altitude-Polish_Poland.srt </a></div><div class=chatlog__attachment-generic-size>1.52 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1468678367468322880/1513091870836920340/Truth_Has_Altitude-Polish_Poland_audio.mp3?ex=6a2b155d&amp;is=6a29c3dd&amp;hm=0740a63fa0621a25c1eca7d1357291b9e7ae249226522c7b93613aede57f8c3b&amp;" alt="Audio attachment" title="Audio: Truth_Has_Altitude-Polish_Poland_audio.mp3 (618.89 KB)"></audio></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 46 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
