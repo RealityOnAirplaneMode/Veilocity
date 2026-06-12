@@ -1,11 +1,8 @@
-<!DOCTYPE html><html lang=en><head><title>Veilocity - sweden</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+<!DOCTYPE html><html lang=en><head><title>Veilocity - Sweden</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
 return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
 function showSpoiler(event,element){if(!element)
 return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
-if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / sweden</div></div></div>
-<div class="chatlog">
-
-<div class=chatlog__message-group><div id=chatlog__message-container-1485012734570401958 class=chatlog__message-container data-message-id=1485012734570401958><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, March 22, 2026 12:30 AM"><a href=#chatlog__message-container-1485012734570401958>3/22/2026 12:30 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sverige: Narcissism &#228;r systemet <img
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body data-flag-src="Sweden Flag.png"><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / sweden</div></div></div><div class="chatlog"><div class=chatlog__message-group><div id=chatlog__message-container-1485012734570401958 class=chatlog__message-container data-message-id=1485012734570401958><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, March 22, 2026 12:30 AM"><a href=#chatlog__message-container-1485012734570401958>3/22/2026 12:30 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sverige: Narcissism &#228;r systemet <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#129504;"
@@ -37,10 +34,7 @@ Medvetenhet kollapsar loopen.
 
 #Narcissism #Systemisk&#214;vergrepp #NarcissistiskKontroll #BrytLoopen #Tv&#229;ngskontroll #Gaslighting #StrukturelltV&#229;ld #Vapenf&#246;rseddaSystem #R&#228;ttsliga&#214;vergrepp #InstitutionelltMisslyckande #Psykologiska&#214;vergrepp #TraumaMedvetenhet #SanningBer&#228;ttande #&#214;verlevareR&#246;st #Ansvarsskyldighet #Urskiljning #Uppvaknande #V&#228;ljKlarhet #AvslutaCirkeln
 
-<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a>
-
-<a href="https://vimeo.com/1175803146">https://vimeo.com/1175803146</a></span> <span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:27 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1485012706556641541/Narcissism_is_the_System_Sweden_caption.mp4?ex=6a2d151b&amp;is=6a2bc39b&amp;hm=e72806ab6a985a01f3c062c90d03f4dc0b626a1305a1847462916b1a47cb5d88&amp;" alt="Video attachment" title="Video: Narcissism_is_the_System_Sweden_caption.mp4 (429.99 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1485012734264479976/Narcissism_is_the_System_Sweden_caption.srt?ex=6a2d1522&amp;is=6a2bc3a2&amp;hm=038f5e174a4d19624f6c73ea8790326aa9dbc9e404399fd240273cbc9ee1d021&amp;"> Narcissism_is_the_System_Sweden_caption.srt </a></div><div class=chatlog__attachment-generic-size>75.26 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1485012734620864622/Narcissism_is_the_System_Sweden_audio.mp3?ex=6a2d1522&amp;is=6a2bc3a2&amp;hm=242db38b7efef4d3b88d0f74ebca04a839366a40cee6bce9da6f96099e1ea224&amp;" alt="Audio attachment" title="Audio: Narcissism_is_the_System_Sweden_audio.mp3 (27.15 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490257185081524284 class=chatlog__message-container data-message-id=1490257185081524284><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 11:50 AM"><a href=#chatlog__message-container-1490257185081524284>4/5/2026 11:50 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Himlen &#228;r en fr&#229;ga om uppfattning <img
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1175803146">https://vimeo.com/1175803146</a></span><span class=chatlog__edited-timestamp title="Monday, April 6, 2026 10:27 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Narcissism_is_the_System_Sweden_caption.srt </a></div><div class=chatlog__attachment-generic-size>75.26 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490257185081524284 class=chatlog__message-container data-message-id=1490257185081524284><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 11:50 AM"><a href=#chatlog__message-container-1490257185081524284>4/5/2026 11:50 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Himlen &#228;r en fr&#229;ga om uppfattning <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127780;️"
@@ -53,8 +47,7 @@ Matteus 6:25–26 &#183; Matteus 18:3 &#183; Psalm 4:8
 
 #FridfulltSinne #TystaStunder #Stillhet #MildMedvetenhet
 
-<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490257185241038909/All_Dogs_Go_to_Heaven.mp4?ex=6a2d0ba8&amp;is=6a2bba28&amp;hm=824aa8e19e9852a444569f728fea2e2cb7a57806b6e1901f2722af25330debe7&amp;" alt="Video attachment" title="Video: All_Dogs_Go_to_Heaven.mp4 (1.14 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490263997172154438 class=chatlog__message-container data-message-id=1490263997172154438><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:17 PM"><a href=#chatlog__message-container-1490263997172154438>4/5/2026 12:17 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Buren &#228;r inte ditt hem <img
+<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490263997172154438 class=chatlog__message-container data-message-id=1490263997172154438><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 12:17 PM"><a href=#chatlog__message-container-1490263997172154438>4/5/2026 12:17 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Buren &#228;r inte ditt hem <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128330;️"
@@ -101,13 +94,12 @@ Lita p&#229; v&#228;gen.
 
 #TheHunts #TheSparrow #PhrayaNakhonCave ⁠thailand #PrachuapKhiriKhan #DivineSigns #FaithWalk #SpiritualJourney #BreakFree #YouWereMeantAtFly #HealingPath #GodIsSpeaking #AwakenedSoul
 
-<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490263998480781372/The_cage_is_not_your_home.mp4?ex=6a2d1201&amp;is=6a2bc081&amp;hm=09182d5411dd5e0c4754de4a6afc6d0db9551f347df1103558be22dbe5f5d207&amp;" alt="Video attachment" title="Video: The_cage_is_not_your_home.mp4 (21.46 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490273420901089330 class=chatlog__message-container data-message-id=1490273420901089330><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:54 PM"><a href=#chatlog__message-container-1490273420901089330>4/5/2026 12:54 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490273420901089330 class=chatlog__message-container data-message-id=1490273420901089330><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 12:54 PM"><a href=#chatlog__message-container-1490273420901089330>4/5/2026 12:54 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127807;"
     title="herb"
-    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> <img
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128065;️"
@@ -138,8 +130,7 @@ Jag satt med tystnaden och ins&#229;g – n&#228;r allt st&#228;mmer &#246;veren
 
 #stillhet #natur #fokus #inriktning #lager #tystnad #meditativ #lugn #naturvideo #tystastunder
 
-<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490273426386976899/When_Stillness_Aligns.mp4?ex=6a2d1ac8&amp;is=6a2bc948&amp;hm=04901a7ce4c5032638b8cce72c71b52eddb73a73891ef937d244bb1d3cb61f1a&amp;" alt="Video attachment" title="Video: When_Stillness_Aligns.mp4 (89.27 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490326106539298937 class=chatlog__message-container data-message-id=1490326106539298937><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:23 PM"><a href=#chatlog__message-container-1490326106539298937>4/5/2026 4:23 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490326106539298937 class=chatlog__message-container data-message-id=1490326106539298937><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 4:23 PM"><a href=#chatlog__message-container-1490326106539298937>4/5/2026 4:23 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128167;"
@@ -158,8 +149,7 @@ Jag satt med tystnaden och ins&#229;g – n&#228;r allt st&#228;mmer &#246;veren
 
 #NaturVibbar #S&#246;tvattenSimning #Sj&#246;liv #Natur&#228;lskare #In iVildmarken #Utomhusterapi #FridfullaVibbar #VildSimning #NaturL&#228;ker #LivINaturen #Jordning #&#196;ventyrstid
 
-<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490326111337578536/Freshwater_therapy.mp4?ex=6a2ca319&amp;is=6a2b5199&amp;hm=bd958a9f0915c38c84855690a5edffb5a9efd4f7232d100b467fd0382cebc714&amp;" alt="Video attachment" title="Video: Freshwater_therapy.mp4 (93.64 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490335165455794357 class=chatlog__message-container data-message-id=1490335165455794357><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:59 PM"><a href=#chatlog__message-container-1490335165455794357>4/5/2026 4:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Gl&#228;dje &#228;r medicin. Naturen &#228;r sanning. <img
+<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490335165455794357 class=chatlog__message-container data-message-id=1490335165455794357><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 4:59 PM"><a href=#chatlog__message-container-1490335165455794357>4/5/2026 4:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Gl&#228;dje &#228;r medicin. Naturen &#228;r sanning. <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127807;"
@@ -172,9 +162,7 @@ Jorden f&#246;r&#228;ndras, och det g&#246;r vi ocks&#229;. Detta &#228;r den gl
     class="chatlog__emoji "
     alt="&#127744;"
     title="cyclone"
-    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
-
-<img
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127926;"
@@ -185,8 +173,7 @@ Stugliv i Bulgarien — d&#228;r jag k&#228;nde frid, n&#228;rvaro och lek igen.
 
 #5dshift #NewEarth #spiritualawaking #natureglowup #glowup ⁠bulgarien #vildmark #awakensj&#228;l #stugaiskogen #ljusarbetare #skog #natur #andlighet #viral
 
-<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490335172246241290/Joy_is_medicine._Nature_is_truth.mp4?ex=6a2cab8a&amp;is=6a2b5a0a&amp;hm=a637d3564efbf76d86e41d7909f7457e2145477f0de9f437ba19c3ac422c57ce&amp;" alt="Video attachment" title="Video: Joy_is_medicine._Nature_is_truth.mp4 (112.8 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490389863084593292 class=chatlog__message-container data-message-id=1490389863084593292><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:37 PM"><a href=#chatlog__message-container-1490389863084593292>4/5/2026 8:37 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, &#214;ppna F&#228;lt, Klart Sinne <img
+<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490389863084593292 class=chatlog__message-container data-message-id=1490389863084593292><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 8:37 PM"><a href=#chatlog__message-container-1490389863084593292>4/5/2026 8:37 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, &#214;ppna F&#228;lt, Klart Sinne <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127926;"
@@ -204,8 +191,7 @@ Fleetwood Mac i bakgrunden, frisk luft framf&#246;r mig och en v&#228;rld som in
 
 #vanlife #naturvibes #fleetwoodmac #fridfulla&#246;gonblick #f&#228;ltliv #kor #landskap #resevibbar #avmattning #medvetna&#246;gonblick #solnedg&#229;ngsvibbar #australien #europa #musikochnatur #frihetsresa #fridfullsj&#228;l #lugnenergi #tysta&#246;gonblick #kreativresa #l&#228;kandev&#228;g
 
-<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490389868646502660/Fleetwood_Mac_Open_Fields_Clear_Mind.mp4?ex=6a2cde7a&amp;is=6a2b8cfa&amp;hm=af7235e28bde3c1e57e7017794e10fe91bb36180171204678ff348e9a66618ee&amp;" alt="Video attachment" title="Video: Fleetwood_Mac_Open_Fields_Clear_Mind.mp4 (85.4 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490396804569628792 class=chatlog__message-container data-message-id=1490396804569628792><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 9:04 PM"><a href=#chatlog__message-container-1490396804569628792>4/5/2026 9:04 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ett Fridfullt Steg Ut P&#229; F&#228;ltet <img
+<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490396804569628792 class=chatlog__message-container data-message-id=1490396804569628792><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, April 5, 2026 9:04 PM"><a href=#chatlog__message-container-1490396804569628792>4/5/2026 9:04 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ett Fridfullt Steg Ut P&#229; F&#228;ltet <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127806;"
@@ -233,8 +219,7 @@ och den enda musiken &#228;r den mjuka k&#246;ren av ko-klockor.
 
 #VanLife #NatureVibes #CowBells #PeacefulMoments #PastureLife #SlowLiving #OffGridLife #MorningVibes #FarmUtsikter #MindfulLiving
 
-<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490396810047656159/A_Peaceful_Step_Into_the_Field.mp4?ex=6a2ce4f1&amp;is=6a2b9371&amp;hm=a81acc62ec2a373b99a0ec8583fe74f448f0826066894e525a516f199a94e264&amp;" alt="Video attachment" title="Video: A_Peaceful_Step_Into_the_Field.mp4 (106.54 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490608864050286662 class=chatlog__message-container data-message-id=1490608864050286662><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, April 6, 2026 11:07 AM"><a href=#chatlog__message-container-1490608864050286662>4/6/2026 11:07 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dollarn kastar ocks&#229; trollformler! <img
+<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490608864050286662 class=chatlog__message-container data-message-id=1490608864050286662><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, April 6, 2026 11:07 AM"><a href=#chatlog__message-container-1490608864050286662>4/6/2026 11:07 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dollarn kastar ocks&#229; trollformler! <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128184;"
@@ -258,8 +243,7 @@ Alltf&#246;r m&#229;nga k&#228;mpar inuti loopen och inser aldrig vilken makt de
 
 #dollarillusion #uppvaknande #andligtuppvaknande #matris #brytfri #sanningss&#246;kare #poetiskvisdom #visuellber&#228;ttande #fyp #f&#246;rdig #f&#246;rdigsida #viralvideo #djupatankar #livsl&#228;xor #medvetande #sj&#228;lvf&#246;rverkligande #t&#228;nkes&#228;ttsskifte #systemisksanning #filosofi #metafor #modernliknelse #t&#228;nkp&#229;det #illusionenskollaps #inrefrihet #stephencooke
 
-<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490608864402341988/Dollars_Cast_Spells_Too.mp4?ex=6a2d01af&amp;is=6a2bb02f&amp;hm=ea8766877c921ddb6098afee703ce51efddec8398457437b2e02408443d40d1f&amp;" alt="Video attachment" title="Video: Dollars_Cast_Spells_Too.mp4 (1.77 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490939129058426970 class=chatlog__message-container data-message-id=1490939129058426970><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 8:59 AM"><a href=#chatlog__message-container-1490939129058426970>4/7/2026 8:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490939129058426970 class=chatlog__message-container data-message-id=1490939129058426970><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 8:59 AM"><a href=#chatlog__message-container-1490939129058426970>4/7/2026 8:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128656;"
@@ -285,8 +269,7 @@ Solar power, hot water, heat, and a small space on wheels. Not showing off — j
 
 #Sovereignty #ReclaimYourPeace #OwnYourLife #VanLife #OffGridLiving #IndependentLiving #SolarPower #WaterIsLife #BackToNature #SustainableLiving #SimpleLiving #NatureBoundaries #GodProvides #FaithAndFreedom #LivingInGrace
 
-<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490939133278031872/To_Sovereignty.mp4?ex=6a2ce3c5&amp;is=6a2b9245&amp;hm=dd29059d861ef0f65c0312937044ddae6608ea4ebe9f84044a29b12ee0970746&amp;" alt="Video attachment" title="Video: To_Sovereignty.mp4 (83.29 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490946132891668633 class=chatlog__message-container data-message-id=1490946132891668633><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:27 AM"><a href=#chatlog__message-container-1490946132891668633>4/7/2026 9:27 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sanningen v&#228;ntar bakom spegeln <img
+<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490946132891668633 class=chatlog__message-container data-message-id=1490946132891668633><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:27 AM"><a href=#chatlog__message-container-1490946132891668633>4/7/2026 9:27 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sanningen v&#228;ntar bakom spegeln <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#129694;"
@@ -324,9 +307,7 @@ Set 6
 
 #EpsteinFiles #Epstein #EpsteinCase #EpsteinInvestigation #MirrorAvEpstein #R&#228;ttvisaF&#246;rOffren #Ansvarsskyldighet #OffentligaRegister #Transparens #Avsl&#246;jaSanningen #G&#246;rDinForskning #Sanningen&#196;rRiktig #R&#228;ttvisa&#196;rRiktig #St&#229;F&#246;rSanningen #Medvetenhet #S&#246;kSanningen
 
-<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
-<a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490946135710498897/Man_in_the_Mirror.mp4?ex=6a2cea4b&amp;is=6a2b98cb&amp;hm=aebcbf8b3ad71c6b877abfc22a53aa0c28ead4d84ecceec6ab686d0c016ab19a&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1490946136272408707/The_Mirror_of_Evil.png?ex=6a2cea4b&amp;is=6a2b98cb&amp;hm=2381b6e929c18458a5082dd1d32ae316e2d9576992da78cbb44d8247f5ec8ae5&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1478353423907684524/1490946136272408707/The_Mirror_of_Evil.png?ex=6a2cea4b&amp;is=6a2b98cb&amp;hm=2381b6e929c18458a5082dd1d32ae316e2d9576992da78cbb44d8247f5ec8ae5&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490946138545717421/The_Mirror_of_Evil.mp4?ex=6a2cea4b&amp;is=6a2b98cb&amp;hm=92c15ab990f6b4196f98472e5917c738ed82daabdebcaae00a72efa4bba12db2&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil.mp4 (90.59 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1490971461735809054 class=chatlog__message-container data-message-id=1490971461735809054><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 11:08 AM"><a href=#chatlog__message-container-1490971461735809054>4/7/2026 11:08 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>R&#228;dda Dig Fr&#229;n Tvivel <img
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a><a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1490971461735809054 class=chatlog__message-container data-message-id=1490971461735809054><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 11:08 AM"><a href=#chatlog__message-container-1490971461735809054>4/7/2026 11:08 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>R&#228;dda Dig Fr&#229;n Tvivel <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127807;"
@@ -336,7 +317,7 @@ Set 6
     class="chatlog__emoji "
     alt="&#128656;"
     title="minibus"
-    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"> <img
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127754;"
@@ -348,8 +329,7 @@ Av motorv&#228;gen, in i det ok&#228;nda.
 
 #VanLife #LeaveItBetter #RoadStories #FreedomOnWheels #ResaRealTalk #SpontanResa #NomadLife #AdventureAwaits #CinematicVibes #Bronson #ODESZA #TaltEnormeUtd&#246;daDinosaurier #R&#228;ddaDigFr&#229;nTvivel #GeAldrigUpp #LitaP&#229;Resan #TroIR&#246;relse #FlowState #AvMotorv&#228;gen #In iDetOk&#228;nda #Sj&#228;lvtillit
 
-<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1490971464596193311/Save_Yourself_from_Doubt.mp4?ex=6a2d01e2&amp;is=6a2bb062&amp;hm=8f4991b3be6e2c56b31d88841d7d522f870098f2ef209ed05147faeb1430237c&amp;" alt="Video attachment" title="Video: Save_Yourself_from_Doubt.mp4 (48.43 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1491035993678282862 class=chatlog__message-container data-message-id=1491035993678282862><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 3:24 PM"><a href=#chatlog__message-container-1491035993678282862>4/7/2026 3:24 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
+<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1491035993678282862 class=chatlog__message-container data-message-id=1491035993678282862><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, April 7, 2026 3:24 PM"><a href=#chatlog__message-container-1491035993678282862>4/7/2026 3:24 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127757;"
@@ -363,8 +343,7 @@ Av motorv&#228;gen, in i det ok&#228;nda.
 
 #klavier #vreedsamevibes #hele nuwew&#234;reld #natuurvibes #kalm #esteties #klaviermusiek #vertraag #bewusstoekomblikke #sagtevloei #boomvanlewe
 
-<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1491035997943894056/Flying_free_in_a_whole_new_world.mp4?ex=6a2c953c&amp;is=6a2b43bc&amp;hm=3f496f0a3b6651961fc2f8e8cf30d031a689939d1bc09c6dbde5515ae8170755&amp;" alt="Video attachment" title="Video: Flying_free_in_a_whole_new_world.mp4 (62.02 MB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1499029916534964306 class=chatlog__message-container data-message-id=1499029916534964306><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, April 29, 2026 4:49 PM"><a href=#chatlog__message-container-1499029916534964306>4/29/2026 4:49 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Att vara en god herde…” ≠ m&#228;nniskohandel <img
+<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1499029916534964306 class=chatlog__message-container data-message-id=1499029916534964306><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, April 29, 2026 4:49 PM"><a href=#chatlog__message-container-1499029916534964306>4/29/2026 4:49 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Att vara en god herde…” ≠ m&#228;nniskohandel <img
     loading="lazy"
     class="chatlog__emoji "
     alt="♻️"
@@ -387,9 +366,7 @@ Urskiljning &#228;r att komma ih&#229;g skillnaden.
 
 #Fr&#229;nResonansTillKontroll #Sanningen&#196;rRiktig #AndligUrskiljning #Tv&#229;ngskontroll #HerdeInte&#196;gare #Minska&#197;teranv&#228;ndRebell #InteBiologisktNedbrytbar #System&#214;verlevare #BearbetadAvSystemet #L&#228;kandeResa #Res&#214;verDen #TalaDinSanning #BrytCirkeln #InreLjus #&#197;tertaDinBer&#228;ttelse #VanLivsdagbok #Motst&#229;ndskraftsl&#228;ge #SanningMedHumor #Livsl&#228;xor #Forts&#228;tt
 
-<a href="https://vimeo.com/1187710722">https://vimeo.com/1187710722</a>
-<a href="https://vimeo.com/1187698231">https://vimeo.com/1187698231</a></span> <span class=chatlog__edited-timestamp title="Wednesday, April 29, 2026 5:47 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1499029912793776219/Exodus_2013-Swedish_Sweden_caption.mp4?ex=6a2ca925&amp;is=6a2b57a5&amp;hm=724d7327dac09b81114bf38300abc31f98140df5bc3beb440acb507d77c33052&amp;" alt="Video attachment" title="Video: Exodus_2013-Swedish_Sweden_caption.mp4 (98.66 MB)"></video></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1499029916304412853/Being_a_Good_Sheppard__trafficking_people.mp4?ex=6a2ca926&amp;is=6a2b57a6&amp;hm=4633f39ed25a89cf599c997a4a4e2e97a23f14c8abd4a8fef0cee0c8b023158a&amp;" alt="Video attachment" title="Video: Being_a_Good_Sheppard__trafficking_people.mp4 (547.74 KB)"></video></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1511063798117568563 class=chatlog__message-container data-message-id=1511063798117568563><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 1, 2026 9:48 PM"><a href=#chatlog__message-container-1511063798117568563>6/1/2026 9:48 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1187710722">https://vimeo.com/1187710722</a><a href="https://vimeo.com/1187698231">https://vimeo.com/1187698231</a></span><span class=chatlog__edited-timestamp title="Wednesday, April 29, 2026 5:47 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1511063798117568563 class=chatlog__message-container data-message-id=1511063798117568563><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, June 1, 2026 9:48 PM"><a href=#chatlog__message-container-1511063798117568563>6/1/2026 9:48 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127756;"
@@ -430,8 +407,7 @@ En dans, en b&#246;n, en viskning av sanning… Jag &#228;lskar dig Christian <i
 
 #SanningensFr&#246; #SpegelSpegel #VisaMigSanningen #Sk&#246;nhetenOchOdjuret #MystiskaVibbar #K&#228;rlekensDans #Jag&#196;lskarDigKristen #Jag&#196;lskarDigJoshua #FaderK&#228;rlek #PlanterarFr&#246;n
 
-<a href="https://vimeo.com/1197465384">https://vimeo.com/1197465384</a></span> <span class=chatlog__edited-timestamp title="Monday, June 1, 2026 10:17 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1511063790261895168/Sweden.mp4?ex=6a2cef11&amp;is=6a2b9d91&amp;hm=a3c61e2f487b9e6e46ae02774773f29aad8f998e32f19e93978f04cf91e2c4b3&amp;" alt="Video attachment" title="Video: Sweden.mp4 (151.83 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1511063797799059586/Mirror_Mirror-Swedish_Sweden.srt?ex=6a2cef13&amp;is=6a2b9d93&amp;hm=06ee0034a1354b61cd1f19f013c3e3e47b2065b3a4ba24ad3cf304e15d53234d&amp;"> Mirror_Mirror-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>227 bytes</div></div></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1511328365578031184 class=chatlog__message-container data-message-id=1511328365578031184><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 2, 2026 3:19 PM"><a href=#chatlog__message-container-1511328365578031184>6/2/2026 3:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1197465384">https://vimeo.com/1197465384</a></span><span class=chatlog__edited-timestamp title="Monday, June 1, 2026 10:17 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Mirror_Mirror-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>227 bytes</div></div></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1511328365578031184 class=chatlog__message-container data-message-id=1511328365578031184><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, June 2, 2026 3:19 PM"><a href=#chatlog__message-container-1511328365578031184>6/2/2026 3:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128176;"
@@ -460,8 +436,7 @@ men &#246;verfl&#246;d har alltid tillh&#246;rt Gud.
 
 #pengar #finanssystem #kontrollsystem #uppvaknande #sanningss&#246;kare #systemmedvetenhet #finansiell kontroll #t&#228;nkp&#229;det #perspektiv #t&#228;nkes&#228;ttsskifte #socialasystem #maktstrukturer #ifr&#229;gas&#228;ttaallt #sanning&#246;verkomfort #medvetenhet #andligtuppvaknande #medvetande #brytillusionen #kollektivtuppvaknande #medvetett&#228;nkande #andligklarhet #h&#246;gre perspektiv #innersanning #v&#228;ckuppv&#228;rlden #pengaprat #ekonomi #rikedomsillusionen #modernsamh&#228;llet #kapitalism #ifr&#229;gas&#228;ttaauktoritet #sanningen&#228;rviktig #v&#228;rldssystem #samh&#228;lletdagen #Pengar&#196;rInte&#214;verfl&#246;d #&#214;verfl&#246;dst&#228;nkes&#228;tt #Tro&#214;verR&#228;dsla #LutaMedGud #AndligFrihet #PengarSanning #&#214;verfl&#246;dFr&#229;nGud #BrytSl&#246;jan #Trosnak #SanningenAvsl&#246;jad
 
-<a href="https://vimeo.com/1197685865">https://vimeo.com/1197685865</a></span> <span class=chatlog__edited-timestamp title="Wednesday, June 3, 2026 9:18 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1511328363883659365/Money_is_a_Verb_Abundance_is_the_caption.mp4?ex=6a2c93f9&amp;is=6a2b4279&amp;hm=f93269afb47abd4d5ae9f4701a196937225cfeac93816eb84b58555e7d6e9037&amp;" alt="Video attachment" title="Video: Money_is_a_Verb_Abundance_is_the_caption.mp4 (7.39 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1511328364751753337/Money_is_a_Verb_Abundance_is_the_Source-.srt?ex=6a2c93f9&amp;is=6a2b4279&amp;hm=d5df969c2a5336cc8b5bf7a44b582035c8134af3348e0568c4791b3d50ee9ca0&amp;"> Money_is_a_Verb_Abundance_is_the_Source-.srt </a></div><div class=chatlog__attachment-generic-size>1 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1511328365100142672/Money_is_a_Verb_Abundance_is_the_S_audio.mp3?ex=6a2c93f9&amp;is=6a2b4279&amp;hm=a78765af9a4b94c0bd4b839e70d2c75bbf3f6f2a016420b7349d5a49e38b6ace&amp;" alt="Audio attachment" title="Audio: Money_is_a_Verb_Abundance_is_the_S_audio.mp3 (513.89 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513100311185588254 class=chatlog__message-container data-message-id=1513100311185588254><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 7, 2026 12:40 PM"><a href=#chatlog__message-container-1513100311185588254>6/7/2026 12:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sanningen har h&#246;jd <img
+<a href="https://vimeo.com/1197685865">https://vimeo.com/1197685865</a></span><span class=chatlog__edited-timestamp title="Wednesday, June 3, 2026 9:18 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Money_is_a_Verb_Abundance_is_the_Source-.srt </a></div><div class=chatlog__attachment-generic-size>1 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513100311185588254 class=chatlog__message-container data-message-id=1513100311185588254><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, June 7, 2026 12:40 PM"><a href=#chatlog__message-container-1513100311185588254>6/7/2026 12:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sanningen har h&#246;jd <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128330;️"
@@ -479,8 +454,7 @@ Inte ens Jesus hade n&#229;got hem d&#228;r - ett bevis p&#229; att sanningen al
 
 #TalaSanning #St&#229;Stark #ResDig&#214;verOndska #R&#246;st&#196;rRiktig #ModAttHanda #LjusIM&#246;rkret #StyrkaISanningen #FrihetR&#246;st #Sanningen&#214;verAllt #TalaUtanR&#228;dsla #Kompromissl&#246;sSanning #SanningenHarTyngd #SanningenB&#228;r #H&#246;jDinR&#246;st #MoralisktMod #IngetTystMer #SamvetetsR&#246;st #V&#229;gaTala #TroOchSanning #VandraISanningen #InteAvDennaV&#228;rld #H&#246;greJord #AndligKlarhet #IckeF&#246;rhandlingsbar #IngenKompromiss #Integritet&#196;rRiktig #St&#229;AvSidan #V&#228;graTystnad #SanningenTak #MedvetetInneh&#229;ll #V&#228;cktaR&#246;ster #&#196;ktaPrat #Klarhet&#214;verBuller
 
-<a href="https://vimeo.com/1199135449">https://vimeo.com/1199135449</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513100312792141964/Truth_Has_Altitude-Swedish_Swede_caption.mp4?ex=6a2d177a&amp;is=6a2bc5fa&amp;hm=cb01937752e372527a032c0771ca83af08585c472373d2260d57f860044ccaba&amp;" alt="Video attachment" title="Video: Truth_Has_Altitude-Swedish_Swede_caption.mp4 (29.79 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1513100314532647034/Truth_Has_Altitude-Swedish_Sweden.srt?ex=6a2d177b&amp;is=6a2bc5fb&amp;hm=cb90e764fb4e83aedfdd1756e83a66296b1358ad9ec3ba5550f9a98c87be48ce&amp;"> Truth_Has_Altitude-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>1.45 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513100314931368146/Truth_Has_Altitude-Swedish_Sweden_audio.mp3?ex=6a2d177b&amp;is=6a2bc5fb&amp;hm=952f63191f0f36e08790de463594edc2ae03924b3cd3829dee841114d9fa2f82&amp;" alt="Audio attachment" title="Audio: Truth_Has_Altitude-Swedish_Sweden_audio.mp3 (635.02 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513107007601905696 class=chatlog__message-container data-message-id=1513107007601905696><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 7, 2026 1:07 PM"><a href=#chatlog__message-container-1513107007601905696>6/7/2026 1:07 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sk&#246;rdens lag... <img
+<a href="https://vimeo.com/1199135449">https://vimeo.com/1199135449</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Truth_Has_Altitude-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>1.45 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513107007601905696 class=chatlog__message-container data-message-id=1513107007601905696><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Sunday, June 7, 2026 1:07 PM"><a href=#chatlog__message-container-1513107007601905696>6/7/2026 1:07 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sk&#246;rdens lag... <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127793;"
@@ -491,8 +465,7 @@ De som s&#229;r fattigdom f&#246;r andra kommer att finna att den v&#228;xer i s
 
 #S&#229;OchSk&#246;rda #SanningenIEnLinje #Energi&#197;terv&#228;nder #KarmaEllerKallelse
 
-<a href="https://vimeo.com/1199139700">https://vimeo.com/1199139700</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513107007786450984/Law_of_the_Harvest-Swedish_Swede_caption.mp4?ex=6a2d1db6&amp;is=6a2bcc36&amp;hm=db78181cda5bc37289985f18a00970a73e0c9c3ff372b6c20fcc47f30642befa&amp;" alt="Video attachment" title="Video: Law_of_the_Harvest-Swedish_Swede_caption.mp4 (685.92 KB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1513107007995908196/Law_of_the_Harvest-Swedish_Sweden.srt?ex=6a2d1db6&amp;is=6a2bcc36&amp;hm=6124c91a4d06df021be219d374664e7848374ee24719e119afcf9e730806c455&amp;"> Law_of_the_Harvest-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>179 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513107008432373820/Law_of_the_Harvest-Swedish_Sweden_audio.mp3?ex=6a2d1db6&amp;is=6a2bcc36&amp;hm=cd5aca0100f15f19cd2cdf3e24dda8d6793983239e71141293276c698f3d35ef&amp;" alt="Audio attachment" title="Audio: Law_of_the_Harvest-Swedish_Sweden_audio.mp3 (70.64 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513467786003746947 class=chatlog__message-container data-message-id=1513467786003746947><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 8, 2026 1:00 PM"><a href=#chatlog__message-container-1513467786003746947>6/8/2026 1:00 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>M&#228;nniskor &#228;r den verkliga rikedomen 23/03/2026 - VOID</strong>
+<a href="https://vimeo.com/1199139700">https://vimeo.com/1199139700</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Law_of_the_Harvest-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>179 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513467786003746947 class=chatlog__message-container data-message-id=1513467786003746947><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Monday, June 8, 2026 1:00 PM"><a href=#chatlog__message-container-1513467786003746947>6/8/2026 1:00 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>M&#228;nniskor &#228;r den verkliga rikedomen 23/03/2026 - VOID</strong>
 
 Sedan jag tog ett steg tillbaka fr&#229;n global konflikt har jag kommit att se n&#229;got tydligt: ​​m&#228;nniskor &#228;r den verkliga rikedomen.
 &#196;nd&#229; ser vi r&#228;dsla, stigande kostnader och restriktioner subtilt &quot;innesluta&quot; och flytta runt den rikedomen.
@@ -506,8 +479,7 @@ Kanske &#228;r det dags att inse vad vi redan &#228;r – och skydda det.
 
 #Sanning #Medvetenhet #M&#228;nniskor&#196;rRikedom #VaknaUpp #FamiljenF&#246;rst #FredB&#246;rjarHemma #AndligtUppvaknande #PerspektivF&#246;rskjutning #SystemisktT&#228;nkande #ModernV&#228;rld #H&#229;llJorda #RiktigTal
 
-<a href="https://vimeo.com/1199343336">https://vimeo.com/1199343336</a></span> <span class=chatlog__edited-timestamp title="Monday, June 8, 2026 1:08 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513467782237524139/People_Are_the_Real_Wealth-Swedi_caption.mp4?ex=6a2d1c36&amp;is=6a2bcab6&amp;hm=72abb6055dc7be84da87fd0f73669ac51a8511aed41cd5d02bd61b2e43f98dd8&amp;" alt="Video attachment" title="Video: People_Are_the_Real_Wealth-Swedi_caption.mp4 (94.72 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1513467785286647998/People_Are_the_Real_Wealth-Swedish_Swede.srt?ex=6a2d1c36&amp;is=6a2bcab6&amp;hm=72941e6c817b84e7908f88f5f10bf92e693ec35855793aefe0e24e6d4429b909&amp;"> People_Are_the_Real_Wealth-Swedish_Swede.srt </a></div><div class=chatlog__attachment-generic-size>4.79 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513467785706082304/People_Are_the_Real_Wealth-Swedish_audio.mp3?ex=6a2d1c36&amp;is=6a2bcab6&amp;hm=ce374598afac7c1b29a3aa69b71211b600b59cb2209b246bb89106dbf198666f&amp;" alt="Audio attachment" title="Audio: People_Are_the_Real_Wealth-Swedish_audio.mp3 (2.24 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513809418695999712 class=chatlog__message-container data-message-id=1513809418695999712><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 9, 2026 11:38 AM"><a href=#chatlog__message-container-1513809418695999712>6/9/2026 11:38 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1199343336">https://vimeo.com/1199343336</a></span><span class=chatlog__edited-timestamp title="Monday, June 8, 2026 1:08 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> People_Are_the_Real_Wealth-Swedish_Swede.srt </a></div><div class=chatlog__attachment-generic-size>4.79 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513809418695999712 class=chatlog__message-container data-message-id=1513809418695999712><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, June 9, 2026 11:38 AM"><a href=#chatlog__message-container-1513809418695999712>6/9/2026 11:38 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="✨"
@@ -524,8 +496,7 @@ Ibland &#228;r det som k&#228;nns som uppenbarelse bara nuet som p&#229;minner o
 
 #Profeti #Minne #Uppvaknande #Nuvarande&#214;gonblick #Medvetande #Enhet #Uppenbarelse #AndligVisdom #EvigNu #GudomligTid #InreSeende #Medvetenhet #AndligResa #MystiskaSanningar #TrofastFlykt #veilocity111osn
 
-<a href="https://vimeo.com/1199663967">https://vimeo.com/1199663967</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513809419245457598/Prophecy_or_Memory-Swedish_Swede_caption.mp4?ex=6a2d08e2&amp;is=6a2bb762&amp;hm=ec780734a7d3a4ef89e9aad3dc3d52aaa357663707420c7d28e01e8032124285&amp;" alt="Video attachment" title="Video: Prophecy_or_Memory-Swedish_Swede_caption.mp4 (2.72 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1513809419715215430/Prophecy_or_Memory-Swedish_Sweden.srt?ex=6a2d08e2&amp;is=6a2bb762&amp;hm=25d3be23ebcaa1e8d02df188e401c3dcbe72a0c36e4b72673bec5adf4fba758e&amp;"> Prophecy_or_Memory-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>122 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513809420038045857/Prophecy_or_Memory-Swedish_Sweden_audio.mp3?ex=6a2d08e2&amp;is=6a2bb762&amp;hm=86081d9221fa3fd110183d1d3bf03e8317325d7399883dca8279b9639512cffa&amp;" alt="Audio attachment" title="Audio: Prophecy_or_Memory-Swedish_Sweden_audio.mp3 (85.64 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1513818291561304184 class=chatlog__message-container data-message-id=1513818291561304184><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, June 9, 2026 12:13 PM"><a href=#chatlog__message-container-1513818291561304184>6/9/2026 12:13 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+<a href="https://vimeo.com/1199663967">https://vimeo.com/1199663967</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Prophecy_or_Memory-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>122 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1513818291561304184 class=chatlog__message-container data-message-id=1513818291561304184><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Tuesday, June 9, 2026 12:13 PM"><a href=#chatlog__message-container-1513818291561304184>6/9/2026 12:13 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
     loading="lazy"
     class="chatlog__emoji "
     alt="☯️"
@@ -551,8 +522,7 @@ Det finns ingen br&#229;dska och ingen press att bli n&#229;got annat. Att konse
 
 #UppvaknandeResa #InreBalans #YinYang #MedvetenTillv&#228;xt #AndligJordning #Sj&#228;lvinst&#228;llning #Medvetenhet #Medk&#228;nsla #Tillv&#228;xtTankes&#228;tt #SanningOchIntegritet #InreStabilitet #MildTillv&#228;xt #N&#228;rvaro&#196;rRiktig
 
-<a href="https://vimeo.com/1199675873">https://vimeo.com/1199675873</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513818294229139506/Holding_Space-Swedish_Sweden_caption.mp4?ex=6a2d1126&amp;is=6a2bbfa6&amp;hm=34e10462c4fc7a504b421ffa96d7a3a2b2c93a378179bce07ad96e3fa7f8dcd5&amp;" alt="Video attachment" title="Video: Holding_Space-Swedish_Sweden_caption.mp4 (57.01 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1513818296552652921/Holding_Space-Swedish_Sweden.srt?ex=6a2d1127&amp;is=6a2bbfa7&amp;hm=aca0c37aaeff83d32a8e611750bf4b4492b082c7d0af35234ad216fb69fa10b2&amp;"> Holding_Space-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>2.97 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1513818296976146472/Holding_Space-Swedish_Sweden_audio.mp3?ex=6a2d1127&amp;is=6a2bbfa7&amp;hm=c5c0c4528aa17cf2ced1f17a5d5b0a1246fae01bdbf05d832190b9d43c93032a&amp;" alt="Audio attachment" title="Audio: Holding_Space-Swedish_Sweden_audio.mp3 (1.33 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1514338116675047465 class=chatlog__message-container data-message-id=1514338116675047465><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, June 10, 2026 10:39 PM"><a href=#chatlog__message-container-1514338116675047465>6/10/2026 10:39 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#196;g din frid <img
+<a href="https://vimeo.com/1199675873">https://vimeo.com/1199675873</a></span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Holding_Space-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>2.97 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1514338116675047465 class=chatlog__message-container data-message-id=1514338116675047465><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, June 10, 2026 10:39 PM"><a href=#chatlog__message-container-1514338116675047465>6/10/2026 10:39 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#196;g din frid <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128656;"
@@ -621,8 +591,7 @@ utan att ta ett steg tillbaka in i handlingsfriheten.
 
 #VanLiv #MinimalistisktLiv #EkonomiskFrihet #Husbilsliv #HemmaVsVan #NomadLiv #LivP&#229;Hjul #SkuldfrittLiv #FrihetLivsstil #LevP&#229;DittS&#228;tt #LitetHemP&#229;Hjul #BrytSigFriFr&#229;nSystemet #LivUtanf&#246;rN&#228;tet #ResaFrihet #MinskaF&#246;rAttUppgradera
 
-<a href="https://vimeo.com/1200199109">https://vimeo.com/1200199109</a></span> <span class=chatlog__edited-timestamp title="Wednesday, June 10, 2026 10:41 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514338111398739988/I_dont_own_a_house_I_own_my_peac_caption.mp4?ex=6a2cfb04&amp;is=6a2ba984&amp;hm=1463f9a264d7e50a5f77ab0aea55a67edeaf19a18fcb6bb7a4be381b6c12f9c6&amp;" alt="Video attachment" title="Video: I_dont_own_a_house_I_own_my_peac_caption.mp4 (66.47 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1514338115991371836/I_dont_own_a_house_I_own_my_peace-Swedis.srt?ex=6a2cfb05&amp;is=6a2ba985&amp;hm=354a7a5aa369a840ec8a22ad99197c90e0874e3bfb5ab452ddd0557684bfe553&amp;"> I_dont_own_a_house_I_own_my_peace-Swedis.srt </a></div><div class=chatlog__attachment-generic-size>2.89 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514338116473851956/I_dont_own_a_house_I_own_my_peace-_audio.mp3?ex=6a2cfb06&amp;is=6a2ba986&amp;hm=d6c03abd39d9e13ae6950883895bbcc6e4b9be371b2d2bd83641acb83dd63b58&amp;" alt="Audio attachment" title="Audio: I_dont_own_a_house_I_own_my_peace-_audio.mp3 (1.49 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1514344877410877510 class=chatlog__message-container data-message-id=1514344877410877510><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, June 10, 2026 11:05 PM"><a href=#chatlog__message-container-1514344877410877510>6/10/2026 11:05 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Om v&#228;rlden gl&#246;mde g&#229;rdagen <img
+<a href="https://vimeo.com/1200199109">https://vimeo.com/1200199109</a></span><span class=chatlog__edited-timestamp title="Wednesday, June 10, 2026 10:41 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> I_dont_own_a_house_I_own_my_peace-Swedis.srt </a></div><div class=chatlog__attachment-generic-size>2.89 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1514344877410877510 class=chatlog__message-container data-message-id=1514344877410877510><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, June 10, 2026 11:05 PM"><a href=#chatlog__message-container-1514344877410877510>6/10/2026 11:05 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Om v&#228;rlden gl&#246;mde g&#229;rdagen <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127757;"
@@ -641,8 +610,7 @@ kanske &#228;r det det som &#229;terst&#229;r n&#228;r vi &#228;ntligen gl&#246;
 
 Matteus 6:11 • Matteus 6:12 • Matteus 6:34
 
-#SkuldEngine #F&#246;rl&#229;tV&#229;raSkulder #Himlen&#196;rNu #TroIHandling #SanningIRaktAvSyn #AndligtUppvaknande #MedvetenEkonomi #Fred&#214;verProfit #System&#197;terst&#228;llning #Nuet #Matteus611 #Matteus612 #Matteus634 #EvangelietSanning #V&#228;ckM&#228;nskligheten #NyJord</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514344874315481311/If_the_World_Forgot_Yesterday-Sw_caption.mp4?ex=6a2d0151&amp;is=6a2bafd1&amp;hm=9968bbc333b9cd189db4d072adcfa155c783281ecdcae8adf4d1576713fd51e9&amp;" alt="Video attachment" title="Video: If_the_World_Forgot_Yesterday-Sw_caption.mp4 (54.46 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1514344876802707646/If_the_World_Forgot_Yesterday-Swedish_Sw.srt?ex=6a2d0151&amp;is=6a2bafd1&amp;hm=b180451f0b1a6ab9d86179ecb7fdf9e8416ea457bf1f889c92ab0c46e1f5d3d7&amp;"> If_the_World_Forgot_Yesterday-Swedish_Sw.srt </a></div><div class=chatlog__attachment-generic-size>2.77 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514344877104562259/If_the_World_Forgot_Yesterday-Swed_audio.mp3?ex=6a2d0151&amp;is=6a2bafd1&amp;hm=170bcc25427ff17160ad97ce526252e9f9abe31a24fb2602a31d640c25a4f9d1&amp;" alt="Audio attachment" title="Audio: If_the_World_Forgot_Yesterday-Swed_audio.mp3 (1.35 MB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1514890986168516749 class=chatlog__message-container data-message-id=1514890986168516749><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, June 12, 2026 11:15 AM"><a href=#chatlog__message-container-1514890986168516749>6/12/2026 11:15 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>O&#228;ndligt Arbete F&#246;rsenar Fred ♾️ 08/09/2025 - Albanien</strong>
+#SkuldEngine #F&#246;rl&#229;tV&#229;raSkulder #Himlen&#196;rNu #TroIHandling #SanningIRaktAvSyn #AndligtUppvaknande #MedvetenEkonomi #Fred&#214;verProfit #System&#197;terst&#228;llning #Nuet #Matteus611 #Matteus612 #Matteus634 #EvangelietSanning #V&#228;ckM&#228;nskligheten #NyJord</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> If_the_World_Forgot_Yesterday-Swedish_Sw.srt </a></div><div class=chatlog__attachment-generic-size>2.77 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1514890986168516749 class=chatlog__message-container data-message-id=1514890986168516749><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, June 12, 2026 11:15 AM"><a href=#chatlog__message-container-1514890986168516749>6/12/2026 11:15 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>O&#228;ndligt Arbete F&#246;rsenar Fred ♾️ 08/09/2025 - Albanien</strong>
 
 Denna uppgift slutar.
 Och n&#228;r den g&#246;r det, kommer freden naturligt.
@@ -653,8 +621,7 @@ och freden skjuts upp o&#228;ndligt.
 
 #O&#228;ndligtArbete #F&#246;rsenarFred #&#196;rligtArbete #ArbeteMedAvslutning #SystemiskDr&#228;nering #InflationsVerklighet #Bottenl&#246;sBrunn #Arbetsv&#228;rdet #Vila&#196;rM&#228;nskligt #Fred&#196;rNaturligt #BortomProduktivitet #M&#228;nskligtV&#228;rde #EkonomiskReflektion #TystSanning #Medvetenhet
 
-<a href="https://vimeo.com/1200681025">https://vimeo.com/1200681025</a></span> <span class=chatlog__edited-timestamp title="Friday, June 12, 2026 11:26 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514890981466701854/Accountability-Swedish_Sweden_caption.mp4?ex=6a2d03ab&amp;is=6a2bb22b&amp;hm=d0b3701d9f2463a939ffb324be6c6ff2f7ffdd28c79bb5a6a616c9b367080687&amp;" alt="Video attachment" title="Video: Accountability-Swedish_Sweden_caption.mp4 (74.98 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1514890985442639942/Accountability-Swedish_Sweden.srt?ex=6a2d03ac&amp;is=6a2bb22c&amp;hm=4b3e6370df781b60ae5bf97cf49a036e721dc61b307cc84cb950f2971e5d2c13&amp;"> Accountability-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>1.05 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514890986201813074/Accountability-Swedish_Sweden_audio.mp3?ex=6a2d03ac&amp;is=6a2bb22c&amp;hm=1b21838a7384c4480aa24307f044462f93c9d6f10f36d76a56d19dfd2ded9aff&amp;" alt="Audio attachment" title="Audio: Accountability-Swedish_Sweden_audio.mp3 (808.64 KB)"></audio></div></div></div></div></div>
-<div class=chatlog__message-group><div id=chatlog__message-container-1514895446441725952 class=chatlog__message-container data-message-id=1514895446441725952><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, June 12, 2026 11:33 AM"><a href=#chatlog__message-container-1514895446441725952>6/12/2026 11:33 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Legal Gaslight 02/12/2025 - VOID</strong>
+<a href="https://vimeo.com/1200681025">https://vimeo.com/1200681025</a></span><span class=chatlog__edited-timestamp title="Friday, June 12, 2026 11:26 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Accountability-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>1.05 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1514895446441725952 class=chatlog__message-container data-message-id=1514895446441725952><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Friday, June 12, 2026 11:33 AM"><a href=#chatlog__message-container-1514895446441725952>6/12/2026 11:33 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Legal Gaslight 02/12/2025 - VOID</strong>
 
 Bakom det artiga spr&#229;ket &quot;st&#246;d&quot;
 lurar en hand som ritar om din verklighet.
@@ -666,9 +633,1580 @@ tar makten ett ord i taget.
 
 #JuridiskGasljus #gasbelysning #juridiska&#246;vergrepp #auktoritets&#246;vergrepp #maktdynamik #systemiskgasbelysning #sj&#228;lvagenskap #sanningtalande #medvetenhetompsykiskh&#228;lsa #or&#228;ttvisaavsl&#246;jad #medvetenmedvetenhet #l&#228;kanderesa #sj&#228;lvsovereignitet #stephencooke #falsks&#228;kerhet #socialkommentar
 
-<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a>
+<a href="https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html">https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html</a><a href="https://vimeo.com/1200681889">https://vimeo.com/1200681889</a></span><span class=chatlog__edited-timestamp title="Friday, June 12, 2026 11:33 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Legal_Gaslight-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>883 bytes</div></div></div><div class=chatlog__attachment></div></div></div></div></div></div><div class=postamble><div class=postamble__entry>Exported 25 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
 
-<a href="https://vimeo.com/1200681889">https://vimeo.com/1200681889</a></span> <span class=chatlog__edited-timestamp title="Friday, June 12, 2026 11:33 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514895447494361160/Legal_Gaslight-Swedish_Sweden_caption.mp4?ex=6a2d07d4&amp;is=6a2bb654&amp;hm=997ae789c3e37bde7361cf0467945f73d278d2973fc67a7c850e6081e7b79566&amp;" alt="Video attachment" title="Video: Legal_Gaslight-Swedish_Sweden_caption.mp4 (17.98 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1478353423907684524/1514895448253665302/Legal_Gaslight-Swedish_Sweden.srt?ex=6a2d07d4&amp;is=6a2bb654&amp;hm=f2cb5179ec5a07bf5737950e249c5a84ab4b7f808770e7f163b354938bf9050d&amp;"> Legal_Gaslight-Swedish_Sweden.srt </a></div><div class=chatlog__attachment-generic-size>883 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1478353423907684524/1514895448534552646/Legal_Gaslight-Swedish_Sweden_audio.mp3?ex=6a2d07d4&amp;is=6a2bb654&amp;hm=36eb02d9e17d24cf81b33dafc39aded32ff3fee8c84fc1e086063dd6b59c2eff&amp;" alt="Audio attachment" title="Audio: Legal_Gaslight-Swedish_Sweden_audio.mp3 (431.77 KB)"></audio></div></div></div></div></div>
+<script id="chatlog-date-sorter">
+document.addEventListener("DOMContentLoaded", () => {
+  const ALLOWED_DISCORD_CDN_URL =
+    "https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512";
 
-</div>
-<div class=postamble><div class=postamble__entry>Exported 25 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
+  const chatlog = document.querySelector(".chatlog");
+  if (!chatlog) return;
+  document.body.id = "top";
+
+  const groups = Array.from(chatlog.querySelectorAll(".chatlog__message-group"));
+
+  function extractContentDate(group) {
+    const strong = group.querySelector(".chatlog__content strong");
+    if (!strong) return null;
+
+    const text = strong.textContent || "";
+    const match = text.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+    if (!match) return null;
+
+    const [, day, month, year] = match;
+    return new Date(Number(year), Number(month) - 1, Number(day));
+  }
+
+  function capitalizeWords(text) {
+    return text.replace(
+      /\b([a-z\u00c0-\u024f\u0400-\u04ff])([a-z\u00c0-\u024f\u0400-\u04ff]*)/gi,
+      (match, first, rest) => first.toUpperCase() + rest.toLowerCase()
+    );
+  }
+
+  function isEmojiLikeText(text) {
+    if (!text) return false;
+    try {
+      return /[\p{Extended_Pictographic}\u200D\uFE0F]/u.test(text);
+    } catch {
+      return /[\u2190-\u2BFF\u2600-\u27BF]/.test(text);
+    }
+  }
+
+  function isTinyDimension(value) {
+    if (!value) return false;
+    const num = Number.parseFloat(value);
+    return Number.isFinite(num) && num > 0 && num <= 64;
+  }
+
+  function isEmojiImage(img) {
+    if (!img) return false;
+
+    const className = (img.className || "").toString();
+    const alt = img.getAttribute("alt") || "";
+    const aria = img.getAttribute("aria-label") || "";
+    const src = img.getAttribute("src") || "";
+    const title = img.getAttribute("title") || "";
+    const widthAttr = img.getAttribute("width");
+    const heightAttr = img.getAttribute("height");
+
+    if (/\b(emoji|emote|twemoji|custom-emoji|chatlog__emoji|chatlog__custom-emoji)\b/i.test(className)) {
+      return true;
+    }
+
+    if (/\/emoji\/|\/emojis\/|\/twemoji\/|\/assets\/emojis\//i.test(src)) {
+      return true;
+    }
+
+    if (isEmojiLikeText(alt) || isEmojiLikeText(aria) || isEmojiLikeText(title)) {
+      return true;
+    }
+
+    const naturalWidth = img.naturalWidth || 0;
+    const naturalHeight = img.naturalHeight || 0;
+    const renderedWidth = img.width || 0;
+    const renderedHeight = img.height || 0;
+
+    const tinyByAttr = isTinyDimension(widthAttr) && isTinyDimension(heightAttr);
+    const tinyByNatural = naturalWidth > 0 && naturalHeight > 0 && naturalWidth <= 64 && naturalHeight <= 64;
+    const tinyByRendered = renderedWidth > 0 && renderedHeight > 0 && renderedWidth <= 48 && renderedHeight <= 48;
+
+    if ((tinyByAttr || tinyByNatural || tinyByRendered) && (alt || aria || title || /\bemoji\b/i.test(className))) {
+      return true;
+    }
+
+    return false;
+  }
+
+  function isDiscordCdnUrl(url) {
+    const value = (url || "").trim();
+    if (!value) return false;
+    if (value === ALLOWED_DISCORD_CDN_URL) return false;
+    return /^https?:\/\/cdn\.discordapp\.com\//i.test(value);
+  }
+
+  function getVimeoId(url) {
+    if (!url) return null;
+
+    const patterns = [
+      /vimeo\.com\/(?:video\/)?(\d+)/i,
+      /player\.vimeo\.com\/video\/(\d+)/i
+    ];
+
+    for (const pattern of patterns) {
+      const match = url.match(pattern);
+      if (match) return match[1];
+    }
+
+    return null;
+  }
+
+  function findVimeoAnchors(content) {
+    if (!content) return [];
+
+    const anchors = Array.from(content.querySelectorAll('a[href]'));
+    const seen = new Set();
+    const results = [];
+
+    for (const a of anchors) {
+      const href = (a.getAttribute("href") || "").trim();
+      const vimeoId = getVimeoId(href);
+      if (!vimeoId) continue;
+
+      const key = `${vimeoId}|${href}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      results.push({
+        anchor: a,
+        href,
+        vimeoId
+      });
+    }
+
+    return results;
+  }
+
+  function replaceCourtArchiveLinks() {
+    const courtUrl =
+      "https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html";
+
+    function buildCourtArchiveCard() {
+      const row = document.createElement("div");
+      row.className = "media-row court-archive-media-row";
+
+      const card = document.createElement("div");
+      card.className = "chatlog__attachment-generic court-archive-card";
+
+      const name = document.createElement("div");
+      name.className = "chatlog__attachment-generic-name";
+
+      const link = document.createElement("a");
+      link.href = courtUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Court Archive";
+
+      name.appendChild(link);
+      card.appendChild(name);
+      row.appendChild(card);
+      return row;
+    }
+
+    function normalizeText(value) {
+      return (value || "")
+        .replace(/\u00a0/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function isCourtOnlyText(value) {
+      const t = normalizeText(value);
+      if (!t) return false;
+      if (/^Court archive:?$/i.test(t)) return true;
+      if (/^Court archive:\s*https?:\/\/\S+$/i.test(t)) return true;
+      if (t === courtUrl) return true;
+      if (/^https?:\/\/\S*court-of-illusions-trafficking\S*$/i.test(t)) return true;
+      return false;
+    }
+
+    document.querySelectorAll(".chatlog__message-group").forEach(group => {
+      const content = group.querySelector(".chatlog__content");
+      if (!content) return;
+
+      let foundCourtReference = false;
+
+      group.querySelectorAll(".court-archive-media-row").forEach(el => el.remove());
+
+      const exactCourtAnchors = Array.from(content.querySelectorAll("a[href]")).filter(a => {
+        const href = (a.getAttribute("href") || "").replace(/&amp;/g, "&").trim();
+        return href === courtUrl;
+      });
+
+      if (exactCourtAnchors.length) {
+        foundCourtReference = true;
+        exactCourtAnchors.forEach(a => {
+          const parent = a.parentElement;
+          if (parent && isCourtOnlyText(parent.textContent || "")) {
+            parent.remove();
+          } else {
+            a.remove();
+          }
+        });
+      }
+
+      const elements = Array.from(content.querySelectorAll("*"));
+      elements.forEach(el => {
+        const txt = normalizeText(el.textContent || "");
+        if (!txt) return;
+
+        if (/^Court archive:?$/i.test(txt)) {
+          foundCourtReference = true;
+          el.remove();
+          return;
+        }
+
+        if (/^Court archive:\s*https?:\/\/\S+$/i.test(txt) && /court-of-illusions-trafficking/i.test(txt)) {
+          foundCourtReference = true;
+          el.remove();
+          return;
+        }
+
+        if (/^https?:\/\/\S*court-of-illusions-trafficking\S*$/i.test(txt)) {
+          foundCourtReference = true;
+          el.remove();
+          return;
+        }
+      });
+
+      const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      let current;
+      while ((current = walker.nextNode())) {
+        textNodes.push(current);
+      }
+
+      textNodes.forEach(node => {
+        const value = node.nodeValue || "";
+        let nextValue = value;
+
+        if (/Court archive:/i.test(nextValue) || /court-of-illusions-trafficking/i.test(nextValue)) {
+          foundCourtReference = true;
+          nextValue = nextValue
+            .replace(/Court archive:\s*/gi, "")
+            .replace(/https?:\/\/[^\s<>"']*court-of-illusions-trafficking[^\s<>"']*/gi, "")
+            .replace(/\s{2,}/g, " ");
+        }
+
+        if (nextValue !== value) {
+          node.nodeValue = nextValue;
+        }
+      });
+
+      Array.from(content.querySelectorAll("p, div, span")).forEach(el => {
+        const txt = normalizeText(el.textContent || "");
+        if (!txt) return;
+        if (isCourtOnlyText(txt)) {
+          el.remove();
+        }
+      });
+
+      const hadCourt = foundCourtReference;
+      if (!hadCourt) return;
+
+      const subtitlesRow =
+        group.querySelector(".media-row") ||
+        (group.querySelector(".chatlog__attachment-generic") ? group.querySelector(".chatlog__attachment-generic").parentElement : null);
+
+      const card = buildCourtArchiveCard();
+
+      if (subtitlesRow && subtitlesRow.parentElement) {
+        subtitlesRow.insertAdjacentElement("beforebegin", card);
+      } else {
+        content.insertAdjacentElement("afterend", card);
+      }
+    });
+  }
+
+  function stripDiscordCdnNodes(root) {
+    if (!root) return;
+
+    const scope = root.querySelector(".chatlog");
+    if (!scope) return;
+
+    scope.querySelectorAll("[src], [href], source[src]").forEach(el => {
+      const src = el.getAttribute("src");
+      const href = el.getAttribute("href");
+
+      if (isDiscordCdnUrl(src) || isDiscordCdnUrl(href)) {
+        const attachment =
+          el.closest(".chatlog__attachment") ||
+          el.closest(".chatlog__embed") ||
+          el.closest(".chatlog__reference") ||
+          el.closest(".chatlog__attachment-generic");
+
+        if (attachment) {
+          attachment.remove();
+          return;
+        }
+
+        if (el.tagName === "IMG" || el.tagName === "VIDEO" || el.tagName === "SOURCE" || el.tagName === "AUDIO") {
+          el.remove();
+          return;
+        }
+
+        if (el.tagName === "A") {
+          const text = (el.textContent || "").trim();
+          if (!text || isDiscordCdnUrl(text)) {
+            el.remove();
+          } else {
+            el.replaceWith(document.createTextNode(text));
+          }
+        }
+      }
+    });
+
+    scope.querySelectorAll(".chatlog__content, .chatlog__markdown-preserve").forEach(block => {
+      const anchors = Array.from(block.querySelectorAll("a[href]"));
+      anchors.forEach(a => {
+        const href = a.getAttribute("href") || "";
+        if (isDiscordCdnUrl(href)) {
+          const text = (a.textContent || "").trim();
+          if (!text || isDiscordCdnUrl(text)) {
+            a.remove();
+          } else {
+            a.replaceWith(document.createTextNode(text));
+          }
+        }
+      });
+
+      const walker = document.createTreeWalker(block, NodeFilter.SHOW_TEXT);
+      const textNodes = [];
+      let current;
+      while ((current = walker.nextNode())) {
+        textNodes.push(current);
+      }
+
+      textNodes.forEach(node => {
+        const value = node.nodeValue || "";
+        if (/https?:\/\/cdn\.discordapp\.com\//i.test(value)) {
+          node.nodeValue = value
+            .replace(
+              /https?:\/\/cdn\.discordapp\.com\/[^\s<>"']+/gi,
+              (match) => match === ALLOWED_DISCORD_CDN_URL ? match : ""
+            )
+            .replace(/\s{2,}/g, " ")
+            .trim();
+        }
+      });
+    });
+  }
+
+  function removeEmptyMediaRows(root) {
+    root.querySelectorAll(".media-row").forEach(row => {
+      if (!row.children.length) {
+        row.remove();
+      }
+    });
+  }
+
+  function buildVimeoCard(vimeoId, originalUrl) {
+    const wrap = document.createElement("div");
+    wrap.className = "veilocity-vimeo-card";
+
+    const iframeWrap = document.createElement("div");
+    iframeWrap.className = "veilocity-vimeo-embed";
+
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://player.vimeo.com/video/${vimeoId}`;
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allow", "autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media");
+    iframe.setAttribute("allowfullscreen", "");
+    iframe.loading = "lazy";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.title = "Vimeo video player";
+
+    iframeWrap.appendChild(iframe);
+    wrap.appendChild(iframeWrap);
+
+    const actions = document.createElement("div");
+    actions.className = "veilocity-vimeo-actions";
+
+    const button = document.createElement("a");
+    button.className = "veilocity-vimeo-button";
+    button.href = originalUrl;
+    button.target = "_blank";
+    button.rel = "noopener noreferrer";
+    button.textContent = "Watch on Vimeo";
+
+    actions.appendChild(button);
+    wrap.appendChild(actions);
+
+    return wrap;
+  }
+
+  function enhanceVimeoPosts() {
+    document.querySelectorAll(".chatlog__message-group").forEach(group => {
+      const content = group.querySelector(".chatlog__content");
+      if (!content) return;
+
+      const vimeoItems = findVimeoAnchors(content);
+      if (!vimeoItems.length) return;
+
+      group.querySelectorAll(".veilocity-vimeo-card, .veilocity-vimeo-stack").forEach(el => el.remove());
+
+      vimeoItems.forEach(item => {
+        item.anchor.classList.add("veilocity-vimeo-source-link");
+      });
+
+      const stack = document.createElement("div");
+      stack.className = "veilocity-vimeo-stack";
+
+      vimeoItems.forEach(item => {
+        const card = buildVimeoCard(item.vimeoId, item.href);
+        stack.appendChild(card);
+      });
+
+      const attachments = Array.from(group.querySelectorAll(".chatlog__attachment"));
+      const lastAttachment = attachments.length ? attachments[attachments.length - 1] : null;
+
+      if (lastAttachment) {
+        lastAttachment.insertAdjacentElement("afterend", stack);
+      } else {
+        content.insertAdjacentElement("afterend", stack);
+      }
+    });
+  }
+
+  groups.sort((a, b) => {
+    const dateA = extractContentDate(a);
+    const dateB = extractContentDate(b);
+
+    if (!dateA && !dateB) return 0;
+    if (!dateA) return 1;
+    if (!dateB) return -1;
+
+    return dateA - dateB;
+  });
+
+  chatlog.replaceChildren(...groups);
+
+  document.querySelectorAll(".chatlog__attachment-generic-name a").forEach(link => {
+    const href = (link.getAttribute("href") || "").toLowerCase();
+    const text = (link.textContent || "").trim().toLowerCase();
+
+    if (
+      href.endsWith(".srt") || text.endsWith(".srt") ||
+      href.endsWith(".mp3") || text.endsWith(".mp3")
+    ) {
+      const card = link.closest(".chatlog__attachment-generic");
+      if (card) {
+        card.remove();
+      } else {
+        link.remove();
+      }
+    }
+  });
+
+  document.querySelectorAll(".chatlog__edited-timestamp").forEach(el => {
+    el.remove();
+  });
+
+  document.querySelectorAll(".chatlog__message-group").forEach(group => {
+    const strong = group.querySelector(".chatlog__content strong");
+    const header = group.querySelector(".chatlog__header");
+    const author = group.querySelector(".chatlog__author");
+    const authorName = group.querySelector(".chatlog__author-name");
+    const timestamp = group.querySelector(".chatlog__timestamp");
+    const container = group.querySelector(".chatlog__message-container");
+    const content = group.querySelector(".chatlog__content");
+    const preserve = group.querySelector(".chatlog__markdown-preserve");
+
+    if (!strong || !header) return;
+
+    const titleText = (strong.textContent || "").trim();
+    if (!titleText) return;
+
+    let titleRow = header.querySelector(".chatlog__title-row");
+    if (!titleRow) {
+      titleRow = document.createElement("div");
+      titleRow.className = "chatlog__title-row";
+      header.prepend(titleRow);
+    }
+
+    let titleEl = titleRow.querySelector(".chatlog__title-replacement");
+    if (!titleEl) {
+      titleEl = document.createElement("a");
+      titleEl.className = "chatlog__title-replacement";
+      titleRow.appendChild(titleEl);
+    }
+
+    titleEl.innerHTML = strong.innerHTML;
+
+    if (container && container.id) {
+      titleEl.setAttribute("href", `#${container.id}`);
+    }
+
+    if (author) author.remove();
+    if (authorName) authorName.remove();
+    if (timestamp) timestamp.remove();
+
+    strong.remove();
+
+    if (preserve) {
+      preserve.innerHTML = preserve.innerHTML
+        .replace(/^(?:\s|&nbsp;|<br\s*\/?>)+/i, "")
+        .replace(/^(?:\u00a0|\s)+/i, "");
+    }
+
+    if (content) {
+      content.innerHTML = content.innerHTML
+        .replace(/^(?:\s|&nbsp;|<br\s*\/?>)+/i, "")
+        .replace(/^(?:\u00a0|\s)+/i, "");
+    }
+  });
+
+  document.querySelectorAll(".chatlog__attachment-generic").forEach(card => {
+    const parent = card.parentElement;
+    if (parent) {
+      parent.classList.add("media-row");
+    }
+  });
+
+  document.querySelectorAll("audio").forEach(audio => {
+    const source = audio.querySelector("source");
+    const src = (source && source.getAttribute("src")) || audio.getAttribute("src") || "";
+
+    if (src.toLowerCase().endsWith(".mp3")) {
+      const parent = audio.parentElement;
+      audio.remove();
+
+      if (parent && !parent.children.length) {
+        parent.remove();
+      }
+    }
+  });
+
+  document.querySelectorAll(".chatlog__content img, .chatlog__markdown-preserve img").forEach(img => {
+    if (isEmojiImage(img)) {
+      img.classList.add("veilocity-inline-emoji");
+    } else {
+      img.classList.remove("veilocity-inline-emoji");
+    }
+  });
+
+  replaceCourtArchiveLinks();
+  stripDiscordCdnNodes(document);
+  enhanceVimeoPosts();
+  stripDiscordCdnNodes(document);
+  removeEmptyMediaRows(document);
+
+  const style = document.createElement("style");
+  style.textContent = `
+    :root {
+      --bg-1: #e7d8c2;
+      --bg-2: #cbb79e;
+      --panel: rgba(255, 248, 235, 0.78);
+      --panel-2: rgba(245, 230, 210, 0.92);
+      --line: rgba(110, 88, 64, 0.18);
+      --line-strong: rgba(110, 88, 64, 0.32);
+      --text: #3c332c;
+      --muted: #6e5f4d;
+      --accent: #d86a3c;
+      --accent-2: #f08a2b;
+      --accent-3: #2f6e62;
+      --glow: 0 0 22px rgba(240, 138, 43, 0.14);
+      --radius: 16px;
+    }
+
+    html, body {
+      background:
+        radial-gradient(circle at top left, rgba(240, 138, 43, 0.16), transparent 32%),
+        radial-gradient(circle at top right, rgba(216, 106, 60, 0.12), transparent 28%),
+        linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%) !important;
+      color: var(--text) !important;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+      letter-spacing: 0.01em;
+    }
+
+    .chatlog {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 18px 48px;
+    }
+
+    .chatlog__message-group {
+      margin: 18px 0 !important;
+      padding: 16px 18px !important;
+      background: linear-gradient(180deg, rgba(255, 250, 241, 0.90), rgba(242, 225, 201, 0.95)) !important;
+      border: 1px solid var(--line) !important;
+      border-radius: var(--radius) !important;
+      box-shadow:
+        0 10px 24px rgba(60, 51, 44, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        var(--glow) !important;
+      backdrop-filter: blur(8px);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .chatlog__message-group:hover,
+    .chatlog__message-group:focus,
+    .chatlog__message-group:active {
+      background: linear-gradient(180deg, rgba(255, 250, 241, 0.90), rgba(242, 225, 201, 0.95)) !important;
+      border: 1px solid var(--line) !important;
+      box-shadow:
+        0 10px 24px rgba(60, 51, 44, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        var(--glow) !important;
+      transform: none !important;
+      filter: none !important;
+      color: var(--text) !important;
+    }
+
+    .chatlog__author-avatar-container,
+    .chatlog__avatar {
+      visibility: hidden !important;
+      width: 0 !important;
+      min-width: 0 !important;
+    }
+
+    .chatlog__messages {
+      margin-left: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: none !important;
+      transform: none !important;
+    }
+
+    .chatlog__message,
+    .chatlog__message:hover,
+    .chatlog__message:focus,
+    .chatlog__message:active,
+    .chatlog__messages,
+    .chatlog__messages:hover,
+    .chatlog__messages:focus,
+    .chatlog__messages:active,
+    .chatlog__content,
+    .chatlog__content:hover,
+    .chatlog__content:focus,
+    .chatlog__content:active {
+      background: transparent !important;
+      box-shadow: none !important;
+      filter: none !important;
+      transform: none !important;
+    }
+
+    .chatlog__header {
+      display: block !important;
+      margin-bottom: 8px !important;
+      padding-bottom: 0 !important;
+    }
+
+    .chatlog__title-row {
+      display: block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      line-height: 1.2 !important;
+    }
+
+    .chatlog__title-replacement,
+    .chatlog__title-replacement:link,
+    .chatlog__title-replacement:visited {
+      display: inline-block !important;
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+      font-size: 1.02rem !important;
+      font-weight: 700 !important;
+      line-height: 1.2 !important;
+      letter-spacing: 0 !important;
+      text-shadow: none !important;
+      text-decoration: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .chatlog__title-replacement:hover,
+    .chatlog__title-replacement:focus {
+      text-decoration: underline !important;
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+    }
+
+    .chatlog__author-name {
+      color: var(--accent-3) !important;
+      font-weight: 600 !important;
+      text-shadow: 0 0 8px rgba(47, 110, 98, 0.10);
+    }
+
+    .chatlog__timestamp {
+      color: var(--muted) !important;
+      font-size: 0.78rem !important;
+    }
+
+    .chatlog__content {
+      color: var(--text) !important;
+      line-height: 1.6;
+      font-size: 0.98rem;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .chatlog__markdown-preserve {
+      display: block !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      line-height: 1.6 !important;
+    }
+
+    .chatlog__content > .chatlog__markdown-preserve:first-child {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .chatlog__header + .chatlog__content {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+
+    .chatlog__content strong {
+      color: #2f2923 !important;
+    }
+
+    .chatlog__attachment,
+    .chatlog__embed,
+    .chatlog__reference,
+    .chatlog__markdown-pre--multiline,
+    .chatlog__markdown-pre {
+      border-radius: 14px !important;
+      border: 1px solid rgba(110, 88, 64, 0.14) !important;
+      background: rgba(255, 246, 233, 0.85) !important;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.35);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .chatlog__markdown-pre--multiline,
+    .chatlog__markdown-pre--multiline code,
+    .chatlog__markdown-pre,
+    .chatlog__markdown-pre code,
+    code.chatlog__markdown-pre,
+    code.chatlog__markdown-pre--multiline {
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+      opacity: 1 !important;
+      text-shadow: none !important;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !important;
+    }
+
+    .chatlog__markdown-pre--multiline .hljs,
+    .chatlog__markdown-pre--multiline .hljs *,
+    .chatlog__markdown-pre .hljs,
+    .chatlog__markdown-pre .hljs *,
+    .chatlog__markdown-pre--multiline.highlight,
+    .chatlog__markdown-pre--multiline.highlight * {
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+      opacity: 1 !important;
+      text-shadow: none !important;
+    }
+
+    .media-row {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+
+    .media-row > .chatlog__attachment-generic,
+    .media-row > .mp3-download {
+      width: 140px !important;
+      min-width: 140px !important;
+      max-width: 140px !important;
+      min-height: 0 !important;
+      height: 44px !important;
+      box-sizing: border-box !important;
+    }
+
+    .chatlog__attachment-generic {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 0 14px !important;
+      border-radius: 14px !important;
+      border: 1px solid rgba(110, 88, 64, 0.14) !important;
+      background: rgba(250, 239, 223, 0.90) !important;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .chatlog__attachment-generic:hover {
+      background: rgba(252, 240, 223, 0.95) !important;
+      border-color: rgba(216, 106, 60, 0.28) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .chatlog__attachment-generic:active {
+      background: rgba(245, 231, 212, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.34) !important;
+      transform: translateY(0) !important;
+    }
+
+    .chatlog__attachment-generic-icon,
+    .chatlog__attachment-generic-size {
+      display: none !important;
+    }
+
+    .chatlog__attachment-generic-name {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 0 !important;
+      font-size: 0.95rem !important;
+      line-height: 1 !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .chatlog__attachment-generic-name a,
+    .chatlog__content a,
+    .chatlog__attachment-generic-name a:link,
+    .chatlog__content a:link,
+    .chatlog__attachment-generic-name a:visited,
+    .chatlog__content a:visited,
+    .chatlog__attachment-generic-name a:hover,
+    .chatlog__content a:hover,
+    .chatlog__attachment-generic-name a:focus,
+    .chatlog__content a:focus,
+    .chatlog__attachment-generic-name a:active,
+    .chatlog__content a:active {
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      outline: none !important;
+      border-color: transparent !important;
+      transition: none !important;
+      filter: none !important;
+      transform: none !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .court-archive-media-row {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      gap: 10px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .court-archive-media-row > .chatlog__attachment-generic {
+      width: 140px !important;
+      min-width: 140px !important;
+      max-width: 140px !important;
+      min-height: 0 !important;
+      height: 44px !important;
+      box-sizing: border-box !important;
+    }
+
+    .veilocity-vimeo-source-link {
+      display: none !important;
+    }
+
+    .veilocity-vimeo-stack {
+      display: grid !important;
+      gap: 12px !important;
+      width: min(720px, 100%) !important;
+      max-width: 100% !important;
+      margin-top: 12px !important;
+    }
+
+    .veilocity-vimeo-card {
+      width: 100% !important;
+      max-width: 100% !important;
+      border-radius: 14px !important;
+      overflow: hidden !important;
+      border: 1px solid rgba(110, 88, 64, 0.14) !important;
+      background: rgba(255, 246, 233, 0.85) !important;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.35),
+        0 8px 24px rgba(60, 51, 44, 0.18) !important;
+      box-sizing: border-box !important;
+    }
+
+    .veilocity-vimeo-embed {
+      position: relative !important;
+      width: 100% !important;
+      aspect-ratio: 16 / 9 !important;
+      background: #000 !important;
+    }
+
+    .veilocity-vimeo-embed iframe {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      display: block !important;
+      border: 0 !important;
+      background: #000 !important;
+    }
+
+    .veilocity-vimeo-actions {
+      display: flex !important;
+      justify-content: flex-end !important;
+      padding: 10px 12px !important;
+      background: linear-gradient(180deg, rgba(255, 244, 230, 0.95), rgba(244, 228, 205, 0.98)) !important;
+      border-top: 1px solid rgba(110, 88, 64, 0.12) !important;
+    }
+
+    .veilocity-vimeo-button,
+    .veilocity-vimeo-button:link,
+    .veilocity-vimeo-button:visited {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 9px 12px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      background: rgba(250, 239, 223, 0.92) !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.84rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 2px 8px rgba(60, 51, 44, 0.06) !important;
+      white-space: nowrap;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+    }
+
+    .veilocity-vimeo-button:hover,
+    .veilocity-vimeo-button:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .veilocity-vimeo-button:active {
+      transform: translateY(0) !important;
+    }
+
+    .preamble {
+      position: relative !important;
+      align-items: flex-start !important;
+      gap: 20px !important;
+      padding: 22px !important;
+      padding-right: 150px !important;
+      margin: 22px auto 28px !important;
+      max-width: 1200px;
+      min-height: 170px;
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, rgba(250, 240, 225, 0.88), rgba(236, 216, 190, 0.95));
+      border: 1px solid rgba(110, 88, 64, 0.16);
+      box-shadow:
+        0 18px 32px rgba(60, 51, 44, 0.14),
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        0 0 26px rgba(240, 138, 43, 0.08);
+      backdrop-filter: blur(8px);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .preamble:hover,
+    .preamble:focus,
+    .preamble:active {
+      background:
+        linear-gradient(180deg, rgba(250, 240, 225, 0.88), rgba(236, 216, 190, 0.95)) !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      box-shadow:
+        0 18px 32px rgba(60, 51, 44, 0.14),
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        0 0 26px rgba(240, 138, 43, 0.08) !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .preamble__guild-icon {
+      max-width: 280px !important;
+      max-height: 280px !important;
+      width: 280px !important;
+      height: auto !important;
+      display: block !important;
+      border-radius: 18px;
+      border: 1px solid rgba(110, 88, 64, 0.20);
+      box-shadow:
+        0 0 20px rgba(240, 138, 43, 0.08),
+        0 8px 20px rgba(60, 51, 44, 0.14);
+    }
+
+    .preamble__guild-icon-container {
+      max-width: 360px !important;
+    }
+
+    .preamble__entries-container {
+      margin-left: 1.25rem !important;
+      padding-top: 2px !important;
+    }
+
+    .preamble__entry {
+      color: var(--muted) !important;
+    }
+
+    .preamble__entry:first-child {
+      font-size: 0.72rem !important;
+      line-height: 1.05 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      color: rgba(60, 51, 44, 0.28) !important;
+      -webkit-text-fill-color: rgba(60, 51, 44, 0.28) !important;
+      text-shadow: none !important;
+      margin-bottom: 8px !important;
+      font-weight: 500 !important;
+    }
+
+    .preamble__entry:nth-child(2) {
+      font-size: 1.28rem !important;
+      font-weight: 700 !important;
+      color: var(--accent-3) !important;
+      letter-spacing: 0.02em;
+      text-shadow: 0 0 10px rgba(47, 110, 98, 0.08);
+      margin-top: 0 !important;
+    }
+
+    .flag-block {
+      position: absolute;
+      top: 22px;
+      right: 22px;
+      margin: 0 !important;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      z-index: 2;
+    }
+
+    .flag-image {
+      display: block;
+      width: 96px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 14px;
+      border: 1px solid rgba(110, 88, 64, 0.20);
+      box-shadow:
+        0 8px 20px rgba(60, 51, 44, 0.12),
+        0 0 18px rgba(240, 138, 43, 0.05);
+      background: rgba(255,255,255,0.35);
+      padding: 4px;
+    }
+
+    .toc-block {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(110, 88, 64, 0.14);
+    }
+
+    .toc-title {
+      margin: 0 0 10px 0;
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .toc-list {
+      margin: 0;
+      padding-left: 18px;
+      columns: 2;
+      column-gap: 28px;
+    }
+
+    .toc-list li {
+      margin: 0 0 7px 0;
+      break-inside: avoid;
+    }
+
+    .toc-list a,
+    .toc-list a:link,
+    .toc-list a:visited {
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.93rem;
+      line-height: 1.4;
+    }
+
+    .toc-list a:hover,
+    .toc-list a:focus {
+      text-decoration: underline !important;
+    }
+
+    @media (max-width: 900px) {
+      .toc-list {
+        columns: 1;
+      }
+    }
+
+    .post-return-wrap {
+      display: flex !important;
+      justify-content: flex-end !important;
+      margin-top: 14px !important;
+      padding-top: 6px !important;
+      width: 100% !important;
+    }
+
+    .post-return-link,
+    .post-return-link:link,
+    .post-return-link:visited {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 7px 12px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      background: rgba(250, 239, 223, 0.92) !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.84rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 2px 8px rgba(60, 51, 44, 0.06) !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+
+    .post-return-link:hover,
+    .post-return-link:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .post-return-link:active {
+      transform: translateY(0) !important;
+    }
+
+    .btc-note {
+      margin-top: 14px;
+      padding: 14px 16px;
+      max-width: 320px;
+      color: var(--text);
+      font-size: 0.92rem;
+      line-height: 1.45;
+      word-break: break-word;
+      background: linear-gradient(180deg, rgba(255, 244, 230, 0.95), rgba(244, 228, 205, 0.98));
+      border: 1px solid rgba(216, 106, 60, 0.28);
+      border-radius: 14px;
+      box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.45),
+        0 0 18px rgba(240, 138, 43, 0.06);
+      transition: none !important;
+    }
+
+    .btc-note strong {
+      color: var(--accent);
+    }
+
+    .btc-address {
+      display: block;
+      margin-top: 8px;
+      padding: 10px 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      line-height: 1.45;
+      color: #4a392e;
+      background: rgba(240, 138, 43, 0.10);
+      border: 1px solid rgba(216, 106, 60, 0.20);
+      border-radius: 10px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-heading {
+      display: block;
+      margin-top: 14px;
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    .contact-btn,
+    .contact-btn:link,
+    .contact-btn:visited {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 9px 12px !important;
+      border-radius: 999px !important;
+      border: 1px solid rgba(110, 88, 64, 0.16) !important;
+      background: rgba(250, 239, 223, 0.92) !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.84rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 2px 8px rgba(60, 51, 44, 0.06) !important;
+      white-space: nowrap;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+    }
+
+    .contact-btn:hover,
+    .contact-btn:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .contact-btn:active {
+      transform: translateY(0) !important;
+    }
+
+    .mp3-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 14px;
+      border: 1px solid rgba(110, 88, 64, 0.14);
+      border-radius: 14px;
+      background: rgba(255, 246, 233, 0.85) !important;
+      text-decoration: none !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      font-weight: 500;
+      font-size: 0.95rem;
+      line-height: 1;
+      transition:
+        background 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.08s ease !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .mp3-download:hover {
+      background: rgba(252, 240, 223, 0.95) !important;
+      border-color: rgba(216, 106, 60, 0.28) !important;
+      box-shadow: 0 4px 10px rgba(240, 138, 43, 0.08) !important;
+      transform: translateY(-1px) !important;
+    }
+
+    .mp3-download:active {
+      background: rgba(245, 231, 212, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.34) !important;
+      transform: translateY(0) !important;
+    }
+
+    .mp3-download:focus {
+      outline: none !important;
+      border-color: rgba(47, 110, 98, 0.35) !important;
+      box-shadow: 0 0 0 3px rgba(47, 110, 98, 0.12) !important;
+    }
+
+    .mp3-download__icon,
+    .mp3-download__text,
+    .mp3-download__title {
+      display: none !important;
+    }
+
+    img:not(.veilocity-inline-emoji),
+    video {
+      border-radius: 14px !important;
+      box-shadow: 0 8px 24px rgba(60, 51, 44, 0.18);
+      transition: none !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    img:not(.veilocity-inline-emoji):hover,
+    video:hover,
+    img:not(.veilocity-inline-emoji):focus,
+    video:focus,
+    img:not(.veilocity-inline-emoji):active,
+    video:active {
+      border-radius: 14px !important;
+      box-shadow: 0 8px 24px rgba(60, 51, 44, 0.18) !important;
+      transform: none !important;
+      filter: none !important;
+    }
+
+    .veilocity-inline-emoji,
+    .chatlog__content .veilocity-inline-emoji,
+    .chatlog__markdown-preserve .veilocity-inline-emoji {
+      display: inline-block !important;
+      width: 1.35em !important;
+      height: 1.35em !important;
+      max-width: 1.35em !important;
+      max-height: 1.35em !important;
+      min-width: 1.35em !important;
+      min-height: 1.35em !important;
+      vertical-align: -0.2em !important;
+      object-fit: contain !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin: 0 0.06em !important;
+      background: transparent !important;
+      filter: none !important;
+      transform: none !important;
+    }
+
+    .chatlog__message-group * {
+      background-color: transparent !important;
+    }
+
+    .chatlog__message-group .chatlog__markdown-pre--multiline,
+    .chatlog__message-group .chatlog__markdown-pre,
+    .chatlog__message-group .chatlog__attachment,
+    .chatlog__message-group .chatlog__embed,
+    .chatlog__message-group .chatlog__reference,
+    .chatlog__message-group .chatlog__attachment-generic,
+    .chatlog__message-group .mp3-download,
+    .chatlog__message-group .post-return-link,
+    .chatlog__message-group .contact-btn,
+    .chatlog__message-group .veilocity-vimeo-card,
+    .chatlog__message-group .veilocity-vimeo-stack {
+      background: rgba(255, 246, 233, 0.85) !important;
+    }
+
+    * {
+      -webkit-tap-highlight-color: transparent !important;
+      caret-color: var(--text) !important;
+    }
+
+    *:focus,
+    *:active {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    a,
+    a:link,
+    a:visited,
+    a:hover,
+    a:focus,
+    a:active,
+    .chatlog a,
+    .chatlog a:link,
+    .chatlog a:visited,
+    .chatlog a:hover,
+    .chatlog a:focus,
+    .chatlog a:active,
+    .chatlog__content a,
+    .chatlog__content a:link,
+    .chatlog__content a:visited,
+    .chatlog__content a:hover,
+    .chatlog__content a:focus,
+    .chatlog__content a:active,
+    .chatlog__attachment-generic-name a,
+    .chatlog__attachment-generic-name a:link,
+    .chatlog__attachment-generic-name a:visited,
+    .chatlog__attachment-generic-name a:hover,
+    .chatlog__attachment-generic-name a:focus,
+    .chatlog__attachment-generic-name a:active {
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      background: transparent !important;
+      text-decoration: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      border-color: transparent !important;
+      filter: none !important;
+      transition: none !important;
+    }
+
+    .chatlog__message-group,
+    .chatlog__message-group:hover,
+    .chatlog__message-group:focus,
+    .chatlog__message-group:active,
+    .chatlog__attachment,
+    .chatlog__attachment:hover,
+    .chatlog__attachment:focus,
+    .chatlog__attachment:active,
+    .chatlog__attachment-generic,
+    .chatlog__attachment-generic:hover,
+    .chatlog__attachment-generic:focus,
+    .chatlog__attachment-generic:active,
+    .chatlog__embed,
+    .chatlog__embed:hover,
+    .chatlog__embed:focus,
+    .chatlog__embed:active,
+    .chatlog__reference,
+    .chatlog__reference:hover,
+    .chatlog__reference:focus,
+    .chatlog__reference:active,
+    .mp3-download,
+    .mp3-download:hover,
+    .mp3-download:focus,
+    .mp3-download:active,
+    .post-return-link,
+    .post-return-link:hover,
+    .post-return-link:focus,
+    .post-return-link:active,
+    .contact-btn,
+    .contact-btn:hover,
+    .contact-btn:focus,
+    .contact-btn:active,
+    .veilocity-vimeo-card,
+    .veilocity-vimeo-card:hover,
+    .veilocity-vimeo-card:focus,
+    .veilocity-vimeo-card:active,
+    .veilocity-vimeo-stack,
+    .veilocity-vimeo-stack:hover,
+    .veilocity-vimeo-stack:focus,
+    .veilocity-vimeo-stack:active,
+    .veilocity-vimeo-button,
+    .veilocity-vimeo-button:hover,
+    .veilocity-vimeo-button:focus,
+    .veilocity-vimeo-button:active {
+      filter: none !important;
+    }
+
+    ::selection {
+      background: rgba(240, 138, 43, 0.22);
+      color: #3c332c;
+    }
+  `;
+  document.head.appendChild(style);
+
+  const preamble = document.querySelector(".preamble");
+  const brandLine = document.querySelector(".preamble__entry:first-child");
+  const channelLine = document.querySelector(".preamble__entry:nth-child(2)");
+
+  if (brandLine) {
+    brandLine.textContent = "Veilocity";
+  }
+
+  if (channelLine) {
+    const cleaned = channelLine.textContent.replace(/^Text Channels\s*\/\s*/i, "").trim();
+    channelLine.textContent = capitalizeWords(cleaned);
+  }
+
+  if (preamble) {
+    let existing = preamble.querySelector(".flag-block");
+    if (existing) existing.remove();
+
+    const flagSrc = document.body.dataset.flagSrc;
+    if (flagSrc) {
+      const flagBlock = document.createElement("div");
+      flagBlock.className = "flag-block";
+
+      const img = document.createElement("img");
+      img.className = "flag-image";
+      img.src = flagSrc;
+      img.alt = "Country flag";
+
+      flagBlock.appendChild(img);
+      preamble.appendChild(flagBlock);
+    }
+
+    let existingToc = preamble.querySelector(".toc-block");
+    if (existingToc) existingToc.remove();
+
+    const titleLinks = Array.from(document.querySelectorAll(".chatlog__title-replacement"))
+      .filter(link => {
+        const text = (link.textContent || "").trim();
+        const href = (link.getAttribute("href") || "").trim();
+        return text && href.startsWith("#");
+      });
+
+    if (titleLinks.length) {
+      const tocBlock = document.createElement("div");
+      tocBlock.className = "toc-block";
+
+      const tocTitle = document.createElement("div");
+      tocTitle.className = "toc-title";
+      tocTitle.textContent = "Table of Contents";
+
+      const tocList = document.createElement("ol");
+      tocList.className = "toc-list";
+
+      titleLinks.forEach(link => {
+        const li = document.createElement("li");
+
+        const a = document.createElement("a");
+        a.href = link.getAttribute("href");
+        a.textContent = (link.textContent || "").trim();
+
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+
+      tocBlock.appendChild(tocTitle);
+      tocBlock.appendChild(tocList);
+
+      const entriesContainer = preamble.querySelector(".preamble__entries-container");
+      const btcNote = preamble.querySelector(".btc-note");
+
+      if (btcNote) {
+        btcNote.insertAdjacentElement("beforebegin", tocBlock);
+      } else if (entriesContainer) {
+        entriesContainer.appendChild(tocBlock);
+      } else {
+        preamble.appendChild(tocBlock);
+      }
+    }
+  }
+
+  if (document.title) {
+    document.title = document.title.replace(
+      /^(Veilocity\s*-\s*)(.+)$/i,
+      (_, prefix, country) => prefix + capitalizeWords(country.trim())
+    );
+  }
+
+  const iconContainer = document.querySelector(".preamble__guild-icon-container");
+  if (iconContainer && !iconContainer.querySelector(".btc-note")) {
+    const note = document.createElement("div");
+    note.className = "btc-note";
+    note.innerHTML = `
+      QR code contains my Bitcoin address. If you feel called to support this work, you may donate using it.
+      <br><br>
+      <strong>BTC address:</strong>
+      <span class="btc-address">bc1qr5n4feh27pktff0cmu3m4n2zd70s466tsrxzk3</span>
+
+      <span class="contact-heading">Contact details:</span>
+      <div class="contact-links">
+        <a class="contact-btn" href="https://patreon.com/StephenChristopherCooke?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer">Patreon</a>
+        <a class="contact-btn" href="https://www.tiktok.com/@veilocity_rising?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">@veilocity_rising (TikTok)</a>
+        <a class="contact-btn" href="https://www.tiktok.com/@veilocity_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">@veilocity (TikTok)</a>
+        <a class="contact-btn" href="https://github.com/veilocity717-blip/Veilocity" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="contact-btn" href="mailto:stephencooke.c@gmail.com">Gmail</a>
+      </div>
+    `;
+    iconContainer.appendChild(note);
+  }
+
+  document.querySelectorAll(".chatlog__message-group").forEach(group => {
+    let existingReturn = group.querySelector(".post-return-wrap");
+    if (existingReturn) existingReturn.remove();
+
+    const wrap = document.createElement("div");
+    wrap.className = "post-return-wrap";
+
+    const link = document.createElement("a");
+    link.className = "post-return-link";
+    link.href = "#top";
+    link.textContent = "Return to top";
+
+    wrap.appendChild(link);
+    group.appendChild(wrap);
+  });
+});
+</script>
