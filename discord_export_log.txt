@@ -2136,3 +2136,52 @@ Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/
 
 ===== Discord Export Finished: 2026-06-15 00:18:28.132565 =====
 Completed: 1 | Skipped: 38 | Failed: 0
+
+===== Discord Export Started: 2026-06-15 10:19:32.581520 =====
+Script directory: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader
+Output directory: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity
+Exporter: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/1_Program/DiscordChatExporter.Cli
+[2026-06-15 10:19:32.582065] SKIPPED: ENGLISH - Court
+[2026-06-15 10:19:32.582187] SKIPPED: Spanish
+[2026-06-15 10:19:32.582277] SKIPPED: Afrikaans
+[2026-06-15 10:19:32.582357] SKIPPED: Albania
+[2026-06-15 10:19:32.582439] SKIPPED: Arabic
+[2026-06-15 10:19:32.582514] SKIPPED: Bosnia
+[2026-06-15 10:19:32.582591] SKIPPED: Bulgaria
+[2026-06-15 10:19:32.582664] SKIPPED: Cantonese
+[2026-06-15 10:19:32.582735] SKIPPED: Czech-Republic
+[2026-06-15 10:19:32.582805] SKIPPED: Danish
+[2026-06-15 10:19:32.582876] SKIPPED: Dutch
+[2026-06-15 10:19:32.582955] START: English - 1468663904052973860 (Attempt 1/3)
+[2026-06-15 10:19:41.269294] SUCCESS: English
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/English/English.html
+[2026-06-15 10:19:44.269997] SKIPPED: Philippines
+[2026-06-15 10:19:44.270231] SKIPPED: French
+[2026-06-15 10:19:44.270338] SKIPPED: Georgia
+[2026-06-15 10:19:44.270417] SKIPPED: German
+[2026-06-15 10:19:44.270496] SKIPPED: Greece
+[2026-06-15 10:19:44.270579] SKIPPED: Hebrew
+[2026-06-15 10:19:44.270657] SKIPPED: Hindi
+[2026-06-15 10:19:44.270737] SKIPPED: Iceland
+[2026-06-15 10:19:44.270815] SKIPPED: Indonesian
+[2026-06-15 10:19:44.270894] SKIPPED: Iran
+[2026-06-15 10:19:44.270971] SKIPPED: Italy
+[2026-06-15 10:19:44.271074] SKIPPED: Norwegian
+[2026-06-15 10:19:44.271181] SKIPPED: Japan
+[2026-06-15 10:19:44.271547] SKIPPED: Korea
+[2026-06-15 10:19:44.271718] SKIPPED: Mandarin
+[2026-06-15 10:19:44.271811] SKIPPED: Nepal
+[2026-06-15 10:19:44.271882] SKIPPED: Polish
+[2026-06-15 10:19:44.271949] SKIPPED: Portuguese-Brazil
+[2026-06-15 10:19:44.272016] SKIPPED: Sweden
+[2026-06-15 10:19:44.272085] SKIPPED: Romanian
+[2026-06-15 10:19:44.272310] SKIPPED: Russian
+[2026-06-15 10:19:44.272558] SKIPPED: Turkey
+[2026-06-15 10:19:44.272663] SKIPPED: Taiwan
+[2026-06-15 10:19:44.272744] SKIPPED: Thailand
+[2026-06-15 10:19:44.272817] SKIPPED: Ukraine
+[2026-06-15 10:19:44.272947] SKIPPED: Vietnam
+[2026-06-15 10:19:44.273022] SKIPPED: Zulu
+
+===== Discord Export Finished: 2026-06-15 10:19:44.273039 =====
+Completed: 1 | Skipped: 38 | Failed: 0
