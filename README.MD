@@ -136,7 +136,10 @@ VOL 6
 https://mega.nz/folder/EqhjRZQD#REsKXwwW-UtJmTqSrX2EXg  
 
 VOL 7  
-https://mega.nz/folder/IYMEVYgR#TXgEEP5kBlgGURh5hmRJgw  
+https://mega.nz/folder/IYMEVYgR#TXgEEP5kBlgGURh5hmRJgw
+
+VOL 8  
+https://mega.nz/folder/uvZB1ZwR#lCamVpOHDmKRObZ0MWeYnQ    
 
 ---
 
