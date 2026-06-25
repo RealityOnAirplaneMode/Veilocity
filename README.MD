@@ -203,7 +203,7 @@ Only made available.
 
 
 Local scan source: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity
-HTML files found: 39
+HTML files found: 40
 
 ====================================================================================================
 
@@ -243,6 +243,18 @@ VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Arabic/Arab
 
 ----------------------------------------------------------------------------------------------------
 
+## ARKCHIVE MULTILINGUAL FRONTEND ##
+
+FILE:
+Arkchive Multilingual Frontend/index.html
+
+VIEW 1 (Mirror 1): https://veilocity717-blip.github.io/Veilocity/Arkchive%20Multilingual%20Frontend/index.html
+
+VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Arkchive%20Multilingual%20Frontend/index.html
+
+
+----------------------------------------------------------------------------------------------------
+
 ## BOSNIA ##
 
 FILE:
@@ -275,6 +287,18 @@ Cantonese/Cantonese.html
 VIEW 1 (Mirror 1): https://veilocity717-blip.github.io/Veilocity/Cantonese/Cantonese.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Cantonese/Cantonese.html
+
+
+----------------------------------------------------------------------------------------------------
+
+## COURT-OF-ILLUSIONS-TRAFFICKING ##
+
+FILE:
+court-of-illusions-trafficking/Veilocity - Text Channels - court-of-illusions-trafficking [1466356241738760202].html
+
+VIEW 1 (Mirror 1): https://veilocity717-blip.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html
+
+VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/court-of-illusions-trafficking/Veilocity%20-%20Text%20Channels%20-%20court-of-illusions-trafficking%20%5B1466356241738760202%5D.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -323,18 +347,6 @@ English/English.html
 VIEW 1 (Mirror 1): https://veilocity717-blip.github.io/Veilocity/English/English.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/English/English.html
-
-
-----------------------------------------------------------------------------------------------------
-
-## ENGLISH - COURT ##
-
-FILE:
-ENGLISH - Court/ENGLISH - Court.html
-
-VIEW 1 (Mirror 1): https://veilocity717-blip.github.io/Veilocity/ENGLISH%20-%20Court/ENGLISH%20-%20Court.html
-
-VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/ENGLISH%20-%20Court/ENGLISH%20-%20Court.html
 
 
 ----------------------------------------------------------------------------------------------------
