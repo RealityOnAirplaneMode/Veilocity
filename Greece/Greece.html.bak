@@ -1,0 +1,865 @@
+<!DOCTYPE html><html lang=en><head><title>Veilocity - greece</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / greece</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1469265805010014271 class=chatlog__message-container data-message-id=1469265805010014271><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 1:37 PM"><a href=#chatlog__message-container-1469265805010014271>2/6/2026 1:37 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Αναστήθηκε Πάνω από τον Τροχό <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128260;"
+    title="arrows_counterclockwise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f504.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> &#171;Συγχώρεσέ τους, Πατέρα…&#187; 29/10/2025 - Αλβανία</strong>
+
+Για να πει ο Ιησούς αυτά τα λόγια,
+είχε ήδη περάσει πέρα από τον καρμικό κύκλο —
+πέρα από την αντίδραση, πέρα από την ψευδαίσθηση.
+Η συγχώρεση δεν είναι αδυναμία… είναι υπέρβαση. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg">
+
+#ΔιδασκαλίεςΤουΙησού #ΠνευματικήΑφύπνιση #Συγχώρεση #ΧριστικήΣυνείδηση #ΚαρμικόςΚύκλος #ΑφύπνισηΜέσαΑπόΤοΕυαγγέλιο #ΘείαΣοφία #ΥψηλότερηΔόνηση #ΦωςΠάνωΑπόΤοΣκοτάδι #ΕσωτερικήΕιρήνη #ΤαξίδιΠίστης #Ανυψώσου
+
+<a href="https://vimeo.com/1149506328">https://vimeo.com/1149506328</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 9:14 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1469265805567987828/He_Rose_Above_the_Wheel-Greek_Gr_caption.mp4?ex=6a3f99e9&amp;is=6a3e4869&amp;hm=c5948894b1e5902ece1d266181cebd4a06e15adf17b74e936c387c577c6bcce3&amp;" alt="Video attachment" title="Video: He_Rose_Above_the_Wheel-Greek_Gr_caption.mp4 (27.76 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1469265807547699424/He_Rose_Above_the_Wheel-Greek_Greece.srt?ex=6a3f99ea&amp;is=6a3e486a&amp;hm=4e0a4991d838e054f109dc4a5d3b376e0c78673e65b49d3b4f46dc15dee55f2e&amp;"> He_Rose_Above_the_Wheel-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>3.86 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1469265808029909123/He_Rose_Above_the_Wheel-Greek_Gree_audio.mp3?ex=6a3f99ea&amp;is=6a3e486a&amp;hm=cc6c9c869d1df7ba3a832567c0e5c08701d399b997853224e2b279250336b72a&amp;" alt="Audio attachment" title="Audio: He_Rose_Above_the_Wheel-Greek_Gree_audio.mp3 (1.67 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469299768512614482 class=chatlog__message-container data-message-id=1469299768512614482><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 3:52 PM"><a href=#chatlog__message-container-1469299768512614482>2/6/2026 3:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Νομικός Ψυχολογικός Εκβιασμός <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 02/12/2025 - Γεωργία</strong>
+
+Πίσω από την ευγενική γλώσσα της &#171;υποστήριξης&#187;
+κρύβεται ένα χέρι που ξαναγράφει την πραγματικότητά σου.
+Ένα σύστημα που ισχυρίζεται πως προστατεύει,
+μα σου κλέβει τον καθρέφτη από τα ίδια σου τα μάτια.
+Το νομικό gaslighting είναι ένας σιωπηλός κλέφτης —
+που αφαιρεί τη δύναμή σου, λέξη προς λέξη.
+
+#ΝομικόGaslighting #gaslighting #νομικήκακοποίηση #κατάχρησηεξουσίας #δυναμικήεξουσίας #συστημικόGaslighting #αυτονομία #μίλησετηνΑλήθεια #ενημέρωσηψυχικήςυγείας #αδικίααποκαλύπτεται #συνειδητήεπίγνωση #πορείαίασης #προσωπικήκυριαρχία #stephencooke #ψεύτικηασφάλεια #κοινωνικόσχόλιο
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1154273741">https://vimeo.com/1154273741</a></span> <span class=chatlog__edited-timestamp title="Friday, June 26, 2026 12:03 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1469299768671866930/Legal_Gaslight-Greek_Greece_caption.mp4?ex=6a3fb98b&amp;is=6a3e680b&amp;hm=ed34a87026209501939480b6d239124003ed1b57ff7ef4d89a4b53561a1b9025&amp;" alt="Video attachment" title="Video: Legal_Gaslight-Greek_Greece_caption.mp4 (7.23 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1469299769263521895/Legal_Gaslight-Greek_Greece.srt?ex=6a3fb98b&amp;is=6a3e680b&amp;hm=dd61b504187969822013aa02a6e90d613d8b78728c381fc343c87f3d8b22517a&amp;"> Legal_Gaslight-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>1.07 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1469299769523441767/Legal_Gaslight-Greek_Greece_audio.mp3?ex=6a3fb98b&amp;is=6a3e680b&amp;hm=c2a467c865fc5d1baa95be4a38b4f693c205b3f7e58b957809d5dd199f7eca36&amp;" alt="Audio attachment" title="Audio: Legal_Gaslight-Greek_Greece_audio.mp3 (422.96 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469316322092515440 class=chatlog__message-container data-message-id=1469316322092515440><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 4:58 PM"><a href=#chatlog__message-container-1469316322092515440>2/6/2026 4:58 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ΕΓΩ ΕΙΜΑΙ Ο ΩΝ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 17/08/2025 - Αλβανία</strong>
+
+Ο Ιησούς | Γεσούα μας δείχνει:
+Η ταυτότητα αποκαλύπτεται μέσα από τις πράξεις, όχι μέσα από περαστικές σκέψεις.
+Ο πειρασμός μιλά, αλλά δεν είναι αυτός που είσαι.
+Όταν τον αφήνεις πίσω σου, αυτό που μένει είναι η αλήθεια του Θεού. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg">
+
+#Γεσούα #ΑλήθειαΤουΕυαγγελίου #ΠνευματικόΤαξίδι #ΣοφίαΤηςΒίβλου #ΠνευματικήΜάχη #ΒασιλείαΤουΘεού #ΤαυτότηταΣτονΧριστό #Μετάνοια #ΌχιΟιΣκέψειςΣου #Ιησούς
+
+<a href="https://vimeo.com/1153284599">https://vimeo.com/1153284599</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 9:15 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1469316322960867349/We_are_not_the_voice_in_our_head_caption.mp4?ex=6a3fc8f5&amp;is=6a3e7775&amp;hm=9d06755186d2198822bb489197a0f7d74a9e1a5034c44226607e1a37a6124d0b&amp;" alt="Video attachment" title="Video: We_are_not_the_voice_in_our_head_caption.mp4 (37.16 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1469316324659564666/We_are_not_the_voice_in_our_heads-Hebrew.srt?ex=6a3fc8f6&amp;is=6a3e7776&amp;hm=c09676126bee0803abcf38a473febfaffbd050effb79881f04cad37dab9108e8&amp;"> We_are_not_the_voice_in_our_heads-Hebrew.srt </a></div><div class=chatlog__attachment-generic-size>4.76 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1469316325020008600/We_are_not_the_voice_in_our_heads-_audio.mp3?ex=6a3fc8f6&amp;is=6a3e7776&amp;hm=a6ad679af5960da1a6c1a1140d99f95de3c35763ab07945ffdadcfb4dd018c6b&amp;" alt="Audio attachment" title="Audio: We_are_not_the_voice_in_our_heads-_audio.mp3 (2.24 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1470065558157263090 class=chatlog__message-container data-message-id=1470065558157263090><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, February 8, 2026 6:35 PM"><a href=#chatlog__message-container-1470065558157263090>2/8/2026 6:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Μην Τρέφεις το Σκοτάδι <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128367;️"
+    title="candle"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f56f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠️"
+    title="warning"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg"> Ενέργεια, Τραύμα &amp; ο Κύκλος του Κακού - 23/01/2026 - Γεωργία</strong>
+
+Η ενέργεια ρέει εκεί όπου πηγαίνει η προσοχή.
+Θεραπεύουμε το τραύμα — ή το τρέφουμε;
+Αυτό που θρέφεις επιβιώνει. Αυτό που στερείς καταρρέει.
+
+#ΗΕνέργειαΡέει #ΣυνειδητήΕπίγνωση #ΘεραπείαΤραύματος #ΣυλλογικόΤραύμα #ΠνευματικήΔιάκριση #ΣκιάΕργασία #ΕνσυνείδητηΠροσοχή #Αφύπνιση #Αλήθεια #ΘεραπείαΌχιΜίσος #ΣπάσεΤονΚύκλο #ΠνευματικήΑνάπτυξη #ΕσωτερικήΕργασία #ΜηνΤρέφειςΤοΣκοτάδι #ΗΕπίγνωσηΜετράει
+
+<a href="https://vimeo.com/1157901854">https://vimeo.com/1157901854</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 6:17 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1470065559059173483/Dont_Feed_the_Darkness-Greek_Gre_caption.mp4?ex=6a3f36fd&amp;is=6a3de57d&amp;hm=9528653cec2e3b7f2838a0f1f8126da8cb36d1b81baead1a2a3ef40cb0b0b583&amp;" alt="Video attachment" title="Video: Dont_Feed_the_Darkness-Greek_Gre_caption.mp4 (60.85 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1470065562041450596/Dont_Feed_the_Darkness-Greek_Greece.srt?ex=6a3f36fe&amp;is=6a3de57e&amp;hm=c713c76a99905934a956efd2e5e4d79aff9ef74df66f0a5ec74edbeaffe4a8a7&amp;"> Dont_Feed_the_Darkness-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>8.54 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1470065562418679930/Dont_Feed_the_Darkness-Greek_Greec_audio.mp3?ex=6a3f36fe&amp;is=6a3de57e&amp;hm=1b233ace1f3a990a0495f5c2d43461d1bf6ebb6599e3b2b58b7d3a670225efa0&amp;" alt="Audio attachment" title="Audio: Dont_Feed_the_Darkness-Greek_Greec_audio.mp3 (3.21 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1475270955508171074 class=chatlog__message-container data-message-id=1475270955508171074><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, February 23, 2026 3:20 AM"><a href=#chatlog__message-container-1475270955508171074>2/23/2026 3:20 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ανάλαβε την Ειρήνη σου <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 26/08/2025 - Αλβανία</strong>
+
+Μας είπαν ότι η ειρήνη είναι κάτι που πρέπει να κερδίσεις,
+κάτι που ανατίθεται σε πόλεις, συστήματα και υπογραφές. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127961;️"
+    title="cityscape"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d9.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128395;️"
+    title="pen_fountain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f58b.svg">
+Αλλά κάπου ανάμεσα σε τοίχους που μικραίνουν και τιμές που ανεβαίνουν,
+ο έλεγχος γλίστρησε σιωπηλά μακριά.
+
+Ένα βαν διδάσκει έναν διαφορετικό ρυθμό.
+Ειρήνη που τη διατηρούν τα δικά σου χέρια.
+Χώρος που επεκτείνεται επειδή είναι δικός σου. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg">
+
+Καμία στρατηγική αντιμετώπισης.
+Καμία χημική ηρεμία.
+Καμία άδεια απαραίτητη.
+
+Μόνο η ήσυχη δύναμη να επιλέγεις πού ξεκουράζεσαι,
+πότε κινείσαι,
+και τι προστατεύεις. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128273;"
+    title="key"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f511.svg">
+
+Αυτό δεν είναι απόδραση — είναι ανάκτηση.
+Όχι φυγή από τον κόσμο,
+αλλά επιστροφή στη δική σου αυτονομία.
+
+Ανάλαβε τον χώρο σου.
+Ανάλαβε τον ρυθμό σου.
+Ανάλαβε την ειρήνη σου. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127748;"
+    title="sunrise_over_mountains"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f304.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">
+
+patreon.com/StephenChristopherCooke
+
+#VanLife #ΜινιμαλιστικήΖωή #ΟικονομικήΕλευθερία #ΖωήΣεΒαν #ΣπίτιΉΒαν #ΝομαδικήΖωή #ΖωήΣεΡόδες #ΧωρίςΧρέη #ΕλεύθεροςΤρόποςΖωής #ΖήσεΜεΤονΔικόΣουΤρόπο #ΜικρόΣπίτιΣεΡόδες #ΣπάσεΤοΣύστημα #ΖωήΕκτόςΔικτύου #ΕλευθερίαΤαξιδιού #ΜείωσεΓιαΝαΑναβαθμίσεις
+
+<a href="https://vimeo.com/1167197355">https://vimeo.com/1167197355</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 9:17 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1475270951997407306/I_dont_own_a_house_I_own_my_peac_caption.mp4?ex=6a3fb1e4&amp;is=6a3e6064&amp;hm=710f16e960f2bf1430dce17ca302d4959eb4814fae71cf813f6452171642e14e&amp;" alt="Video attachment" title="Video: I_dont_own_a_house_I_own_my_peac_caption.mp4 (26 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1475270954581102622/I_dont_own_a_house_I_own_my_peace-Greek_.srt?ex=6a3fb1e4&amp;is=6a3e6064&amp;hm=5a94477f02438e51e68909305d20011b998e5d2f1544a77ae864a6acefcefafc&amp;"> I_dont_own_a_house_I_own_my_peace-Greek_.srt </a></div><div class=chatlog__attachment-generic-size>3.52 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1475270955184947552/I_dont_own_a_house_I_own_my_peace-_audio.mp3?ex=6a3fb1e4&amp;is=6a3e6064&amp;hm=bd411a0dad94d074b8b2107a75fe119a4ab25e55d304af882c5d9f7e113dfbfc&amp;" alt="Audio attachment" title="Audio: I_dont_own_a_house_I_own_my_peace-_audio.mp3 (1.56 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1477601052747632641 class=chatlog__message-container data-message-id=1477601052747632641><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, March 1, 2026 1:39 PM"><a href=#chatlog__message-container-1477601052747632641>3/1/2026 1:39 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ο Νόμος της Συγκομιδής... 08/10/2025 - Αλβανία</strong>
+
+Όσοι σπέρνουν φτώχεια για τους άλλους, θα τη βρουν να μεγαλώνει στο δικό τους χωράφι.
+
+#ΣπείρεΚαιΘέρισε #ΑλήθειαΣεΜίαΓραμμή #ΗΕνέργειαΕπιστρέφει #ΚάρμαΉΚάλεσμα
+
+<a href="https://vimeo.com/1169284393">https://vimeo.com/1169284393</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 9:18 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1477601052130807849/Law_of_the_Harvest-Greek_Greece_caption.mp4?ex=6a3f9a37&amp;is=6a3e48b7&amp;hm=eb2540b5d2518162fbe7971f31596148ba2a48ecdb3b8c104cd6b641dd1584ab&amp;" alt="Video attachment" title="Video: Law_of_the_Harvest-Greek_Greece_caption.mp4 (1.1 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1477601052529393715/Law_of_the_Harvest-Greek_Greece.srt?ex=6a3f9a37&amp;is=6a3e48b7&amp;hm=2debd4101e710285b86ef962346395e2e699bb1e87bdfd25c53db03556ddb8b0&amp;"> Law_of_the_Harvest-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>186 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1477601052789571745/Law_of_the_Harvest-Greek_Greece_audio.mp3?ex=6a3f9a37&amp;is=6a3e48b7&amp;hm=3602ddd7a3e8eb6af054727b118630c5926623fd5540d6cbaf6c731e35dc2fcb&amp;" alt="Audio attachment" title="Audio: Law_of_the_Harvest-Greek_Greece_audio.mp3 (69.52 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1477702848212107265 class=chatlog__message-container data-message-id=1477702848212107265><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, March 1, 2026 8:23 PM"><a href=#chatlog__message-container-1477702848212107265>3/1/2026 8:23 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Επιλογές έχουν Συχνότητες <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128246;"
+    title="signal_strength"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4f6.svg"> 23/08/2025 - Αλβανία</strong>
+
+Κάποιες επιλογές δεν αφορούν το φαγητό… αφορούν τη συχνότητα.
+Αυτό που καταναλώνουμε συνδέεται με αυτό που ανεχόμαστε.
+
+#ΔικαιώματαΑνθρώπου #ΔικαιοσύνηΜετανάστευσης #ICE #ΚέντραΚράτησης #ΗθικήΣτάση #ΖώαΑναψυχής #ΌχιΠλέονΚόκκινοΚρέας #Διαμαρτυρία #ΠνευματικήΑφύπνιση #ΣύστημαΒαβέλων #ΣυνείδησηΠάνωΑπόΚατανάλωση #Ξύπνα #Αφύπνιση #Συνείδηση #Επιλογές #ΚρυμμένοΣεΠλήρηΟρατότητα #ΣιωπηλήΔιαμαρτυρία #ΚοίταΠιοΚοντά #ΑνθρώπινηΑξιοπρέπεια #ΣπάσεΤοΣύστημα #ΒιομηχανίαΒοείουΚρέατος #ΚόκκινοΚρέας #ΒιομηχανίαΚρέατος #ΗθικήΤροφίμων #ΒιομηχανικήΓεωργία #ΖωικήΓεωργία #Χριστιανισμός #ΠίστηΚαιΔικαιοσύνη #ΠροφητικήΦωνή #Αποκάλυψη #ΛέγοντεςΤηνΑλήθεια #Βίγκαν #Χορτοφάγος #ΦυτικήΔιατροφή #ΒίγκανΓιαΔικαιοσύνη #ΧωρίςΚρέας #ΣυνειδητήΔιατροφή #Συχνότητα #ΥψηλότερηΔόνηση #ΑναζητητέςΤηςΑλήθειας #ΕργάτεςΦωτός
+
+<a href="https://vimeo.com/1169322372">https://vimeo.com/1169322372</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 9:18 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1477702847117131917/Choices_Have_Frequencies-Greek_G_caption.mp4?ex=6a3f5045&amp;is=6a3dfec5&amp;hm=d3676e93edd64e54c2ffd5575788f0bd642604c3c607ffe76531cfd231027784&amp;" alt="Video attachment" title="Video: Choices_Have_Frequencies-Greek_G_caption.mp4 (8 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1477702847649939456/Choices_Have_Frequencies-Greek_Greece.srt?ex=6a3f5045&amp;is=6a3dfec5&amp;hm=44e1c110bbb1f242c3b42bf02b6ad45b5ace0e986840d359747d2b29522f6ec2&amp;"> Choices_Have_Frequencies-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>480 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1477702847947608279/Choices_Have_Frequencies-Greek_Gre_audio.mp3?ex=6a3f5045&amp;is=6a3dfec5&amp;hm=af0126a51faf9995079f553ddf1309d4daf201a87563d580999a8a7b8a342127&amp;" alt="Audio attachment" title="Audio: Choices_Have_Frequencies-Greek_Gre_audio.mp3 (384.89 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1480820036103962805 class=chatlog__message-container data-message-id=1480820036103962805><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, March 10, 2026 10:50 AM"><a href=#chatlog__message-container-1480820036103962805>3/10/2026 10:50 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127905;"
+    title="ferris_wheel"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3a1.svg"> Σπάσε τον Τροχό, Βρες το Μονοπάτι σου <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"> 25/09/2025 - Αλβανία</strong>
+
+Η διαδρομή είναι ατελείωτη—εκτός αν επιλέξεις να κατέβεις. Η δημιουργικότητα είναι το κλειδί.
+
+#ΟΤροχός #ΣπάσεΤονΚύκλο #ΕλευθερίαVanLife #ΗλιακήΖωή #ΕλάχιστεςΑνάγκες #ΞέφυγεΑπόΤονΠληθωρισμό #ΣπαστήςΚύκλου #Κυριαρχία #ΖωήΜεΤουςΔικούςΣουΌρους #ΕιρήνηΜαζίΣου
+
+<a href="https://vimeo.com/1172044313">https://vimeo.com/1172044313</a></span> <span class=chatlog__edited-timestamp title="Friday, March 27, 2026 9:19 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1480820033394315275/Break_the_Wheel-Greek_Greece_caption.mp4?ex=6a3f72a0&amp;is=6a3e2120&amp;hm=22350ffe990204074c7abbea27db89b9552daeb4a28be8c3e96939c1ea30eed5&amp;" alt="Video attachment" title="Video: Break_the_Wheel-Greek_Greece_caption.mp4 (19.11 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1480820035038744596/Break_the_Wheel-Greek_Greece.srt?ex=6a3f72a0&amp;is=6a3e2120&amp;hm=2c7b905fffd3420ec8d188a85dad3a13e33722706655906a9a07393e91301434&amp;"> Break_the_Wheel-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>2.17 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1480820035642720306/Break_the_Wheel-Greek_Greece_audio.mp3?ex=6a3f72a0&amp;is=6a3e2120&amp;hm=faecb752ea959d0f506b5847cf7a2ee7fff7ef90d653924f8fd0f62e5ef003ce&amp;" alt="Audio attachment" title="Audio: Break_the_Wheel-Greek_Greece_audio.mp3 (837.89 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1484434428930297997 class=chatlog__message-container data-message-id=1484434428930297997><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, March 20, 2026 10:12 AM"><a href=#chatlog__message-container-1484434428930297997>3/20/2026 10:12 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ο ναρκισσισμός είναι το σύστημα <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 28/01/2026 - Γεωργία
+(Εκτεταμένη έκδοση — περιλαμβάνει επιπλέον 20 λεπτά υλικού)
+</strong>
+Αυτή δεν είναι απλώς μια προσωπική ιστορία — πρόκειται για τον ναρκισσισμό που λειτουργεί σε μεγάλη κλίμακα.
+
+Ο ναρκισσισμός ευδοκιμεί στον έλεγχο, τη σύγχυση, την εξάρτηση και την εξάντληση. Όταν τα συστήματα χάνουν την υπευθυνότητα, αρχίζουν να αντικατοπτρίζουν τα ίδια χαρακτηριστικά: gaslighting, μετατόπιση ευθυνών, φίμωση και τιμωρία για αυτονομία.
+
+Κατά τη διάρκεια του χωρισμού μου, παρακολούθησα πώς οι νομικές διαδικασίες, η οικονομική πίεση και οι αφηγήσεις για την ψυχική υγεία μπορούν να χρησιμοποιηθούν λανθασμένα για να απογυμνώσουν την αυτονομία και να κρατήσουν τους ανθρώπους παγιδευμένους μέσα σε έναν επεκτεινόμενο βρόχο — έναν βρόχο που αποστραγγίζει ενέργεια, ταυτότητα και ελπίδα.
+
+Το μοιράζομαι αυτό όχι από θυμό, αλλά από σαφήνεια. Όταν ο ναρκισσισμός γίνεται δομικός, δεν μοιάζει πλέον με άτομο — μοιάζει με πολιτική, διαδικασία και &#171;πώς ακριβώς λειτουργούν τα πράγματα&#187;.
+
+Αν έχετε αμφιβάλλει για την πραγματικότητά σας, έχετε τιμωρηθεί επειδή λέτε την αλήθεια ή έχετε αναγκαστεί να επιβιώσετε αντί να θεραπευτείτε — δεν είστε πληγωμένοι. Αντιδράτε σε ένα σύστημα που χτίστηκε χωρίς ενσυναίσθηση.
+
+Η επίγνωση καταρρέει τον βρόχο.
+
+#Ναρκισσισμός #ΣυστημικήΚακοποίηση #ΝαρκισσιστικόςΈλεγχος #ΔιάλειμμαΒίου #ΚαταναγκαστικόςΈλεγχος #ΑεριωθητικήΔιαχείριση #ΔομικήΒία #ΟπλοποιημέναΣυστήματα #ΝόμιμηΚακοποίηση #ΘεσμικήΑποτυχία #ΨυχολογικήΚακοποίηση #ΕπίγνωσηΤραύματος #ΛέξηΑλήθειας #ΦωνήΕπιζώντος #Λογοδοσία #Διάκριση #Αφύπνιση #ΕπιλογήΔιαύγειας #ΤέλοςΚύκλου
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1175390076">https://vimeo.com/1175390076</a></span> <span class=chatlog__edited-timestamp title="Friday, June 26, 2026 12:03 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1484434409900740628/Narcissism_is_the_System_Prt_1-G_caption.mp4?ex=6a3f69c6&amp;is=6a3e1846&amp;hm=ce26c828cd9cc91e691a4e0226b1069c46032d2e14dc4cb669106267482daed9&amp;" alt="Video attachment" title="Video: Narcissism_is_the_System_Prt_1-G_caption.mp4 (421.18 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1484434428750069780/Narcissism_is_the_System_Greek_caption.srt?ex=6a3f69cb&amp;is=6a3e184b&amp;hm=6eb5c405b717c7a793a7328f78b14363798519baaa513aa790a53102b521b97c&amp;"> Narcissism_is_the_System_Greek_caption.srt </a></div><div class=chatlog__attachment-generic-size>109.7 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1484434429010251897/Narcissism_is_the_System_Greek_audio.mp3?ex=6a3f69cb&amp;is=6a3e184b&amp;hm=7c3cea99d691d73635b70ff184d199fc04ee52b3905de215701b3f1839ecd619&amp;" alt="Audio attachment" title="Audio: Narcissism_is_the_System_Greek_audio.mp3 (25.73 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490252834363412651 class=chatlog__message-container data-message-id=1490252834363412651><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 11:32 AM"><a href=#chatlog__message-container-1490252834363412651>4/5/2026 11:32 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ο παράδεισος είναι θέμα αντίληψης <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127780;️"
+    title="white_sun_small_cloud"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f324.svg"> 16/01/2026 - Γεωργία</strong>
+
+Τίποτα δεν φαίνεται επικίνδυνο για ένα ειρηνικό μυαλό.
+
+Ματθαίος 6:25–26 &#183; Ματθαίος 18:3 &#183; Ψαλμός 4:8
+
+#ΕιρηνικόΝου #ΉσυχεςΣτιγμές #Ηρεμία #ΕυγενικήΕπίγνωση
+
+<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 6:18 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490252834594361484/All_Dogs_Go_to_Heaven.mp4?ex=6a3f7c9b&amp;is=6a3e2b1b&amp;hm=1021ad8ba122fa8312ecd220216e260d202d8125395f60c6f244191d384758be&amp;" alt="Video attachment" title="Video: All_Dogs_Go_to_Heaven.mp4 (1.14 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490260665074454600 class=chatlog__message-container data-message-id=1490260665074454600><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:03 PM"><a href=#chatlog__message-container-1490260665074454600>4/5/2026 12:03 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Το Κλουβί Δεν Είναι το Σπίτι Σου <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127749;"
+    title="sunrise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f305.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129718;"
+    title="feather"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fab6.svg"> 06/04/2025 - Ταϊλάνδη</strong>
+
+Άκουσα αυτό το τραγούδι ενώ περπατούσα σε μια αγορά στην Ιαπωνία, μια συνηθισμένη μέρα... και με σταμάτησε απότομα.
+
+&#171;Δώσε χώρο να αναπτυχθείς... το κλουβί δεν είναι το σπίτι σου&#187;.
+
+Δεν έψαχνα καν για κάποιο σημάδι, αλλά ο Θεός έβαλε ένα ακριβώς μπροστά μου.
+
+Το &#171;The Sparrow&#187; των The Hunts έπαιξε και οι στίχοι χτύπησαν βαθιά — σαν τον Ουρανό να ψιθυρίζει μέσα από τον θόρυβο του κόσμου.
+
+Και παρόλο που αυτή η στιγμή συνέβη στην Ιαπωνία, αυτό το βίντεο γυρίστηκε στο Σπήλαιο Phraya Nakhon — Prachuap Khiri Khan Ταϊλάνδη — σε ένα μέρος όπου το νόημα του μηνύματος ξεδιπλώθηκε πραγματικά.
+
+Μου θύμισε ότι ο Θεός συχνά μας οδηγεί προς τα εδώ — έξω από τον περιορισμό, έξω από τον φόβο, έξω από τους μικρούς χώρους στους οποίους έχουμε επιβιώσει...
+
+Και σε κάτι ευρύτερο.
+
+Μια ψίχα ψωμιού σε μια χώρα.
+
+Μια σημαντική ανακάλυψη σε μια άλλη.
+
+Χτίζουμε κλουβιά από την άνεση, τις παλιές ταυτότητες, τα πρότυπα επιβίωσης... αλλά ποτέ δεν ήμασταν φτιαγμένοι για να μένουμε περιορισμένοι.
+
+Το κλουβί δεν είναι το σπίτι σου.
+
+Κάνε χώρο για να αναπτυχθείς.
+Άνοιξε τα φτερά σου.
+Εμπιστεύσου το μονοπάτι.
+
+&#171;Sparrow&#187; από τους The Hunts — ένα τραγούδι από το indie folk ντουέτο The Hunts, που περιλαμβάνεται στο άλμπουμ τους Hibernating Heart. Λεζάντες από το TikTok.
+
+#TheHunts #TheSparrow #PhrayaNakhonCave ⁠Ταϊλάνδη #PrachuapKhiriKhan #DivineSigns #FaithWalk #SpiritualJourney #BreakFree #YouWereMeantToFly #HealingPath #GodIsSpeaking #AwakenedSoul
+
+<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490260666517557278/The_cage_is_not_your_home.mp4?ex=6a3f83e6&amp;is=6a3e3266&amp;hm=5e37f707d92f29cc0467c6b126715d21a1d78e89c19965266dd286b313254012&amp;" alt="Video attachment" title="Video: The_cage_is_not_your_home.mp4 (21.46 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490271345924378716 class=chatlog__message-container data-message-id=1490271345924378716><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:46 PM"><a href=#chatlog__message-container-1490271345924378716>4/5/2026 12:46 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg">Όταν η Ακινησία Ευθυγραμμίζεται<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127811;"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127769;"
+    title="crescent_moon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f319.svg"> 16/09/2025 - Αλβανία
+</strong>
+Καθισμένος στην ησυχία, συνειδητοποίησα—όταν όλα ευθυγραμμίζονται, νιώθω σαν να κοιτάζει πίσω.
+
+#ακινησία #φύση #εστίαση #ευθυγράμμιση #στρώσεις #σιωπή #διαλογισμός #ηρεμία #βίντεοφύσης #ήσυχεςστιγμές
+
+<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490271350936309811/When_Stillness_Aligns.mp4?ex=6a3f8dd9&amp;is=6a3e3c59&amp;hm=925bd412c0c31e6ad4d2cd0a78641b9a60f88b70b4ea260c6ce51887683dd273&amp;" alt="Video attachment" title="Video: When_Stillness_Aligns.mp4 (89.27 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490318271071781016 class=chatlog__message-container data-message-id=1490318271071781016><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 3:52 PM"><a href=#chatlog__message-container-1490318271071781016>4/5/2026 3:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128167;"
+    title="droplet"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a7.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> Θεραπεία γλυκού νερού - δεν χρειάζεται φίλτρο. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"> 25/07/2025 - Μαυροβούνιο</strong>
+
+#NatureVibes #ΚολύμπιΣτοΓλυκόΝερό #ΖωήΣτηΛίμνη #ΛάτρειςτηςΦύσης #ΜέσαΣτηνΆγριαΦύση #ΘεραπείαΥπαίθρου #ΓαλήνιεςΔονήσεις #ΚολύμπιΆγριαςΦύσης #ΗΦύσηΘεραπεύει #ΖωήΣτηΦύση #Προσγείωση #ΏραΠεριπέτειας
+
+<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490318277795250206/Freshwater_therapy.mp4?ex=6a3fb98e&amp;is=6a3e680e&amp;hm=5859c0e1bf03fb66b7143c805332b65c6b2e7c9405411767b4ec0bf73df64d8e&amp;" alt="Video attachment" title="Video: Freshwater_therapy.mp4 (93.64 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490332656737456219 class=chatlog__message-container data-message-id=1490332656737456219><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:49 PM"><a href=#chatlog__message-container-1490332656737456219>4/5/2026 4:49 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Η χαρά είναι φάρμακο. Η φύση είναι αλήθεια. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 11/06/2025 - Βουλγαρία
+</strong>
+Δεν ήρθα εδώ απλώς για ένα διάλειμμα — ήρθα για να θυμηθώ.
+Η Γη αλλάζει, όπως και εμείς. Αυτή είναι η λάμψη που έρχεται με την αφύπνιση. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"> “Παντού” – Niall Horan &amp; Anne-Marie
+
+Ζωή σε καμπίνα στη Βουλγαρία — όπου ένιωσα ξανά γαλήνη, παρουσία και παιχνίδι.
+
+#5dshift #NewEarth #spirtualawaking #natureglowup #glowup ⁠βουλγαρία #έρημος #awakendsoul #cabininthewoods #lightworkers #forest #nature #spirituality #viral
+
+<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490332662668202024/Joy_is_medicine._Nature_is_truth.mp4?ex=6a3fc6f3&amp;is=6a3e7573&amp;hm=4f9933451afa5e847169779e1a151e11eab03f94c5654b77e4872e026838f859&amp;" alt="Video attachment" title="Video: Joy_is_medicine._Nature_is_truth.mp4 (112.8 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490387878021431488 class=chatlog__message-container data-message-id=1490387878021431488><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:29 PM"><a href=#chatlog__message-container-1490387878021431488>4/5/2026 8:29 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, Ανοιχτά Πεδία, Καθαρό Μυαλό <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 18/10/2025 - Αλβανία</strong>
+
+Μερικές φορές το μόνο που χρειάζεσαι είναι ένα ήσυχο χωράφι, ένα καλό τραγούδι και την υπενθύμιση ότι η ζωή είναι ακόμα όμορφη.
+Fleetwood Mac στο βάθος, καθαρός αέρας μπροστά μου και ένας κόσμος που δεν ζητάει τίποτα — απλώς να σταματήσω και να αναπνεύσω.
+
+#vanlife #naturevibes #fleetwoodmac #ειρηνικέςστιγμές #ζωήστοπεδίο #αγελάδες #τοπία #ταξιδιωτικέςδονήσεις #επιβράδυνση #mindfulmoments #sunsetvibes #αυστραλία #ευρώπη #μουσικήκαιφύση #ταξίδιελευθερίας #ψυχήστηςυπέροχης #ήρεμηενέργεια #ήσυχεςστιγμές #δημιουργικόταξίδι #διαδρομήθεραπείας
+
+<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490387883024973844/Fleetwood_Mac_Open_Fields_Clear_Mind.mp4?ex=6a3f51a1&amp;is=6a3e0021&amp;hm=97d752619628da2c47323d517017c10c17c97b368ffd53c4dfa1752e5b506e13&amp;" alt="Video attachment" title="Video: Fleetwood_Mac_Open_Fields_Clear_Mind.mp4 (85.4 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490395417253380299 class=chatlog__message-container data-message-id=1490395417253380299><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:59 PM"><a href=#chatlog__message-container-1490395417253380299>4/5/2026 8:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ένα Γαλήνιο Βήμα στο Χωράφι <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127806;"
+    title="ear_of_rice"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33e.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128004;"
+    title="cow2"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f404.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128276;"
+    title="bell"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f514.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 16/08/2025 - Αλβανία</strong>
+
+Βγαίνοντας στο &#171;χωράφι&#187; — όχι σε οποιοδήποτε μέρος, αλλά σε αυτό που σε περιμένει.
+Όπου ο χρόνος χαλαρώνει, ο αέρας κρατάει την ανάσα του,
+και η μόνη μουσική είναι η απαλή χορωδία από κουδούνια αγελάδας.
+
+#VanLife #NatureVibes #CowBells #GreenfulMoments #PastureLife #SlowLiving #OffGridLife #PmorningVibes #FarmViews #MindfulLiving
+
+<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490395422819094689/A_Peaceful_Step_Into_the_Field.mp4?ex=6a3f58a7&amp;is=6a3e0727&amp;hm=2efd6af0ecb76475ee672d09c431807066427352e65a21c2adfb64646303a8aa&amp;" alt="Video attachment" title="Video: A_Peaceful_Step_Into_the_Field.mp4 (106.54 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490606227606995030 class=chatlog__message-container data-message-id=1490606227606995030><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, April 6, 2026 10:56 AM"><a href=#chatlog__message-container-1490606227606995030>4/6/2026 10:56 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Και τα ξόρκια του δολαρίου! <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128184;"
+    title="money_with_wings"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b8.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 01/12/2025 - Γεωργία</strong>
+
+Όπως κάθε ξόρκι, η δύναμή του εξαρτάται από την πίστη σας — τη συμμετοχή σας.
+Το δολάριο είναι ουδέτερο, όπως και ο καπιταλισμός — είναι παιδιά του Θεού που πάντα προορίζονταν να ανέβουν πάνω από εμάς.
+Αλλά έχουμε μάθει να πιστεύουμε ότι το δολάριο είναι πάνω από εμάς,
+και αυτή η πίστη καταρρέει το πεδίο των πιθανοτήτων μας σε μια στενή μορφή.
+Η ψευδαίσθηση είναι να νομίζουμε ότι είμαστε ίσοι με τα συστήματα που δημιουργήσαμε.
+Πάρα πολλοί μάχονται μέσα στον βρόχο, χωρίς ποτέ να συνειδητοποιούν τη δύναμη που κατέχουν απλώς και μόνο βγαίνοντας εντελώς από αυτόν.
+
+#δολαριανήψευδαίσθηση #αφύπνιση #πνευματικήαφύπνιση #matrix #breakfree #αναζητητέςαλήθειας #ποιητικήσοφία #οπτικήαφήγηση #fyp #foryou #foryoupage #ιοριακόβίντεο #βαθιέςσκέψεις #μαθήματαζωής #συνείδηση ​​#αυτοπραγμάτωση #αλλαγήνοτροπίας #συστημικήαλήθεια #φιλοσοφία #μεταφορά #σύγχρονηπαραβολή #σκεφτείτετο #κατάρρευσηψευδαίσθησης #εσωτερικήελευθερία #stephencooke
+
+<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 6:18 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490606228261568532/Dollars_Cast_Spells_Too.mp4?ex=6a3f743a&amp;is=6a3e22ba&amp;hm=427a4373fb2ddd40bba81c896f6a8503fbc8b26de90f8310e1e08f024d8e1987&amp;" alt="Video attachment" title="Video: Dollars_Cast_Spells_Too.mp4 (1.77 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490938619500691616 class=chatlog__message-container data-message-id=1490938619500691616><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 8:57 AM"><a href=#chatlog__message-container-1490938619500691616>4/7/2026 8:57 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> Δεν πρόκειται για επίδειξη, πρόκειται για την επίδειξη του δρόμου επιστροφής — στην κυριαρχία, στην ειρήνη, στη φύση. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 09/09/2025 - Αλβανία
+</strong>
+Ηλιακή ενέργεια, ζεστό νερό, θέρμανση και ένας μικρός χώρος πάνω σε ρόδες. Όχι επίδειξη — απλώς επίδειξη ότι ένας άλλος τρόπος ζωής είναι εφικτός, όπου η ειρήνη παραμένει υπό τον έλεγχο κάποιου και η δράση του δεν ανατίθεται σε εξωτερικούς συνεργάτες.
+
+#Κυριαρχία #ΑνακτήστεΤηνΕιρήνηΣας #ΚατέχετεΤηΖωήΣας #ΖωήΣτοΦορτηγό #ΖωήΕκτόςΔικτύου #ΑνεξάρτητηΖωή #ΗλιακήΕνέργεια #ΤοΝερόΕίναιΖωή #ΕπιστροφήΣτηΦύση #ΒιώσιμηΖωή #ΑπλήΖωή #ΌριαΦύσης #Ο ΘεόςΠαρέχει #ΠίστηΚαιΕλευθερία #ΖώνταςΣτηΧάρη
+
+<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span> <span class=chatlog__edited-timestamp title="Saturday, June 13, 2026 12:20 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490938623477153893/To_Sovereignty.mp4?ex=6a3f584c&amp;is=6a3e06cc&amp;hm=252727c5a9a551ef725096aaa5a2bdee4d05831f85f3f876cc685eecb4e71034&amp;" alt="Video attachment" title="Video: To_Sovereignty.mp4 (83.29 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490943346691276930 class=chatlog__message-container data-message-id=1490943346691276930><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:16 AM"><a href=#chatlog__message-container-1490943346691276930>4/7/2026 9:16 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Η Αλήθεια Περιμένει Πίσω από τον Καθρέφτη <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129694;"
+    title="mirror"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa9e.svg"> 21/02/2026 - Γεωργία</strong>
+
+Υπάρχει κίνδυνος να αγνοείς τη διαφθορά.
+Υπάρχει επίσης κίνδυνος να την κοιτάς επίμονα για πολύ ώρα.
+
+Έχω μοιραστεί εργαλεία για να κατεβάζω τα αρχεία του Epstein απευθείας από την πηγή της Δικαιοσύνης — επειδή η αλήθεια πρέπει να διατηρείται στην προέλευσή της, όχι να φιλτράρεται μέσω αφηγήσεων.
+
+Αν η πηγή καταρρεύσει, τι την αντικαθιστά;
+Εικασίες. Χειραγώγηση. Παραμόρφωση.
+
+Αρχειοθετήστε υπεύθυνα.
+Εξετάστε καθαρά.
+Μην αφήσετε τον καθρέφτη να σας παραμορφώσει.
+
+Λήψη Google:
+<a href="https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing">https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing</a>
+
+Σετ 1
+<a href="https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g">https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g</a>
+Σετ 2
+<a href="https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g">https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g</a>
+Σετ 3
+<a href="https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w">https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w</a>
+Σετ 4
+<a href="https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA">https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA</a>
+Σετ 5
+<a href="https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg">https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg</a>
+Σετ 6
+<a href="https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA">https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA</a>
+
+#ΑρχείαΕπστάιν #Επστάιν #ΥπόθεσηΕπστάιν #ΈρευναΕπστάιν #ΚαθρέφτηςΕπστάιν #ΔικαιοσύνηΓιαΤαΘύματα #Λογοδοσία #ΔημόσιαΑρχεία #Διαφάνεια #ΑποκαλύψτεΤηνΑλήθεια #ΚάντεΤηνΈρευνάΣας #ΗΑλήθειαΜετράει #ΗΔικαιοσύνηΜετράει #Υπερασπιστείτε τηνΑλήθεια #Ευαισθητοποίηση #ΑναζητήστεΤηνΑλήθεια
+
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
+<a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 6:18 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490943350067433532/Man_in_the_Mirror.mp4?ex=6a3f5cb3&amp;is=6a3e0b33&amp;hm=8d3e188142c0f457427ef1bb938f81195b6a3f87940626353a49e149a94ae7b5&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1490943351502012456/The_Mirror_of_Evil.png?ex=6a3f5cb3&amp;is=6a3e0b33&amp;hm=a9b54c3cdfe133e588a68f49c087f569c70596d3b525cfc3d6e038c34df2ffed&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1469265580610682900/1490943351502012456/The_Mirror_of_Evil.png?ex=6a3f5cb3&amp;is=6a3e0b33&amp;hm=a9b54c3cdfe133e588a68f49c087f569c70596d3b525cfc3d6e038c34df2ffed&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490943354480099368/The_Mirror_of_Evil.mp4?ex=6a3f5cb4&amp;is=6a3e0b34&amp;hm=57bf41a3acb6031b2a6863145a61da0f3a18a72fb79444b5df91b1877b501a5a&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil.mp4 (90.59 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490964859532083211 class=chatlog__message-container data-message-id=1490964859532083211><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 10:42 AM"><a href=#chatlog__message-container-1490964859532083211>4/7/2026 10:42 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Σώστε τον εαυτό σας από την αμφιβολία <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127754;"
+    title="ocean"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30a.svg"> 09/11/2025 - Τουρκία</strong>
+
+Μερικές φορές οι καλύτερες στροφές δεν είναι προγραμματισμένες.
+Εκτός αυτοκινητόδρομου, στο άγνωστο.
+
+#VanLife #LeaveItBetter #RoadStories #FreedomOnWheels #TravelRealTalk #SpontaneousJourney #NomadLife #AdventureAwaits #CinematicVibes #Bronson #ODESZA #TotallyEnormousExtinctDinosaurs #SaveYourselfFromDoubt #NeverGiveItUp #TrustTheJourney #FaithInMotion #FlowState #OffTheHighway #IntoTheUnknown #SelfTrust
+
+<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1490964862401249351/Save_Yourself_from_Doubt.mp4?ex=6a3f70bb&amp;is=6a3e1f3b&amp;hm=2b8326b226052ff95af4eaab211c27409c0671b46e66307b7fa1ac324fe87390&amp;" alt="Video attachment" title="Video: Save_Yourself_from_Doubt.mp4 (48.43 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1491034899556204594 class=chatlog__message-container data-message-id=1491034899556204594><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 3:20 PM"><a href=#chatlog__message-container-1491034899556204594>4/7/2026 3:20 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 24/08/2025 - Albani&#235;</strong>
+
+#klavier #vreedsamevibes #hele nuwew&#234;reld #natuurvibes #kalm #esteties #klaviermusiek #vertraag #bewusstoekomblikke #sagtevloei #boomvanlewe
+
+<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1491034904341909584/Flying_free_in_a_whole_new_world.mp4?ex=6a3fb1f7&amp;is=6a3e6077&amp;hm=9ae07cf03102fed7d18c4e27dcd04bab0dcba13def524aca7fe15277eabe6e90&amp;" alt="Video attachment" title="Video: Flying_free_in_a_whole_new_world.mp4 (62.02 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1499022894490062938 class=chatlog__message-container data-message-id=1499022894490062938><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, April 29, 2026 4:21 PM"><a href=#chatlog__message-container-1499022894490062938>4/29/2026 4:21 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#171;Να είσαι καλός ποιμένας…&#187; ≠ εμπορία ανθρώπων <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="♻️"
+    title="recycle"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/267b.svg"> 18/11/2025 – Γεωργία</strong>
+
+Ένας ποιμένας προστατεύει την αυτονομία — ποτέ δεν την αντικαθιστά. Ένας διακινητής επωφελείται από την απώλειά της.
+
+Και μερικές φορές αυτό που μοιάζει με φροντίδα… είναι απλώς επεξεργασία.
+
+&#171;Ου φονεύσεις&#187;. — Έξοδος 20:13
+
+Όχι μόνο το σώμα — αλλά και το πνεύμα, η θέληση, η αυτονομία μέσα μας.
+
+Όπου υπάρχει καταναγκασμός, εξάρτηση ή έλεγχος, κάτι έχει ήδη πάει στραβά.
+
+Η φροντίδα δεν καταναλώνει. Η καθοδήγηση δεν σβήνει.
+
+Και δεν είμαι εδώ για να με αναλύσουν σε κάτι πιο βολικό.
+
+Διάκριση είναι να θυμάσαι τη διαφορά.
+
+#ΑπόΑντήχησηΣτονΈλεγχο #ΗΑλήθειαΜετράει #ΠνευματικήΔιάκριση #ΕξαναγκαστικόςΈλεγχος #ΠοιμέναςΔενΕίναιΙδιοκτήτης #ΜειώστεΕπαναχρησιμοποίησηΕπαναστάτης #ΔενΒιοδιασπάται #ΕπιζώνΣύστημα #ΕπεξεργάζεταιΑπόΤοΣύστημα #ΤαξίδιΘεραπείας #ΑνεβείτεΠάνωΑπόΑυτό #ΜιλήστεΤηνΑλήθειαΣας #ΔιάλειμμαΟΚύκλος #ΕσωτερικόΦως #ΑνακτήστεΤηνΙστορίαΣας #ΗμερολόγιοΖωήςVan #ΛειτουργίαΑνθεκτικότητας #ΑλήθειαΣτοΧιούμορ #ΜαθήματαΖωής #Συνεχίστε
+
+<a href="https://vimeo.com/1187695879">https://vimeo.com/1187695879</a>
+<a href="https://vimeo.com/1187695834">https://vimeo.com/1187695834</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 6:18 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1499022889465417839/Exodus_2013-English-Greek_caption.mp4?ex=6a3fc05b&amp;is=6a3e6edb&amp;hm=37cd9a83e97b8692e43d70c1acf84d9184f8f393164b17da02d4fd29d4a02bd7&amp;" alt="Video attachment" title="Video: Exodus_2013-English-Greek_caption.mp4 (99.46 MB)"></video></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1499022894196457583/Being_a_Good_Sheppard__trafficking_people.mp4?ex=6a3fc05c&amp;is=6a3e6edc&amp;hm=6e6df3fa83449cca2aa2421da1984c5e25670b28c834a531a77912f8ac21345e&amp;" alt="Video attachment" title="Video: Being_a_Good_Sheppard__trafficking_people.mp4 (553.15 KB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1510242997378486332 class=chatlog__message-container data-message-id=1510242997378486332><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, May 30, 2026 3:26 PM"><a href=#chatlog__message-container-1510242997378486332>5/30/2026 3:26 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127774;"
+    title="sun_with_face"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f31e.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128168;"
+    title="dash"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a8.svg"> Από τις Καταβόθρες στην Κυριαρχία <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"> 27/09/2025 - Αλβανία</strong>
+
+Τα ορυκτά καύσιμα υπόσχονται ελευθερία, αλλά μας αφήνουν με καταβόθρες — στη γη μας και στην κυριαρχία μας. Οι ανανεώσιμες πηγές ενέργειας δεν μας παγιδεύουν στις αγορές ή στο δολάριο, μας απελευθερώνουν. Η πραγματική δύναμη είναι δική μας όταν αξιοποιούμε τον ήλιο, τον άνεμο και το νερό. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#ΚαταβόθραΕναντίονΚυριαρχίας #ΕνεργειακήΕλευθερία #ΠίστηΕνάντιαΣτοΦόβο #ΑνανεώσιμεςΠηγές #ΗλιακήΕνέργεια #ΑιολικήΕνέργεια #Αποκέντρωση #ΑλήθειαΕνΑγάπη #Ο ΘεόςΕίναιΚαλός #ΗΕιρήνηΜαζίΣας
+
+<a href="https://vimeo.com/1196926159">https://vimeo.com/1196926159</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1510242998863134720/From_Sinkholes_to_Sovereignty-Gr_caption.mp4?ex=6a3fb365&amp;is=6a3e61e5&amp;hm=5c9c8fea29182514fc6330bc9b32a8664ea91a1ab70faaffa669a61f559de092&amp;" alt="Video attachment" title="Video: From_Sinkholes_to_Sovereignty-Gr_caption.mp4 (25.01 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1510243000314499174/From_Sinkholes_to_Sovereignty-Greek_Gree.srt?ex=6a3fb366&amp;is=6a3e61e6&amp;hm=8ea5ef8b55434dcd6d38543f5ec4ec6f887117cfce1179e950d845b5b352bfb8&amp;"> From_Sinkholes_to_Sovereignty-Greek_Gree.srt </a></div><div class=chatlog__attachment-generic-size>1.59 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1510243000586862782/From_Sinkholes_to_Sovereignty-Gree_audio.mp3?ex=6a3fb366&amp;is=6a3e61e6&amp;hm=543952c28b8df1378f941407b397dbf28a67f868549111dbcff14030e5a0a379&amp;" alt="Audio attachment" title="Audio: From_Sinkholes_to_Sovereignty-Gree_audio.mp3 (543.89 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1510390069444350123 class=chatlog__message-container data-message-id=1510390069444350123><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, May 31, 2026 1:10 AM"><a href=#chatlog__message-container-1510390069444350123>5/31/2026 1:10 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Η ειρήνη είναι η αληθινή προεπιλεγμένη κατάσταση <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 16/09/2025 - Αλβανία</strong>
+
+Η ευτυχία και η θλίψη είναι το ταξίδι της στη δυαδικότητα—η ισορροπία αποκαθίσταται τη στιγμή που αφήνουμε πίσω μας την λογοδοσία.
+
+#ειρήνη #ισορροπία #δυαδικότητα #νοοτροπία #αφύπνιση #εσωτερικόταξίδι #αλήθεια #θεραπεία #αφήνω #σοφία
+
+<a href="https://vimeo.com/1197011942">https://vimeo.com/1197011942</a></span> <span class=chatlog__edited-timestamp title="Sunday, May 31, 2026 1:19 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1510390067619692644/Peace_is_the_true_default_state-_caption.mp4?ex=6a3f939d&amp;is=6a3e421d&amp;hm=9b45f4e4d086ed964e1fb29be419bed8713d19c19e4a118cbbe29ae326a51329&amp;" alt="Video attachment" title="Video: Peace_is_the_true_default_state-_caption.mp4 (22.48 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1510390068961869844/Peace_is_the_true_default_state-Greek_Gr.srt?ex=6a3f939e&amp;is=6a3e421e&amp;hm=cab7cad7f3d4a032fc16ed69719fa88c5de2cfa0835f1ab8056337ec20c20979&amp;"> Peace_is_the_true_default_state-Greek_Gr.srt </a></div><div class=chatlog__attachment-generic-size>1.5 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1510390069368983634/Peace_is_the_true_default_state-Gr_audio.mp3?ex=6a3f939e&amp;is=6a3e421e&amp;hm=3752a032b3d5d080954b4ddb3a7b44fe45e35258ae5b9b32601b43cc9fcbcb31&amp;" alt="Audio attachment" title="Audio: Peace_is_the_true_default_state-Gr_audio.mp3 (463.64 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1514930519249522718 class=chatlog__message-container data-message-id=1514930519249522718><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, June 12, 2026 1:53 PM"><a href=#chatlog__message-container-1514930519249522718>6/12/2026 1:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&#171;Ειρήνη ας είναι μαζί σας… και επίσης μαζί σας&#187;. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 30/09/2025 - Αλβανία</strong>
+
+Αλλά όταν το λέω αυτό, πώς γίνεται; Ακούτε απλώς τα λόγια ή τα νιώθετε; Τι θα μπορούσατε να αλλάξετε στη ζωή σας - εσωτερικά και εξωτερικά - ώστε η ειρήνη να μην είναι απλώς ειλικρινής, αλλά ενσαρκωμένη;
+Πολύ συχνά, καταφεύγουμε σε φευγαλέες εμπειρίες για να αποσπάσουμε την προσοχή μας, επειδή η πραγματική αντιπαράθεση μας κάνει να νιώθουμε άβολα. Αλλά αυτό είναι το θαύμα του Ιησού: Μας δείχνει πώς να συμφιλιώσουμε την ειρήνη, τη δικαιοσύνη και την ορθότητα αφήνοντας τον Θεό να φύγει.
+Παρόλα αυτά - υπάρχει μια λεπτή γραμμή. Η εκκλησία έχει διδάξει μερικές φορές την αυτοεγκατάλειψη, και αυτός δεν είναι ο τρόπος. Το κάλεσμα είναι να εγκαταλείψουμε ό,τι δεν μπορούμε να κουβαλήσουμε μόνοι μας, αλλά όχι να σβήσουμε ποιοι είμαστε.
+Η διατήρηση αυτής της ισορροπίας - αυτό είναι το κλειδί για την εισαγωγή της Βασιλείας των Ουρανών στη Γη. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#ΕιρήνηΜαζίΣου #ΤαξίδιΠίστης #ΟΙησούςΣώζει #ΕνσωματωμένηΠίστη #ΟυρανόςΣτηΓη #ΒασιλείαΕντός #ΧριστιανικόTikTok #ΑςΠάμεΑςΟΘεός #ΙσορροπίαΣτηνΠίστη #ΠερπατώνταςΜεΤονΧριστό
+
+<a href="https://vimeo.com/1200712756">https://vimeo.com/1200712756</a></span> <span class=chatlog__edited-timestamp title="Friday, June 12, 2026 1:53 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514930513993924659/Peace_be_with_you-Greek_Greece_caption.mp4?ex=6a3f9d7c&amp;is=6a3e4bfc&amp;hm=8836fa1fa51fbfbb8ccc62f1e8b84e3076c090f838dbdf1f7834b83ea16fa0b0&amp;" alt="Video attachment" title="Video: Peace_be_with_you-Greek_Greece_caption.mp4 (96.14 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1514930518456537139/Peace_be_with_you-Greek_Greece.srt?ex=6a3f9d7d&amp;is=6a3e4bfd&amp;hm=e1b2ce94bc2d553d7531e277cfd5c73552ae8397323c7465aa3b1192d8ceb892&amp;"> Peace_be_with_you-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>3.87 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514930518943203450/Peace_be_with_you-Greek_Greece_audio.mp3?ex=6a3f9d7d&amp;is=6a3e4bfd&amp;hm=bf8d3965f8e2bfcf35fc570bfca05b83fbc7f78f3a70ab5977a941f9f3fab22d&amp;" alt="Audio attachment" title="Audio: Peace_be_with_you-Greek_Greece_audio.mp3 (1.9 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1514933475722006690 class=chatlog__message-container data-message-id=1514933475722006690><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, June 12, 2026 2:04 PM"><a href=#chatlog__message-container-1514933475722006690>6/12/2026 2:04 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Άνοδος Πέρα από τον Φόβο <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127775;"
+    title="star2"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f31f.svg"> 17/01/2026 - Γεωργία</strong>
+
+Ο φόβος χτίζει το κλουβί.
+Η άνεση κρατά την πόρτα κλειστή.
+Αλλά η παράδοση αποκαλύπτει την έξοδο.
+
+Στην απώλεια, ξαναφτιάχνουμε.
+Στη δυσφορία, αφυπνιζόμαστε.
+Και στην αλήθεια, υψωνόμαστε.
+
+<a href="https://vimeo.com/1200712756">https://vimeo.com/1200712756</a></span> <span class=chatlog__edited-timestamp title="Monday, June 15, 2026 12:12 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514933473775980584/Rise_Beyond_Fear-Greek_Greece_caption.mp4?ex=6a3fa03e&amp;is=6a3e4ebe&amp;hm=e245a3099880394f129fb2f02436513e688094c20fd4f54c99ff15b5351fb13a&amp;" alt="Video attachment" title="Video: Rise_Beyond_Fear-Greek_Greece_caption.mp4 (25.3 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1514933474744602744/Rise_Beyond_Fear-Greek_Greece.srt?ex=6a3fa03e&amp;is=6a3e4ebe&amp;hm=68d27a0bbda4bc4fb8d3b52ba2f29cd2c10220c5297a3272bd8b139eee9ce789&amp;"> Rise_Beyond_Fear-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>2.34 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514933475348709466/Rise_Beyond_Fear-Greek_Greece_audio.mp3?ex=6a3fa03e&amp;is=6a3e4ebe&amp;hm=d5a48a8547d614bdd1829b55e22d47527f1296fffc4e48ab805d5d057f644105&amp;" alt="Audio attachment" title="Audio: Rise_Beyond_Fear-Greek_Greece_audio.mp3 (780.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1514971322164314182 class=chatlog__message-container data-message-id=1514971322164314182><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, June 12, 2026 4:35 PM"><a href=#chatlog__message-container-1514971322164314182>6/12/2026 4:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Από τον Συντονισμό στον Έλεγχο <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠️"
+    title="warning"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> 04/01/2026 - Γεωργία</strong>
+
+Αυτό το βίντεο περιγράφει ένα καταστροφικό μοτίβο που έχω παρατηρήσει σε ορισμένες ζωές στα μέσα κοινωνικής δικτύωσης — και, εκ των υστέρων, σε διάφορες στιγμές της ζωής μου.
+
+Συχνά ξεκινά με συντονισμό: μια κοινή εμπειρία, μια οικεία γλώσσα ή μια διορατικότητα που μοιάζει αληθινή. Αλλά μόλις ξεκινήσει η εμπλοκή, αυτός ο συντονισμός μπορεί να μετατραπεί σε έλεγχο. Το να ανήκεις κάπου γίνεται υπό όρους. Η αμφισβήτηση τιμωρείται. Η συμμόρφωση αντικαθιστά την κατανόηση.
+
+Με την πάροδο του χρόνου, η δομή ενισχύεται όχι μόνο από εκείνους που την ηγούνται, αλλά και από τους συμμετέχοντες που επαναλαμβάνουν την αφήγηση, ανταμείβουν τη συμμόρφωση και ενισχύουν την αποσύνδεση. Η εξουσία ωφελεί όσους βρίσκονται στο κέντρο, ενώ άλλοι κυβερνώνται χωρίς πραγματικά να ανήκουν κάπου.
+
+Αυτή η δυναμική έχει αναγνωριστεί εδώ και πολύ καιρό. Όπως προειδοποιεί η Γραφή:
+
+&#171;Οι βασιλιάδες των εθνών καταδυναστεύουν πάνω τους&#183; και όσοι ασκούν εξουσία πάνω τους αυτοαποκαλούνται ευεργέτες&#187;.
+
+— Λουκάς 22:25–26
+
+Στην πιο ακραία του μορφή, αυτό το μοτίβο κλιμακώνεται στο να χαρακτηρίζει την αυτοκαταστροφή ως διαφυγή.
+
+Αυτό δεν είναι φιλοσοφία.
+
+Αυτό δεν είναι πνευματικότητα.
+
+Είναι ένα καταστροφικό ψυχολογικό μοτίβο.
+
+Η αλήθεια δεν απαιτεί αυτοκαταστροφή.
+
+Η ζωή παραμένει το σημείο αναφοράς.
+
+#ΑπόΣυντονισμόΣτονΈλεγχο #ΚαταναγκαστικόΈλεγχο #ΕξουσίαΒασισμένηΣτοΦόβο #ΔυναμικήΛατρείας #ΟμαδικήΣκέψη #ΨυχολογικάΜοτίβα #ΚριτικήΣκέψη #ΕπίγνωσηΨυχικήςΥγείας #ΕξουσίαΧωρίςΣυναίνεση #Διάκριση #ΠροστατέψτεΤοΝουΣας #ΕπιβεβαίωσηΖωής #ΑφύπνισηΉΈλεγχος #ΕπίγνωσηΚοινωνικώνΜέσων
+
+<a href="https://vimeo.com/1200748790">https://vimeo.com/1200748790</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 6:18 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514971314845126656/Resonance_to_Control-Greek_Greec_caption.mp4?ex=6a3fc37c&amp;is=6a3e71fc&amp;hm=f542a865d91d20b0ba51a37ce6f7183d1753f5c68bde040089cad09040fb559d&amp;" alt="Video attachment" title="Video: Resonance_to_Control-Greek_Greec_caption.mp4 (128.3 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1514971321484709939/Resonance_to_Control-Greek_Greece.srt?ex=6a3fc37d&amp;is=6a3e71fd&amp;hm=51d97cf8608cb0d5bfe7b7e563d4f8108f9a5668a0ebea32cfee4c2fad54a5b6&amp;"> Resonance_to_Control-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>8.66 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514971321849610321/Resonance_to_Control-Greek_Greece_audio.mp3?ex=6a3fc37d&amp;is=6a3e71fd&amp;hm=0f81fd3dda191f4047e167f06a63fdcc3bbe40686e0f99facf7d9965fd8730ed&amp;" alt="Audio attachment" title="Audio: Resonance_to_Control-Greek_Greece_audio.mp3 (2.78 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1514976612808917203 class=chatlog__message-container data-message-id=1514976612808917203><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, June 12, 2026 4:56 PM"><a href=#chatlog__message-container-1514976612808917203>6/12/2026 4:56 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Προσποιούμενος ότι κοιμάμαι… <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128564;"
+    title="sleeping"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f634.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg"> 18/09/2025 - Αλβανία</strong>
+
+Μία από τις αγαπημένες μου αναμνήσεις με τα αγόρια μου — μετά από μια μέρα έξω, έμπαινα στην είσοδο του σπιτιού, κρυφοκοιτούσα στο πίσω κάθισμα και τα έβρισκα &#171;κοιμισμένα&#187;.
+Ήθελαν απλώς να τα κουβαλάω μέσα… και δεν με πείραζε, γιατί πάντα είχα μια αγκαλιά
+
+#ΖωήΜπαμπά #Πατρότητα #ΑγαπημένεςΣτιγμές #ΟικογενειακήΑγάπη #TBT #ΓονικήΧαρά #ΕυγνώμωνΜπαμπάς #ΑναμνήσειςΔημιουργημένες
+
+<a href="https://vimeo.com/1200757957">https://vimeo.com/1200757957</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514976615724093460/Pretending_to_Sleep_Final-Greek__caption.mp4?ex=6a3fc86c&amp;is=6a3e76ec&amp;hm=967ac813bf15a3755fbea9219a5215a3d4772f4d82f1b6781909fec039f57718&amp;" alt="Video attachment" title="Video: Pretending_to_Sleep_Final-Greek__caption.mp4 (50.76 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1514976621856293004/Pretending_to_Sleep_Final-Greek_Greece.srt?ex=6a3fc86d&amp;is=6a3e76ed&amp;hm=61dce5e2288ada555550d39422bf62c1d40b5dd6e4f84a56360b4bdc12fae395&amp;"> Pretending_to_Sleep_Final-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>2.35 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1514976622267076690/Pretending_to_Sleep_Final-Greek_Gr_audio.mp3?ex=6a3fc86d&amp;is=6a3e76ed&amp;hm=1f092443ce886340cae8c043eac4677ebf51af244e311053f16030ca3f60f1be&amp;" alt="Audio attachment" title="Audio: Pretending_to_Sleep_Final-Greek_Gr_audio.mp3 (1.58 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515249898897801376 class=chatlog__message-container data-message-id=1515249898897801376><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, June 13, 2026 11:02 AM"><a href=#chatlog__message-container-1515249898897801376>6/13/2026 11:02 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Η Πολιτική Είναι Θέατρο 30/09/2025 - Αλβανία</strong>
+
+Η πολιτική διαμορφώνεται ως συζήτηση — αλλά η συζήτηση είναι απλώς ένα sandbox, ένα στάδιο όπου η σύγκρουση εκτυλίσσεται ενώ η αλήθεια μένει απ&#39; έξω. Κρατά τους ανθρώπους διασκεδασμένους, κοιμισμένους και διχασμένους, ενώ την αποκαλεί ειρήνη. Ακόμα και οι αναλήθειες έχουν τη θέση τους, δίνοντας σε όσους βρίσκονται σε χαμηλότερες δονήσεις έναν χώρο να γίνουν ορατοί. Αλλά η πραγματική πρόοδος δεν αφορά τη νίκη σε διαφωνίες μέσα σε αυτό το sandbox. Πρόκειται για την ευθυγράμμιση — όπου η αλήθεια βαθμονομείται, η ειρήνη είναι πραγματική και τα θεμέλια είναι ακλόνητα. Η ευθυγράμμιση είναι ο φάρος. Και οι φάροι δεν συζητούν την καταιγίδα — λάμπουν μέσα από αυτήν.
+
+#πολιτική #συζήτηση #θέατρο #αφύπνιση #αλήθεια #ευθυγράμμιση #ανώτερησυνείδηση ​​#πνευματικήαφύπνιση #μήτρα #φάρος #άνοδος #ειρήνη #αγάπη #διάκριση #αναζητητής της αλήθειας
+
+<a href="https://vimeo.com/1200960313">https://vimeo.com/1200960313</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515249900571590746/Politics_Is_Theatre-Greek_Greece_caption.mp4?ex=6a3f7570&amp;is=6a3e23f0&amp;hm=5c5cd1c7e39660b926957b484fa67e3e16dcf6c274fa93223f2a62f3d8ec78ca&amp;" alt="Video attachment" title="Video: Politics_Is_Theatre-Greek_Greece_caption.mp4 (34.65 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515249901913636894/Politics_Is_Theatre-Greek_Greece.srt?ex=6a3f7570&amp;is=6a3e23f0&amp;hm=508dd54d420ced1fb4f7543734b1f0524f5efc1e1fe767593b85bd722b6b0aee&amp;"> Politics_Is_Theatre-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>3.01 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515249902186397746/Politics_Is_Theatre-Greek_Greece_audio.mp3?ex=6a3f7570&amp;is=6a3e23f0&amp;hm=b3de61adc2db3cab6f06531fb3d417b42e846162a0ce047867b84e67faf4ac8e&amp;" alt="Audio attachment" title="Audio: Politics_Is_Theatre-Greek_Greece_audio.mp3 (924.52 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515272526828273686 class=chatlog__message-container data-message-id=1515272526828273686><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, June 13, 2026 12:32 PM"><a href=#chatlog__message-container-1515272526828273686>6/13/2026 12:32 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> Το Πηγάδι Είναι το Ταξίδι <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 17/10/2025 - Αλβανία</strong>
+
+Η κοινωνία μας διδάσκει το κουτί—όρια, περιορισμό, ιδιοκτησία—και το αποκαλεί επίτευγμα. Αλλά το κουτί τροφοδοτεί το εγώ, όχι το πνεύμα. Ο Θεός δεν μπορεί να εγκλωβιστεί. Το να προσπαθείς είναι απλώς να τυλίξεις ένα καπάκι γύρω από αυτό που νομίζουμε ότι καταλαβαίνουμε. Στην πραγματικότητα, ξεκινάμε από το καπάκι και ταξιδεύουμε στο πηγάδι—τα βάθη της ζωής, της πίστης και της εμπειρίας—όπου το νόημα ρέει ατελείωτα.
+
+#ΔενΕίναιΚουτί #ΤοΠηγάδιΕίναιΤοΤαξίδι #ΜετατόπισηΠροοπτικής #ΕγώΕναντίονΠνεύματος #ΚρυμμέναΒάθη #ΚοιτάξτεΠιοΚοντά #ΤαξίδιΕσωτερικά
+
+<a href="https://vimeo.com/1200975114">https://vimeo.com/1200975114</a></span> <span class=chatlog__edited-timestamp title="Saturday, June 13, 2026 12:48 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515272525930827876/The_Well_Is_the_Journey-Greek_Gr_caption.mp4?ex=6a3f8a82&amp;is=6a3e3902&amp;hm=7966fd39a91b10d94453be7a3e98ad129b2097c36bdfae38966486ed30305e14&amp;" alt="Video attachment" title="Video: The_Well_Is_the_Journey-Greek_Gr_caption.mp4 (1.59 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515272526253785158/The_Well_Is_the_Journey-Greek_Greece.srt?ex=6a3f8a82&amp;is=6a3e3902&amp;hm=e72e6fbeaf30d69ad970449cf0ef82a5cca160efdcd420e0f03c289e2391a44c&amp;"> The_Well_Is_the_Journey-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>88 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515272526752780409/The_Well_Is_the_Journey-Greek_Gree_audio.mp3?ex=6a3f8a82&amp;is=6a3e3902&amp;hm=d83aeb0b86e22f6a0d557c1bf56916ac0c66d2f80206c0c50a18c46fd3cd1d3c&amp;" alt="Audio attachment" title="Audio: The_Well_Is_the_Journey-Greek_Gree_audio.mp3 (57.52 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515775339761242142 class=chatlog__message-container data-message-id=1515775339761242142><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 9:50 PM"><a href=#chatlog__message-container-1515775339761242142>6/14/2026 9:50 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Το κλάμα ενός μικρού ελέφαντα… 22/09/2025 - Αλβανία</strong>
+
+Δεν είναι κάθε αλυσίδα φτιαγμένη από σίδερο. Κάποιες είναι φτιαγμένες από ντροπή. Κάποιες από σιωπή. Κάποιες από υπογραφές σε χαρτί. Αλλά κάθε αλυσίδα αφήνει τους αθώους να κλαίνε. Σηκώστε τον σταυρό σας.
+
+#ΣώστεΤουςΕλέφαντες #ΚρυμμένηΑλήθεια #ΟικογενειακόΔικαστήριο #ΚακοποίησηΨυχικήςΥγείας #Δικαιοσύνη #ΕκλεκτόςΈνας #ΤέλοςΣκληρότητας #ΑλήθειαΣεΚόκκινοΜάτι #ΣπάστεΤιςΑλυσίδες
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1201213327">https://vimeo.com/1201213327</a></span> <span class=chatlog__edited-timestamp title="Friday, June 26, 2026 12:03 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515775341749211358/Baby_Elephant-Greek_Greece_caption.mp4?ex=6a3f648b&amp;is=6a3e130b&amp;hm=57ac543f7c7730b1a14c2445b2f90e12e3f9cdaddb6dc1dd0c11550e164f948c&amp;" alt="Video attachment" title="Video: Baby_Elephant-Greek_Greece_caption.mp4 (38.32 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515775343699427338/Baby_Elephant-Greek_Greece.srt?ex=6a3f648b&amp;is=6a3e130b&amp;hm=4885f69d32d5feb6d895f712f80e4fe2c4149faa8fa218146f52c611b77392a7&amp;"> Baby_Elephant-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>3.14 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515775343968129074/Baby_Elephant-Greek_Greece_audio.mp3?ex=6a3f648b&amp;is=6a3e130b&amp;hm=c016185938518c4fa74655ca4249ef6e19631b91b1a12f236529c2caa5c713c1&amp;" alt="Audio attachment" title="Audio: Baby_Elephant-Greek_Greece_audio.mp3 (1.07 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515786220251254906 class=chatlog__message-container data-message-id=1515786220251254906><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 10:33 PM"><a href=#chatlog__message-container-1515786220251254906>6/14/2026 10:33 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Η Ατελείωτη Εργασία Καθυστερεί την Ειρήνη 08/09/2025 - Αλβανία</strong>
+
+Αυτό το έργο τελειώνει.
+Και όταν τελειώσει, η ειρήνη έρχεται φυσικά.
+Αυτή είναι η διαφορά μεταξύ της ειλικρινούς εργασίας
+και των συστημάτων που καταναλώνουν προσπάθεια χωρίς κλείσιμο —
+όπου ο πληθωρισμός μετατρέπει την εργασία σε ένα πηγάδι χωρίς πάτο
+και η ειρήνη αναβάλλεται ασταμάτητα.
+
+#ΑτελείωτηΕργασία #ΚαθυστερήσειςΕιρήνης #ΕιλικρινήςΕργασία #ΕργασίαΜεΚλείσιμο #ΣυστημικήΑποστράγγιση #ΠραγματικότηταΠληθωρισμού #ΠηγάδιΧωρίςΠηγάδι #ΑξίαΕργασίας #ΤοΥπόλοιποΕίναιΑνθρώπινο #ΗΕιρήνηΕίναιΦυσικό #Πέρα από τηνΠαραγωγικότητα #ΑνθρώπινηΑξία #ΟικονομικόςΣκέψεις #ΉσυχηΑλήθεια #Επίγνωση
+
+<a href="https://vimeo.com/1201221053">https://vimeo.com/1201221053</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 10:33 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515786213636968518/Accountability-Greek_Greece_caption.mp4?ex=6a3f6eab&amp;is=6a3e1d2b&amp;hm=99a2ab74d163638506c44283e02ee4ec4fe80ed3faa0cb3287d44c926c5ffa69&amp;" alt="Video attachment" title="Video: Accountability-Greek_Greece_caption.mp4 (75.54 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515786218581786694/Accountability-Greek_Greece.srt?ex=6a3f6eac&amp;is=6a3e1d2c&amp;hm=16d4a016cee27d316a1144357eeb6673fdd063a9ac6b5a03801110493a1f21e4&amp;"> Accountability-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>1.49 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515786219554869278/Accountability-Greek_Greece_audio.mp3?ex=6a3f6eac&amp;is=6a3e1d2c&amp;hm=87ecf7261f818ceafdca9fbb1cb8a5e77c1a0c032d033a9715fc68345688bcf5&amp;" alt="Audio attachment" title="Audio: Accountability-Greek_Greece_audio.mp3 (827.39 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515790633766355048 class=chatlog__message-container data-message-id=1515790633766355048><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 10:50 PM"><a href=#chatlog__message-container-1515790633766355048>6/14/2026 10:50 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Δεν Είστε Κολλημένοι - Η Κίνηση Υπάρχει Ακόμα και στην Ακινησία 06/01/2026 - Georgia
+(Κρατώντας Χώρο)</strong>
+
+Δεν είστε ένα αδύναμο σημείο σε ένα χαοτικό σύστημα. Είστε ενεργοί, προσαρμόσιμοι και ικανοί για κίνηση και ανάπτυξη. Αυτό που μπορεί να φαίνεται ασήμαντο από μια μακρινή ή ισοπεδωμένη οπτική γωνία, συχνά έχει σταθερότητα και νόημα όταν το βλέπει κανείς από τη σωστή οπτική γωνία.
+
+Αντί να κλειδώνετε τον εαυτό σας σε μια σταθερή ταυτότητα ή σε μια μόνο στιγμή, μπορεί να βοηθήσει να παραμείνετε ανοιχτοί - επιτρέποντας στην κατανόηση να επεκταθεί αντί να περιοριστεί. Η πρόοδος δεν προέρχεται από την επανάληψη των ίδιων κύκλων από φόβο ή εξάντληση, αλλά από την επιλογή της επίγνωσης, της σαφήνειας και της κίνησης προς τα εμπρός όταν είστε έτοιμοι.
+
+Δεν υπάρχει βιασύνη και πίεση να γίνετε οτιδήποτε άλλο. Η συνεπής επιλογή της σαφήνειας, του σεβασμού και της ευθυγράμμισης είναι αρκετή για να δημιουργήσει σταθερή, ουσιαστική αλλαγή με την πάροδο του χρόνου.
+
+#ΤαξίδιΑφύπνισης #ΕσωτερικήΙσορροπία #ΓινΓιανγκ #ΣυνειδητήΑνάπτυξη #ΠνευματικήΓείωση #Αυτοευθυγράμμιση #Επίγνωση #Συμπόνια #ΝοοτροπίαΑνάπτυξης #ΑλήθειαΚαιΑκεραιότητα #ΕσωτερικήΣταθερότητα #ΕυγενικήΑνάπτυξη #ΗΠΑΡΟΥΣΙΑΜΕΤΡΑ
+
+<a href="https://vimeo.com/1201223540">https://vimeo.com/1201223540</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515790636467491008/Holding_Space-Greek_Greece_caption.mp4?ex=6a3f72c9&amp;is=6a3e2149&amp;hm=6e4c9276a94ff8aed815861adcc10956c7d75ea9488c3f99bf11dae98778789d&amp;" alt="Video attachment" title="Video: Holding_Space-Greek_Greece_caption.mp4 (56.96 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515790639051309207/Holding_Space-Greek_Greece.srt?ex=6a3f72ca&amp;is=6a3e214a&amp;hm=ca74a064d54c7800dad3064246bec2d5bb189bb3d2507f9b06803a650409e0c0&amp;"> Holding_Space-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>4.39 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515790639365750865/Holding_Space-Greek_Greece_audio.mp3?ex=6a3f72ca&amp;is=6a3e214a&amp;hm=6fc8c864ef8c25381fdc8dd7878e001823892fb462bf2400d2d816f9c86004ce&amp;" alt="Audio attachment" title="Audio: Holding_Space-Greek_Greece_audio.mp3 (1.33 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515797837844185108 class=chatlog__message-container data-message-id=1515797837844185108><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 11:19 PM"><a href=#chatlog__message-container-1515797837844185108>6/14/2026 11:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Τα χρήματα δεν είναι αφθονία 04/10/2025 - Αλβανία</strong>
+
+Είναι απλώς ένα ρήμα — μια κίνηση, ένα εργαλείο, ένα κανάλι.
+Η αφθονία είναι η πρόνοια του Θεού, άπειρη και ξεχειλίζει.
+Το σύστημα θέλει να λατρεύετε τα χρήματα ως αφέντη...
+
+αλλά η αφθονία ανήκε πάντα στον Θεό. #χρήμα #οικονομικόσύστημα #σύστημαελέγχου #αφύπνιση #αναζητητήςτηςαλήθειας #επίγνωσησυστήματος #οικονομικόςέλεγχος #σκεφτείτετο #προοπτική #αλλαγήνοτροπίας #κοινωνικάσυστήματα #δομέςεξουσίας #αμφισβήτησητωνπάντων #αλήθειαυπέρβοληάνεση #επίγνωση #πνευματικήαφύπνιση #συνείδηση ​​#σπάστετηνψευδαίσθηση #συλλογικήαφύπνιση #ενσυνείδητησκέψη #πνευματικήδιαύγεια #υψηλότερηπροοπτική #εσωτερικήαλήθεια #ξύπνησετονκόσμο #συζήτησηγιαταχρήματα #οικονομία #ψευδαίσθησητουπλούτου #σύγχρονηκοινωνία #καπιταλισμός #αμφισβήτησητηςεξουσίας #ηαλήθειαμετράει #κοσμοσυστήματα #κοινωνίασήμερα #ΤοΧρήματαΔενΕίναιΑφθονία #ΝοοτροπίαΑφθονίας #ΠίστηΕνάντιαστοΦόβο #ΒασιστείτεΣτονΘεό #ΠνευματικήΕλευθερία #ΑλήθειαΤαΧρήματα #ΑφθονίαΑπότονΘεό #ΣπάστεΤοΠέπλο #ΣυζήτησηΠίστης #ΑποκαλύφθηκεΗΑλήθεια
+
+<a href="https://vimeo.com/1201227716">https://vimeo.com/1201227716</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 11:22 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515797832831992049/People_Are_the_Real_Wealth-Greek_caption.mp4?ex=6a3f797d&amp;is=6a3e27fd&amp;hm=92660ad53d198bf88dabcaeab47f41e6bc1daaa9edd2e52ba7e37b8388c12b2e&amp;" alt="Video attachment" title="Video: People_Are_the_Real_Wealth-Greek_caption.mp4 (95.82 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515797837311512716/People_Are_the_Real_Wealth-Greek_Greece.srt?ex=6a3f797e&amp;is=6a3e27fe&amp;hm=9ff264037e004cb61226a261219ae1b834dba6dc2761162823de21985b12fe2d&amp;"> People_Are_the_Real_Wealth-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>7.29 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515797837617565696/People_Are_the_Real_Wealth-Greek_G_audio.mp3?ex=6a3f797e&amp;is=6a3e27fe&amp;hm=d0ab425c02f24fff9878dc06337ae3c133cb144d478cc3eed7aa55ecf0d8a00a&amp;" alt="Audio attachment" title="Audio: People_Are_the_Real_Wealth-Greek_G_audio.mp3 (2.31 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515803235519303690 class=chatlog__message-container data-message-id=1515803235519303690><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 11:40 PM"><a href=#chatlog__message-container-1515803235519303690>6/14/2026 11:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Προφητεία ή Μνήμη; 08/10/2025 - Αλβανία</strong>
+
+Είναι προφητεία — ένα όραμα για το τι πρόκειται να συμβεί — ή απλώς η ανάμνηση του αιώνιου που τώρα φοράει μια νέα μάσκα;
+Μερικές φορές, αυτό που μοιάζει με αποκάλυψη είναι απλώς η παρούσα στιγμή που μας υπενθυμίζει ότι ήταν πάντα εδώ.
+
+#Προφητεία #Μνήμη #Αφύπνιση #ΠαρούσαΣτιγμή #Συνείδηση ​​#Ενότητα #Αποκάλυψη #ΠνευματικήΣοφία #ΑιώνιοΤώρα #ΘεϊκόςΧρονισμός #ΕσωτερικήΌραση #Επίγνωση #ΠνευματικόΤαξίδι #ΜυστικιστικέςΑλήθειες #ΠίστηΠτήση #veilocity111
+
+<a href="https://vimeo.com/1201231104">https://vimeo.com/1201231104</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 11:44 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515803234432979004/Prophecy_or_Memory-Greek_Greece_caption.mp4?ex=6a3f7e85&amp;is=6a3e2d05&amp;hm=a1623341971623724d250c215e32916c51f8c1ff7ab549bcc11874e98230b436&amp;" alt="Video attachment" title="Video: Prophecy_or_Memory-Greek_Greece_caption.mp4 (2.82 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515803234906804284/Prophecy_or_Memory-Greek_Greece.srt?ex=6a3f7e85&amp;is=6a3e2d05&amp;hm=dcc5cbcd5d9d292a00134bf18ce35e605b21f1949fdceffa4f9d63ed2d51c3cb&amp;"> Prophecy_or_Memory-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>239 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515803235229761586/Prophecy_or_Memory-Greek_Greece_audio.mp3?ex=6a3f7e85&amp;is=6a3e2d05&amp;hm=38f30468705a82a9fd0065b0d69066c562b9af14c4bf8105e42e2e5e29c40be4&amp;" alt="Audio attachment" title="Audio: Prophecy_or_Memory-Greek_Greece_audio.mp3 (89.39 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515806370132136007 class=chatlog__message-container data-message-id=1515806370132136007><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 11:53 PM"><a href=#chatlog__message-container-1515806370132136007>6/14/2026 11:53 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Η ειρήνη είναι μια εσωτερική δουλειά 11/09/2025 - Αλβανία</strong>
+
+Μην παραδίδετε τα κλειδιά της εσωτερικής σας ηρεμίας σε κανέναν άλλον.
+
+#ειρήνημέσα #εσωτερικήδύναμη #αυτοκυριαρχία #ενσυνειδητότητα #ταξίδιθεραπείας #εσωτερικήειρήνη #επιλέξτεειρήνη #πίστηυπέρφωτο #πνευματικήανάπτυξη #αναζητητήςτηςαλήθειας
+
+<a href="https://vimeo.com/1201233093">https://vimeo.com/1201233093</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 11:53 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515806367888310372/Peace_is_an_inside_job-Greek_Gre_caption.mp4?ex=6a3f8170&amp;is=6a3e2ff0&amp;hm=765c547fe30e2dfc10b22fd7024ceffefbb8066c85c5b4f22bfa11e9da2a22b4&amp;" alt="Video attachment" title="Video: Peace_is_an_inside_job-Greek_Gre_caption.mp4 (10.48 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515806368928633013/Peace_is_an_inside_job-Greek_Greece.srt?ex=6a3f8170&amp;is=6a3e2ff0&amp;hm=dab5991dad88c4b0970b1db465569c2dc32ebb80e1c1396a3be4a830ceb9161a&amp;"> Peace_is_an_inside_job-Greek_Greece.srt </a></div><div class=chatlog__attachment-generic-size>460 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515806369503121519/Peace_is_an_inside_job-Greek_Greec_audio.mp3?ex=6a3f8170&amp;is=6a3e2ff0&amp;hm=4b6ec3cc4f46c0562ad88e5ae5ac9684f3a6ea158d42ef9808ea0a1406165ad8&amp;" alt="Audio attachment" title="Audio: Peace_is_an_inside_job-Greek_Greec_audio.mp3 (217.27 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515811718662586529 class=chatlog__message-container data-message-id=1515811718662586529><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 15, 2026 12:14 AM"><a href=#chatlog__message-container-1515811718662586529>6/15/2026 12:14 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Τα χρήματα δεν είναι αφθονία 04/10/2025 - Αλβανία</strong>
+
+Είναι απλώς ένα ρήμα — μια κίνηση, ένα εργαλείο, ένα κανάλι.
+Η αφθονία είναι η πρόνοια του Θεού, άπειρη και ξεχειλίζει.
+Το σύστημα θέλει να λατρεύετε τα χρήματα ως αφέντη...
+
+αλλά η αφθονία ανήκε πάντα στον Θεό. #χρήμα #οικονομικόσύστημα #σύστημαελέγχου #αφύπνιση #αναζητητήςτηςαλήθειας #επίγνωσησυστήματος #οικονομικόςέλεγχος #σκεφτείτετο #προοπτική #αλλαγήνοτροπίας #κοινωνικάσυστήματα #δομέςεξουσίας #αμφισβήτησητωνπάντων #αλήθειαυπέρβοληάνεση #επίγνωση #πνευματικήαφύπνιση #συνείδηση ​​#σπάστετηνψευδαίσθηση #συλλογικήαφύπνιση #ενσυνείδητησκέψη #πνευματικήδιαύγεια #υψηλότερηπροοπτική #εσωτερικήαλήθεια #ξύπνησετονκόσμο #συζήτησηγιαταχρήματα #οικονομία #ψευδαίσθησητουπλούτου #σύγχρονηκοινωνία #καπιταλισμός #αμφισβήτησητηςεξουσίας #ηαλήθειαμετράει #κοσμοσυστήματα #κοινωνίασήμερα #ΤοΧρήματαΔενΕίναιΑφθονία #ΝοοτροπίαΑφθονίας #ΠίστηΕνάντιαστοΦόβο #ΒασιστείτεΣτονΘεό #ΠνευματικήΕλευθερία #ΑλήθειαΤαΧρήματα #ΑφθονίαΑπότονΘεό #ΣπάστεΤοΠέπλο #ΣυζήτησηΠίστης #ΑποκαλύφθηκεΗΑλήθεια
+
+<a href="https://vimeo.com/1201223931">https://vimeo.com/1201223931</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515811719426084924/Money_is_a_Verb_Abundance_is_the_caption.mp4?ex=6a3f866c&amp;is=6a3e34ec&amp;hm=72a6bea29f05605872f93353f913002fd3c8640fe92240aae835563aa2cfb197&amp;" alt="Video attachment" title="Video: Money_is_a_Verb_Abundance_is_the_caption.mp4 (7.16 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515811719929266327/Money_is_a_Verb_Abundance_is_the_Source-.srt?ex=6a3f866c&amp;is=6a3e34ec&amp;hm=d79517f1d6f2571d15430c8fbb458968a3decb1e94193a14c34b993ece14aa5e&amp;"> Money_is_a_Verb_Abundance_is_the_Source-.srt </a></div><div class=chatlog__attachment-generic-size>1.57 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515811720222740610/Money_is_a_Verb_Abundance_is_the_S_audio.mp3?ex=6a3f866c&amp;is=6a3e34ec&amp;hm=4a8652ffbed739a0ba0d156d08a0d5e3013955f678b4c2959f345f855d38a20d&amp;" alt="Audio attachment" title="Audio: Money_is_a_Verb_Abundance_is_the_S_audio.mp3 (499.27 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515996050530369627 class=chatlog__message-container data-message-id=1515996050530369627><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, June 15, 2026 12:27 PM"><a href=#chatlog__message-container-1515996050530369627>6/15/2026 12:27 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ενεργοποίηση Τεράστιου Πλούτου &amp; Ελευθερίας 21/09/2025 - Αλβανία</strong>
+
+Κάθε αλυσίδα φόβου. Κάθε απάτη. Κάθε σύστημα ελέγχου.
+
+Σπασμένο — στο όνομα του Ιησού Χριστού, του Υιού του Ζωντανού Θεού. Με το αίμα Του, είμαστε ελεύθεροι. Με τον σταυρό Του, είμαστε λυτρωμένοι. Με την ανάστασή Του, είμαστε άτρωτοι.
+
+Καμία αυτοκρατορία, κανένας ηγεμόνας, καμία δύναμη δεν έχει ποτέ αντισταθεί στη σωτηρία του Χριστού — και καμία δεν θα το κάνει ποτέ.
+
+&#171;Διότι όποιον ο Υιός ελευθερώνει, είναι πραγματικά ελεύθερος&#187;. - Ιωάννης 8:36
+
+Μιλώ για ελευθερία τώρα — Για τον εαυτό μου. Για τα παιδιά μου. Για όλους όσους το ακούν αυτό.
+
+#ΞόρκιΑφθονίας #ΜαζικόςΠλούτος #ΠνευματικήΑναβάθμιση #ΜαγείαΕκδήλωσης #ΕνεργοποίησηΕνέργειας #ΚβαντικήΜετατόπιση #ΚωδικοίΦωτός #ΜονοπάτιΕυημερίας #ΞεκλείδωτηΕλευθερία #ΆπειρηΕνέργεια #ΣπάστεΤιςΑλυσίδες #ΙερήΕνεργοποίηση #ΧρήσηΞορκιών #ΥψηλήΔόνηση #ΜετατόπισηΠλούτου #ΞεκλείδωμαΑφθονίας #ΠίστηΕνάντιαΣτοΦόβο #ΕλεύθερηΑλήθεια #ΑιώνιαΕλευθερία #John836 #ΝίκηΞεκλείδωτη #ΣπασμένεςΑλυσίδες #ΠνευματικήΕλευθερία #ΕνεργειακόςΠλούτος #ΑναβάθμισηΤώρα #ΜυστικιστικόΞόρκι
+
+<a href="https://vimeo.com/1201221465">https://vimeo.com/1201221465</a></span> <span class=chatlog__edited-timestamp title="Monday, June 15, 2026 12:27 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515996053663645767/A_Massive_Wealth__Freedom_Activa_caption.mp4?ex=6a3f8959&amp;is=6a3e37d9&amp;hm=a2d1d26afbacac5755d1c385831ce6124e6e85f39a14c8333b9ef75ba786db5f&amp;" alt="Video attachment" title="Video: A_Massive_Wealth__Freedom_Activa_caption.mp4 (42.75 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469265580610682900/1515996056549330974/A_Massive_Wealth__Freedom_Activation-Gre.srt?ex=6a3f8959&amp;is=6a3e37d9&amp;hm=d0a12c1de7b4409a15c5b956d6ae56aa32102fa3e30a2703d4f006a37b943417&amp;"> A_Massive_Wealth__Freedom_Activation-Gre.srt </a></div><div class=chatlog__attachment-generic-size>2.44 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469265580610682900/1515996056884609135/A_Massive_Wealth__Freedom_Activati_audio.mp3?ex=6a3f8959&amp;is=6a3e37d9&amp;hm=14aee8306cd95d1839eb88c4c212d6700901218321f32e17021dedfc09d0061b&amp;" alt="Audio attachment" title="Audio: A_Massive_Wealth__Freedom_Activati_audio.mp3 (998.02 KB)"></audio></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 38 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
