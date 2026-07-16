@@ -1,0 +1,712 @@
+<!DOCTYPE html><html lang=en><head><title>Veilocity - afrikaans</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / afrikaans</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1469246876384493671 class=chatlog__message-container data-message-id=1469246876384493671><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 12:22 PM"><a href=#chatlog__message-container-1469246876384493671>2/6/2026 12:22 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dit is wat wetteloosheid werklik is <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg"> 05/11/2025 - Turkye</strong>
+
+As waarheid nie kan staan ​​sonder betaling nie, dan het geregtigheid reeds geval. &#39;n Besinning oor stelsels wat op wins gebou is, nie beginsel nie - en wat gebeur wanneer die reg sy eie getuie vergeet.
+
+#waarheid #geregtigheid #ontwaking #geloof #wet #korrupsie #hof #geestelikerefleksie #stelselgebroke #betaalomtewen #bewusteontwaking #spreekwaarheid #integriteitaf
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1150082607">https://vimeo.com/1150082607</a></span> <span class=chatlog__edited-timestamp title="Friday, June 26, 2026 11:45 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469246876569309332/This_Is_What_Lawlessness_Truly_I_caption.mp4?ex=6a593d88&amp;is=6a57ec08&amp;hm=6496adafd862a31ff5e3445700a56cad65fd7137014feb2c04c6ce277c717c7f&amp;" alt="Video attachment" title="Video: This_Is_What_Lawlessness_Truly_I_caption.mp4 (10.07 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469246877449850890/This_Is_What_Lawlessness_Truly_Is_A-Afri.srt?ex=6a593d88&amp;is=6a57ec08&amp;hm=05bd03855f62e52b02825d0563eef866861f1f79b77fbc2ee25eb36610d8e872&amp;"> This_Is_What_Lawlessness_Truly_Is_A-Afri.srt </a></div><div class=chatlog__attachment-generic-size>965 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469246877882122362/This_Is_What_Lawlessness_Truly_Is__audio.mp3?ex=6a593d88&amp;is=6a57ec08&amp;hm=2f61fb3512ca9483de997cb445074d4686406f777c565148ecb75b21605426a4&amp;" alt="Audio attachment" title="Audio: This_Is_What_Lawlessness_Truly_Is__audio.mp3 (600.71 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469296115332550766 class=chatlog__message-container data-message-id=1469296115332550766><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 3:38 PM"><a href=#chatlog__message-container-1469296115332550766>2/6/2026 3:38 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Regtelike Gasligting <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 02/12/2025 - Georgi&#235;</strong>
+
+Agter die beleefde taal van “ondersteuning”
+skuil ’n hand wat jou werklikheid herteken.
+’n Stelsel wat beweer dit beskerm,
+maar die spie&#235;l uit jou eie o&#235; steel.
+Regs-gaslighting is ’n stille dief —
+wat selfagentskap ontneem,
+woord vir woord.
+
+#RegsGaslighting #Gaslighting #RegsMisbruik #Magsmisbruik #Magdinamika #SistemieseGaslighting #Selfagentskap #PraatDieWaarheid #GeestesgesondheidBewustheid #OnregOntbloot #Bewustheid #Genesingsreis #Selfsoewereiniteit #StephenCooke #ValseVeiligheid #SosialeKommentaar
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1150309225">https://vimeo.com/1150309225</a></span> <span class=chatlog__edited-timestamp title="Friday, June 26, 2026 11:45 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469296115731136573/Legal_Gaslight-Arabic-Afrikaans__caption.mp4?ex=6a596b64&amp;is=6a5819e4&amp;hm=38e3305417f1083c26c7bbc918ca55d4379effa205e92e6ce7a106b782431ecc&amp;" alt="Video attachment" title="Video: Legal_Gaslight-Arabic-Afrikaans__caption.mp4 (10.02 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469296116775387187/Legal_Gaslight-Arabic-Afrikaans_South_Af.srt?ex=6a596b64&amp;is=6a5819e4&amp;hm=b2aae87b3678301f98c31a7c3ea69acb914c9bdd3b11d58bb72acf7e2a88a273&amp;"> Legal_Gaslight-Arabic-Afrikaans_South_Af.srt </a></div><div class=chatlog__attachment-generic-size>866 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469296117308195052/Legal_Gaslight-Arabic-Afrikaans_So_audio.mp3?ex=6a596b64&amp;is=6a5819e4&amp;hm=a693c2f40941abe4bfea251d5d910ecdaf98d4c01ff78e587465912a6ebbc996&amp;" alt="Audio attachment" title="Audio: Legal_Gaslight-Arabic-Afrikaans_So_audio.mp3 (478.46 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469309263972401264 class=chatlog__message-container data-message-id=1469309263972401264><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 4:30 PM"><a href=#chatlog__message-container-1469309263972401264>2/6/2026 4:30 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>EK IS WIE EK IS <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 17/08/2025 - Albani&#235;</strong>
+
+Ons is nie die stem in ons koppe nie — die Bybel wys dit vir ons.
+
+Jesus | Yeshua wys vir ons: Identiteit word in dade geopenbaar, nie in verbygaande gedagtes nie. Versoeking praat, maar dit is nie wie jy is nie. Wanneer jy dit agter jou sit, is wat oorbly God se waarheid. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg">
+
+#Yeshua #EvangelieWaarheid #GeloofReis #BybelWysheid #GeestelikeStryd #KoninkrykVanGod #IdentiteitInChristus #Bekering #NieJouGedagtesNie #Jesus
+
+<a href="https://vimeo.com/1150151501">https://vimeo.com/1150151501</a></span> <span class=chatlog__edited-timestamp title="Tuesday, March 24, 2026 11:40 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469309264622260396/We_are_not_the_voice_in_our_head_caption.mp4?ex=6a5977a3&amp;is=6a582623&amp;hm=7371ea77e177264570697589c863c3ae34e85f0a57a21de10d2515a487f4515f&amp;" alt="Video attachment" title="Video: We_are_not_the_voice_in_our_head_caption.mp4 (36.65 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469309265885007955/We_are_not_the_voice_in_our_heads-Afrika.srt?ex=6a5977a3&amp;is=6a582623&amp;hm=b6f15bf37011d97664af58cca5bfe5b4092edaf5d9fd945cf0dd4f84c2ef753c&amp;"> We_are_not_the_voice_in_our_heads-Afrika.srt </a></div><div class=chatlog__attachment-generic-size>2.98 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469309266136531180/We_are_not_the_voice_in_our_heads-_audio.mp3?ex=6a5977a3&amp;is=6a582623&amp;hm=2e3c30dc7c2f0eb5e4f198ab59b16061c34192b395ea511b430c8e96645470db&amp;" alt="Audio attachment" title="Audio: We_are_not_the_voice_in_our_heads-_audio.mp3 (2.25 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469384771866988554 class=chatlog__message-container data-message-id=1469384771866988554><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 9:30 PM"><a href=#chatlog__message-container-1469384771866988554>2/6/2026 9:30 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Waarheid Het Hoogte <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127956;️"
+    title="mountain_snow"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d4.svg"> 11/09/2025 - Albani&#235;</strong>
+
+Wanneer onreg swaar word, tree terug, styg ho&#235;r, en laat jou stem dra — waarheid hoort nie in die vallei van stilte nie. Selfs Jesus het daar geen tuiste gehad nie — ’n bewys dat waarheid nooit bedoel was om stilgemaak, gedemp of onderhandel te word nie.
+
+#PraatWaarheid #StaanSterk #StygBoKwaad #JouStemMaakSaak #MoedOmTeHandel #LigInDuisternis #KragInWaarheid #StemVanVryheid #WaarheidBoAlles #PraatSonderVrees #OngekompromitteerdeWaarheid #WaarheidHetGewig #WaarheidDra #VerhefJouStem #MoreleMoed #NieMeerStilNie #StemVanGewete #DurfOmTePraat #GeloofEnWaarheid #WandelInWaarheid #NieVanHierdieW&#234;reldNie #Ho&#235;rGrond #GeestelikeHelderheid #NieOnderhandelbaarNie #GeenKompromie #IntegriteitMaakSaak #StaanApart #WeierStilte #WaarheidTok #BewusteInhoud #OntwaakteStemme #RegtePraat #HelderheidBoGeraas
+
+<a href="https://vimeo.com/1150666903">https://vimeo.com/1150666903</a></span> <span class=chatlog__edited-timestamp title="Tuesday, March 24, 2026 11:41 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469384772156391634/Echo_from_the_mountain_top-Afrik_caption.mp4?ex=6a59bdf5&amp;is=6a586c75&amp;hm=1a5eb5f6247e11ae7e4eabe8830baed4525b4dae6c87d49127e4f63e112ea8a7&amp;" alt="Video attachment" title="Video: Echo_from_the_mountain_top-Afrik_caption.mp4 (11.4 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469384773087531234/Echo_from_the_mountain_top-Afrikaans_Sou.srt?ex=6a59bdf5&amp;is=6a586c75&amp;hm=0e689d5a0f53a83ad76fd142ba7ce409c15de9849c25dd8bf6fd13a94c4914d0&amp;"> Echo_from_the_mountain_top-Afrikaans_Sou.srt </a></div><div class=chatlog__attachment-generic-size>1.22 KB</div></div></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469399460751872285 class=chatlog__message-container data-message-id=1469399460751872285><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, February 6, 2026 10:28 PM"><a href=#chatlog__message-container-1469399460751872285>2/6/2026 10:28 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Die Wet van die Oes... <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> 08/10/2025 - Albani&#235;</strong>
+
+Diegene wat armoede vir ander saai, sal dit in hul eie veld sien groei.
+
+#SaaiEnOes #WaarheidInEenLyn #EnergieKeerTerug #KarmaOfRoeping
+
+<a href="https://vimeo.com/1151217776">https://vimeo.com/1151217776</a></span> <span class=chatlog__edited-timestamp title="Saturday, April 4, 2026 10:24 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469399460860657735/Law_of_the_Harvest-Afrikaans_Sou_caption.mp4?ex=6a5922e3&amp;is=6a57d163&amp;hm=0390c499fc4acab540c1feb7f5d67757fff6e62414cbd0da75f79111162f5739&amp;" alt="Video attachment" title="Video: Law_of_the_Harvest-Afrikaans_Sou_caption.mp4 (1.04 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469399461095673897/Law_of_the_Harvest-Afrikaans_South_Afric.srt?ex=6a5922e3&amp;is=6a57d163&amp;hm=ff3310bc8b59b65b4016acfe0f0c3c54a77ab79244166f02d7f711296042aa8b&amp;"> Law_of_the_Harvest-Afrikaans_South_Afric.srt </a></div><div class=chatlog__attachment-generic-size>102 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469399461368434874/Law_of_the_Harvest-Afrikaans_South_audio.mp3?ex=6a5922e3&amp;is=6a57d163&amp;hm=ed936c959f3626459eb3a6749408a54e06974c3c3f05bc3661d743dcc41dbca1&amp;" alt="Audio attachment" title="Audio: Law_of_the_Harvest-Afrikaans_South_audio.mp3 (62.96 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469444879653535745 class=chatlog__message-container data-message-id=1469444879653535745><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 1:29 AM"><a href=#chatlog__message-container-1469444879653535745>2/7/2026 1:29 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> As die W&#234;reld Gister Vergeet Het…<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128173;"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg"> 17/10/2025 - Albani&#235;</strong>
+
+Stel jou voor jy word wakker in ’n w&#234;reld sonder enige herinnering aan skuld, wins of oorlog.
+Waar elke stelsel net die nou kan onthou.
+Miskien is vrede nie iets waarvoor ons veg nie —
+miskien is dit wat oorbly wanneer ons uiteindelik gister vergeet.
+
+Matteus 6:11 • Matteus 6:12 • Matteus 6:34
+
+#SkuldEnjin #VergeweOnsSkulde #HemelIsNou #GeloofInAksie #WaarheidInDuidelikeSig #GeestelikeOntwaking #BewusteEkonomie #VredeBoWins #StelselHerstel #DieNou #Matteus611 #Matteus612 #Matteus634 #EvangelieWaarheid #OntwaakMensdom #NuweAarde
+
+<a href="https://vimeo.com/1150632604">https://vimeo.com/1150632604</a></span> <span class=chatlog__edited-timestamp title="Tuesday, March 24, 2026 11:42 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469444880320434347/If_the_World_Forgot_Yesterday-Af_caption.mp4?ex=6a594d30&amp;is=6a57fbb0&amp;hm=21643b6d497c8b1d9afeb70f4fb5ffa3bb255efef92e661a391bb72f94b4ad7d&amp;" alt="Video attachment" title="Video: If_the_World_Forgot_Yesterday-Af_caption.mp4 (21.53 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469444881452892340/If_the_World_Forgot_Yesterday-Afrikaans_.srt?ex=6a594d30&amp;is=6a57fbb0&amp;hm=011947378775783d613e1caeb6b450650861a930b8a561ed51d1750778301ae3&amp;"> If_the_World_Forgot_Yesterday-Afrikaans_.srt </a></div><div class=chatlog__attachment-generic-size>2.33 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469444881889103892/If_the_World_Forgot_Yesterday-Afri_audio.mp3?ex=6a594d30&amp;is=6a57fbb0&amp;hm=a439325082e66a23639e7776576b136bf4162ea7fe192b72f3673e7633d52b8f&amp;" alt="Audio attachment" title="Audio: If_the_World_Forgot_Yesterday-Afri_audio.mp3 (1.27 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469547256716853341 class=chatlog__message-container data-message-id=1469547256716853341><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 8:16 AM"><a href=#chatlog__message-container-1469547256716853341>2/7/2026 8:16 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>UNO Omkeer <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127876;"
+    title="christmas_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f384.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 04/12/2025 - Georgi&#235;</strong>
+
+Kies helderheid bo ontsnapping hierdie seisoen.
+
+#vakansies #vakansieseisoen #geestesgesondheid #selfsorg #grense #genesingsreis #innerlikevrede #groeimindset #welstand #waarheidsbom #herinnering #kersfees2025 #nuwejaar2025 #ligenliefde #gemeenskapsorg
+
+<a href="https://vimeo.com/1150715181">https://vimeo.com/1150715181</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:20 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469547256993812531/UNO_Reverse-Afrikaans_South_Afri_caption.mp4?ex=6a59ac88&amp;is=6a585b08&amp;hm=dbe5e7f22922c5f549667cd5d6ef75806e57392eba8961cc086c058541e1cdf0&amp;" alt="Video attachment" title="Video: UNO_Reverse-Afrikaans_South_Afri_caption.mp4 (7.5 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469547257643794675/UNO_Reverse-Afrikaans_South_Africa.srt?ex=6a59ac89&amp;is=6a585b09&amp;hm=045374293b8341064d95cc3e11fcfd4ba5acac99ae0c86bd7fcbe3f7941f8b99&amp;"> UNO_Reverse-Afrikaans_South_Africa.srt </a></div><div class=chatlog__attachment-generic-size>620 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469547258231128215/UNO_Reverse-Afrikaans_South_Africa_audio.mp3?ex=6a59ac89&amp;is=6a585b09&amp;hm=344798ddce976b71da08b33eb89324db17e42ec2c0d7c890e987bbf0e60481ca&amp;" alt="Audio attachment" title="Audio: UNO_Reverse-Afrikaans_South_Africa_audio.mp3 (432.71 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469550704543924400 class=chatlog__message-container data-message-id=1469550704543924400><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 8:29 AM"><a href=#chatlog__message-container-1469550704543924400>2/7/2026 8:29 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Liefde Gee in My Werklikheid <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129728;"
+    title="anatomical_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fac0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"> 26/09/2025 - Albani&#235;</strong>
+<code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight"> 
+# Program: Weergawe van Liefde in My Werklikheid - 26/09/2025 - Albani&#235;
+
+# Veranderlike gereserveer vir dinamiese toewysing
+liefde = None
+
+# Respekteer alles wat ek is wanneer jy toewys
+liefde = &quot;selfrespek + waarheid + vryheid&quot;
+
+# Algemene fout (moenie dit doen nie):
+# liefde = &quot;beheer&quot;
+# ❌ lewer gebondenheid, nie liefde nie
+
+# Funksie wat liefde in my omgewing uitvoer
+def weergee_liefde(liefde):
+    if liefde == &quot;beheer&quot;:
+        return &quot;Fout: vervorming opgespoor. Funksie dien nie die bedoelde doel nie.&quot;
+    else:
+        return f&quot;Liefde uitgevoer as {liefde} — skoon, vry, en in lyn.&quot;
+
+# Begin die program
+print(weergee_liefde(liefde))
+
+#KodeVanLiefde #DinamieseToewysing #LiefdeNieBeheerNie #VryheidFunksie #Selfrespek #InnerlikeKode #GeestelikeKodering #BreekDieLus #WaarheidSamesteller #SoewereiniteitSkrip #LeweAsKode #GeprogrammeerVirVryheid</code>
+<a href="https://vimeo.com/1149545837">https://vimeo.com/1149545837</a></span> <span class=chatlog__edited-timestamp title="Monday, April 6, 2026 9:27 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469550704950640774/Rendering_Love_in_My_Reality1-Af_caption.mp4?ex=6a59afbe&amp;is=6a585e3e&amp;hm=072ba91cfb0aa4a01ea739f3e4f4d605097b88cb3fdd6c8a49b8b4fbdb26428b&amp;" alt="Video attachment" title="Video: Rendering_Love_in_My_Reality1-Af_caption.mp4 (24.88 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469550706657857691/Rendering_Love_in_My_Reality1-Afrikaans_.srt?ex=6a59afbf&amp;is=6a585e3f&amp;hm=02addb616c984c3523b3fc8f2ae3a73f4387f0ade5e586e86ad589184a3e9764&amp;"> Rendering_Love_in_My_Reality1-Afrikaans_.srt </a></div><div class=chatlog__attachment-generic-size>2.32 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469550706926288916/Rendering_Love_in_My_Reality1-Afri_audio.mp3?ex=6a59afbf&amp;is=6a585e3f&amp;hm=2f3a89d7973139910cbed60ae2d4f54270596703a4180cf83cc231e0a8a0383e&amp;" alt="Audio attachment" title="Audio: Rendering_Love_in_My_Reality1-Afri_audio.mp3 (1.48 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469662211818524816 class=chatlog__message-container data-message-id=1469662211818524816><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 3:52 PM"><a href=#chatlog__message-container-1469662211818524816>2/7/2026 3:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Die Genade Versteek in Genesis <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127811;"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg"> 28/11/2025 - Turkye</strong>
+
+Ons is nie as straf van die Boom van die Lewe gehou nie.
+Dit was beskerming.
+
+Dualiteit skep eindelose gange.
+Ewige lewe in daardie toestand = ewige lyding.
+
+Slegs wanneer die siel weer heel is, keer Eden terug na binne.
+
+#ontwaking #eden #boomvanlewe #genesisgedekodeer #innerlikereis #bewussynsverskuiwing
+#dualiteit #geestelikegroei #teenwoordigheid #modernemistiek #christusbewussyn
+#skaduwerk #innerlikeeenheid #bewussynlikheid #genesingsreis #po&#235;tiesewysheid
+#geestelikeinsig #stephencooke #lewensonderrig
+
+<a href="https://vimeo.com/1150327401">https://vimeo.com/1150327401</a></span> <span class=chatlog__edited-timestamp title="Tuesday, March 24, 2026 11:44 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469662212271374347/The_Mercy_Hidden_in_Genesis_1-Af_caption.mp4?ex=6a596ed8&amp;is=6a581d58&amp;hm=47c1ca0c271d7b518e5a2826b2fa38ec6c1ea8c072370c278585fd01846dcdff&amp;" alt="Video attachment" title="Video: The_Mercy_Hidden_in_Genesis_1-Af_caption.mp4 (20.23 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469662213185867806/The_Mercy_Hidden_in_Genesis_1-Afrikaans_.srt?ex=6a596ed8&amp;is=6a581d58&amp;hm=d9ed241de84811533eff7c12f8dfc515018a8bebe35900e866b0eaf7440d788d&amp;"> The_Mercy_Hidden_in_Genesis_1-Afrikaans_.srt </a></div><div class=chatlog__attachment-generic-size>2.08 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469662213802299422/The_Mercy_Hidden_in_Genesis_1-Afri_audio.mp3?ex=6a596ed8&amp;is=6a581d58&amp;hm=20d3560972c1f5b471afed4dc3bfb161fcf7e8954dcb30b153204960b51804a6&amp;" alt="Audio attachment" title="Audio: The_Mercy_Hidden_in_Genesis_1-Afri_audio.mp3 (1.21 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469693423861764251 class=chatlog__message-container data-message-id=1469693423861764251><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 5:56 PM"><a href=#chatlog__message-container-1469693423861764251>2/7/2026 5:56 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>&quot;Vrede sy met jou ... en ook met jou.&quot; <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 30/09/2025 - Albani&#235;</strong>
+
+Maar wanneer ek dit s&#234;, hoe land dit? Hoor jy net die woorde, of voel jy dit? Wat kan jy in jou lewe—binne en buite—verskuif sodat vrede nie net uitgespreek word nie, maar beliggaam word?
+Te dikwels gryp ons na vlugtige ervarings om onsself af te lei, omdat ware konfrontasie ongemaklik voel. Maar dit is die wonder van Jesus: Hy wys vir ons hoe om vrede, geregtigheid en regverdigheid te versoen deur in God los te laat.
+Tog—daar is ’n fyn lyn. Die kerk het soms selfverlo&#235;ning geleer, en dit is nie die weg nie. Die roeping is om oor te gee wat ons nie alleen kan dra nie, maar nie om uit te wis wie ons is nie.
+Om daardie balans te hou—dit is die sleutel om die Koninkryk van die Hemel op Aarde te laat kom. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#VredeSyMetJou #GeloofReis #JesusRed #BeliggaamdeGeloof #HemelOpAarde #KoninkrykBinne #ChristelikeTikTok #LaatGaanLaatGod #BalansInGeloof #WandelMetChristus
+
+<a href="https://vimeo.com/1150114546">https://vimeo.com/1150114546</a></span> <span class=chatlog__edited-timestamp title="Saturday, April 4, 2026 10:25 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469693424327459001/Peace_be_with_you_B-Afrikaans_South_Africa.mp4?ex=6a598be9&amp;is=6a583a69&amp;hm=578065ac295f645c421cba4dafe323e2f8d79220c1024b5fcafaf40c14d3ec9c&amp;" alt="Video attachment" title="Video: Peace_be_with_you_B-Afrikaans_South_Africa.mp4 (31.2 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469701828475359392 class=chatlog__message-container data-message-id=1469701828475359392><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 6:30 PM"><a href=#chatlog__message-container-1469701828475359392>2/7/2026 6:30 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vrede is &#39;n binnewerk <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 11/09/2025 - Albani&#235;
+</strong>
+Moenie die sleutels van jou innerlike kalmte aan iemand anders oorhandig nie.
+
+#vredebinnin #innerlikekrag #selfsoewereiniteit #bewustheid #genesingsreis #innerlikevrede #kiesvrede #geloofbovervrees #geestelikegroei #waarheidsoeker
+
+<a href="https://vimeo.com/1149524735">https://vimeo.com/1149524735</a></span> <span class=chatlog__edited-timestamp title="Saturday, April 4, 2026 10:26 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469701828638933133/Peace_is_an_inside_job-Afrikaans_caption.mp4?ex=6a5993bd&amp;is=6a58423d&amp;hm=1c1400615ec2d4e6ec275416d9579948129abd8fa71acc925bbe69e2f45ed0ec&amp;" alt="Video attachment" title="Video: Peace_is_an_inside_job-Afrikaans_caption.mp4 (3.81 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469701829137928305/Peace_is_an_inside_job-Afrikaans_South_A.srt?ex=6a5993bd&amp;is=6a58423d&amp;hm=7f4e26e613a7741b7e4dd042a8bafd5b4da4dc6e1c46d5f4f01b5cfe8389acdf&amp;"> Peace_is_an_inside_job-Afrikaans_South_A.srt </a></div><div class=chatlog__attachment-generic-size>325 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469701829561417779/Peace_is_an_inside_job-Afrikaans_S_audio.mp3?ex=6a5993bd&amp;is=6a58423d&amp;hm=64bc794281e0e382a920fd88e227d918342c8c0f69d2ae4b6035878b6ca817a3&amp;" alt="Audio attachment" title="Audio: Peace_is_an_inside_job-Afrikaans_S_audio.mp3 (241.46 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1469780995447197736 class=chatlog__message-container data-message-id=1469780995447197736><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, February 7, 2026 11:44 PM"><a href=#chatlog__message-container-1469780995447197736>2/7/2026 11:44 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Jou Siel Het Nie Pyn Gekies Nie <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128155;"
+    title="yellow_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49b.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 05/12/2025 - Georgi&#235;</strong>
+
+Jesus het ges&#234; die vrug wys watter boom dit is.
+So watter vrug kom uit die geloof
+“jou siel het hierdie lyding gekies”?
+
+#onderskeiding #selfgetuienis #waarheidsoeker #geestelikehelderheid #deprogrammering #innerlikekrag #bewustheid #genesingsreis #vreesprogrammering #mentalehelderheid #kollektieweontwaking #bemagtiging
+
+<a href="https://vimeo.com/1150882438">https://vimeo.com/1150882438</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:20 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469780995870818620/Your_Soul_Didnt_Choose_Pain_B-Af_caption.mp4?ex=6a5934b8&amp;is=6a57e338&amp;hm=c8cc4dd79d6669c39e1375716a00e3df9599dbe8f3cb1076996a181d2b7f03e2&amp;" alt="Video attachment" title="Video: Your_Soul_Didnt_Choose_Pain_B-Af_caption.mp4 (22.59 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1469780997380767774/Your_Soul_Didnt_Choose_Pain_B-Afrikaans_.srt?ex=6a5934b8&amp;is=6a57e338&amp;hm=85181a22b5fcfc683abf7789edb70091a081d1f10c6448cb89085eebfe8400a6&amp;"> Your_Soul_Didnt_Choose_Pain_B-Afrikaans_.srt </a></div><div class=chatlog__attachment-generic-size>2.27 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1469780998244925642/Your_Soul_Didnt_Choose_Pain_B-Afri_audio.mp3?ex=6a5934b9&amp;is=6a57e339&amp;hm=f94f5a6dde74766f390119f87596349facc068021a71760b632e457cd8e83835&amp;" alt="Audio attachment" title="Audio: Your_Soul_Didnt_Choose_Pain_B-Afri_audio.mp3 (1.36 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1470130157443350682 class=chatlog__message-container data-message-id=1470130157443350682><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, February 8, 2026 10:52 PM"><a href=#chatlog__message-container-1470130157443350682>2/8/2026 10:52 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128181;"
+    title="dollar"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b5.svg"> Tirannie in Vermomming <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 04/10/2025 - Albani&#235;</strong>
+
+Politiek word nie altyd verdien nie — dit word dikwels gekoop.
+Dit word nie uit woede ges&#234; nie, maar uit helderheid.
+
+Ware verandering vereis nie ’n gewelddadige uitbarsting nie. Geskiedenis wys ’n stiller pad: geestelike vasberadenheid, vas, volharding, en om waarheid bo gemak te kies.
+
+Elke keer wanneer jy meer op God staatmaak en minder op die dollar, verswak sy beheer.
+
+Die heerskappy van die dollar eindig die dag wanneer ons ophou om daarvoor te kniel.
+
+Trek jou gehoorsaamheid terug — en die ryk stort onder sy eie gewig in.
+
+#IllusieVanDemokrasie #DollarIsMeester #VasVirVryheid #GeloofBoVrees #LeunOpGod #GeestelikeVryheid #BreekDieSluier #WaarheidBoTirannie #NuweManiereVanLewe #WeerstaanDieDollar
+
+<a href="https://vimeo.com/1176690709">https://vimeo.com/1176690709</a></span> <span class=chatlog__edited-timestamp title="Saturday, April 4, 2026 10:26 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1470130158018101381/Tyranny_in_Disguise-Afrikaans_So_caption.mp4?ex=6a592867&amp;is=6a57d6e7&amp;hm=395bc719104c13a09c37569259b0172faf38b37ccedb4aec5aaf12153689c6d0&amp;" alt="Video attachment" title="Video: Tyranny_in_Disguise-Afrikaans_So_caption.mp4 (33.67 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1470130160337682513/Tyranny_in_Disguise-Afrikaans_South_Afri.srt?ex=6a592867&amp;is=6a57d6e7&amp;hm=2af3e7c1420941e6475803bed920ab35fb50fd2095af39fb68ba772881186675&amp;"> Tyranny_in_Disguise-Afrikaans_South_Afri.srt </a></div><div class=chatlog__attachment-generic-size>3.29 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1470130160622633067/Tyranny_in_Disguise-Afrikaans_Sout_audio.mp3?ex=6a592867&amp;is=6a57d6e7&amp;hm=e89f46db28f82a717aa7da1f0c6558b13b7e7298eaccfd7e99afa652aa17ebca&amp;" alt="Audio attachment" title="Audio: Tyranny_in_Disguise-Afrikaans_Sout_audio.mp3 (1.99 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1484856970354884750 class=chatlog__message-container data-message-id=1484856970354884750><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, March 21, 2026 2:11 PM"><a href=#chatlog__message-container-1484856970354884750>3/21/2026 2:11 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Narcisme is die stelsel <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 28/01/2026 - Georgi&#235;
+(Uitgebreide weergawe — sluit ’n bykomende 20 minute se beeldmateriaal in)</strong>
+
+Dit is nie net ’n persoonlike storie nie — dit gaan oor narcisme wat op groot skaal funksioneer.
+
+Narcisme floreer op beheer, verwarring, afhanklikheid en uitputting. Wanneer stelsels hul aanspreeklikheid verloor, begin hulle dieselfde eienskappe weerspie&#235;l: gaslighting (psigologiese manipulasie), blaamverskuiwing, stilmaak en die straf van outonomie.
+
+Tydens my skeiding het ek gesien hoe regspr prosesse, finansi&#235;le druk en narratiewe rondom geestesgesondheid misbruik kan word om selfbeskikking weg te neem en mense vas te hou in ’n uitbreidende lus — ’n lus wat energie, identiteit en hoop uitput.
+
+Ek deel dit nie uit woede nie, maar uit helderheid. Wanneer narcisme struktureel word, lyk dit nie meer soos ’n persoon nie — dit lyk soos beleid, prosedures en “dis maar hoe dinge werk”.
+
+As jy gedwing is om aan jou werklikheid te twyfel, gestraf is omdat jy die waarheid praat, of gedwing is om net te oorleef eerder as om te genees — jy is nie gebreek nie. Jy reageer op ’n stelsel wat sonder empatie gebou is.
+
+Bewustheid breek die lus.
+
+#Narcisme #SistemieseMisbruik #NarcistieseBeheer #BreekDieLus #DwingendeBeheer #Gaslighting #StruktureleGeweld #GewaapeniseerdeStelsels #RegsMisbruik #InstitusioneleMislukking #PsigologieseMisbruik #TraumaBewustheid #PraatDieWaarheid #StemVanOorlewendes #Aanspreeklikheid #Onderskeidingsvermo&#235; #Ontwaking #KiesHelderheid #Be&#235;indigDieSiklus
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1175714544">https://vimeo.com/1175714544</a></span> <span class=chatlog__edited-timestamp title="Friday, June 26, 2026 11:45 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1484856950721085551/Narcissism_is_the_System_Afrikaans_caption.mp4?ex=6a59570c&amp;is=6a58058c&amp;hm=bc4130e7a37f0f15e966cf63e9855adcb030b4243f10e764cd1c87c59b185f63&amp;" alt="Video attachment" title="Video: Narcissism_is_the_System_Afrikaans_caption.mp4 (427.96 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1484856969465696286/Narcissism_is_the_System_Afrikaans_caption.srt?ex=6a595710&amp;is=6a580590&amp;hm=e2086ae2ce083da71ee4f70f62ae61b0bd19d2b2e28042639dd912f0df127807&amp;"> Narcissism_is_the_System_Afrikaans_caption.srt </a></div><div class=chatlog__attachment-generic-size>73.41 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1484856969889190100/Narcissism_is_the_System_Afrikaans_audio.mp3?ex=6a595710&amp;is=6a580590&amp;hm=aa447e51a5de71ceff778ca03740d9ee0bac4e06ea9002d2192ab6b1cfe8535f&amp;" alt="Audio attachment" title="Audio: Narcissism_is_the_System_Afrikaans_audio.mp3 (26.53 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490250693695766549 class=chatlog__message-container data-message-id=1490250693695766549><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 11:24 AM"><a href=#chatlog__message-container-1490250693695766549>4/5/2026 11:24 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Die hemel is &#39;n kwessie van persepsie <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127780;️"
+    title="white_sun_small_cloud"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f324.svg"> 16/01/2026 - Georgi&#235;</strong>
+
+Niks voel gevaarlik vir &#39;n vreedsame gemoed nie.
+
+Matteus 6:25–26 &#183; Matteus 18:3 &#183; Psalm 4:8
+
+#VreedsameGemoed #StilOomblikke #Stilheid #SagteBewustheid
+
+<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:20 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490250693863542854/All_Dogs_Go_to_Heaven.mp4?ex=6a592fdc&amp;is=6a57de5c&amp;hm=8d9d013f80721c71ad9b5c070b4df64283488804780dd21f9fd047c8a4e0e34c&amp;" alt="Video attachment" title="Video: All_Dogs_Go_to_Heaven.mp4 (1.14 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490258502596165732 class=chatlog__message-container data-message-id=1490258502596165732><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 11:55 AM"><a href=#chatlog__message-container-1490258502596165732>4/5/2026 11:55 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Die Hok Is Nie Jou Huis Nie <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127749;"
+    title="sunrise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f305.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129718;"
+    title="feather"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fab6.svg"> 06/04/2025 - Thailand</strong>
+
+Ek het hierdie liedjie gehoor terwyl ek deur &#39;n mark in Japan geloop het, net &#39;n gewone dag... en dit het my in my spore laat stilstaan.
+
+&quot;Laat ruimte toe om te groei... die hok is nie jou huis nie.&quot;
+
+Ek het nie eers na &#39;n teken gesoek nie, maar God het een reg voor my geplaas.
+
+&quot;The Sparrow&quot; deur The Hunts het gespeel, en die woorde het diep getref - soos die Hemel wat deur die geraas van die w&#234;reld fluister.
+
+En alhoewel daardie oomblik in Japan gebeur het, is hierdie video in die Phraya Nakhon-grot - Prachuap Khiri Khan, Thailand - verfilm op &#39;n plek waar die betekenis van die boodskap werklik ontvou het.
+
+Dit het my daaraan herinner dat God ons dikwels so lei - uit opsluiting, uit vrees, uit die klein ruimtes waarin ons oorleef het...
+
+En in iets groter.
+
+&#39;n Broodkrummel in een land.
+
+&#39;n Deurbraak in &#39;n ander.
+
+Ons bou hokke uit gemak, ou identiteite, oorlewingspatrone… maar ons was nooit bedoel om ingeperk te bly nie.
+
+Die hok is nie jou tuiste nie.
+
+Maak ruimte om te groei.
+Sprei jou vlerke.
+Vertrou die pad.
+
+“Sparrow” deur The Hunts — &#39;n liedjie deur die indie folk-duo The Hunts, wat op hul album Hibernating Heart verskyn. Onderskrifte deur TikTok.
+
+#TheHunts #TheSparrow #PhrayaNakhonCave ⁠thailand #PrachuapKhiriKhan #DivineSigns #FaithWalk #SpiritualJourney #BreakFree #YouWereMeantToFly #HealingPath #GodIsSpeaking #AwakenedSoul
+
+<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490258503959318548/The_cage_is_not_your_home.mp4?ex=6a593723&amp;is=6a57e5a3&amp;hm=2601ee7fdd9edb89e73eec78dd1481fcf48cc94c4d3a93bf8edb65c8044b5bd3&amp;" alt="Video attachment" title="Video: The_cage_is_not_your_home.mp4 (21.46 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490269778458443916 class=chatlog__message-container data-message-id=1490269778458443916><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:40 PM"><a href=#chatlog__message-container-1490269778458443916>4/5/2026 12:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg">Wanneer Stilte In Rig Is<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127811;"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127769;"
+    title="crescent_moon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f319.svg"> 16/09/2025 - Albani&#235;</strong>
+
+Terwyl ek met die stilte sit, het ek besef—wanneer alles in lyn is, voel dit asof dit terugkyk.
+
+#stilte #natuur #fokus #inrigting #lae #stilte #meditatief #kalmte #natuurvideo #stiloomblikke
+
+<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490269783676030997/When_Stillness_Aligns.mp4?ex=6a5941a4&amp;is=6a57f024&amp;hm=e4557c580590388011788a15079078e4f4707b714a67349066e375f329125671&amp;" alt="Video attachment" title="Video: When_Stillness_Aligns.mp4 (89.27 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490315646444113980 class=chatlog__message-container data-message-id=1490315646444113980><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 3:42 PM"><a href=#chatlog__message-container-1490315646444113980>4/5/2026 3:42 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128167;"
+    title="droplet"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a7.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> Varswaterterapie - geen filter nodig nie. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"> 25/07/2025 - Montenegro</strong>
+
+#NatuurVibes #VarswaterSwem #MeerLewe #Natuurliefhebbers #InDieWildernis #Buitelugterapie #VreedsameVibes #Wildswem #Natuurgenesing #LeweInDieNatuur #Aarding #AvontuurTyd
+
+<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span> <span class=chatlog__edited-timestamp title="Sunday, April 5, 2026 3:47 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490315642262388787/Freshwater_therapy.mp4?ex=6a596c59&amp;is=6a581ad9&amp;hm=e6c70869c118f102f59f89846bee3f874db4ea191ae2f672740f0d07fe325eea&amp;" alt="Video attachment" title="Video: Freshwater_therapy.mp4 (93.64 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490329566080798912 class=chatlog__message-container data-message-id=1490329566080798912><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:37 PM"><a href=#chatlog__message-container-1490329566080798912>4/5/2026 4:37 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vreugde is medisyne. Die natuur is waarheid. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 11/06/2025 - Bulgarye</strong>
+
+Ek het nie net hierheen gekom vir &#39;n blaaskans nie — ek het gekom om te onthou.
+Die Aarde verander, en ons ook. Dit is die gloed wat met ontwaking kom. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"> “Oral” – Niall Horan &amp; Anne-Marie
+
+Huttlewe in Bulgarye — waar ek weer vrede, teenwoordigheid en spel gevoel het.
+
+#5dshift #NuweAarde #spiritualwakkerword #natuurgloed #gloed ⁠bulgari&#235; #wildernis #ontwaaksiel #hutindiebos #ligwerkers #bos #natuur #spiritualiteit #viraal
+
+<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490329572179316787/Joy_is_medicine._Nature_is_truth.mp4?ex=6a597952&amp;is=6a5827d2&amp;hm=b89d919af7fdc9a5718c50a60ed58bddd07f90e9dcebf142301981ae4b9d442a&amp;" alt="Video attachment" title="Video: Joy_is_medicine._Nature_is_truth.mp4 (112.8 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490385322339471531 class=chatlog__message-container data-message-id=1490385322339471531><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:19 PM"><a href=#chatlog__message-container-1490385322339471531>4/5/2026 8:19 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, Oop Velde, Helder Gedagte <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 18/10/2025 - Albani&#235;</strong>
+
+Soms is al wat jy nodig het &#39;n stil veld, &#39;n goeie liedjie, en die herinnering dat die lewe steeds mooi is.
+
+Fleetwood Mac in die agtergrond, vars lug voor my, en &#39;n w&#234;reld wat niks vra nie - net om te stop en asem te haal.
+
+#vanlewe #natuurvibes #fleetwoodmac #vreedsame oomblikke #veldlewe #koeie #natuurskoon #reisvibes #vertraging #bewussame oomblikke #sonsondergangvibes #australi&#235; #europa #musiekennatuur #vryheidsreis #buitesiel #kalmenergie #stil oomblikke #kreatiewereis #genesingspad
+
+<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490385327125299401/Fleetwood_Mac_Open_Fields_Clear_Mind.mp4?ex=6a59ad40&amp;is=6a585bc0&amp;hm=122a6690d8b1d7f7b737f909ab8c907f1362204439094ca8ecf3ad1ce49d6eb7&amp;" alt="Video attachment" title="Video: Fleetwood_Mac_Open_Fields_Clear_Mind.mp4 (85.4 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490392383718817893 class=chatlog__message-container data-message-id=1490392383718817893><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:47 PM"><a href=#chatlog__message-container-1490392383718817893>4/5/2026 8:47 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>’n Vreedsame Stap in die Veld <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127806;"
+    title="ear_of_rice"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33e.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128004;"
+    title="cow2"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f404.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128276;"
+    title="bell"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f514.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 16/08/2025 - Albani&#235;</strong>
+
+Stap uit in “die” veld — nie sommer enige plek nie, maar die een wat vir jou wag.
+Waar tyd sy greep verslap, hou die lug sy asem op,
+en die enigste musiek is die sagte koor van koeiklokke.
+
+#VanLewe #NatuurVibes #Koeiklokke #VreedsameOomblikke #WeidelingLewe #StadigeLewe #AfVanNetwerkLewe #OggendVibes #PlaasUitsigte #BewusteLewe
+
+<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490392389620207756/A_Peaceful_Step_Into_the_Field.mp4?ex=6a59b3d3&amp;is=6a586253&amp;hm=45a45f460d9f6a10e3cc68a92e5906df8102a7827d880ed966acb0ae7eadc104&amp;" alt="Video attachment" title="Video: A_Peaceful_Step_Into_the_Field.mp4 (106.54 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490604386987278386 class=chatlog__message-container data-message-id=1490604386987278386><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, April 6, 2026 10:49 AM"><a href=#chatlog__message-container-1490604386987278386>4/6/2026 10:49 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dollar se towerspreuke ook! <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128184;"
+    title="money_with_wings"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b8.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 01/12/2025 - Georgi&#235;</strong>
+
+Soos enige towerspreuk, hang die krag daarvan af van jou geloof — jou deelname.
+Die dollar is neutraal, en so ook kapitalisme — dis God se kinders wat altyd bedoel was om bo ons uit te styg.
+
+Maar ons is gekondisioneer om te dink die dollar is bo ons,
+en daardie geloof laat ons veld van moontlikheid in &#39;n nou vorm ineenstort.
+
+Die illusie is om te dink ons ​​is gelyk aan die stelsels wat ons geskep het.
+
+Te veel veg binne die lus, en besef nooit die mag wat hulle het deur dit eenvoudig heeltemal af te tree nie.
+
+#dollarillusie #ontwaking #spiritueleontwaking #matriks #breekvry #waarheidsoekers #po&#235;tiesewysheid #visuelestorievertelling #fyp #virjou #foryoupage #viralevideo #diepgedagtes #lewenslesse #bewussyn #selfverwesenliking #denkwysing #sistemiesewaarheid #filosofie #metafoor #modernegelykenis #dinkdaaroor #ineenstortingvanillusie #innerlikevryheid #stephencooke
+
+<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:21 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490604387209445536/Dollars_Cast_Spells_Too.mp4?ex=6a5927c4&amp;is=6a57d644&amp;hm=53069d0b57bdb8c92ddaefe8d81ed7b7f20ffc24a96a43d0496af1f36236680b&amp;" alt="Video attachment" title="Video: Dollars_Cast_Spells_Too.mp4 (1.77 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490936743136858182 class=chatlog__message-container data-message-id=1490936743136858182><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 8:50 AM"><a href=#chatlog__message-container-1490936743136858182>4/7/2026 8:50 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> Dit gaan nie oor spog nie, dit gaan oor die pad terug wys — na soewereiniteit, na vrede, na die natuur <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 09/09/2025 - Albani&#235;</strong>
+
+Sonkrag, warm water, hitte, en &#39;n klein spasie op wiele. Nie spog nie — net wys dat &#39;n ander manier van lewe moontlik is, waar vrede binne &#39;n mens se beheer bly en die agentskap daarvan nie uitgekontrakteer word nie.
+
+#Soewereiniteit #HerwinJouVrede #BesitJouLewe #VanBestuurswinkelLewe #AfNetwerkLewe #OnafhanklikeLewe #Sonkrag #WaterIsLewe #TerugNaDieNatuur #VolhoubareLewe #EenvoudigeLewe #Natuurgrense #GodVoorsien #GeloofEnVryheid #LeweInGenade
+
+<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:22 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490936747176103936/To_Sovereignty.mp4?ex=6a59b48c&amp;is=6a58630c&amp;hm=459a1f33078d129270157e45c9d306f554e15b25ad57dbfc2bc775f4bbedb231&amp;" alt="Video attachment" title="Video: To_Sovereignty.mp4 (83.29 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490939944947028119 class=chatlog__message-container data-message-id=1490939944947028119><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:03 AM"><a href=#chatlog__message-container-1490939944947028119>4/7/2026 9:03 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Waarheid Wag Agter die Spie&#235;l <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129694;"
+    title="mirror"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa9e.svg"> 21/02/2026 - Georgi&#235;</strong>
+
+Daar is gevaar om korrupsie te ignoreer.
+
+Daar is ook gevaar om te lank daarna te staar.
+
+Ek het gereedskap gedeel om die Epstein-l&#234;ers direk vanaf die Justice-bron af te laai — want waarheid moet by sy oorsprong bewaar word, nie deur narratiewe gefiltreer word nie.
+
+As die bron verlore gaan, wat vervang dit?
+Spekulasie. Manipulasie. Vervorming.
+
+Argiveer verantwoordelik.
+Ondersoek duidelik.
+Moenie dat die spie&#235;l jou verdraai nie.
+
+Google-aflaai:
+<a href="https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing">https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing</a>
+
+Stel 1
+<a href="https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g">https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g</a>
+Stel 2
+<a href="https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g">https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g</a>
+Stel 3
+<a href="https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w">https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w</a>
+Stel 4
+<a href="https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA">https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA</a>
+Stel 5
+<a href="https://mega.nz/vouer/AvRynZIK#7bbd_CTY355iCHK8cvPWrg">https://mega.nz/vouer/AvRynZIK#7bbd_CTY355iCHK8cvPWrg</a>
+Stel 6
+<a href="https://mega.nz/vouer/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA">https://mega.nz/vouer/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA</a>
+
+#EpsteinL&#234;ers #Epstein #EpsteinSaak #EpsteinOndersoek #Spie&#235;lVanEpstein #GeregtigheidVirSlagoffers #Verantwoordbaarheid #OpenbareRekords #Deursigtigheid #BlootBlykDieWaarheid #DoenJouNavorsing #WaarheidMaakSaak #GeregtigheidMaakSaak #StaanVirDieWaarheid #Bewustheid #SoekDieWaarheid
+
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
+<a href="https://vimeo.com/1166981404">https://vimeo.com/1166981404</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:22 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490939947882909899/Man_in_the_Mirror.mp4?ex=6a59b787&amp;is=6a586607&amp;hm=41e20d52a73f70e681166f0f34d7cf9f6acd366f621cd334e2cc231dc2306d34&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1490939948566839328/The_Mirror_of_Evil.png?ex=6a59b788&amp;is=6a586608&amp;hm=7219c9ce04e36aa0c26662d2da0d1f645b14015249b799725ccb430deaf2bf29&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1469246579759386728/1490939948566839328/The_Mirror_of_Evil.png?ex=6a59b788&amp;is=6a586608&amp;hm=7219c9ce04e36aa0c26662d2da0d1f645b14015249b799725ccb430deaf2bf29&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490939951049736232/The_Mirror_of_Evil.mp4?ex=6a59b788&amp;is=6a586608&amp;hm=d9acefd802d1aafb0794775c7ffba631caf59ec7e4add7fb735c11a93fc8bc1b&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil.mp4 (90.59 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490948016885203026 class=chatlog__message-container data-message-id=1490948016885203026><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 9:35 AM"><a href=#chatlog__message-container-1490948016885203026>4/7/2026 9:35 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Red Jouself Van Twyfel <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127754;"
+    title="ocean"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30a.svg"> 09/11/2025 - Turkye</strong>
+
+Soms word die beste draaie nie beplan nie.
+Van die snelweg af, in die onbekende.
+
+#BaanLewe #LosDitBeter #Padstories #VryheidOpWiele #ReisRegteGesprek #SpontaneReis #NomadieseLewe #AvontuurWag #FilmVibes #Bronson #ODESZA #HeeltemalEnormUitgesterfdeDinosourusse #RedJoselfVanTwyfel #MoetDitNooitOpGeeNooit #VertrouDieReis #GeloofInBeweging #VloeiToestand #VanDieSnelweg Af #InDieOnbekende #SelfVertroue
+
+<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1490948019485413507/Save_Yourself_from_Doubt.mp4?ex=6a59bf0c&amp;is=6a586d8c&amp;hm=101779264b62b56b064dddc25ece41d5d160d2ff0af9d7c4243264873801d9f7&amp;" alt="Video attachment" title="Video: Save_Yourself_from_Doubt.mp4 (48.43 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1491034062884704416 class=chatlog__message-container data-message-id=1491034062884704416><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 3:17 PM"><a href=#chatlog__message-container-1491034062884704416>4/7/2026 3:17 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 24/08/2025 - Albani&#235;</strong>
+
+#klavier #vreedsamevibes #hele nuwew&#234;reld #natuurvibes #kalm #esteties #klaviermusiek #vertraag #bewusstoekomblikke #sagtevloei #boomvanlewe
+
+<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1491034066449858651/Flying_free_in_a_whole_new_world.mp4?ex=6a59666f&amp;is=6a5814ef&amp;hm=0a1648bc96e5bc0a67ebb85aed35b813b9a65017ea50b6ef126cf29f459277f9&amp;" alt="Video attachment" title="Video: Flying_free_in_a_whole_new_world.mp4 (62.02 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1499041280959844493 class=chatlog__message-container data-message-id=1499041280959844493><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, April 29, 2026 5:34 PM"><a href=#chatlog__message-container-1499041280959844493>4/29/2026 5:34 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Om &#39;n Goeie Herder te wees…” ≠ mensehandel <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="♻️"
+    title="recycle"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/267b.svg"> 18/11/2025 – Georgi&#235;</strong>
+
+’n Herder beskerm outonomie – vervang dit nooit. ’n Mensehandelaar maak wins uit die verlies daarvan.
+En soms lyk dit soos sorg… net verwerking.
+
+“Jy mag nie doodslaan nie.” — Eksodus 20:13
+
+Nie net die liggaam nie — maar die gees, die wil, die outonomie binne.
+
+Waar daar dwang, afhanklikheid of beheer is, het iets reeds verkeerd geloop.
+
+Sorg verteer nie. Leiding wis nie uit nie.
+
+En ek is nie hier om afgebreek te word in iets geriefliker nie.
+
+Onderskeiding is om die verskil te onthou.
+
+#VanResonansieNaBeheer #WaarheidMaakSaak #GeestelikeOnderskeiding #DwangBeheer #HerderNieEienaarNie #VerminderHergebruikRebel #NieBioafbreekbaar #Stelseloorlewende #VerwerkDeurDieStelsel #Genesingsreis #StygBoDit #PraatJouWaarheid #BreekDieSiklus #InnerLig #EisJouStorieTerug #VanLewensdagboek #Veerkragtigheidsmodus #WaarheidInHumor #Lewenslesse #HouAan
+
+<a href="https://vimeo.com/1187706849">https://vimeo.com/1187706849</a>
+<a href="https://vimeo.com/1187707332">https://vimeo.com/1187707332</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:23 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1499041275809235045/Exodus_2013-English-Afrikaans_So_caption.mp4?ex=6a5986ba&amp;is=6a58353a&amp;hm=b1c0537f99f69f45f8a9155c2257db35130736ffcef4ca9d56f3643bed29456b&amp;" alt="Video attachment" title="Video: Exodus_2013-English-Afrikaans_So_caption.mp4 (97.79 MB)"></video></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1499041280678691058/Being_a_Good_Sheppard__trafficking_people.mp4?ex=6a5986bc&amp;is=6a58353c&amp;hm=5519700245d6e9d1a724e0f9f587e2e2beaf019f62b74c994da139227dc80fe7&amp;" alt="Video attachment" title="Video: Being_a_Good_Sheppard__trafficking_people.mp4 (599.57 KB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1501505492516601957 class=chatlog__message-container data-message-id=1501505492516601957><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, May 6, 2026 12:46 PM"><a href=#chatlog__message-container-1501505492516601957>5/6/2026 12:46 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Hekseproewe Herbegin <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> 01/03/2026 - Georgi&#235;</strong>
+
+Die Gesondheidsbedryf en Reg in die praktyk - herbegin Heksespore agter die sluier van Kommer en Sorg
+
+#Gesondheidsbedryf #Regstelsel #Hekseproewe #ModerneHeksejag #SistemieseMag #BevraagtekenDieStelsel #WaarheidSoek #Bewustheid #PraatWaarheid #AgterDieSluier #BewusteOntwaking #ModerneSamelewing #SistemieseBeheer #Wekroep #VerborgeWaarhede
+
+<a href="https://vimeo.com/1189662881">https://vimeo.com/1189662881</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 5:23 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1469246579759386728/1501505492722257940/Witch_Trials_Rebooted.mp4?ex=6a594336&amp;is=6a57f1b6&amp;hm=af86b1d256368beefccdafadfb73923e54051586fcc00f29408af86a42b65a5d&amp;" alt="Video attachment" title="Video: Witch_Trials_Rebooted.mp4 (1.36 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1469246579759386728/1501505493175373954/Witch_Trials_Rebooted.png?ex=6a594336&amp;is=6a57f1b6&amp;hm=19355c9d4e645fa3aea510e12db05225e9de041e5052dfdcf2923bb402a5b6a6&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1469246579759386728/1501505493175373954/Witch_Trials_Rebooted.png?ex=6a594336&amp;is=6a57f1b6&amp;hm=19355c9d4e645fa3aea510e12db05225e9de041e5052dfdcf2923bb402a5b6a6&amp;" alt="Image attachment" title="Image: Witch_Trials_Rebooted.png (1.07 MB)" loading=lazy> </a></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 28 message(s)</div><div class=postamble__entry>Timezone: UTC+4</div></div>
