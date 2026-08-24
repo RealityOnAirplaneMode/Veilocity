@@ -8223,3 +8223,128 @@ Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/
 
 ===== Discord Export Finished: 2026-08-24 01:08:06.195660 =====
 Completed: 39 | Skipped: 0 | Failed: 0
+
+===== Discord Export Started: 2026-08-24 03:01:09.585578 =====
+Script directory: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader
+Output directory: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity
+Exporter: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/1_Program/DiscordChatExporter.Cli
+[2026-08-24 03:01:09.586164] START: ENGLISH - Court - 1466356241738760202 (Attempt 1/3)
+[2026-08-24 03:01:14.556954] SUCCESS: ENGLISH - Court
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/ENGLISH - Court/ENGLISH - Court.html
+[2026-08-24 03:01:17.557505] START: Spanish - 1468677640213889212 (Attempt 1/3)
+[2026-08-24 03:01:21.228472] SUCCESS: Spanish
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Spanish/Spanish.html
+[2026-08-24 03:01:24.229071] START: Afrikaans - 1469246579759386728 (Attempt 1/3)
+[2026-08-24 03:01:27.502257] SUCCESS: Afrikaans
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Afrikaans/Afrikaans.html
+[2026-08-24 03:01:30.502966] START: Albania - 1468687486141206780 (Attempt 1/3)
+[2026-08-24 03:01:34.145246] SUCCESS: Albania
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Albania/Albania.html
+[2026-08-24 03:01:37.145771] START: Arabic - 1468664664379363542 (Attempt 1/3)
+[2026-08-24 03:01:41.074738] SUCCESS: Arabic
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Arabic/Arabic.html
+[2026-08-24 03:01:44.075352] START: Bosnia - 1468688037440393418 (Attempt 1/3)
+[2026-08-24 03:01:47.487418] SUCCESS: Bosnia
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Bosnia/Bosnia.html
+[2026-08-24 03:01:50.487988] START: Bulgaria - 1468668506760413316 (Attempt 1/3)
+[2026-08-24 03:01:54.330265] SUCCESS: Bulgaria
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Bulgaria/Bulgaria.html
+[2026-08-24 03:01:57.330709] START: Cantonese - 1468670598149443873 (Attempt 1/3)
+[2026-08-24 03:02:00.890962] SUCCESS: Cantonese
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Cantonese/Cantonese.html
+[2026-08-24 03:02:03.891623] START: Czech-Republic - 1469311453982097548 (Attempt 1/3)
+[2026-08-24 03:02:07.177755] SUCCESS: Czech-Republic
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Czech-Republic/Czech-Republic.html
+[2026-08-24 03:02:10.178281] START: Danish - 1469299369172930602 (Attempt 1/3)
+[2026-08-24 03:02:16.276754] SUCCESS: Danish
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Danish/Danish.html
+[2026-08-24 03:02:19.277202] START: Dutch - 1468699673912021187 (Attempt 1/3)
+[2026-08-24 03:02:23.136899] SUCCESS: Dutch
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Dutch/Dutch.html
+[2026-08-24 03:02:26.137463] START: English - 1468663904052973860 (Attempt 1/3)
+[2026-08-24 03:02:30.150953] SUCCESS: English
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/English/English.html
+[2026-08-24 03:02:33.151500] START: Philippines - 1485157310098575411 (Attempt 1/3)
+[2026-08-24 03:02:36.246653] SUCCESS: Philippines
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Philippines/Philippines.html
+[2026-08-24 03:02:39.247088] START: French - 1468673011505959015 (Attempt 1/3)
+[2026-08-24 03:02:43.072825] SUCCESS: French
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/French/French.html
+[2026-08-24 03:02:46.073422] START: Georgia - 1468673458941722747 (Attempt 1/3)
+[2026-08-24 03:02:50.205026] SUCCESS: Georgia
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Georgia/Georgia.html
+[2026-08-24 03:02:53.205444] START: German - 1468674062040699067 (Attempt 1/3)
+[2026-08-24 03:02:57.156811] SUCCESS: German
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/German/German.html
+[2026-08-24 03:03:00.157392] START: Greece - 1469265580610682900 (Attempt 1/3)
+[2026-08-24 03:03:04.568038] SUCCESS: Greece
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Greece/Greece.html
+[2026-08-24 03:03:07.571619] START: Hebrew - 1468674811562561537 (Attempt 1/3)
+[2026-08-24 03:03:14.087453] SUCCESS: Hebrew
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Hebrew/Hebrew.html
+[2026-08-24 03:03:17.087958] START: Hindi - 1468680504793366679 (Attempt 1/3)
+[2026-08-24 03:03:21.659628] SUCCESS: Hindi
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Hindi/Hindi.html
+[2026-08-24 03:03:24.660150] START: Iceland - 1468700560256536607 (Attempt 1/3)
+[2026-08-24 03:03:28.151947] SUCCESS: Iceland
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Iceland/Iceland.html
+[2026-08-24 03:03:31.152514] START: Indonesian - 1485163000196366386 (Attempt 1/3)
+[2026-08-24 03:03:34.710885] SUCCESS: Indonesian
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Indonesian/Indonesian.html
+[2026-08-24 03:03:37.711385] START: Iran - 1468700828830535815 (Attempt 1/3)
+[2026-08-24 03:03:41.461798] SUCCESS: Iran
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Iran/Iran.html
+[2026-08-24 03:03:44.462339] START: Italy - 1468675616361545950 (Attempt 1/3)
+[2026-08-24 03:03:48.410406] SUCCESS: Italy
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Italy/Italy.html
+[2026-08-24 03:03:51.410985] START: Norwegian - 1469306852222435550 (Attempt 1/3)
+[2026-08-24 03:03:55.289448] SUCCESS: Norwegian
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Norwegian/Norwegian.html
+[2026-08-24 03:03:58.289953] START: Japan - 1468676162820767876 (Attempt 1/3)
+[2026-08-24 03:04:01.860930] SUCCESS: Japan
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Japan/Japan.html
+[2026-08-24 03:04:04.861419] START: Korea - 1468676714912809011 (Attempt 1/3)
+[2026-08-24 03:04:08.569828] SUCCESS: Korea
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Korea/Korea.html
+[2026-08-24 03:04:11.570392] START: Mandarin - 1468677118471962634 (Attempt 1/3)
+[2026-08-24 03:04:14.878369] SUCCESS: Mandarin
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Mandarin/Mandarin.html
+[2026-08-24 03:04:17.878987] START: Nepal - 1499024100830613626 (Attempt 1/3)
+[2026-08-24 03:04:20.935229] SUCCESS: Nepal
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Nepal/Nepal.html
+[2026-08-24 03:04:23.935810] START: Polish - 1468678367468322880 (Attempt 1/3)
+[2026-08-24 03:04:27.421418] SUCCESS: Polish
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Polish/Polish.html
+[2026-08-24 03:04:30.422008] START: Portuguese-Brazil - 1468680118527459411 (Attempt 1/3)
+[2026-08-24 03:04:33.880782] SUCCESS: Portuguese-Brazil
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Portuguese-Brazil/Portuguese-Brazil.html
+[2026-08-24 03:04:36.881294] START: Sweden - 1478353423907684524 (Attempt 1/3)
+[2026-08-24 03:04:40.042500] SUCCESS: Sweden
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Sweden/Sweden.html
+[2026-08-24 03:04:43.043038] START: Romanian - 1499027604206780446 (Attempt 1/3)
+[2026-08-24 03:04:45.953446] SUCCESS: Romanian
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Romanian/Romanian.html
+[2026-08-24 03:04:48.953986] START: Russian - 1468678809141252171 (Attempt 1/3)
+[2026-08-24 03:04:53.109387] SUCCESS: Russian
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Russian/Russian.html
+[2026-08-24 03:04:56.109940] START: Turkey - 1468705199261487104 (Attempt 1/3)
+[2026-08-24 03:04:59.996560] SUCCESS: Turkey
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Turkey/Turkey.html
+[2026-08-24 03:05:02.997051] START: Taiwan - 1470067960738746539 (Attempt 1/3)
+[2026-08-24 03:05:06.224916] SUCCESS: Taiwan
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Taiwan/Taiwan.html
+[2026-08-24 03:05:09.225421] START: Thailand - 1468693931838541964 (Attempt 1/3)
+[2026-08-24 03:05:13.621230] SUCCESS: Thailand
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Thailand/Thailand.html
+[2026-08-24 03:05:16.621814] START: Ukraine - 1468679264395198760 (Attempt 1/3)
+[2026-08-24 03:05:20.760215] SUCCESS: Ukraine
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Ukraine/Ukraine.html
+[2026-08-24 03:05:23.760804] START: Vietnam - 1484976834176225310 (Attempt 1/3)
+[2026-08-24 03:05:27.102977] SUCCESS: Vietnam
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Vietnam/Vietnam.html
+[2026-08-24 03:05:30.103476] START: Zulu - 1468679637071695893 (Attempt 1/3)
+[2026-08-24 03:05:34.497891] SUCCESS: Zulu
+Saved to: /mnt/VAULT/1_Testimony/1_Veilocity_Work/1_DiscordDownloader/Veilocity/Zulu/Zulu.html
+
+===== Discord Export Finished: 2026-08-24 03:05:37.498144 =====
+Completed: 39 | Skipped: 0 | Failed: 0
