@@ -3,21 +3,12 @@ image: alpine:latest
 create-pages:
   script:
     - mkdir -p public
-    - |
-      find . -mindepth 1 -maxdepth 1 \
-        ! -name public \
-        ! -name .git \
-        ! -name .gitlab \
-        ! -name .gitlab-ci.yml \
-        ! -name .gitignore \
-        ! -name '*.bundle' \
-        ! -name '*.zip' \
-        ! -name '*.tar' \
-        ! -name '*.gz' \
-        -exec cp -a {} public/ \;
+    - cp -a . public/site
+    - rm -rf public/site/.git
+    - rm -f public/site/.gitlab-ci.yml
+    - cp public/site/index.html public/index.html
 
-  pages:
-    publish: public
+  pages: true
 
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
