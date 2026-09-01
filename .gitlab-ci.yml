@@ -1,10 +1,54 @@
+image: alpine:latest
+
 create-pages:
   script:
-    - mkdir .public
-    - cp -r * .public
-    - mv .public public
+    - mkdir public
 
-  pages: true
+    - cp -r Afrikaans public/
+    - cp -r Albania public/
+    - cp -r Arabic public/
+    - cp -r Bosnia public/
+    - cp -r Bulgaria public/
+    - cp -r Cantonese public/
+    - cp -r Czech-Republic public/
+    - cp -r Danish public/
+    - cp -r Dutch public/
+    - cp -r English public/
+    - cp -r French public/
+    - cp -r Georgia public/
+    - cp -r German public/
+    - cp -r Greece public/
+    - cp -r Hebrew public/
+    - cp -r Hindi public/
+    - cp -r Iceland public/
+    - cp -r Indonesian public/
+    - cp -r Iran public/
+    - cp -r Italy public/
+    - cp -r Japan public/
+    - cp -r Korea public/
+    - cp -r Mandarin public/
+    - cp -r Nepal public/
+    - cp -r Norwegian public/
+    - cp -r Philippines public/
+    - cp -r Polish public/
+    - cp -r Portuguese-Brazil public/
+    - cp -r Romanian public/
+    - cp -r Russian public/
+    - cp -r Spanish public/
+    - cp -r Sweden public/
+    - cp -r Taiwan public/
+    - cp -r Thailand public/
+    - cp -r Turkey public/
+    - cp -r Ukraine public/
+    - cp -r Vietnam public/
+    - cp -r Zulu public/
+
+    - cp -r ./*.html public/ 2>/dev/null || true
+    - cp -r ./*.css public/ 2>/dev/null || true
+    - cp -r ./*.js public/ 2>/dev/null || true
+
+  pages:
+    publish: public
 
   rules:
-    - if: '$CI_COMMIT_BRANCH == "main"'
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
