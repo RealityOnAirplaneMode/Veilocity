@@ -45,7 +45,6 @@ create-pages:
 
     - cp -r "ENGLISH - Court" public/ || true
     - cp -r "court-of-illusions-trafficking" public/ || true
-    - cp -r "Arkchive Multilingual Frontend" public/ || true
 
     - cp -r ./*.html public/ 2>/dev/null || true
     - cp -r ./*.css public/ 2>/dev/null || true
