@@ -43,9 +43,6 @@ create-pages:
     - cp -r Vietnam public/ || true
     - cp -r Zulu public/ || true
 
-    - cp -r "ENGLISH - Court" public/ || true
-    - cp -r "court-of-illusions-trafficking" public/ || true
-
     - cp -r ./*.html public/ 2>/dev/null || true
     - cp -r ./*.css public/ 2>/dev/null || true
     - cp -r ./*.js public/ 2>/dev/null || true
