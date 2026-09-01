@@ -3,10 +3,13 @@ image: alpine:latest
 create-pages:
   script:
     - mkdir -p public
-    - cp -a . public/site
-    - rm -rf public/site/.git
-    - rm -f public/site/.gitlab-ci.yml
-    - cp public/site/index.html public/index.html
+    - |
+      find . -mindepth 1 -maxdepth 1 \
+        ! -name public \
+        ! -name .git \
+        ! -name .gitlab-ci.yml \
+        -exec cp -a {} public/ \;
+    - echo '<!doctype html><html><body><h1>CommitToTheTimeline</h1></body></html>' > public/index.html
 
   pages: true
 
