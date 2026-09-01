@@ -7,7 +7,13 @@ create-pages:
       find . -mindepth 1 -maxdepth 1 \
         ! -name public \
         ! -name .git \
+        ! -name .gitlab \
         ! -name .gitlab-ci.yml \
+        ! -name .gitignore \
+        ! -name '*.bundle' \
+        ! -name '*.zip' \
+        ! -name '*.tar' \
+        ! -name '*.gz' \
         -exec cp -a {} public/ \;
 
   pages:
