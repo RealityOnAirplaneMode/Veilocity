@@ -42,6 +42,9 @@ create-pages:
     - cp -r Ukraine public/
     - cp -r Vietnam public/
     - cp -r Zulu public/
+    - cp -r ENGLISH - Court/
+    - cp -r court-of-illusions-trafficking/
+    - cp -r Arkchive Multilingual Frontend
 
     - cp -r ./*.html public/ 2>/dev/null || true
     - cp -r ./*.css public/ 2>/dev/null || true
