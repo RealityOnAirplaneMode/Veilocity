@@ -2,11 +2,13 @@ image: alpine:latest
 
 create-pages:
   script:
-    - mkdir public
-    - cp -r Arabic public/
-    - cp -r ./*.html public/ 2>/dev/null || true
-    - cp -r ./*.css public/ 2>/dev/null || true
-    - cp -r ./*.js public/ 2>/dev/null || true
+    - mkdir -p public
+    - |
+      find . -mindepth 1 -maxdepth 1 \
+        ! -name public \
+        ! -name .git \
+        ! -name .gitlab-ci.yml \
+        -exec cp -a {} public/ \;
 
   pages:
     publish: public
