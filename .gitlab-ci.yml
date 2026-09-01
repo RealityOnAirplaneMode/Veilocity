@@ -4,6 +4,7 @@ create-pages:
   script:
     - mkdir -p public
 
+    # Language folders
     - cp -r Afrikaans public/ || true
     - cp -r Albania public/ || true
     - cp -r Arabic public/ || true
@@ -43,9 +44,28 @@ create-pages:
     - cp -r Vietnam public/ || true
     - cp -r Zulu public/ || true
 
-    - cp -r ./*.html public/ 2>/dev/null || true
-    - cp -r ./*.css public/ 2>/dev/null || true
-    - cp -r ./*.js public/ 2>/dev/null || true
+    # ENGLISH - Court: publish HTML files while preserving directories
+    - |
+      if [ -d "ENGLISH - Court" ]; then
+        find "ENGLISH - Court" -type f -name '*.html' | while IFS= read -r file; do
+          mkdir -p "public/$(dirname "$file")"
+          cp "$file" "public/$file"
+        done
+      fi
+
+    # court-of-illusions-trafficking: publish HTML files while preserving directories
+    - |
+      if [ -d "court-of-illusions-trafficking" ]; then
+        find "court-of-illusions-trafficking" -type f -name '*.html' | while IFS= read -r file; do
+          mkdir -p "public/$(dirname "$file")"
+          cp "$file" "public/$file"
+        done
+      fi
+
+    # Root-level website files
+    - cp ./*.html public/ 2>/dev/null || true
+    - cp ./*.css public/ 2>/dev/null || true
+    - cp ./*.js public/ 2>/dev/null || true
 
   pages:
     publish: public
