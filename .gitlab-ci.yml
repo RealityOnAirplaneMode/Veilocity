@@ -36,6 +36,7 @@ create-pages:
     - cp -r Portuguese-Brazil public/ || true
     - cp -r Romanian public/ || true
     - cp -r Russian public/ || true
+    - cp -r Slovenian public/ || true
     - cp -r Spanish public/ || true
     - cp -r Sweden public/ || true
     - cp -r Taiwan public/ || true

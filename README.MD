@@ -605,6 +605,18 @@ VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Russian/Rus
 
 ----------------------------------------------------------------------------------------------------
 
+## SLOVENIAN ##
+
+FILE:
+Slovenian/Slovenian.html
+
+VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Slovenian/Slovenian.html
+
+VIEW 2 (Mirror 2): https://realityonairplanemode.github.io/Veilocity/Slovenian/Slovenian.html
+
+
+----------------------------------------------------------------------------------------------------
+
 ## SPANISH ##
 
 FILE:
