@@ -28,6 +28,7 @@ create-pages:
     - cp -r Japan public/ || true
     - cp -r Korea public/ || true
     - cp -r Mandarin public/ || true
+    - cp -r Mongolia public/ || true
     - cp -r Nepal public/ || true
     - cp -r Norwegian public/ || true
     - cp -r Philippines public/ || true
