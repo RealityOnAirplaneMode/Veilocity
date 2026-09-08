@@ -284,7 +284,7 @@ VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Cantonese/C
 FILE:
 court-of-illusions-trafficking/ENGLISH - Court.html
 
-VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Bosnia/court-of-illusions-trafficking/ENGLISH%20-%20Court.html
+VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/court-of-illusions-trafficking/ENGLISH%20-%20Court.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html
 
