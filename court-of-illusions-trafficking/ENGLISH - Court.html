@@ -1632,6 +1632,8 @@ Formal No-Contact Notice: Written notice was sent separately to Angela Cooke and
 </div>
 <div class=postamble><div class=postamble__entry>Exported 250 message(s)</div><div class=postamble__entry>Timezone: UTC-5</div></div>
 
+
+
 <script id="report-chatlog-enhancer">
 document.addEventListener("DOMContentLoaded", () => {
   const chatlog = document.querySelector(".chatlog");
@@ -2374,7 +2376,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // present in it), while prefixing the Table of Contents summary with the
     // actual Discord-posted timestamp used for chronological sorting.
     group.dataset.summary = discordPostedLabel
-      ? `Discord posted: ${discordPostedLabel} — ${summaryText}`
+      ? `${discordPostedLabel} — Discord Entry — ${summaryText}`
       : summaryText;
     group.dataset.discordPosted = discordPostedLabel;
     group.dataset.reportTitle = titleTextPlain;
@@ -2910,6 +2912,36 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+    .toc-return-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+
+    .toc-return-link,
+    .toc-return-link:link,
+    .toc-return-link:visited {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(110, 88, 64, 0.16);
+      background: rgba(250, 239, 223, 0.92) !important;
+      color: var(--accent-3) !important;
+      -webkit-text-fill-color: var(--accent-3) !important;
+      text-decoration: none !important;
+      font-size: 0.78rem;
+      line-height: 1;
+    }
+
+    .toc-return-link:hover,
+    .toc-return-link:focus {
+      text-decoration: none !important;
+      background: rgba(252, 240, 223, 0.98) !important;
+      border-color: rgba(216, 106, 60, 0.24);
+    }
+
     .toc-item-summary {
       margin-top: 8px;
       color: var(--text);
@@ -3280,9 +3312,26 @@ document.addEventListener("DOMContentLoaded", () => {
           ? (titleLink.getAttribute("href") || "")
           : (group.id ? `#${group.id}-marker` : "");
         const summary = group.dataset.summary || "";
-        return { title, href, summary };
+
+        // TOC ordering deliberately ignores the Discord-posted timestamp.
+        // Instead, use the first date applicable to the entry's actual content
+        // (including the preserved title/content text).
+        const contentDate = extractContentDate(group);
+
+        return {
+          title,
+          href,
+          summary,
+          contentDate: contentDate ? contentDate.getTime() : null
+        };
       })
-      .filter(item => item.title && item.href.startsWith("#") && item.title !== "Untitled Entry");
+      .filter(item => item.title && item.href.startsWith("#") && item.title !== "Untitled Entry")
+      .sort((a, b) => {
+        if (a.contentDate === null && b.contentDate === null) return 0;
+        if (a.contentDate === null) return 1;
+        if (b.contentDate === null) return -1;
+        return a.contentDate - b.contentDate;
+      });
 
     if (reportItems.length) {
       const tocBlock = document.createElement("div");
@@ -3308,8 +3357,18 @@ document.addEventListener("DOMContentLoaded", () => {
         summary.className = "toc-item-summary";
         summary.textContent = item.summary;
 
+        const returnWrap = document.createElement("div");
+        returnWrap.className = "toc-return-wrap";
+
+        const returnLink = document.createElement("a");
+        returnLink.className = "toc-return-link";
+        returnLink.href = "#top-marker";
+        returnLink.textContent = "Return to top";
+
+        returnWrap.appendChild(returnLink);
         entry.appendChild(a);
         entry.appendChild(summary);
+        entry.appendChild(returnWrap);
         tocList.appendChild(entry);
       });
 
