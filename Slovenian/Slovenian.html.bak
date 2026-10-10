@@ -1,0 +1,624 @@
+<!DOCTYPE html><html lang=en><head><title>Veilocity - slovenian</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / slovenian</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1538396853542854676 class=chatlog__message-container data-message-id=1538396853542854676><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, August 15, 2026 11:59 PM"><a href=#chatlog__message-container-1538396853542854676>8/15/2026 11:59 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>To je resnično brezpravje <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg"> 05/11/2025 - Turčija</strong>
+
+Če resnica ne more obstati brez plačila, potem je pravičnost že padla. Razmislek o sistemih, zgrajenih na dobičku, ne na načelih – in kaj se zgodi, ko zakon pozabi na lastno pričo.
+
+#resnica #pravica #prebujenje #vera #zakon #korupcija #sodišče #duhovniodsev #sistempokvarjen #plačilozazmago #zavestnoprebujenje #govoriresnico #integriteta
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1218614699">https://vimeo.com/1218614699</a></span> <span class=chatlog__edited-timestamp title="Sunday, August 16, 2026 12:14 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1538396851194167306/This_Is_What_Lawlessness_Truly_I_caption.mp4?ex=6acbb277&amp;is=6aca60f7&amp;hm=511af31cbba31e9ecf07515769095f82f75bf942768d64646b72a762537f7261&amp;" alt="Video attachment" title="Video: This_Is_What_Lawlessness_Truly_I_caption.mp4 (28.91 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1538396852678959184/This_Is_What_Lawlessness_Truly_Is-Sloven.srt?ex=6acbb277&amp;is=6aca60f7&amp;hm=c530e30ee3fd9ce14512487ccaae31b2f0639e5f300523a1d9af39a6a5631e68&amp;"> This_Is_What_Lawlessness_Truly_Is-Sloven.srt </a></div><div class=chatlog__attachment-generic-size>759 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1538396853115297924/This_Is_What_Lawlessness_Truly_Is-_audio.mp3?ex=6acbb277&amp;is=6aca60f7&amp;hm=0e3c030979570f6b8fb362d889f8ea8f8b0cc9a747a1214bdcb708174bddf2bd&amp;" alt="Audio attachment" title="Audio: This_Is_What_Lawlessness_Truly_Is-_audio.mp3 (665.77 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1545287958419087481 class=chatlog__message-container data-message-id=1545287958419087481><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 4, 2026 12:22 AM"><a href=#chatlog__message-container-1545287958419087481>9/4/2026 12:22 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128081;"
+    title="crown"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f451.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128128;"
+    title="skull"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f480.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"> ЛИЦЕМЕРИЕ ПРОПОВЕДИ О НЕБЕСАХ, В ТО ВРЕМЯ КАК ЗЕМНЫЕ СОКРОВИЩА ВОЗВОДЯТСЯ НА ПЬЕДЕСТАЛ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128214;"
+    title="book"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d6.svg"> 03/09/2026 - Банф, Альберта, Канада</strong>
+
+Okronana lobanja.
+Srebro. Zlato. Dragulji. Slovesnost.
+
+Pa vendar Sveto pismo pravi:
+
+Kološanom 3:2
+&#187;Imejte to, kar je zgoraj, ne to, kar je na zemlji.&#171;
+
+Matej 6:19–21
+&#187;Ne kopičite si zakladov na zemlji ... Kajti kjer je vaš zaklad, tam bo tudi vaše srce.&#171;
+
+Matej 6:24
+&#187;Ne morete služiti Bogu in mamonu.&#171;
+
+1 Janez 2:15
+&#187;Ne ljubite sveta ne tega, kar je v svetu.&#171;
+
+Oznanjujte odmaknjenost od zemeljskih stvari – nato jih kronajte z zlatom in dragulji. Če to ni hinavščina, kaj je potem?
+
+#Sveto pismo #Biblija #JezusKristus #Krščanstvo #BiblijskaResnica #Hinavščina #Razločevanje #ZemeljskiZakladi #BogInMamon #LjubezenNeSveta #VeraNajprejTradicija #Vatikan #SvetaAgata #Relikvije #BožjaBeseda
+
+<a href="https://vimeo.com/1223713856?share=copy">https://vimeo.com/1223713856?share=copy</a></span> <span class=chatlog__edited-timestamp title="Wednesday, September 30, 2026 11:54 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1545287957504598046/Sacro_Capo_di_SaintAgata.mp4?ex=6acbb7cf&amp;is=6aca664f&amp;hm=bd0051b0db62657fed90ad7f0b885e2516b9ae455d36d5afda21b190cb266e6a&amp;" alt="Video attachment" title="Video: Sacro_Capo_di_SaintAgata.mp4 (17.02 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546648426819878992 class=chatlog__message-container data-message-id=1546648426819878992><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, September 7, 2026 6:28 PM"><a href=#chatlog__message-container-1546648426819878992>9/7/2026 6:28 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ljudje so pravo bogastvo <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128173;"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 23/03/2026 - Gruzija</strong>
+
+Odkar sem se umaknil od globalnih konfliktov, sem nekaj jasno spoznal: ljudje so pravo bogastvo. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128161;"
+    title="bulb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"> Kljub temu opazujemo, kako strah, naraščajoči življenjski stroški in omejitve neopazno &#187;zadržujejo&#171; in premeščajo to bogastvo.
+
+Če se mir, varnost in občutek zaščitenosti začnejo doma <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127969;"
+    title="house_with_garden"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3e1.svg"> — v družini — zakaj se toliko ljudi spodbuja, da jih iščejo drugje prek obljub, plač ali odloženih nagrad?
+
+Tu obstaja protislovje. Pravimo, da so ljudje najpomembnejši … vendar jih sistemi še vedno razpršujejo in izpostavljajo škodi.
+
+Morda je čas, da prepoznamo, kaj že smo — in to zaščitimo. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#Resnica #Zavedanje #LjudjeSoBogastvo #PrebudiSe #DružinaNaPrvemMestu #MirSeZačneDoma #DuhovnoPrebujenje #SpremembaPerspektive #SistemskoRazmišljanje #SodobniSvet #OstaniPrizemljen #Iskreno
+
+<a href="https://vimeo.com/1224732118?share=copy">https://vimeo.com/1224732118?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 11:42 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1546648420540874843/People_Are_the_Real_Wealth-Slove_caption.mp4?ex=6acc0d96&amp;is=6acabc16&amp;hm=92e8ec81b182a118a6ed03104a0239b9168ebd5f2641a2dcb42d23afbdc364b7&amp;" alt="Video attachment" title="Video: People_Are_the_Real_Wealth-Slove_caption.mp4 (96.46 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1546648425817444402/People_Are_the_Real_Wealth-Slovenian_Slo.srt?ex=6acc0d98&amp;is=6acabc18&amp;hm=8878419627fada0c6c906cc70abefa641d29846ec317dfb84e10a9d0880bb88e&amp;"> People_Are_the_Real_Wealth-Slovenian_Slo.srt </a></div><div class=chatlog__attachment-generic-size>3.1 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1546648426488270980/People_Are_the_Real_Wealth-Sloveni_audio.mp3?ex=6acc0d98&amp;is=6acabc18&amp;hm=82a6bf7f39ace9bda0b7bfd0a5d5a9835ce86a60ead359b63a93d0ed64cbf111&amp;" alt="Audio attachment" title="Audio: People_Are_the_Real_Wealth-Sloveni_audio.mp3 (2.26 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546892502953631814 class=chatlog__message-container data-message-id=1546892502953631814><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 10:38 AM"><a href=#chatlog__message-container-1546892502953631814>9/8/2026 10:38 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Pravna plinska razsvetljava <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 02/12/2025 - VOID</strong>
+
+Za vljudnim jezikom &#187;podpore&#171; se skriva roka, ki prerisuje vašo resničnost.
+Sistem, ki trdi, da ščiti,
+a vam ukrade ogledalo iz lastnih oči.
+
+Pravna plinska razsvetljava je tihi tat –
+jemlje agencijo besedo za besedo.
+
+#PravnaPlinskaRazsvetljava #plinskarazsvetljava #zlorabapravneobmočja #dinamikamoči #sistemskaplinskarazsvetljava #samozavest #govorjenjeresnice #ozaveščenostoduševnemzdravju #razkritakrivica #ozaveščenostozavesti #zdravilnapotovanje #samozavest #stephencooke #lažnavarnost #družbenikomentar
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1224949583?share=copy">https://vimeo.com/1224949583?share=copy</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 10:42 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1546892500688445590/Legal_Gaslight-Slovenian_Sloveni_caption.mp4?ex=6acb9f68&amp;is=6aca4de8&amp;hm=4d00f63c104325da0d9e7638d8a8a65aab0cf77872de69ffa2e0c4b5bf659889&amp;" alt="Video attachment" title="Video: Legal_Gaslight-Slovenian_Sloveni_caption.mp4 (18.57 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1546892502223687821/Legal_Gaslight-Slovenian_Slovenia.srt?ex=6acb9f68&amp;is=6aca4de8&amp;hm=6f90e8692b779f1c4c003c89a3444e7c525846f833d8ad5383c71bb5ba389654&amp;"> Legal_Gaslight-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>596 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1546892502597107773/Legal_Gaslight-Slovenian_Slovenia_audio.mp3?ex=6acb9f68&amp;is=6aca4de8&amp;hm=d035136ad9ea00600653214e387950571c468f46ad1c0d782926e5a904da69d3&amp;" alt="Audio attachment" title="Audio: Legal_Gaslight-Slovenian_Slovenia_audio.mp3 (448.64 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546983623767625891 class=chatlog__message-container data-message-id=1546983623767625891><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 4:40 PM"><a href=#chatlog__message-container-1546983623767625891>9/8/2026 4:40 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Od &#187;Boj proti svetu&#171; do gibanja naprej <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚔️"
+    title="crossed_swords"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2694.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> Kolektivno branje <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 02/04/2026 – Georgia</strong>
+
+To se je zdelo kot prehod skozi kaos v jasnost.
+
+Začetek na mestu boja proti vsemu ... občutek, kot da si ti proti svetu ... prejemaš udarce, nosiš težo – dokler sčasoma ne neha boleti enako. Kot: &#187;meči na mojem hrbtu ... ampak zdaj so samo zobotrebci.&#171;
+
+Nato pride ta premor ... pogled ven, tiho vprašanje: &#187;Kje so moji ljudje?&#171;
+Ne zaradi osamljenosti – zaradi prerastanja tistega, kar mi ne ustreza več.
+
+Po tem sledi premik k resnici. Manj nastopa. Manj truda.
+&#187;Golota ... ja ... oblačila so preveč dela.&#171;
+
+Samo iskrenost. Samo biti.
+
+In tudi ko je ponujeno nekaj pristnega – nekaj resničnega, polnega, usklajenega – še vedno obstaja tisti trenutek oklevanja ... kot: &#187;Ne vem, kaj naj s tem.&#171;
+
+Nekje tam je spoznanje, da ni treba bojevati vsake bitke ... in da ni bila vsaka zmaga vredna tega.
+
+A ne glede na to – gibanje se vrne. Sledi prepoznavanje. In ta ogenj se vrne na splet.
+
+Ne vsiljeno. Ne dokazano. Samo ... naravno.
+
+&#187;Verjetno bi moral malo raziskati tole ...&#171;
+Ali pa morda že točno veste, kam greste.
+
+Vzemite tisto, kar odmeva <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg">
+
+#tarot #kolektivnobranje #duhovnoprebujenje #notranjedelo #delosenc #resnica #usklajenost #energetskaposodobitev #prebujenje #duhovnopotovanje #veilocity #fyp #foryou
+
+<a href="https://vimeo.com/1225061220?share=copy">https://vimeo.com/1225061220?share=copy</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 5:09 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1546983617308401684/Fighting_the_World_to_Forward_Mo_caption.mp4?ex=6acbf443&amp;is=6acaa2c3&amp;hm=bf6ccb9b66a653b86c5a417211fb2040e1b7df1dad8cff786fa88be37866bc23&amp;" alt="Video attachment" title="Video: Fighting_the_World_to_Forward_Mo_caption.mp4 (91.67 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1546983623008198776/Fighting_the_World_to_Forward_Motion-Slo.srt?ex=6acbf445&amp;is=6acaa2c5&amp;hm=12b570fdfd19a93331b4786fe33ead2503e034210c293f1206a7587b0bc81055&amp;"> Fighting_the_World_to_Forward_Motion-Slo.srt </a></div><div class=chatlog__attachment-generic-size>2.03 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1546983623440203916/Fighting_the_World_to_Forward_Moti_audio.mp3?ex=6acbf445&amp;is=6acaa2c5&amp;hm=b6af857c8b737a62aa49ce8f41d6e5b93bd1acdca0d07b030548831c29cd2663&amp;" alt="Audio attachment" title="Audio: Fighting_the_World_to_Forward_Moti_audio.mp3 (1.96 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547011735767224461 class=chatlog__message-container data-message-id=1547011735767224461><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 6:32 PM"><a href=#chatlog__message-container-1547011735767224461>9/8/2026 6:32 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Resnica čaka za ogledalom <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129694;"
+    title="mirror"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa9e.svg"> 21/02/2026 - Gruzija</strong>
+
+Nevarnost je v ignoriranju korupcije. Nevarnost je tudi v predolgem strmenju vanjo.
+
+Delil sem orodja za prenos Epsteinovih datotek neposredno iz vira Justice – ker je treba resnico ohraniti pri njenem izvoru, ne pa jo filtrirati skozi pripovedi.
+
+Če vir izgine, kaj ga nadomesti?
+
+Špekulacije. Manipulacije. Popačenja.
+
+Arhivirajte odgovorno.
+Preučite jasno.
+Ne dovolite, da vas ogledalo popači.
+
+Prenos z Googla:
+<a href="https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing">https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing</a>
+
+Komplet 1
+<a href="https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g">https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g</a>
+Komplet 2
+<a href="https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g">https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g</a>
+Komplet 3
+<a href="https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w">https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w</a>
+Komplet 4
+<a href="https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA">https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA</a>
+Komplet 5
+<a href="https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg">https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg</a>
+Sklop 6
+<a href="https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA">https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA</a>
+
+#EpsteinFiles #Epstein #EpsteinCase #EpsteinInvestigation #MirrorOfEpstein #JusticeZaVictims #Accountability #JavniZapisi #Transparentnost #ExposeTruth #OpraviteSvojoRaziskovo #ResnicaJePomembna #PravicaJePomembna #StandZaResnico #Ozaveščenost #SeekTruth
+
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
+<a href="https://vimeo.com/1225083285">https://vimeo.com/1225083285</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547011728988971110/Man_in_the_Mirror.mp4?ex=6acc0e72&amp;is=6acabcf2&amp;hm=462f796fca753f2d52d707424edae427b4acfa44638017c0e65160d820197090&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1547011729693745263/The_Mirror_of_Evil.png?ex=6acc0e72&amp;is=6acabcf2&amp;hm=2af2f7f7a5316af47eb559132eb35497a4ea9f0d4e4a9b6a3f47304769ff063f&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1538396702208163860/1547011729693745263/The_Mirror_of_Evil.png?ex=6acc0e72&amp;is=6acabcf2&amp;hm=2af2f7f7a5316af47eb559132eb35497a4ea9f0d4e4a9b6a3f47304769ff063f&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547011731853938718/The_Mirror_of_Evil-Slovenian_Slo_caption.mp4?ex=6acc0e72&amp;is=6acabcf2&amp;hm=18528d410c171fbfb79368d20727d400a35e3d81de4bfab3bc589554912de05e&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil-Slovenian_Slo_caption.mp4 (69.61 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1547011735045668895/The_Mirror_of_Evil-Slovenian_Slovenia.srt?ex=6acc0e73&amp;is=6acabcf3&amp;hm=1fd00d7e7cb2dbe5cf2518ffbfed7a08d0ade9c554da3ba08a05cdd650e01775&amp;"> The_Mirror_of_Evil-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>2.61 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547011735443996802/The_Mirror_of_Evil-Slovenian_Slove_audio.mp3?ex=6acc0e73&amp;is=6acabcf3&amp;hm=81f93f9d016bd5df638ede14fc728bbcfc482225d3af1022764583c90b5ec90f&amp;" alt="Audio attachment" title="Audio: The_Mirror_of_Evil-Slovenian_Slove_audio.mp3 (1.69 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547601274705551503 class=chatlog__message-container data-message-id=1547601274705551503><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 9:34 AM"><a href=#chatlog__message-container-1547601274705551503>9/10/2026 9:34 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> Ni koncev — le aktivacije, ki se razkrivajo <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> 08/02/2026 - Gruzija</strong>
+
+#aktivacije #duhovnoprebujenje #novizačetki #potpreobrazbe #notranjarast #božanskičas #potduše #potzdravljenja #zavest #višjeprebujenje #potsvetlobe #božjičas #enaVrataSeOdprejo #energijaponovneg rojstva
+
+<a href="https://vimeo.com/1225619810?share=copy">https://vimeo.com/1225619810?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 10:05 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547601270167179364/No_endings_just_activations-Slov_caption.mp4?ex=6acb907f&amp;is=6aca3eff&amp;hm=15e78850d0390339e532a51a8e6f1bc20446606306422007f4d7ba0c9103f885&amp;" alt="Video attachment" title="Video: No_endings_just_activations-Slov_caption.mp4 (63.97 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1547601274021609492/No_endings_just_activations-Slovenian_Sl.srt?ex=6acb9080&amp;is=6aca3f00&amp;hm=11a74140ad82756d0ae16b90bf58fa479cef56c8dae5336b36eaf13326050985&amp;"> No_endings_just_activations-Slovenian_Sl.srt </a></div><div class=chatlog__attachment-generic-size>1.04 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547601274382454834/No_endings_just_activations-Sloven_audio.mp3?ex=6acb9080&amp;is=6aca3f00&amp;hm=517c520a8a27f0d531026b86dab7eb4052166537bd5046e3fd03d0e1f831b295&amp;" alt="Audio attachment" title="Audio: No_endings_just_activations-Sloven_audio.mp3 (995.02 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547760035461857322 class=chatlog__message-container data-message-id=1547760035461857322><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 8:05 PM"><a href=#chatlog__message-container-1547760035461857322>9/10/2026 8:05 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>UNO Reverse <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127876;"
+    title="christmas_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f384.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 04/12/2025 – Georgia</strong>
+
+V tem prazničnem času izberi jasnost namesto bega.
+
+#prazniki #prazničničas #duševnozdravje #skrbzase #meje #potceljenja #notranjimir #miselnostrasti #dobropočutje #resnica #opomnik #božič2025 #novolet2025 #svetlobainljubezen #skrbzaskupnost
+
+<a href="https://vimeo.com/1225790188?share=copy">https://vimeo.com/1225790188?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 8:16 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547760033326960730/UNO_Reverse-Slovenian_Slovenia_caption.mp4?ex=6acb7b9b&amp;is=6aca2a1b&amp;hm=8368284184e3159bbab0a40112782ca34c7e85a7e490846fcbf0585d82a82ea5&amp;" alt="Video attachment" title="Video: UNO_Reverse-Slovenian_Slovenia_caption.mp4 (23.31 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1547760034832719882/UNO_Reverse-Slovenian_Slovenia.srt?ex=6acb7b9c&amp;is=6aca2a1c&amp;hm=9f1e732157a9bef02eeb006857217986d29e46b280fdceff997d999306bf2d8d&amp;"> UNO_Reverse-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>584 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547760035151609946/UNO_Reverse-Slovenian_Slovenia_audio.mp3?ex=6acb7b9c&amp;is=6aca2a1c&amp;hm=e82b85eeab5c1297e7b4c0c92ce2ce6ce68308c7c595dd2795ba34a5dcf7622e&amp;" alt="Audio attachment" title="Audio: UNO_Reverse-Slovenian_Slovenia_audio.mp3 (483.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547846247467982959 class=chatlog__message-container data-message-id=1547846247467982959><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 1:48 AM"><a href=#chatlog__message-container-1547846247467982959>9/11/2026 1:48 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> ​​Labirint pozabe <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg"> 06/10/2025 – Albanija</strong>
+
+Razmislek o tako imenovanem daru znanja – neskončni mreži hodnikov, ki mečejo sence na človeško srce. Tisto, kar je bilo ponujeno kot modrost, je postalo labirint pozabe, v katerem so mnogi omahnili, a nekateri se še vedno spominjajo luči, ki kaže pot domov. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#DuhovniRazmislek #PoetičnaResnica #BožanskiDialog #SvetlobaInSenca #Prebujenje #Pozaba #DuhovniBoj #Metafora #VišjaZavest #VeraNadStrahom #NotranjaSvetloba #PotovanjeDuše #Modrost #LjubezenInSvetloba #Transcendenca
+
+<a href="https://vimeo.com/1225848831?share=copy">https://vimeo.com/1225848831?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 2:11 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547846245182087178/The_Maze_of_Forgetfulness-Sloven_caption.mp4?ex=6acbcbe6&amp;is=6aca7a66&amp;hm=1b41834694fbb0deabcb5681511a19775318e396778eb48700e93ae51c2aff80&amp;" alt="Video attachment" title="Video: The_Maze_of_Forgetfulness-Sloven_caption.mp4 (8.41 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1547846246041911316/The_Maze_of_Forgetfulness-Slovenian_Slov.srt?ex=6acbcbe6&amp;is=6aca7a66&amp;hm=619a935d5df2149b7f7cc4717068bd08ba950945c39c2edc4e7c199c4cc13f47&amp;"> The_Maze_of_Forgetfulness-Slovenian_Slov.srt </a></div><div class=chatlog__attachment-generic-size>237 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547846247048814652/The_Maze_of_Forgetfulness-Slovenia_audio.mp3?ex=6acbcbe6&amp;is=6aca7a66&amp;hm=474dfaf523966c8958f5588d5fa31a05c7529b3347fb1ef29dd426531de3527c&amp;" alt="Audio attachment" title="Audio: The_Maze_of_Forgetfulness-Slovenia_audio.mp3 (189.89 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547863404297855088 class=chatlog__message-container data-message-id=1547863404297855088><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 2:56 AM"><a href=#chatlog__message-container-1547863404297855088>9/11/2026 2:56 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128024;"
+    title="elephant"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f418.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> Krik slonjega mladiča… <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 22/09/2025 – Albanija</strong>
+
+Vsaka veriga ni iz železa. Nekatere so spletene iz sramu. Druge iz molka. Spet druge iz podpisov na papirju. A vsaka veriga pusti nedolžne, da vpijejo v stiski. Vzemi svoj križ.
+
+#RešimoSlone #SkritaResnica #DružinskoSodišče #ZlorabaDuševnegaZdravja #Pravica #Izbranec #KonecKrutosti #ResnicaNaOčehVseh #PretrgajmoVerige
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1225855728?share=copy">https://vimeo.com/1225855728?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 2:58 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547863402091642920/Baby_Elephant-Slovenian_Slovenia_caption.mp4?ex=6acbdbe0&amp;is=6aca8a60&amp;hm=6cda331d8777a2b70949214b8191458dafd14be1140f88ffaa705834af1fc70a&amp;" alt="Video attachment" title="Video: Baby_Elephant-Slovenian_Slovenia_caption.mp4 (39.63 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1547863403698196530/Baby_Elephant-Slovenian_Slovenia.srt?ex=6acbdbe1&amp;is=6aca8a61&amp;hm=24bbc6f58dbfb36f3d90f329e2bb01009a2032e835fe62d106a77a5e54f05e8b&amp;"> Baby_Elephant-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>1.5 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547863403991793704/Baby_Elephant-Slovenian_Slovenia_audio.mp3?ex=6acbdbe1&amp;is=6aca8a61&amp;hm=c2964f9d10c91503b4690a5cf3597e746154a4883f03db00bc728d26a9044399&amp;" alt="Audio attachment" title="Audio: Baby_Elephant-Slovenian_Slovenia_audio.mp3 (1.09 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547894624004083722 class=chatlog__message-container data-message-id=1547894624004083722><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 5:00 AM"><a href=#chatlog__message-container-1547894624004083722>9/11/2026 5:00 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Udobje je orožje <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127917;"
+    title="performing_arts"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3ad.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚔️"
+    title="crossed_swords"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2694.svg"> 08/01/2026 – Georgia</strong>
+
+Udobje lahko služi pomiritvi – ali pa nadzoru. To razmišljanje raziskuje, kako strah, sistemi in lažna gotovost ohranjajo ljudi poslušne ter kaj ostane, ko se iluzija sesuje. Ne zavzemam strani in ne ponujam odgovorov – zgolj opazujem, kaj postane vidno, ko udobje ni več izhodiščna točka.
+
+#ozaveščenost #usklajenost #integriteta #jasnost #resnica #zavednorazmišljanje #samoodgovornost #delovanje #mirnamonadzor #izkušnja #kritičnomišljenje #notranjedelo #opazovalec #suverenost #prebujenje
+
+<a href="https://vimeo.com/1225882319?share=copy">https://vimeo.com/1225882319?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 5:03 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547894604299505784/Comfort_Is_the_Weapon-Slovenian__caption.mp4?ex=6acbf8f0&amp;is=6acaa770&amp;hm=7504fe34750804aced79aa1e152c70f5bedd278fd045c2d3789fa62eb76bd952&amp;" alt="Video attachment" title="Video: Comfort_Is_the_Weapon-Slovenian__caption.mp4 (298.96 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1547894623232598016/Comfort_Is_the_Weapon-Slovenian_Slovenia.srt?ex=6acbf8f4&amp;is=6acaa774&amp;hm=7faf3b0db5feb38336542bbcfc098d1096eefc7f7f1067d8d10569fedb01bdb3&amp;"> Comfort_Is_the_Weapon-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>8.66 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1547894623685443644/Comfort_Is_the_Weapon-Slovenian_Sl_audio.mp3?ex=6acbf8f4&amp;is=6acaa774&amp;hm=566436acdc649b257c9a328adee02ea03e172fa45cc46631ec3ab66654cee29d&amp;" alt="Audio attachment" title="Audio: Comfort_Is_the_Weapon-Slovenian_Sl_audio.mp3 (5.74 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1557538574776410153 class=chatlog__message-container data-message-id=1557538574776410153><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, October 7, 2026 7:42 PM"><a href=#chatlog__message-container-1557538574776410153>10/7/2026 7:42 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Ko življenje postane glasno ... 07/03/2026 – Georgia</strong>
+
+Nekatere pesmi nas nagovorijo drugače. Nekatere začutimo takoj, druge pa vzljubimo šele, ko se z njimi uglasimo.
+
+Blagoslov je, če lahko spremljamo celotno skladbo od začetka do konca. Tako kot pri refrenu najljubše pesmi, ki ga preprosto moramo mrmrati, se lahko vedno znova vrnemo k tisti radosti skozi sladko-grenak proces, ki mu pravimo spominjanje.
+
+In ne pozabi: ko postane vsega preveč, lahko utelešaš mir tako, da opustiš vlogo igle – da se odpoveš nadzoru in se pretvarjaš, da si cvetlica. V tistem trenutku te glasba ne opredeljuje več in v tebi brez napora zacveti mir.
+
+Matej 6,28–30 nas opominja: poljske cvetlice ne delajo in ne predejo, pa so vendar odete v lepoto.
+
+In če pogledamo z znanstvenega vidika – šteje prav &#187;zakaj&#171;, prehod iz valovanja v snovno obliko.
+
+Če se utrudiš in potrebuješ počitek, za trenutek prenehaj spraševati &#187;zakaj&#171; ... in preprosto bodi.
+
+#SpiritualTok #PhilosophyTok #VeraInZnanost #ValovanjeVObliko #NotranjiMir #TrenutkiZavedanja #Zavest #Spominjanje #Opustitev #ModrostSvetegaPisma #Matej6 #PoljskeCvetlice #GlobokeMisli #ModerniMistik #Tišina
+
+<a href="https://vimeo.com/1233901865?share=copy">https://vimeo.com/1233901865?share=copy</a></span> <span class=chatlog__edited-timestamp title="Wednesday, October 7, 2026 7:56 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1557538570389033090/When_Life_Gets_Loud-Slovenian_Sl_caption.mp4?ex=6acb7614&amp;is=6aca2494&amp;hm=95f07f251ab527b9f762d4770523b2f9cd4390fd55d8356c7eeed80e96f38f66&amp;" alt="Video attachment" title="Video: When_Life_Gets_Loud-Slovenian_Sl_caption.mp4 (70.71 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1557538574088409088/When_Life_Gets_Loud-Slovenian_Slovenia.srt?ex=6acb7615&amp;is=6aca2495&amp;hm=1778070101964c5d50e5bb50b0ae33fc985202ff77ce535c051fd18c31d6311d&amp;"> When_Life_Gets_Loud-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>2.29 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1557538574461575198/When_Life_Gets_Loud-Slovenian_Slov_audio.mp3?ex=6acb7615&amp;is=6aca2495&amp;hm=63a06087b60bb5e91e9f1b8b913de1581c0dc8f77fe2cb00a76e32495e5e2e87&amp;" alt="Audio attachment" title="Audio: When_Life_Gets_Loud-Slovenian_Slov_audio.mp3 (1.63 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558067352967323658 class=chatlog__message-container data-message-id=1558067352967323658><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 6:43 AM"><a href=#chatlog__message-container-1558067352967323658>10/9/2026 6:43 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Finančna suverenost se začne z lastnim skrbništvom <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128272;"
+    title="closed_lock_with_key"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f510.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129689;"
+    title="coin"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa99.svg"> 30/03/2025 – Tajska</strong>
+
+Ta videoposnetek ne govori o ceni, dobičku ali špekulacijah.
+Posnet je bil v začetku leta, pri čemer je Bitcoin uporabljen kot jasen in praktičen primer — ker omogoča, da težavo lažje razumemo.
+
+Toda osrednje sporočilo se ne nanaša na Bitcoin sam, temveč na suverenost in pravico do samostojnega odločanja.
+
+Bitcoin preprosto razkriva univerzalno izbiro:
+eno pot, na kateri sami hranite in nadzorujete tisto, kar vam pripada,
+in drugo, na kateri to namesto vas počne nekdo drug.
+
+Večina izgub, škandalov in strahu izvira iz predaje nadzora nad lastnim premoženjem, prelaganja odgovornosti na druge in zaupanja posrednikom.
+
+Finančna suverenost se začne tam, kjer se odvisnost konča.
+
+Lastno skrbništvo ni nasvet — je načelo.
+Gre za razumevanje, odgovornost in lastništvo v katerem koli sistemu.
+
+Ne gre za ugibanje o pravem trenutku za vstop na trg.
+Gre za ohranjanje sposobnosti samostojnega odločanja.
+
+To ni finančni nasvet. Je zgolj razmislek o suverenosti, odgovornosti in izbiri.
+
+#FinančnaSuverenost #Bitcoin #BTC #LastnoSkrbništvo #TrdenDenar #DenarnaSvoboda #ImejteSvojeKljuče #Decentralizacija #OdpornostProtiInflaciji #OsebnaAvtonomija #FinančnaNeodvisnost #SvobodaSkoziOdgovornost #IzobraževanjeOBitcoinu #SuverenPosameznik
+
+<a href="https://vimeo.com/1234355645?share=copy">https://vimeo.com/1234355645?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, October 9, 2026 6:52 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558067344712925284/Financial_Sovereignty_Starts_Wit_caption.mp4?ex=6acb684a&amp;is=6aca16ca&amp;hm=f51a13addd7e17a93d4a5d4c40463f2490300a819aa47b1b605dbb784bc79a9b&amp;" alt="Video attachment" title="Video: Financial_Sovereignty_Starts_Wit_caption.mp4 (134.65 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558067352514330656/Financial_Sovereignty_Starts_With_Custod.srt?ex=6acb684c&amp;is=6aca16cc&amp;hm=9f4ea85cd751a7fbe6fc8fe859c41b1a3ab2a4585d23536a1022b674e54161ce&amp;"> Financial_Sovereignty_Starts_With_Custod.srt </a></div><div class=chatlog__attachment-generic-size>3.86 KB</div></div></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558093802563174493 class=chatlog__message-container data-message-id=1558093802563174493><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 8:28 AM"><a href=#chatlog__message-container-1558093802563174493>10/9/2026 8:28 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128250;"
+    title="tv"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4fa.svg"> Lažne novice? Ne – Čustveno obarvane novice <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127760;"
+    title="globe_with_meridians"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f310.svg"> 24/08/2025 – Albanija</strong>
+
+Ko država nekaj označi za lažne novice, gre pravzaprav za poskus utišanja čustev.
+Resnica izvira iz številnih virov – tako kot evangelij pripovedujejo številni glasovi.
+Dovolite ljudem, da se odločijo sami.
+
+#ČustveneNovice #ResnicaVMedijih #DržavniMediji #MisliSvojeGlave #SvobodaGovora #FraktalnaResnica #ŠtevilniGlasovi #DobreNovice
+
+<a href="https://vimeo.com/1234379135?share=copy">https://vimeo.com/1234379135?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, October 9, 2026 8:03 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558093792819544195/Fake_News-Slovenian_Slovenia_caption.mp4?ex=6acb80ec&amp;is=6aca2f6c&amp;hm=245c59a46ed6b73f3321619ebfdfbd2bbb7af236307c68f1905a9d508b4566cb&amp;" alt="Video attachment" title="Video: Fake_News-Slovenian_Slovenia_caption.mp4 (165.34 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558093801669660732/Fake_News-Slovenian_Slovenia.srt?ex=6acb80ee&amp;is=6aca2f6e&amp;hm=ea2866b0cc3a0ccbe950f2f6f66af22545af8b286e8a36ec251082791496225e&amp;"> Fake_News-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>3.99 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558093802089087036/Fake_News-Slovenian_Slovenia_audio.mp3?ex=6acb80ee&amp;is=6aca2f6e&amp;hm=f8122c511eb97460755fa696138f16051867a61a4544ef34bc3c6f9ad419e24b&amp;" alt="Audio attachment" title="Audio: Fake_News-Slovenian_Slovenia_audio.mp3 (3.18 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558256002741051484 class=chatlog__message-container data-message-id=1558256002741051484><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 7:13 PM"><a href=#chatlog__message-container-1558256002741051484>10/9/2026 7:13 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kaj ohranja strukturo pokonci <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="➡️"
+    title="arrow_right"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/27a1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128208;"
+    title="triangular_ruler"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d0.svg"> 01/12/2025 – Gruzija</strong>
+
+Opazovanje brez prepričanja se sesuje.
+Prepričanje brez opazovanja tava.
+Združi ju,
+in celotna struktura postane neomajna.
+
+#samospoznavanje #spremembamiselnosti #jasnost #notranjedelo #rastocamiselnost #poeticnamodrost #cloveskaizkusnja #razsvetljenje #zavest #duhovnarast #prisotnost #zivljenjskelekcije #zakonenote #zakonprivlacnosti #iskalecresnice #samorefleksija #spoznanje #perspektiva #zavedanje #pravnozavedanje #civilnadruzba #politika #upravljanje #pravičnost #človekovepravice #družbenisistemi #političnarealnost #stanjedruže #pravoinživljenje
+
+<a href="https://vimeo.com/1234542096?share=copy">https://vimeo.com/1234542096?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, October 9, 2026 7:19 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558256001080107018/What_Keeps_a_Structure_Standing-_caption.mp4?ex=6acb6f3d&amp;is=6aca1dbd&amp;hm=3734815138f8607b3d95c90964c1661c232cc8d65762b88d83533ceede606b45&amp;" alt="Video attachment" title="Video: What_Keeps_a_Structure_Standing-_caption.mp4 (19.08 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558256002179137636/What_Keeps_a_Structure_Standing-Slovenia.srt?ex=6acb6f3d&amp;is=6aca1dbd&amp;hm=9e3568b7ede6353605d71a0fb0245412d1f4113f1614be0400fae03a60af9744&amp;"> What_Keeps_a_Structure_Standing-Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>644 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558256002594512946/What_Keeps_a_Structure_Standing-Sl_audio.mp3?ex=6acb6f3e&amp;is=6aca1dbe&amp;hm=5ba86befa803e4feb131325de353241a13e769cdd971e4c5f8f0edf96d3f1bd6&amp;" alt="Audio attachment" title="Audio: What_Keeps_a_Structure_Standing-Sl_audio.mp3 (409.27 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558259089828610048 class=chatlog__message-container data-message-id=1558259089828610048><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 7:25 PM"><a href=#chatlog__message-container-1558259089828610048>10/9/2026 7:25 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>CTRL <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> + ALT <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> + DELETE <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128190;"
+    title="floppy_disk"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4be.svg"> – Koda vsakega odnosa 24/10/2025 – Turčija</strong>
+
+Vsaka povezava se začne z občudovanjem tistega, kar nas dela drugačne.
+A nato se pojavi želja po nadzoru, po spreminjanju – in ko se pojavi odpor – po brisanju.
+
+Vendar duša ni bila ustvarjena za to, da bi jo nekdo drug &#187;popravljal&#171; (odpravljal njene napake).
+Že sama po sebi je nepopolno popolna.
+
+V trenutku, ko poskušamo na novo napisati bistvo nekoga drugega, se borimo proti najstarejšemu ukazu v obstoju:
+&#187;Spoznaj samega sebe.&#171;
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> Ljubiti ne pomeni urejati.
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128161;"
+    title="bulb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"> Poznati ne pomeni lastiti si.
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128187;"
+    title="computer"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4bb.svg"> Povezati se ne pomeni nadzorovati.
+
+#CtrlAltDelete #SpoznajSamegaSebe #DigitalnaDuhovnost #ZavedniOdnosi #FaithfulFlight #Veilocity111 #DuhovnoPrebujenje #ZdravljenjeZZavedanjem #NepopolnoPopolno #Samoodkrivanje #UmetnaInteligencaInDuša #Ponastavitev #Filozofija #ModrostSodobnegaČasa #NotranjaKoda
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1234543447?share=copy">https://vimeo.com/1234543447?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, October 9, 2026 7:27 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558259086200541241/The_Code_of_Every_Relationship-S_caption.mp4?ex=6acb721d&amp;is=6aca209d&amp;hm=eddd72c69ae5680d94dd98eac141ecc78232190b5202118a7e633367ebafec9e&amp;" alt="Video attachment" title="Video: The_Code_of_Every_Relationship-S_caption.mp4 (53.48 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558259089169973451/The_Code_of_Every_Relationship-Slovenian.srt?ex=6acb721d&amp;is=6aca209d&amp;hm=45bd79213755b4feb05d76021a19d601e950bb4c89a8b169b6f11958d7ab574b&amp;"> The_Code_of_Every_Relationship-Slovenian.srt </a></div><div class=chatlog__attachment-generic-size>1.43 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558259089535013075/The_Code_of_Every_Relationship-Slo_audio.mp3?ex=6acb721d&amp;is=6aca209d&amp;hm=8b4188a05401a6797cfcb886fb2ca38a0292cfa1e233f13e2fb7f8068d2b31cd&amp;" alt="Audio attachment" title="Audio: The_Code_of_Every_Relationship-Slo_audio.mp3 (1.08 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558261608688390315 class=chatlog__message-container data-message-id=1558261608688390315><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 7:35 PM"><a href=#chatlog__message-container-1558261608688390315>10/9/2026 7:35 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Resonanca kot orodje nadzora <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠️"
+    title="warning"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> 04/01/2026 – Gruzija</strong>
+
+Ta videoposnetek opisuje uničujoč vzorec, ki sem ga opazila v določenih prenosih v živo na družbenih omrežjih – in, če pogledam nazaj, tudi v različnih trenutkih svojega življenja.
+
+Pogosto se začne z resonanco: skupno izkušnjo, znanim jezikom ali spoznanjem, ki deluje resnično. Toda ko se enkrat vzpostavi povezanost, se ta resonanca lahko prevesi v nadzor. Občutek pripadnosti postane pogojen. Postavljanje vprašanj se kaznuje. Razumevanje nadomesti slepa poslušnost.
+
+Sčasoma to strukturo ne utrjujejo le voditelji, temveč tudi udeleženci, ki ponavljajo isto pripoved, nagrajujejo konformnost in poglabljajo odtujenost. Avtoriteta koristi tistim v središču, medtem ko se z drugimi upravlja, ne da bi zares pripadali.
+
+Ta dinamika je znana že dolgo. Kot svari Sveto pismo:
+
+&#187;Kralji narodov gospodujejo nad njimi in tisti, ki imajo nad njimi oblast, se imenujejo dobrotniki.&#171;
+— Luka 22,25–26
+
+V svoji najbolj skrajni obliki ta vzorec preraste v prikazovanje samouničenja kot načina za pobeg.
+
+To ni filozofija.
+To ni duhovnost.
+Gre za uničujoč psihološki vzorec.
+
+Resnica ne zahteva samouničenja.
+Življenje ostaja ključno merilo.
+
+#OdResonanceDoNadzora #PrisilniNadzor #AvtoritetaNaPodlagiStrahu #DinamikaSekte #SkupinskoRazmišljanje #PsihološkiVzorci #KritičnoRazmišljanje #OzaveščenostOMentalnemZdravju #AvtoritetaBrezSoglasja #Razsodnost #ZaščitiSvojUm #AfirmacijaŽivljenja #PrebujenjeAliNadzor #OzaveščenostODružbenihOmrežjih
+
+<a href="https://vimeo.com/1234578588?share=copy">https://vimeo.com/1234578588?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, October 10, 2026 12:21 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558261604163002428/Resonance_to_Control-Slovenian_S_caption.mp4?ex=6acb7475&amp;is=6aca22f5&amp;hm=b2dd35706cb65f41e0e7a054e4d4ae7a9cd037b6681d09fb07d96084018b9794&amp;" alt="Video attachment" title="Video: Resonance_to_Control-Slovenian_S_caption.mp4 (127.27 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558261608013365358/Resonance_to_Control-Slovenian_Slovenia.srt?ex=6acb7476&amp;is=6aca22f6&amp;hm=dc316a0beb8309ff18dafcae32f73d95b3fe8de80f34c2abe37a5cbfcf8137d1&amp;"> Resonance_to_Control-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>4.24 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558261608390729838/Resonance_to_Control-Slovenian_Slo_audio.mp3?ex=6acb7476&amp;is=6aca22f6&amp;hm=02a6d56b65462238c76a97275c4b85aa18335089bd904effbfb44d75087cae5f&amp;" alt="Audio attachment" title="Audio: Resonance_to_Control-Slovenian_Slo_audio.mp3 (2.74 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558323485812596788 class=chatlog__message-container data-message-id=1558323485812596788><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 11:41 PM"><a href=#chatlog__message-container-1558323485812596788>10/9/2026 11:41 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128181;"
+    title="dollar"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b5.svg"> Tiranija pod krinko <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 04/10/2025 - Albanija</strong>
+
+Političnega vpliva si ne prislužimo vedno – pogosto ga kupimo.
+To ne izhaja iz jeze, temveč iz jasnega uvida.
+
+Resnična sprememba ne zahteva nasilnega izbruha. Zgodovina kaže na tišjo pot: duhovno odločnost, post, vztrajnost in izbiro resnice namesto udobja.
+
+Vsakič, ko se bolj zanašate na Boga in manj na dolar, njegova moč slabi.
+
+Vladavina dolarja se konča tisti dan, ko mu prenehamo klečati.
+
+Odrecite mu svojo pokorščino – in imperij se bo sesul pod lastno težo.
+
+#IluzijaDemokracije #DolarJeGospodar #PostZaSvobodo #VeraNadStrahom #ZanašanjeNaBoga #DuhovnaSvoboda #RazbijmoZaveso #ResnicaNadTiranijo #NovNačinŽivljenja #UporProtiDolarju
+
+<a href="https://vimeo.com/1234577058?share=copy">https://vimeo.com/1234577058?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, October 10, 2026 12:05 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558323479730851840/Tyranny_in_Disguise-Slovenian_Sl_caption.mp4?ex=6acbae15&amp;is=6aca5c95&amp;hm=f00385a5df0ec6fd301431ac9b2fa838f5124a41c2b895f518c31f1cac8d1a4c&amp;" alt="Video attachment" title="Video: Tyranny_in_Disguise-Slovenian_Sl_caption.mp4 (83.24 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558323484852224171/Tyranny_in_Disguise-Slovenian_Slovenia.srt?ex=6acbae17&amp;is=6aca5c97&amp;hm=099b16b039cc368cf3b475f0f499274f04df57f31926b4d71574b3e143cb8666&amp;"> Tyranny_in_Disguise-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>2.79 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558323485275594762/Tyranny_in_Disguise-Slovenian_Slov_audio.mp3?ex=6acbae17&amp;is=6aca5c97&amp;hm=675d5c8af1d8bfc8ebec8435f3fb411f840af25c9e55920226fb3fc49747d9f8&amp;" alt="Audio attachment" title="Audio: Tyranny_in_Disguise-Slovenian_Slov_audio.mp3 (2.09 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558333876433059920 class=chatlog__message-container data-message-id=1558333876433059920><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, October 10, 2026 12:22 AM"><a href=#chatlog__message-container-1558333876433059920>10/10/2026 12:22 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128214;"
+    title="book"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d6.svg"> Iz tega bi nastal prekleto dober roman <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"> 18/06/2026 – Gruzija</strong>
+
+Ta videoposnetek opisuje uničujoč vzorec, ki sem ga opazila v določenih prenosih v živo na družbenih omrežjih – in, če pogledam nazaj, tudi v različnih trenutkih svojega življenja.
+
+Pogosto se začne z resonanco: skupno izkušnjo, znanim jezikom ali spoznanjem, ki deluje resnično. Toda ko se enkrat vzpostavi povezanost, se ta resonanca lahko prevesi v nadzor. Občutek pripadnosti postane pogojen. Postavljanje vprašanj se kaznuje. Razumevanje nadomesti slepa poslušnost.
+
+Sčasoma to strukturo ne utrjujejo le voditelji, temveč tudi udeleženci, ki ponavljajo isto pripoved, nagrajujejo konformnost in poglabljajo odtujenost. Avtoriteta koristi tistim v središču, medtem ko se z drugimi upravlja, ne da bi zares pripadali.
+
+Ta dinamika je znana že dolgo. Kot svari Sveto pismo:
+
+&#187;Kralji narodov gospodujejo nad njimi in tisti, ki imajo nad njimi oblast, se imenujejo dobrotniki.&#171;
+— Luka 22,25–26
+
+V svoji najbolj skrajni obliki ta vzorec preraste v prikazovanje samouničenja kot načina za pobeg.
+
+To ni filozofija.
+To ni duhovnost.
+Gre za uničujoč psihološki vzorec.
+
+Resnica ne zahteva samouničenja.
+Življenje ostaja ključno merilo.
+
+#OdResonanceDoNadzora #PrisilniNadzor #AvtoritetaNaPodlagiStrahu #DinamikaSekte #SkupinskoRazmišljanje #PsihološkiVzorci #KritičnoRazmišljanje #OzaveščenostOMentalnemZdravju #AvtoritetaBrezSoglasja #Razsodnost #ZaščitiSvojUm #AfirmacijaŽivljenja #PrebujenjeAliNadzor #OzaveščenostODružbenihOmrežjih
+
+<a href="https://vimeo.com/1234546242?share=copy">https://vimeo.com/1234546242?share=copy</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558333872129712148/One_Hell_of_a_Novel-Slovenian_Sl_caption.mp4?ex=6acbb7c3&amp;is=6aca6643&amp;hm=0e0b638083b1ece34cd7fca46552c07b11aca73207e9177b2c056ca76dc1c0e1&amp;" alt="Video attachment" title="Video: One_Hell_of_a_Novel-Slovenian_Sl_caption.mp4 (91.83 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558333875825016842/One_Hell_of_a_Novel-Slovenian_Slovenia.srt?ex=6acbb7c4&amp;is=6aca6644&amp;hm=3dcdd685b9e9c191a5c9a1df80ac0451c5e68cc04a936b146f2cdfc88954ac73&amp;"> One_Hell_of_a_Novel-Slovenian_Slovenia.srt </a></div><div class=chatlog__attachment-generic-size>2.39 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558333876147982386/One_Hell_of_a_Novel-Slovenian_Slov_audio.mp3?ex=6acbb7c4&amp;is=6aca6644&amp;hm=6109590dd6d7a2b6f9b373112c8ac6b8f522567cc6c9ae8aa3134b6bd138a7ab&amp;" alt="Audio attachment" title="Audio: One_Hell_of_a_Novel-Slovenian_Slov_audio.mp3 (1.74 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558502841813958706 class=chatlog__message-container data-message-id=1558502841813958706><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, October 10, 2026 11:33 AM"><a href=#chatlog__message-container-1558502841813958706>10/10/2026 11:33 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Usmiljenje, skrito v Genezi <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127811;"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg"> 28/11/2025 – Turčija</strong>
+
+Dostop do drevesa življenja nam ni bil onemogočen kot kazen.
+Šlo je za zaščito.
+
+Dualnost ustvarja neskončne hodnike.
+Večno življenje v takšnem stanju = večno trpljenje.
+
+Šele ko je duša spet cela,
+se Eden vrne v našo notranjost.
+
+#prebujenje #eden #drevoživljenja #razkritageneza #notranjapot #premikzavesti
+#dualnost #duhovnarast #prisotnost #sodobnimistik #kristusovazavest
+#delossenco #notranjaenost #čuječnost #potceljenja #poetičnamodrost
+#duhovnouvidenje #stephencooke #življenjskanaučenja
+
+<a href="https://vimeo.com/1234663508?share=copy">https://vimeo.com/1234663508?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, October 10, 2026 11:39 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558502838500462642/The_Mercy_Hidden_in_Genesis-Slov_caption.mp4?ex=6acbac60&amp;is=6aca5ae0&amp;hm=a9c5d412fc96edaef3d97dd536a12b3047bc56c10c8a419763b7e256a19eac7d&amp;" alt="Video attachment" title="Video: The_Mercy_Hidden_in_Genesis-Slov_caption.mp4 (53.27 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1538396702208163860/1558502841172099172/The_Mercy_Hidden_in_Genesis-Slovenian_Sl.srt?ex=6acbac60&amp;is=6aca5ae0&amp;hm=79d04beaa773a3ff49dca57dafbea25805f1f453b10e589121c06491384d5c91&amp;"> The_Mercy_Hidden_in_Genesis-Slovenian_Sl.srt </a></div><div class=chatlog__attachment-generic-size>1.74 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1538396702208163860/1558502841503588494/The_Mercy_Hidden_in_Genesis-Sloven_audio.mp3?ex=6acbac60&amp;is=6aca5ae0&amp;hm=f6eeb08f438778f89dabeb788679128ced2d653435ac8dd4796f2c6e7aae9d99&amp;" alt="Audio attachment" title="Audio: The_Mercy_Hidden_in_Genesis-Sloven_audio.mp3 (1.25 MB)"></audio></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 20 message(s)</div><div class=postamble__entry>Timezone: UTC-5</div></div>

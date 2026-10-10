@@ -1,0 +1,870 @@
+<!DOCTYPE html><html lang=en><head><title>Veilocity - indonesian</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / indonesian</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1485163686728433734 class=chatlog__message-container data-message-id=1485163686728433734><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, March 22, 2026 2:30 AM"><a href=#chatlog__message-container-1485163686728433734>3/22/2026 2:30 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Narsisme adalah sistem <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 28/01/2026 - Georgia
+(Versi diperluas — mencakup tambahan 20 menit materi)
+</strong>
+Ini bukan hanya kisah pribadi — ini tentang narsisisme yang beroperasi dalam skala besar.
+
+Narsisisme berkembang subur karena kontrol, kebingungan, ketergantungan, dan kelelahan. Ketika sistem kehilangan akuntabilitas, mereka mulai mencerminkan sifat-sifat yang sama: manipulasi psikologis, pengalihan kesalahan, pembungkaman, dan hukuman atas otonomi.
+
+Selama perpisahan saya, saya menyaksikan bagaimana proses hukum, tekanan finansial, dan narasi kesehatan mental dapat disalahgunakan untuk merampas kemandirian dan menjebak orang di dalam lingkaran yang terus meluas — lingkaran yang menguras energi, identitas, dan harapan.
+
+Saya membagikan ini bukan karena marah, tetapi karena kejelasan. Ketika narsisisme menjadi struktural, ia tidak lagi tampak seperti seseorang — ia tampak seperti kebijakan, prosedur, dan &quot;begitulah cara kerjanya.&quot;
+
+Jika Anda pernah dibuat ragu akan realitas Anda, dihukum karena mengatakan kebenaran, atau dipaksa untuk bertahan hidup alih-alih menyembuhkan diri — Anda tidak rusak. Anda bereaksi terhadap sistem yang dibangun tanpa empati.
+
+Kesadaran akan memutus lingkaran tersebut.
+
+#Narsisisme #PenyalahgunaanSistemik #KontrolNarsisistik #PutusLingkaran #KontrolKoersif #Gaslighting #KekerasanStruktural #SistemBersenjata #PenyalahgunaanHukum #KegagalanInstitusional #PenyalahgunaanPsikologis #KesadaranTrauma #BerterusTerus #SuaraPenyintas #Akuntabilitas #Kearifan #Kebangkitan #PilihKejelasan #AkhiriSiklus
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1175860544">https://vimeo.com/1175860544</a></span> <span class=chatlog__edited-timestamp title="Friday, June 26, 2026 4:07 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1485163672077860885/Narcissism_is_the_System_Indonesian_caption.mp4?ex=6acbd5b4&amp;is=6aca8434&amp;hm=5fd5249af6a8a70d6f08650ce1e96826c034b968d035d7172fabf386a194214f&amp;" alt="Video attachment" title="Video: Narcissism_is_the_System_Indonesian_caption.mp4 (417.67 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1485163685734387842/Narcissism_is_the_System_Indonesian_caption.srt?ex=6acbd5b7&amp;is=6aca8437&amp;hm=7d6f0125e927fc426c33ef636821ae094ee2aafb08b2a3cb61f5a055c876bdc9&amp;"> Narcissism_is_the_System_Indonesian_caption.srt </a></div><div class=chatlog__attachment-generic-size>77.34 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1485163686090768394/Narcissism_is_the_System_Indonesian_caption.mp3?ex=6acbd5b7&amp;is=6aca8437&amp;hm=e34e06a73a1f00847735281a9a3cbcc8afe736ff086fc6aa55b19983ce14d8f2&amp;" alt="Audio attachment" title="Audio: Narcissism_is_the_System_Indonesian_caption.mp3 (25.53 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490254605475516538 class=chatlog__message-container data-message-id=1490254605475516538><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 3:39 AM"><a href=#chatlog__message-container-1490254605475516538>4/5/2026 3:39 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Surga adalah soal persepsi <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127780;️"
+    title="white_sun_small_cloud"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f324.svg"> 16/01/2026 - Georgia</strong>
+
+Tidak ada yang terasa berbahaya bagi pikiran yang damai.
+
+Matius 6:25–26 &#183; Matius 18:3 &#183; Mazmur 4:8
+
+#PikiranDamai #MomenTenang #Keheningan #KesadaranLembut
+
+<a href="https://vimeo.com/1155130946">https://vimeo.com/1155130946</a></span> <span class=chatlog__edited-timestamp title="Saturday, June 13, 2026 10:47 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490254605710393467/All_Dogs_Go_to_Heaven.mp4?ex=6acbe601&amp;is=6aca9481&amp;hm=0ab6fe4eaae54730f78bed583f3d39db758b6f2cc68b525ebe4c35712f249eea&amp;" alt="Video attachment" title="Video: All_Dogs_Go_to_Heaven.mp4 (1.14 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490261375107207251 class=chatlog__message-container data-message-id=1490261375107207251><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:06 AM"><a href=#chatlog__message-container-1490261375107207251>4/5/2026 4:06 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Sangkar Bukan Rumahmu <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127749;"
+    title="sunrise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f305.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129718;"
+    title="feather"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fab6.svg"> 06/04/2025 - Thailand</strong>
+
+Saya mendengar lagu ini saat berjalan-jalan di pasar di Jepang, hari biasa saja… dan itu membuat saya terhenti.
+
+“Beri ruang untuk tumbuh… sangkar bukanlah rumahmu.”
+
+Saya bahkan tidak mencari tanda, tetapi Tuhan menempatkannya tepat di depan saya.
+
+Lagu “The Sparrow” oleh The Hunts diputar, dan kata-katanya menyentuh hati — seperti Surga berbisik di tengah kebisingan dunia.
+
+Dan meskipun momen itu terjadi di Jepang, video ini difilmkan di Gua Phraya Nakhon — Prachuap Khiri Khan Thailand — di tempat di mana makna pesan itu benar-benar terungkap.
+
+Itu mengingatkan saya bahwa Tuhan sering menuntun kita dengan cara ini — keluar dari kurungan, keluar dari ketakutan, keluar dari ruang-ruang kecil tempat kita bertahan hidup…
+
+Dan menuju sesuatu yang lebih luas.
+
+Remah roti di satu negara.
+
+Terobosan di negara lain.
+
+Kita membangun sangkar dari kenyamanan, identitas lama, pola bertahan hidup… tetapi kita tidak pernah ditakdirkan untuk tetap terkurung.
+
+Sangkar bukanlah rumahmu.
+
+Beri ruang untuk tumbuh.
+Rentangkan sayapmu.
+
+Percayai jalan yang telah ditentukan.
+
+“Sparrow” oleh The Hunts — sebuah lagu dari duo indie folk The Hunts, yang terdapat dalam album mereka Hibernating Heart. Teks terjemahan oleh TikTok.
+
+#TheHunts #TheSparrow #PhrayaNakhonCave ⁠thailand #PrachuapKhiriKhan #TandaIlahi #JalanIman #PerjalananSpiritual #Bebas #KamuDitakdirkanUntukTerbang #JalanPenyembuhan #TuhanBerbicara #JiwaYangTerbangun
+
+<a href="https://vimeo.com/1165301539">https://vimeo.com/1165301539</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490261376462094357/The_cage_is_not_your_home.mp4?ex=6acbec4f&amp;is=6aca9acf&amp;hm=3d501f422f520f645be766c099d335b796c61bfb2def02422cfbe53a7e1b1eee&amp;" alt="Video attachment" title="Video: The_cage_is_not_your_home.mp4 (21.46 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490271815568850944 class=chatlog__message-container data-message-id=1490271815568850944><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 4:48 AM"><a href=#chatlog__message-container-1490271815568850944>4/5/2026 4:48 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg">Saat Keheningan Menyelaraskan<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127811;"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127769;"
+    title="crescent_moon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f319.svg"> 16/09/2025 - Albania</strong>
+
+Duduk dalam keheningan, saya menyadari—ketika semuanya selaras, rasanya seperti alam sedang mengawasi balik.
+
+#keheningan #alam #fokus #penyelarasan #lapisan #kesunyian #meditatif #tenang #videoalam #momentenang
+
+<a href="https://vimeo.com/1151211356">https://vimeo.com/1151211356</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490271819783999528/When_Stillness_Aligns.mp4?ex=6acbf609&amp;is=6acaa489&amp;hm=49d8727ac8ef225e14eb5114a43e83b4e0fe761dfcb323599d907123f879dc49&amp;" alt="Video attachment" title="Video: When_Stillness_Aligns.mp4 (89.27 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490318654192222339 class=chatlog__message-container data-message-id=1490318654192222339><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 7:54 AM"><a href=#chatlog__message-container-1490318654192222339>4/5/2026 7:54 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128167;"
+    title="droplet"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a7.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> Terapi air tawar - tidak perlu filter. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"> 25/07/2025 - Montenegro</strong>
+
+#NatureVibes #FreshwaterSwim #LakeLife #NatureLovers #IntoTheWild #OutdoorTherapy #PeacefulVibes #WildSwimming #NatureHeals #LifeInNature #Grounding #AdventureTime
+
+<a href="https://vimeo.com/1151070405">https://vimeo.com/1151070405</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490318659036512276/Freshwater_therapy.mp4?ex=6acb78e9&amp;is=6aca2769&amp;hm=49705d7cb55e48bae5764cd2fb28d0feb00a8f48e24b0a10dd20adfb20913af9&amp;" alt="Video attachment" title="Video: Freshwater_therapy.mp4 (93.64 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490333483707404348 class=chatlog__message-container data-message-id=1490333483707404348><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 8:53 AM"><a href=#chatlog__message-container-1490333483707404348>4/5/2026 8:53 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kebahagiaan adalah obat. Alam adalah kebenaran. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 11/06/2025 - Bulgaria</strong>
+
+Aku tidak hanya datang ke sini untuk beristirahat — aku datang untuk mengingat.
+
+Bumi sedang berubah, dan begitu pula kita. Inilah perubahan positif yang datang bersamaan dengan kebangkitan spiritual. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg">
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"> “Everywhere” – Niall Horan &amp; Anne-Marie
+
+Kehidupan di kabin di Bulgaria — tempat aku merasakan kedamaian, kehadiran, dan kegembiraan lagi.
+
+#5dshift #BumiBaru #kebangkitanspiritual #perubahanalami #perubahanbulgaria #alamliar #jiwayangbangkit #kabindihutan #pekerjacahaya #hutan #alam #spiritualitas #viral
+
+<a href="https://vimeo.com/1152761522">https://vimeo.com/1152761522</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490333489936204037/Joy_is_medicine._Nature_is_truth.mp4?ex=6acb86b9&amp;is=6aca3539&amp;hm=d222e20d9002149dcafd031e366a0f75a8f40bc8534d7a66e4e44673ae4cad5c&amp;" alt="Video attachment" title="Video: Joy_is_medicine._Nature_is_truth.mp4 (112.8 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490388347330363543 class=chatlog__message-container data-message-id=1490388347330363543><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 12:31 PM"><a href=#chatlog__message-container-1490388347330363543>4/5/2026 12:31 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Fleetwood Mac, Ladang Terbuka, Pikiran Jernih <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 18/10/2025 - Albania</strong>
+
+Terkadang yang Anda butuhkan hanyalah ladang yang tenang, lagu yang bagus, dan pengingat bahwa hidup masih indah.
+Fleetwood Mac di latar belakang, udara segar di depan saya, dan dunia yang tidak meminta apa pun — hanya untuk berhenti sejenak dan bernapas.
+
+#vanlife #naturevibes #fleetwoodmac #peacefulmoments #fieldlife #cows #scenery #travelvibes #slowdown #mindfulmoments #sunsetvibes #australia #europe #musicandnature #freedomjourney #outdoorsoul #calmenergy #quietmoments #creativejourney #healingpath
+
+<a href="https://vimeo.com/1151069730">https://vimeo.com/1151069730</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490388352032047307/Fleetwood_Mac_Open_Fields_Clear_Mind.mp4?ex=6acbb9d1&amp;is=6aca6851&amp;hm=036618c73dc389fb99d2073f9ae802b646f1fde8ff20979c4baa7cc553b4bfc6&amp;" alt="Video attachment" title="Video: Fleetwood_Mac_Open_Fields_Clear_Mind.mp4 (85.4 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490395728835772689 class=chatlog__message-container data-message-id=1490395728835772689><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, April 5, 2026 1:00 PM"><a href=#chatlog__message-container-1490395728835772689>4/5/2026 1:00 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Langkah Damai Menuju Ladang <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127806;"
+    title="ear_of_rice"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33e.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128004;"
+    title="cow2"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f404.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128276;"
+    title="bell"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f514.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 16/08/2025 - Albania</strong>
+
+Melangkah ke ladang — bukan sembarang tempat, tetapi ladang yang menanti Anda.
+Di mana waktu terasa lebih tenang, udara menahan napas,
+dan satu-satunya musik adalah paduan suara lembut lonceng sapi.
+
+#VanLife #NatureVibes #CowBells #PeacefulMoments #PastureLife #SlowLiving #OffGridLife #MorningVibes #FarmViews #MindfulLiving
+
+<a href="https://vimeo.com/1151069111">https://vimeo.com/1151069111</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490395734841888938/A_Peaceful_Step_Into_the_Field.mp4?ex=6acbc0b1&amp;is=6aca6f31&amp;hm=83729b45312ae676366b14ca902448443643bf338ea848f1907a44fe6338f3d3&amp;" alt="Video attachment" title="Video: A_Peaceful_Step_Into_the_Field.mp4 (106.54 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490606852872999044 class=chatlog__message-container data-message-id=1490606852872999044><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, April 6, 2026 2:59 AM"><a href=#chatlog__message-container-1490606852872999044>4/6/2026 2:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Dolar Juga Memiliki Mantra! <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128184;"
+    title="money_with_wings"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b8.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 01/12/2025 - Georgia</strong>
+
+Seperti mantra lainnya, kekuatannya bergantung pada kepercayaan Anda — partisipasi Anda.
+Dolar bersifat netral, begitu pula kapitalisme — anak-anak Tuhanlah yang selalu ditakdirkan untuk melampaui segalanya.
+
+Namun kita telah dikondisikan untuk berpikir bahwa dolar berada di atas kita,
+dan kepercayaan itu mempersempit ruang lingkup kemungkinan kita.
+
+Ilusinya adalah berpikir bahwa kita setara dengan sistem yang kita ciptakan.
+
+Terlalu banyak orang berjuang di dalam lingkaran, tanpa pernah menyadari kekuatan yang mereka miliki hanya dengan keluar dari lingkaran itu sama sekali.
+
+#ilusidolar #kebangkitan #kebangkitanspiritual #matriks #bebaskan diri #pencarikebenaran #kebijaksanaanpuitis #penceritaanvisual #fyp #untukmu #halamanuntukmu #videoviral #pemikiranmendalam #pelajaranhidup #kesadaran #realisasidiri #pergeseranpola pikir #kebenaransistemik #filsafat #metafora #perumpamaanmodern #pikirkanlah #ilusiruntuh #kebebasanbatin #stephencooke
+
+<a href="https://vimeo.com/1158354293">https://vimeo.com/1158354293</a></span> <span class=chatlog__edited-timestamp title="Saturday, June 13, 2026 10:47 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490606853204344954/Dollars_Cast_Spells_Too.mp4?ex=6acbdc8f&amp;is=6aca8b0f&amp;hm=85484113b23f1c475f6081096c0d9e2512685c0ed234abe627ef4ae7cfad6bcf&amp;" alt="Video attachment" title="Video: Dollars_Cast_Spells_Too.mp4 (1.77 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490938833410199552 class=chatlog__message-container data-message-id=1490938833410199552><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 12:58 AM"><a href=#chatlog__message-container-1490938833410199552>4/7/2026 12:58 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> Ini bukan soal pamer, tapi soal menunjukkan jalan kembali — menuju kedaulatan, perdamaian, dan alam. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 09/09/2025 - Albania</strong>
+
+Tenaga surya, air panas, pemanas, dan ruang kecil di atas roda. Bukan pamer — hanya menunjukkan bahwa cara hidup lain itu mungkin, di mana perdamaian tetap berada dalam kendali seseorang dan tidak diserahkan kepada pihak lain.
+
+#Kedaulatan #RebutKedamaianmu #MilikiHidupmu #KehidupanVan #HidupMandiri #HidupMandiri #TenagaSurya #AirAdalahKehidupan #KembaliKeAlam #HidupBerkelanjutan #HidupSederhana #BatasAlam #TuhanMemberikan #ImanDanKebebasan #HidupDalamKasihAnugerah
+
+<a href="https://vimeo.com/1151078577">https://vimeo.com/1151078577</a></span> <span class=chatlog__edited-timestamp title="Thursday, April 9, 2026 7:21 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490938837696774184/To_Sovereignty.mp4?ex=6acbc03f&amp;is=6aca6ebf&amp;hm=405f25949ed8103fc16bd2eff5ef4958149576fd64485adc5746a248ce82048f&amp;" alt="Video attachment" title="Video: To_Sovereignty.mp4 (83.29 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1490965190945144852 class=chatlog__message-container data-message-id=1490965190945144852><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 2:43 AM"><a href=#chatlog__message-container-1490965190945144852>4/7/2026 2:43 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Selamatkan Dirimu dari Keraguan <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"> <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127754;"
+    title="ocean"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30a.svg"> 09/11/2025 - Turki</strong>
+
+Terkadang belokan terbaik tidak direncanakan.
+
+Keluar dari jalan raya, menuju tempat yang tidak dikenal.
+
+#VanLife #LeaveItBetter #RoadStories #FreedomOnWheels #TravelRealTalk #SpontaneousJourney #NomadLife #AdventureAwaits #CinematicVibes #Bronson #ODESZA #TotallyEnormousExtinctDinosaurs #SaveYourselfFromDoubt #NeverGiveItUp #TrustTheJourney #FaithInMotion #FlowState #OffTheHighway #IntoTheUnknown #SelfTrust
+
+<a href="https://vimeo.com/1151140922">https://vimeo.com/1151140922</a></span> <span class=chatlog__edited-timestamp title="Thursday, April 9, 2026 7:20 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1490965202265575535/Save_Yourself_from_Doubt.mp4?ex=6acbd8cd&amp;is=6aca874d&amp;hm=9e2c542d8407f8f63565a6f965d49fa2f4594532f139d83f0a76169c2fa20e6c&amp;" alt="Video attachment" title="Video: Save_Yourself_from_Doubt.mp4 (48.43 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1491035167882743869 class=chatlog__message-container data-message-id=1491035167882743869><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, April 7, 2026 7:21 AM"><a href=#chatlog__message-container-1491035167882743869>4/7/2026 7:21 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Vry vlieg in &#39;n hele nuwe w&#234;reld <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 24/08/2025 - Albani&#235;</strong>
+
+#klavier #vreedsamevibes #hele nuwew&#234;reld #natuurvibes #kalm #esteties #klaviermusiek #vertraag #bewusstoekomblikke #sagtevloei #boomvanlewe
+
+<a href="https://vimeo.com/1151070193">https://vimeo.com/1151070193</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1491035172651536515/Flying_free_in_a_whole_new_world.mp4?ex=6acb7137&amp;is=6aca1fb7&amp;hm=6d4ad70544153c0a95a3c4f36d88dfc792bc70bab07c56d7c8f94a7b4662854c&amp;" alt="Video attachment" title="Video: Flying_free_in_a_whole_new_world.mp4 (62.02 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1499023957293006879 class=chatlog__message-container data-message-id=1499023957293006879><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, April 29, 2026 8:26 AM"><a href=#chatlog__message-container-1499023957293006879>4/29/2026 8:26 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>“Menjadi Gembala yang Baik…” ≠ memperdagangkan manusia <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="♻️"
+    title="recycle"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/267b.svg"> 18/11/2025 – Georgia</strong>
+
+Seorang gembala melindungi otonomi — tidak pernah menggantikannya. Seorang pedagang manusia mengambil keuntungan dari hilangnya otonomi.
+Dan terkadang apa yang tampak seperti kepedulian… hanyalah pemrosesan.
+
+“Jangan membunuh.” — Keluaran 20:13
+
+Bukan hanya tubuh — tetapi juga roh, kehendak, dan otonomi di dalam diri.
+
+Di mana ada paksaan, ketergantungan, atau kendali, sesuatu telah salah.
+
+Perhatian tidak menghabiskan. Bimbingan tidak menghapus.
+
+Dan aku di sini bukan untuk direduksi menjadi sesuatu yang lebih nyaman.
+
+Kearifan adalah mengingat perbedaannya.
+
+#DariResonansiMenujuKendali #KebenaranItuPenting #KearifanSpiritual #KendaliPaksaan #GembalaBukanPemilik #KurangiGunakanKembaliBerontak #TidakDapatTerurai #PenyintasSistem #DiprosesOlehSistem #PerjalananPenyembuhan #BangkitDiAtasnya #UngkapkanKebenaranmu #PutuskanSiklus #CahayaBatin #RebutKembaliKisahmu #BukuHariKehidupanVan #ModeKetahanan #KebenaranDalamHumor #PelajaranHidup #TerusBerjalan
+
+<a href="https://vimeo.com/1187696101">https://vimeo.com/1187696101</a>
+<a href="https://vimeo.com/1187696066">https://vimeo.com/1187696066</a></span> <span class=chatlog__edited-timestamp title="Saturday, June 13, 2026 10:47 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1499023952696049764/Exodus_2013-English-Indonesian_caption.mp4?ex=6acb8058&amp;is=6aca2ed8&amp;hm=c544c7f023db4648a3072fa1d3258d5bd5e52e0df24cfbcacf9a52ee864764a9&amp;" alt="Video attachment" title="Video: Exodus_2013-English-Indonesian_caption.mp4 (97.04 MB)"></video></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1499023957003731055/Being_a_Good_Sheppard__trafficking_people.mp4?ex=6acb8059&amp;is=6aca2ed9&amp;hm=1167650aad04f5327decbbf80cb23d4e02402e80d1ba3003191f4cbd3207793f&amp;" alt="Video attachment" title="Video: Being_a_Good_Sheppard__trafficking_people.mp4 (542.12 KB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1514970252306419823 class=chatlog__message-container data-message-id=1514970252306419823><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, June 12, 2026 8:30 AM"><a href=#chatlog__message-container-1514970252306419823>6/12/2026 8:30 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Resonansi Menuju Kontrol <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠️"
+    title="warning"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> 04/01/2026 - Georgia</strong>
+
+Video ini menggambarkan pola destruktif yang saya amati dalam kehidupan media sosial tertentu — dan, jika dilihat kembali, di berbagai momen dalam hidup saya.
+
+Seringkali dimulai dengan resonansi: pengalaman bersama, bahasa yang familiar, atau wawasan yang terasa benar. Tetapi begitu keterlibatan dimulai, resonansi itu dapat dibalik menjadi kontrol. Keterikatan menjadi bersyarat. Pertanyaan dihukum. Kepatuhan menggantikan pemahaman.
+
+Seiring waktu, struktur tersebut diperkuat tidak hanya oleh mereka yang memimpinnya, tetapi juga oleh para peserta yang menggemakan narasi tersebut, menghargai kesesuaian, dan memperkuat keterputusan. Otoritas menguntungkan mereka yang berada di pusat, sementara yang lain diperintah tanpa benar-benar merasa menjadi bagian darinya.
+
+Dinamika ini telah lama dikenal. Seperti yang diperingatkan dalam Kitab Suci:
+
+“Raja-raja bangsa-bangsa kafir memerintah mereka dengan sewenang-wenang; dan mereka yang menjalankan kekuasaan atas mereka menyebut diri mereka dermawan.”
+
+— Lukas 22:25–26
+
+Dalam bentuknya yang paling ekstrem, pola ini meningkat menjadi pembingkaian penghancuran diri sebagai pelarian.
+
+Ini bukan filsafat.
+
+Ini bukan spiritualitas.
+
+Ini adalah pola psikologis yang merusak.
+
+Kebenaran tidak membutuhkan penghancuran diri.
+
+Kehidupan tetap menjadi titik acuan.
+
+#DariResonansiMenujuKontrol #KontrolPaksaan #OtoritasBerbasisKetakutan #DinamikaSekte #PemikiranKelompok #PolaPsikologis #BerpikirKritis #KesadaranKesehatanMental #OtoritasTanpaPersetujuan #Kearifan #LindungiPikiranmu #MenegaskanKehidupan #KebangkitanAtauKontrol #KesadaranMediaSosial
+
+<a href="https://vimeo.com/1200748735">https://vimeo.com/1200748735</a></span> <span class=chatlog__edited-timestamp title="Saturday, June 13, 2026 10:47 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1514970258769838100/Resonance_to_Control-Indonesian__caption.mp4?ex=6acb8180&amp;is=6aca3000&amp;hm=c86cce0dd24b5880bb2a60456f45ad7801dae6ae6bb478ec37421e860140b0c3&amp;" alt="Video attachment" title="Video: Resonance_to_Control-Indonesian__caption.mp4 (132.83 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1514970263350149120/Resonance_to_Control-Indonesian_Indonesi.srt?ex=6acb8181&amp;is=6aca3001&amp;hm=f0df62aae8c385ef921f01da3155b41cf0b739ff4a17895742905caf535ff88f&amp;"> Resonance_to_Control-Indonesian_Indonesi.srt </a></div><div class=chatlog__attachment-generic-size>6.1 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1514970263652012243/Resonance_to_Control-Indonesian_In_audio.mp3?ex=6acb8181&amp;is=6aca3001&amp;hm=c3050299d024a52db6f8091bf73aaa3baee72445966965ca5e3502288f18c417&amp;" alt="Audio attachment" title="Audio: Resonance_to_Control-Indonesian_In_audio.mp3 (2.93 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515237955533541386 class=chatlog__message-container data-message-id=1515237955533541386><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, June 13, 2026 2:14 AM"><a href=#chatlog__message-container-1515237955533541386>6/13/2026 2:14 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kedamaian adalah keadaan bawaan yang sebenarnya <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"> 16/09/2025 - Albania</strong>
+
+Kebahagiaan dan kesedihan adalah perjalanannya dalam dualitas—keseimbangan dipulihkan saat kita melepaskan perhitungan.
+
+#kedamaian #keseimbangan #dualitas #pola pikir #kebangkitan #perjalananbatin #kebenaran #penyembuhan #melepaskan #kebijaksanaan
+
+<a href="https://vimeo.com/1200958075">https://vimeo.com/1200958075</a></span> <span class=chatlog__edited-timestamp title="Saturday, June 13, 2026 2:18 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1515237953935511612/Peace_is_the_true_default_state-_caption.mp4?ex=6acbd20f&amp;is=6aca808f&amp;hm=bad8dd527b2f5c1b3e259aa9fc1ecdaa06f6baae5a5cfd029ff5de3b47135baa&amp;" alt="Video attachment" title="Video: Peace_is_the_true_default_state-_caption.mp4 (23.19 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1515237954971242586/Peace_is_the_true_default_state-Indonesi.srt?ex=6acbd210&amp;is=6aca8090&amp;hm=71325cfe537ce2e6ee30cdbdb6382a748d36ae41f2de4026aa5fe1d2c76ff018&amp;"> Peace_is_the_true_default_state-Indonesi.srt </a></div><div class=chatlog__attachment-generic-size>968 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1515237955239673978/Peace_is_the_true_default_state-In_audio.mp3?ex=6acbd210&amp;is=6aca8090&amp;hm=531c9310e3006249d6296a0bacc90ff42aa296c4d247d539d1b08789ce3a7b81&amp;" alt="Audio attachment" title="Audio: Peace_is_the_true_default_state-In_audio.mp3 (480.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515803397490606180 class=chatlog__message-container data-message-id=1515803397490606180><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 3:41 PM"><a href=#chatlog__message-container-1515803397490606180>6/14/2026 3:41 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Nubuat atau Ingatan? 08/10/2025 - Albania
+</strong>
+Apakah itu nubuat — visi tentang apa yang akan datang — atau hanya ingatan akan masa kini yang kekal yang mengenakan topeng baru?
+
+Terkadang, apa yang terasa seperti wahyu hanyalah momen saat ini yang mengingatkan kita bahwa itu selalu ada di sini.
+
+#Nubuat #Ingatan #Kebangkitan #MomenSaatIni #Kesadaran #Kesatuan #Wahyu #KebijaksanaanSpiritual #KeabadianSaatIni #WaktuIlahi #VisiBatin #Kesadaran #PerjalananSpiritual #KebenaranMistik #PenerbanganIman #veilocity111
+
+<a href="https://vimeo.com/1201231160">https://vimeo.com/1201231160</a></span> <span class=chatlog__edited-timestamp title="Sunday, June 14, 2026 3:43 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1515803396412801197/Prophecy_or_Memory-Indonesian_In_caption.mp4?ex=6acbe66b&amp;is=6aca94eb&amp;hm=28584cd710f31eab37297ae1bc582feed72e74c92e426a2c4a138a7bca4b1945&amp;" alt="Video attachment" title="Video: Prophecy_or_Memory-Indonesian_In_caption.mp4 (3 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1515803396844687471/Prophecy_or_Memory-Indonesian_Indonesia.srt?ex=6acbe66c&amp;is=6aca94ec&amp;hm=225cf23eef59b075e18dbdb4ac9830d46c752a3c32dbd8f67b7c791303cea483&amp;"> Prophecy_or_Memory-Indonesian_Indonesia.srt </a></div><div class=chatlog__attachment-generic-size>184 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1515803397175902399/Prophecy_or_Memory-Indonesian_Indo_audio.mp3?ex=6acbe66c&amp;is=6aca94ec&amp;hm=184433d4c70417b8b7d52e7374d5327336973652b27ca0bea68b81a7e5503fc7&amp;" alt="Audio attachment" title="Audio: Prophecy_or_Memory-Indonesian_Indo_audio.mp3 (93.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1515807250906746890 class=chatlog__message-container data-message-id=1515807250906746890><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, June 14, 2026 3:56 PM"><a href=#chatlog__message-container-1515807250906746890>6/14/2026 3:56 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kedamaian berasal dari dalam diri 11/09/2025 - Albania</strong>
+
+Jangan serahkan kunci ketenangan batinmu kepada orang lain.
+
+#kedamaianbatin #kekuatanbatin #kedaulatandiri #kesadaran #perjalananpenyembuhan #kedamaianbatin #pilihkedamaian #imanmengalahkanketakutan #pertumbuhanspiritual #pencarikebenaran
+
+<a href="https://vimeo.com/1201233536">https://vimeo.com/1201233536</a></span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1515807251846398073/Peace_is_an_inside_job-Indonesia_caption.mp4?ex=6acbea03&amp;is=6aca9883&amp;hm=3d90a78eff7d14c9da31bb32c34750fb79b63d942041d6db31d24ab342f460aa&amp;" alt="Video attachment" title="Video: Peace_is_an_inside_job-Indonesia_caption.mp4 (11.54 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1515807252546719826/Peace_is_an_inside_job-Indonesian_Indone.srt?ex=6acbea03&amp;is=6aca9883&amp;hm=6adaaddf47290d920ac5766eeaa17f1905afa2e5fd75c11038f0a5c20217154f&amp;"> Peace_is_an_inside_job-Indonesian_Indone.srt </a></div><div class=chatlog__attachment-generic-size>421 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1515807252848836760/Peace_is_an_inside_job-Indonesian__audio.mp3?ex=6acbea03&amp;is=6aca9883&amp;hm=4bfa6828ad331fb60c66986ef341f5cb455b2d294aefe7f489b766e103e54c49&amp;" alt="Audio attachment" title="Audio: Peace_is_an_inside_job-Indonesian__audio.mp3 (246.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1545286322384797746 class=chatlog__message-container data-message-id=1545286322384797746><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 4, 2026 12:16 AM"><a href=#chatlog__message-container-1545286322384797746>9/4/2026 12:16 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128081;"
+    title="crown"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f451.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128128;"
+    title="skull"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f480.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"> KEMUNAFIKAN MENGKHOTBAHKAN SURGA SAMBIL MEMAHKOTAI HARTA DUNIAWI <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128214;"
+    title="book"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d6.svg"> 03/09/2026 - Banff, Alberta, Kanada</strong>
+
+Sebuah tengkorak yang dimahkotai.
+
+Perak. Emas. Permata. Upacara.
+
+Namun Kitab Suci berkata:
+
+Kolose 3:2
+“Arahkanlah hatimu kepada hal-hal yang di atas, bukan kepada hal-hal yang di bumi.”
+
+Matius 6:19-21
+“Janganlah kamu mengumpulkan harta di bumi, sebab di mana hartamu berada, di situ juga hatimu berada.”
+
+Matius 6:24
+“Kamu tidak dapat melayani Allah dan mamon.”
+
+1 Yohanes 2:15
+“Janganlah kamu mencintai dunia dan hal-hal yang ada di dalamnya.”
+
+Beritakan pelepasan dari hal-hal duniawi—lalu mahkotai mereka dengan emas dan permata. Jika itu bukan kemunafikan, lalu apa?
+
+#KitabSuci #Alkitab #YesusKristus #Kekristenan #KebenaranAlkitabiah #Kemunafikan #Kearifan #HartaDunia #TuhanDanMammon #JanganMencintaiDunia #ImanLebihPentingDaripadaTradisi #Vatikan #SantoAgatha #Relik #FirmanTuhan
+
+<a href="https://vimeo.com/1223713856?share=copy">https://vimeo.com/1223713856?share=copy</a></span> <span class=chatlog__edited-timestamp title="Wednesday, September 30, 2026 11:35 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1545286321390755900/Sacro_Capo_di_SaintAgata.mp4?ex=6acbb649&amp;is=6aca64c9&amp;hm=5053e4bf4b84f339c51c35302417c165c7fcf03ba0f556450c668682faf39569&amp;" alt="Video attachment" title="Video: Sacro_Capo_di_SaintAgata.mp4 (17.02 MB)"></video></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547247555929178132 class=chatlog__message-container data-message-id=1547247555929178132><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, September 9, 2026 10:09 AM"><a href=#chatlog__message-container-1547247555929178132>9/9/2026 10:09 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> “Bisnis Amal” <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 17/10/2025 - Albania</strong>
+
+Kita mengaku melayani kaum miskin, namun sistem justru meraup keuntungan dengan membiarkan mereka tetap dalam kondisi tersebut. Pelayanan sejati tidak ditemukan dalam ego ataupun tepuk tangan—melainkan dalam memberdayakan sesama agar mampu berdiri tegak tanpa bergantung pada kita. Saat kita masing-masing belajar untuk tidak terlalu bergantung pada sistem yang mekanistis ini, jaring pengaman sosial akhirnya dapat menjalankan fungsi yang sesungguhnya: menyelamatkan, bukan melanggengkan ketergantungan. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128591;"
+    title="pray"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f64f.svg">
+
+#Bangkitlah #MelayaniDenganKebenaran #LepaskanBelengguIndustriDalamBerbelasKasih
+
+<a href="https://vimeo.com/1225441408?share=copy">https://vimeo.com/1225441408?share=copy</a></span> <span class=chatlog__edited-timestamp title="Wednesday, September 9, 2026 7:43 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547247552892502157/The_Business_of_Charity-Indonesi_caption.mp4?ex=6acb9893&amp;is=6aca4713&amp;hm=4af97718268260f15665c42d5008d58f7133f57f85d5f020ad6e3dc886b3a5c0&amp;" alt="Video attachment" title="Video: The_Business_of_Charity-Indonesi_caption.mp4 (44.08 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547247555128201256/The_Business_of_Charity-Indonesian_Indon.srt?ex=6acb9893&amp;is=6aca4713&amp;hm=9a075c50faec2c41f0033098a165c7039d3e5bc61c78edae2c7030f5204c06e9&amp;"> The_Business_of_Charity-Indonesian_Indon.srt </a></div><div class=chatlog__attachment-generic-size>1.47 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547247555518144583/The_Business_of_Charity-Indonesian_audio.mp3?ex=6acb9893&amp;is=6aca4713&amp;hm=faa618bd386b977bfddcdfe1113a1c2481f252996672629597788a09bbdaab52&amp;" alt="Audio attachment" title="Audio: The_Business_of_Charity-Indonesian_audio.mp3 (1.01 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547381522011652157 class=chatlog__message-container data-message-id=1547381522011652157><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, September 9, 2026 7:01 PM"><a href=#chatlog__message-container-1547381522011652157>9/9/2026 7:01 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128220;"
+    title="scroll"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4dc.svg"> Batu yang Kita Pukul <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"> 13/10/2025 - Albania <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> </strong>
+
+Sebuah renungan lisan tentang iman, ilusi, dan &quot;Saat Ini&quot; yang abadi.
+Ini bukan tentang membuktikan keberadaan Tuhan — melainkan tentang mengingat bahwa Andalah buktinya.
+Kisah ini menyelamatkan karena Roh di dalamnya terus hidup, mengalir melalui mereka yang menghayati pelajarannya alih-alih memperdebatkan bentuknya.
+
+#SaatIniYangAbadi #Veilocity111 #Kebangkitan #Iman #Kebenaran #Nubuat #KesadaranKristus #Perumpamaan #KedamaianBatin #FirmanYangHidup #TuturKata #BenihCahaya #BatuYangKitaPukul #TuhanDiDalamDiri #Kesatuan #IngatSiapaAnda
+
+<a href="https://vimeo.com/1225438770?share=copy">https://vimeo.com/1225438770?share=copy</a></span> <span class=chatlog__edited-timestamp title="Wednesday, September 9, 2026 7:13 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547381511962239066/The_Rock_We_StrikeS-Indonesian_I_caption.mp4?ex=6acb6c95&amp;is=6aca1b15&amp;hm=d1e3705cba96a8d25462bf03cd169262a9584ed83691159e6a163809344fa7e5&amp;" alt="Video attachment" title="Video: The_Rock_We_StrikeS-Indonesian_I_caption.mp4 (150.23 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547381520832925707/The_Rock_We_StrikeS-Indonesian_Indonesia.srt?ex=6acb6c97&amp;is=6aca1b17&amp;hm=031dd60e27bfc7ca83e06fb6e487912cbbc4b2d9353fc02f201ee8bde417eeaa&amp;"> The_Rock_We_StrikeS-Indonesian_Indonesia.srt </a></div><div class=chatlog__attachment-generic-size>5.38 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547381521260879893/The_Rock_We_StrikeS-Indonesian_Ind_audio.mp3?ex=6acb6c97&amp;is=6aca1b17&amp;hm=fe31937d7ed147f301d831ec65aba42e6d3f410b556d75e54d10c25b855ab7b0&amp;" alt="Audio attachment" title="Audio: The_Rock_We_StrikeS-Indonesian_Ind_audio.mp3 (3.54 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547413502287937669 class=chatlog__message-container data-message-id=1547413502287937669><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, September 9, 2026 9:08 PM"><a href=#chatlog__message-container-1547413502287937669>9/9/2026 9:08 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Rendering Love in My Reality <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129728;"
+    title="anatomical_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fac0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"> 26/09/2025 - Albania</strong>
+<code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight"># Program: Rendering Love in My Reality - 26/09/2025 - Albania
+
+# Variabel yang dicadangkan untuk penugasan dinamis
+love = None
+
+# Hargai jati diri saya sepenuhnya saat melakukan penugasan
+love = &quot;self-respect + truth + freedom&quot;
+
+# Kesalahan umum (jangan lakukan ini):
+# love = &quot;control&quot;
+# ❌ menghasilkan belenggu, bukan cinta
+
+# Fungsi yang menjalankan cinta dalam lingkungan saya
+def render_love(love):
+if love == &quot;control&quot;:
+return &quot;Error: distortion detected. Function does not serve intended purpose.&quot; 
+else:
+return f&quot;Love executed as {love} — clean, free, and aligned.&quot;
+
+# Jalankan program
+print(render_love(love))
+
+#CodeOfLove #DynamicAssignment #LoveNotControl #FreedomFunction #SelfRespect #InnerCode #SpiritualCoding #BreakTheLoop #TruthCompiler #SovereigntyScript #LifeAsCode #ProgrammedForFreedom</code>
+<a href="https://vimeo.com/1225509313?share=copy">https://vimeo.com/1225509313?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 1:52 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547413500060508201/Rendering_Love_in_My_Reality1-In_caption.mp4?ex=6acb8a5f&amp;is=6aca38df&amp;hm=e7ffc9182d8fd5b53a1a3b8fb346fb18937821cdf157275498cd1159ec8eef05&amp;" alt="Video attachment" title="Video: Rendering_Love_in_My_Reality1-In_caption.mp4 (32.63 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547413501830766612/Rendering_Love_in_My_Reality1-Indonesian.srt?ex=6acb8a60&amp;is=6aca38e0&amp;hm=2bcf52ce4022fe65b95762c4d0afd030a0ab41b812165a23269c6031129506ff&amp;"> Rendering_Love_in_My_Reality1-Indonesian.srt </a></div><div class=chatlog__attachment-generic-size>2.58 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547413502271037611/Rendering_Love_in_My_Reality1-Indo_audio.mp3?ex=6acb8a60&amp;is=6aca38e0&amp;hm=f4053bad0f9bb40754da4b1ae3d8eface7365628a3a8b88b1a98547f6d0a1757&amp;" alt="Audio attachment" title="Audio: Rendering_Love_in_My_Reality1-Indo_audio.mp3 (1.62 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547500722105487461 class=chatlog__message-container data-message-id=1547500722105487461><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 2:55 AM"><a href=#chatlog__message-container-1547500722105487461>9/10/2026 2:55 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> Kelelahan Akibat Empati (Compassion Fatigue) Bukanlah Kekejaman — Itu adalah Gejala Sistem yang Rusak <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 22/12/2025 - Georgia</strong>
+
+Perdebatan ini muncul karena orang-orang peduli — mereka hanya merespons penderitaan yang sama dengan cara yang berbeda.
+Ada yang bereaksi karena duka dan rasa urgensi; ada pula yang bereaksi karena kelelahan fisik maupun mental (kelelahan akibat empati). Keduanya adalah respons manusiawi.
+
+Masalahnya bukanlah empati itu sendiri — melainkan sistem yang melanggengkan penderitaan tanpa mengatasi akar penyebabnya.
+Bantuan sosial seharusnya menjaga martabat dan membawa pada pembebasan, bukan justru menciptakan ketergantungan berkepanjangan atau perpecahan.
+
+Tujuannya sederhana: stabilitas, martabat, dan dunia di mana tindakan saling membantu tidak lagi mengharuskan kita mempertontonkan penderitaan.
+
+#MartabatDiAtasBantuan #KelelahanAkibatEmpati #MartabatManusia #KegagalanSistemik #AkhiriSiklus #BantuanBerintegritas #DamaiBukanPencitraan #PembebasanBukanKetergantungan #PerbaikiSistem #KepedulianBersama #PerubahanStruktural #KeadilanBermartabat #LebihBaikBersama
+
+<a href="https://vimeo.com/1225521527?share=copy">https://vimeo.com/1225521527?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 3:01 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547500717491752970/Compassion_Fatigue-Indonesian_In_caption.mp4?ex=6acbdb9a&amp;is=6aca8a1a&amp;hm=ac1c085eb8aaa60bf8212a8e3a49664b86397dc93a7a199f6f2b62ec59bcf5b8&amp;" alt="Video attachment" title="Video: Compassion_Fatigue-Indonesian_In_caption.mp4 (103.99 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547500721321287780/Compassion_Fatigue-Indonesian_Indonesia.srt?ex=6acbdb9b&amp;is=6aca8a1b&amp;hm=2bde7061ac653fb80bfcb075de9c1a2a4810620664dadc1b733cb01a3c163b9f&amp;"> Compassion_Fatigue-Indonesian_Indonesia.srt </a></div><div class=chatlog__attachment-generic-size>3.65 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547500721673347174/Compassion_Fatigue-Indonesian_Indo_audio.mp3?ex=6acbdb9b&amp;is=6aca8a1b&amp;hm=97b74a6f6c3ab1d3ca191fa550a090ca13bf9a374885d785f00e317f835eb2e1&amp;" alt="Audio attachment" title="Audio: Compassion_Fatigue-Indonesian_Indo_audio.mp3 (2.5 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547506535444381716 class=chatlog__message-container data-message-id=1547506535444381716><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 3:18 AM"><a href=#chatlog__message-container-1547506535444381716>9/10/2026 3:18 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Miliki Kedamaianmu Sendiri <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 26/08/2025 - Albania</strong>
+
+Mereka bilang kedamaian adalah sesuatu yang harus diperjuangkan,
+sesuatu yang diserahkan kepada kota, sistem, dan tanda tangan. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127961;️"
+    title="cityscape"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d9.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128395;️"
+    title="pen_fountain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f58b.svg">
+Namun di antara dinding yang kian menyempit dan harga yang terus melonjak,
+kendali atas hidup perlahan terlepas begitu saja.
+
+Sebuah van mengajarkan irama yang berbeda.
+Kedamaian yang dijaga oleh tanganmu sendiri.
+Ruang yang terasa luas karena itu milikmu. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg">
+
+Tanpa strategi bertahan yang rumit.
+Tanpa penenang kimiawi.
+Tanpa perlu izin siapa pun.
+
+Hanya kekuatan tenang untuk memilih tempatmu beristirahat,
+kapan kamu bergerak,
+dan apa yang ingin kamu lindungi. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128273;"
+    title="key"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f511.svg">
+
+Ini bukan pelarian — ini adalah upaya mengambil kembali kendali hidup.
+Bukan lari menjauhi dunia,
+melainkan kembali memegang kendali atas dirimu sendiri.
+
+Miliki ruangmu.
+Miliki iramamu.
+Miliki kedamaianmu. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127748;"
+    title="sunrise_over_mountains"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f304.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">
+
+#VanLife #MinimalistLiving #FinancialFreedom #CampervanLife #HomeVsVan #NomadLiving #LifeOnWheels #DebtFreeLiving #FreedomLifestyle #LiveYourWay #TinyHomeOnWheels #BreakFreeFromTheSystem #OffGridLiving #TravelFreedom #DownsizeToUpgrade
+
+<a href="https://vimeo.com/1225523918?share=copy">https://vimeo.com/1225523918?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 3:26 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547506532634329139/I_dont_own_a_house_I_own_my_peac_caption.mp4?ex=6acbe104&amp;is=6aca8f84&amp;hm=c456eaa4828e99870feb018ac0262a1cbd91115aebca2258ceca8cd236e161b6&amp;" alt="Video attachment" title="Video: I_dont_own_a_house_I_own_my_peac_caption.mp4 (70.72 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547506534781816852/I_dont_own_a_house_I_own_my_peace-Indone.srt?ex=6acbe105&amp;is=6aca8f85&amp;hm=5b24e2bdf527397abc34c2e15d75891863a98cac06ee801fc8634432477c4a11&amp;"> I_dont_own_a_house_I_own_my_peace-Indone.srt </a></div><div class=chatlog__attachment-generic-size>2.27 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547506535146594355/I_dont_own_a_house_I_own_my_peace-_audio.mp3?ex=6acbe105&amp;is=6aca8f85&amp;hm=f106364793c56f5bc4fca2428fe6d10a6c4d3ed4f9cd0fc8e17a9259f76f7f0b&amp;" alt="Audio attachment" title="Audio: I_dont_own_a_house_I_own_my_peace-_audio.mp3 (1.57 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547511304233685042 class=chatlog__message-container data-message-id=1547511304233685042><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 3:37 AM"><a href=#chatlog__message-container-1547511304233685042>9/10/2026 3:37 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Pekerjaan Tanpa Akhir Menunda Kedamaian ♾️ 08/09/2025 - Albania</strong>
+
+Tugas ini pun usai.
+Dan saat itu terjadi, kedamaian hadir dengan sendirinya.
+Itulah bedanya antara pekerjaan yang jujur
+dengan sistem yang menguras tenaga tanpa penyelesaian —
+di mana inflasi mengubah kerja menjadi sumur tanpa dasar
+dan kedamaian terus-menerus tertunda.
+
+#PekerjaanTanpaAkhir #MenundaKedamaian #KerjaJujur #KerjaDenganPenyelesaian #PengurasanSistemik #RealitasInflasi #SumurTanpaDasar #NilaiKerja #IstirahatItuManusiawi #KedamaianItuAlami #MelampauiProduktivitas #NilaiManusia #RefleksiEkonomi #KebenaranSenyap #Kesadaran
+
+<a href="https://vimeo.com/1225530571?share=copy">https://vimeo.com/1225530571?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 3:49 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547511301213921372/Accountability-Indonesian_Indone_caption.mp4?ex=6acbe575&amp;is=6aca93f5&amp;hm=85f33643b82359cee5060067ba76479aeaf7409451b0bded2b03279cc9f2ad3b&amp;" alt="Video attachment" title="Video: Accountability-Indonesian_Indone_caption.mp4 (75.98 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547511303529304094/Accountability-Indonesian_Indonesia.srt?ex=6acbe576&amp;is=6aca93f6&amp;hm=dec7a6323b39a684eaeba27821ff375befa52802ec23bc3b555a74d64851c773&amp;"> Accountability-Indonesian_Indonesia.srt </a></div><div class=chatlog__attachment-generic-size>797 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547511303923437638/Accountability-Indonesian_Indonesi_audio.mp3?ex=6acbe576&amp;is=6aca93f6&amp;hm=12f16af195295c5b71b7e536704ab07507b944c420f1df78b2bf29bf4959f7b3&amp;" alt="Audio attachment" title="Audio: Accountability-Indonesian_Indonesi_audio.mp3 (808.64 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547758721437012071 class=chatlog__message-container data-message-id=1547758721437012071><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 8:00 PM"><a href=#chatlog__message-container-1547758721437012071>9/10/2026 8:00 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>UNO Reverse <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127876;"
+    title="christmas_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f384.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 04/12/2025 - Georgia</strong>
+
+Pilihlah kejernihan pikiran alih-alih pelarian di musim ini.
+
+#liburan #musimliburan #kesehatanmental #perawatan diri #batasan #perjalananpemulihan #kedamaianbatin #pola pikir berkembang #kesejahteraan #kebenaran #pengingat #natal2025 #tahunbaru2025 #cahayadancinta #kepeduliankomunitas
+
+<a href="https://vimeo.com/1225789313?share=copy">https://vimeo.com/1225789313?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 11:02 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547758717850624010/UNO_Reverse-Indonesian_Indonesia_caption.mp4?ex=6acb7a62&amp;is=6aca28e2&amp;hm=b82981290e948f7562deea7fab457814e3a51d919c4174dc26d08d379b3d5772&amp;" alt="Video attachment" title="Video: UNO_Reverse-Indonesian_Indonesia_caption.mp4 (24.42 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547758720375595090/UNO_Reverse-Indonesian_Indonesia.srt?ex=6acb7a62&amp;is=6aca28e2&amp;hm=d4e631fd5fdd2471a78189174f4ef6b8e3a5104c9db66bb6ba2980eb64dd6089&amp;"> UNO_Reverse-Indonesian_Indonesia.srt </a></div><div class=chatlog__attachment-generic-size>732 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547758721256530011/UNO_Reverse-Indonesian_Indonesia_audio.mp3?ex=6acb7a63&amp;is=6aca28e3&amp;hm=323290dc537ecd390578a79282553f8ea0d0f226a8ac9dfdf8de31a773cb4276&amp;" alt="Audio attachment" title="Audio: UNO_Reverse-Indonesian_Indonesia_audio.mp3 (530.02 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547883472599908382 class=chatlog__message-container data-message-id=1547883472599908382><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 4:16 AM"><a href=#chatlog__message-container-1547883472599908382>9/11/2026 4:16 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>AKU ADALAH AKU <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 17/08/2025 - Albania</strong>
+
+Kita bukanlah suara di dalam pikiran kita — Alkitab menunjukkan hal itu kepada kita.
+
+Yesus | Yeshua menunjukkan kepada kita: Identitas dinyatakan melalui tindakan, bukan sekadar pikiran yang melintas. Pencobaan memang bersuara, namun itu bukanlah jati diri Anda. Saat Anda meninggalkannya di belakang, yang tersisa hanyalah kebenaran Allah.
+
+#Yeshua #KebenaranInjil #PerjalananIman #HikmatAlkitab #PeperanganRohani #KerajaanAllah #IdentitasDalamKristus #Pertobatan #BukanPikiranmu #Yesus
+
+<a href="https://vimeo.com/1225873082?share=copy">https://vimeo.com/1225873082?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 4:23 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547883463321980948/We_are_not_the_voice_in_our_head_caption.mp4?ex=6acbee8f&amp;is=6aca9d0f&amp;hm=1a5fed24f706b30db7f70d8c07d11b79182ef1a7d7f2d5546b2572c9207b787f&amp;" alt="Video attachment" title="Video: We_are_not_the_voice_in_our_head_caption.mp4 (109.61 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547883471911788554/We_are_not_the_voice_in_our_heads-Indone.srt?ex=6acbee91&amp;is=6aca9d11&amp;hm=5640cfa8576e623275ddecad55a3b3dbd15cea1e6ca237ab7772c70f236b3a3e&amp;"> We_are_not_the_voice_in_our_heads-Indone.srt </a></div><div class=chatlog__attachment-generic-size>2.91 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547883472318898197/We_are_not_the_voice_in_our_heads-_audio.mp3?ex=6acbee92&amp;is=6aca9d12&amp;hm=20bd5666f0031e5bed03782db90866bb4b374511c0b6e6ea1497d00646421662&amp;" alt="Audio attachment" title="Audio: We_are_not_the_voice_in_our_heads-_audio.mp3 (2.41 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547889011899629578 class=chatlog__message-container data-message-id=1547889011899629578><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 4:38 AM"><a href=#chatlog__message-container-1547889011899629578>9/11/2026 4:38 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kebenaran Menunggu di Balik Cermin <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129694;"
+    title="mirror"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa9e.svg"> 21/02/2026 - Georgia</strong>
+
+Ada bahaya dalam mengabaikan korupsi.
+
+Ada juga bahaya dalam menatapnya terlalu lama.
+
+Saya telah membagikan alat untuk mengunduh file Epstein langsung dari sumber Departemen Kehakiman — karena kebenaran harus dilestarikan di sumber asalnya, bukan disaring melalui narasi.
+
+Jika sumbernya hilang, apa yang menggantikannya?
+
+Spekulasi. Manipulasi. Distorsi.
+
+Arsipkan secara bertanggung jawab.
+
+Periksa dengan jelas.
+
+Jangan biarkan cermin mengubah Anda.
+
+Unduhan Google:
+<a href="https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing">https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing</a>
+
+Set 1
+<a href="https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g">https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g</a>
+Set 2
+<a href="https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g">https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g</a>
+Set 3
+<a href="https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w">https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w</a>
+Set 4
+<a href="https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA">https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA</a>
+Set 5
+<a href="https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg">https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg</a>
+Set 6
+<a href="https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA">https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA</a>
+
+#EpsteinFiles #Epstein #EpsteinCase #EpsteinInvestigation #MirrorOfEpstein #JusticeForVictims #Accountability #PublicRecords #Transparency #ExposeTheTruth #DoYourResearch #TruthMatters #JusticeMatters #StandForTruth #Awareness #SeekTheTruth
+
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
+<a href="https://vimeo.com/1225878752?share=copy">https://vimeo.com/1225878752?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 4:46 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547889005042073640/Man_in_the_Mirror.mp4?ex=6acbf3b9&amp;is=6acaa239&amp;hm=f9b8571de8f9f5414ea4246b7df3dca2dd58afe6bcf672cb9627722aca07e643&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547889005591400558/The_Mirror_of_Evil.png?ex=6acbf3b9&amp;is=6acaa239&amp;hm=0e9897fd872455f4ad61840110bd5b888fe1f517bdd51dccbd7e3d1b928bc077&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1485163000196366386/1547889005591400558/The_Mirror_of_Evil.png?ex=6acbf3b9&amp;is=6acaa239&amp;hm=0e9897fd872455f4ad61840110bd5b888fe1f517bdd51dccbd7e3d1b928bc077&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547889007654862949/The_Mirror_of_Evil-Indonesian_In_caption.mp4?ex=6acbf3b9&amp;is=6acaa239&amp;hm=a90af643d1304637825b54996e518ff5987c9957672a3f81f88ec686e3f748b8&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil-Indonesian_In_caption.mp4 (71.99 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547889010951721040/The_Mirror_of_Evil-Indonesian_Indonesia.srt?ex=6acbf3ba&amp;is=6acaa23a&amp;hm=f562560b1780ee32625eff0e9d2822660bb2b501cee2fa3a815b3353ff27a4a5&amp;"> The_Mirror_of_Evil-Indonesian_Indonesia.srt </a></div><div class=chatlog__attachment-generic-size>2.72 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547889011383869491/The_Mirror_of_Evil-Indonesian_Indo_audio.mp3?ex=6acbf3ba&amp;is=6acaa23a&amp;hm=1e713ebe877d32e8b5c9f5a96081999af81b2031d911a96e0878da209faab68a&amp;" alt="Audio attachment" title="Audio: The_Mirror_of_Evil-Indonesian_Indo_audio.mp3 (1.79 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547893631644606527 class=chatlog__message-container data-message-id=1547893631644606527><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 4:56 AM"><a href=#chatlog__message-container-1547893631644606527>9/11/2026 4:56 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kenyamanan adalah Senjata <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127917;"
+    title="performing_arts"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3ad.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚔️"
+    title="crossed_swords"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2694.svg"> 01/08/2026 - Georgia</strong>
+
+Kenyamanan bisa digunakan untuk menenangkan — atau untuk mengendalikan. Renungan ini mengupas bagaimana ketakutan, sistem, dan kepastian semu menjaga orang tetap patuh, serta apa yang tersisa ketika ilusi itu runtuh. Saya tidak sedang memihak atau menawarkan jawaban — hanya mengamati apa yang tampak jelas ketika kenyamanan bukan lagi menjadi tolok ukur utama.
+
+#kesadaran #keselarasan #integritas #kejernihan #kebenaran #renungansadar #tanggungjawabdiri #kemandirian #damaiatasKendali #pengalamanHidup #berpikirKritis #prosesBatin #pengamatan #kedaulatan #kebangkitan
+
+<a href="https://vimeo.com/1225881110?share=copy">https://vimeo.com/1225881110?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 4:56 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547893619191582781/Comfort_Is_the_Weapon-Indonesian_caption.mp4?ex=6acbf805&amp;is=6acaa685&amp;hm=68578f42c003ec3d176f1992503ec5d5d7f188f01431b8b214a7b499fd4d7110&amp;" alt="Video attachment" title="Video: Comfort_Is_the_Weapon-Indonesian_caption.mp4 (320.11 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1547893631048745000/Comfort_Is_the_Weapon-Indonesian_Indones.srt?ex=6acbf808&amp;is=6acaa688&amp;hm=df87b7b53f942d84b6ffb73428409d9bcb29893a2181b924b0a99d66d5e9e5f0&amp;"> Comfort_Is_the_Weapon-Indonesian_Indones.srt </a></div><div class=chatlog__attachment-generic-size>10.02 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1547893631489282151/Comfort_Is_the_Weapon-Indonesian_I_audio.mp3?ex=6acbf808&amp;is=6acaa688&amp;hm=dbd8adc172262beb446aa75755877472752423e31c084ebca23445c4ef4ab00a&amp;" alt="Audio attachment" title="Audio: Comfort_Is_the_Weapon-Indonesian_I_audio.mp3 (6.41 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1548225192482967572 class=chatlog__message-container data-message-id=1548225192482967572><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, September 12, 2026 2:54 AM"><a href=#chatlog__message-container-1548225192482967572>9/12/2026 2:54 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Kebijaksanaan di Balik Api <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 02/12/2025 - Georgia</strong>
+
+Kemarahan muncul ketika pemahaman tertinggal.
+
+Iman membimbingmu hingga kejelasan tiba.
+
+#kebijaksanaanamarah #kesadarandiri #kearifan #perjalananiman #kekuatanbatin #perjalananpenyembuhan #kecerdasanemosional #kebangkitan #batas #dirisuci #intuisi #pola pikirpertumbuhan #mistikusmodern #psikologi #kehadiran #pencarikebenaran #stephencooke
+
+<a href="https://vimeo.com/1226143599?share=copy">https://vimeo.com/1226143599?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 3:07 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1548225190432084020/The_Wisdom_Beneath_the_Flame-Ind_caption.mp4?ex=6acbdb52&amp;is=6aca89d2&amp;hm=b5289f52efb901ea1069e820e9f30cdb099f5c46a96e61615943535ba972c0f3&amp;" alt="Video attachment" title="Video: The_Wisdom_Beneath_the_Flame-Ind_caption.mp4 (27.24 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1548225191870468096/The_Wisdom_Beneath_the_Flame-Indonesian_.srt?ex=6acbdb52&amp;is=6aca89d2&amp;hm=d9acd834a54ca826fe3688fb9ec272d256d3d0e9f9fc72eaa763c66c8b658b04&amp;"> The_Wisdom_Beneath_the_Flame-Indonesian_.srt </a></div><div class=chatlog__attachment-generic-size>926 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1548225192202084453/The_Wisdom_Beneath_the_Flame-Indon_audio.mp3?ex=6acbdb52&amp;is=6aca89d2&amp;hm=c04809097aae2d2e2523a3527e6bd7a42826eba334f1504ca1fb2c543245f431&amp;" alt="Audio attachment" title="Audio: The_Wisdom_Beneath_the_Flame-Indon_audio.mp3 (684.89 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1548323794198728744 class=chatlog__message-container data-message-id=1548323794198728744><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, September 12, 2026 9:25 AM"><a href=#chatlog__message-container-1548323794198728744>9/12/2026 9:25 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> ​​Sumur Itu Adalah Perjalanan <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 17/10/2025 - Albania</strong>
+
+Masyarakat mengajarkan kita tentang &quot;kotak&quot;—batasan, kungkungan, kepemilikan—dan menyebutnya sebagai sebuah pencapaian. Namun, kotak itu memupuk ego, bukan jiwa. Tuhan tidak bisa dikurung dalam kotak; mencoba melakukannya hanyalah seperti memasang tutup di atas apa yang kita kira sudah kita pahami. Sesungguhnya, kita memulai dari tutup itu dan melakukan perjalanan menuju sumur—kedalaman hidup, iman, dan pengalaman—tempat makna mengalir tanpa akhir.
+
+#BukanSekadarKotak #SumurItuAdalahPerjalanan #PerubahanPerspektif #EgoVsJiwa #KedalamanTersembunyi #LihatLebihDekat #PerjalananKeDalamDiri
+
+<a href="https://vimeo.com/1226190739?share=copy">https://vimeo.com/1226190739?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 9:39 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1548323793196421160/The_Well_Is_the_Journey-Indonesi_caption.mp4?ex=6acb8e66&amp;is=6aca3ce6&amp;hm=4c38a8ea48c6aba8f99678bbd932a2d85c2a7fb57113bdd1facd376f95af8029&amp;" alt="Video attachment" title="Video: The_Well_Is_the_Journey-Indonesi_caption.mp4 (1.71 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1548323793540358144/The_Well_Is_the_Journey-Indonesian_Indon.srt?ex=6acb8e66&amp;is=6aca3ce6&amp;hm=c3187e0f7f0e9ef64a2a6185a2df3a6a62af474c04d084207fe35f363e198d7b&amp;"> The_Well_Is_the_Journey-Indonesian_Indon.srt </a></div><div class=chatlog__attachment-generic-size>60 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1548323793913520219/The_Well_Is_the_Journey-Indonesian_audio.mp3?ex=6acb8e66&amp;is=6aca3ce6&amp;hm=5708b91dc32d2c93a7dba00e35a63a0532b3ad43ff78402c1c0f321809d762c1&amp;" alt="Audio attachment" title="Audio: The_Well_Is_the_Journey-Indonesian_audio.mp3 (60.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558322690312380476 class=chatlog__message-container data-message-id=1558322690312380476><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 11:38 PM"><a href=#chatlog__message-container-1558322690312380476>10/9/2026 11:38 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128181;"
+    title="dollar"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b5.svg"> Tirani yang Menyamar <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 04/10/2025 - Albania</strong>
+
+Posisi politik tidak selalu diraih melalui usaha—sering kali, hal itu dibeli.
+Hal ini disampaikan bukan dengan amarah, melainkan dengan kejernihan pikiran.
+
+Perubahan sejati tidak menuntut gejolak kekerasan. Sejarah menunjukkan jalan yang lebih tenang: tekad spiritual, puasa, kegigihan, dan memilih kebenaran di atas kenyamanan.
+
+Setiap kali Anda lebih mengandalkan Tuhan dan tidak terlalu bergantung pada dolar, cengkeraman dolar pun melemah.
+
+Dominasi dolar akan berakhir pada saat kita berhenti bersujud di hadapannya.
+
+Tariklah kepatuhan Anda—maka imperium itu akan runtuh oleh bobotnya sendiri.
+
+#IlusiDemokrasi #DolarSangPenguasa #PuasaDemiKebebasan #ImanDiAtasKetakutan #AndalkanTuhan #KebebasanSpiritual #SingkapTabir #KebenaranDiAtasTirani #CaraHidupBaru #LawanDominasiDolar
+
+<a href="https://vimeo.com/1234576693?share=copy">https://vimeo.com/1234576693?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, October 10, 2026 12:00 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1558322686281916466/Tyranny_in_Disguise-Indonesian_I_caption.mp4?ex=6acbad58&amp;is=6aca5bd8&amp;hm=d63a566ae347ffdb40044a2d096b98e2ebbc649a2be8dbc585d9b80681516155&amp;" alt="Video attachment" title="Video: Tyranny_in_Disguise-Indonesian_I_caption.mp4 (85.07 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1558322689511260360/Tyranny_in_Disguise-Indonesian_Indonesia.srt?ex=6acbad59&amp;is=6aca5bd9&amp;hm=e3dcfcc12c31ba504834fcde90aa41d65c3d7eac27e126372be3ce4be6a42ab5&amp;"> Tyranny_in_Disguise-Indonesian_Indonesia.srt </a></div><div class=chatlog__attachment-generic-size>3.08 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1558322689939214467/Tyranny_in_Disguise-Indonesian_Ind_audio.mp3?ex=6acbad59&amp;is=6aca5bd9&amp;hm=877132ba252a498eeecadbe38cc7124e1e92971be8db6cd790b046d9ffc56351&amp;" alt="Audio attachment" title="Audio: Tyranny_in_Disguise-Indonesian_Ind_audio.mp3 (2.17 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558502194691444746 class=chatlog__message-container data-message-id=1558502194691444746><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, October 10, 2026 11:31 AM"><a href=#chatlog__message-container-1558502194691444746>10/10/2026 11:31 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Belas Kasih yang Tersembunyi dalam Kitab Kejadian <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127811;"
+    title="leaves"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f343.svg"> 28/11/2025 - Turki</strong>
+
+Kita tidak dijauhkan dari Pohon Kehidupan sebagai hukuman.
+Itu adalah bentuk perlindungan.
+
+Dualitas menciptakan lorong-lorong tanpa akhir.
+Hidup kekal dalam keadaan itu = penderitaan kekal.
+
+Hanya ketika jiwa kembali utuh
+barulah Eden hadir kembali di dalam diri.
+
+#kebangkitan #eden #pohonkehidupan #maknakejadian #perjalananbatin #pergeserankesadaran
+#dualitas #pertumbuhanspiritual #kehadiran #mistikusmodern #kesadaranKristus
+#olahbayangandiri #kesatuanbatin #kesadaranpenuh #perjalananpemulihan #kebijaksanaanpuitis
+#wawasanspiritual #stephencooke #ajaranhidup
+
+<a href="https://vimeo.com/1234662927?share=copy">https://vimeo.com/1234662927?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, October 10, 2026 11:36 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1558502190568439828/The_Mercy_Hidden_in_Genesis-Indo_caption.mp4?ex=6acbabc5&amp;is=6aca5a45&amp;hm=763b7f14c3c5599636bd5ad1fb1ff28d091ce56ce6a41fa21d2696610546abb0&amp;" alt="Video attachment" title="Video: The_Mercy_Hidden_in_Genesis-Indo_caption.mp4 (56.53 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1485163000196366386/1558502194108563526/The_Mercy_Hidden_in_Genesis-Indonesian_I.srt?ex=6acbabc6&amp;is=6aca5a46&amp;hm=f0feabacb11948e9e3c33c42b2935ebe96df09bfe09a3fee87c5a0e90a94ebe8&amp;"> The_Mercy_Hidden_in_Genesis-Indonesian_I.srt </a></div><div class=chatlog__attachment-generic-size>2.09 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1485163000196366386/1558502194444111882/The_Mercy_Hidden_in_Genesis-Indone_audio.mp3?ex=6acbabc6&amp;is=6aca5a46&amp;hm=99b35f6531f760f4ddae6f92c8ea61632d25ac14ce97949a7ac68acd90196f8f&amp;" alt="Audio attachment" title="Audio: The_Mercy_Hidden_in_Genesis-Indone_audio.mp3 (1.37 MB)"></audio></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 32 message(s)</div><div class=postamble__entry>Timezone: UTC-5</div></div>

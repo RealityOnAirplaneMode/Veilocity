@@ -1,0 +1,823 @@
+<!DOCTYPE html><html lang=en><head><title>Veilocity - mongolia</title><meta charset=utf-8><meta name=viewport content="width=device-width"><style>@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-400.woff2");font-family:gg sans;font-weight:400;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-500.woff2");font-family:gg sans;font-weight:500;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-600.woff2");font-family:gg sans;font-weight:600;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-700.woff2");font-family:gg sans;font-weight:700;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-normal-800.woff2");font-family:gg sans;font-weight:800;font-style:normal}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-400.woff2");font-family:gg sans;font-weight:400;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-500.woff2");font-family:gg sans;font-weight:500;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-600.woff2");font-family:gg sans;font-weight:600;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-700.woff2");font-family:gg sans;font-weight:700;font-style:italic}@font-face{src:url("https://cdn.jsdelivr.net/gh/Tyrrrz/DiscordFonts@master/ggsans-italic-800.woff2");font-family:gg sans;font-weight:800;font-style:italic}html,body{margin:0;padding:0;background-color:#36393e;color:#dcddde;font-family:"gg sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:17px;font-weight:400;scroll-behavior:smooth}a{color:#00aff4;text-decoration:none}a:hover{text-decoration:underline}img{object-fit:contain;image-rendering:high-quality;image-rendering:-webkit-optimize-contrast}.preamble{display:grid;grid-template-columns:auto 1fr;max-width:100%;padding:1rem}.preamble__guild-icon-container{grid-column:1}.preamble__guild-icon{max-width:88px;max-height:88px}.preamble__entries-container{grid-column:2;margin-left:1rem}.preamble__entry{margin-bottom:0.15rem;color:#ffffff;font-size:1.4rem}.preamble__entry--small{font-size:1rem}.chatlog{padding:1rem 0;width:100%;border-top:1px solid rgba(255,255,255,0.1);border-bottom:1px solid rgba(255,255,255,0.1)}.chatlog__message-group{margin-bottom:1rem}.chatlog__message-container{background-color:transparent;transition:background-color 1s ease}.chatlog__message-container--highlighted{background-color:rgba(114,137,218,0.2)}.chatlog__message-container--pinned{background-color:rgba(249,168,37,0.05)}.chatlog__message{display:grid;grid-template-columns:auto 1fr;padding:0.15rem 0;direction:ltr;unicode-bidi:bidi-override}.chatlog__message:hover{background-color:#32353b}.chatlog__message:hover .chatlog__short-timestamp{display:block}.chatlog__message-aside{grid-column:1;width:72px;padding:0.15rem 0.15rem 0 0.15rem;text-align:center}.chatlog__reply-symbol{height:10px;margin:6px 4px 4px 36px;border-left:2px solid #4f545c;border-top:2px solid #4f545c;border-radius:8px 0 0 0}.chatlog__avatar{width:40px;height:40px;border-radius:50%}.chatlog__short-timestamp{display:none;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__message-primary{grid-column:2;min-width:0}.chatlog__reply{display:flex;margin-bottom:0.15rem;align-items:center;color:#b5b6b8;font-size:0.875rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chatlog__reply-avatar{width:16px;height:16px;margin-right:0.25rem;border-radius:50%}.chatlog__reply-author{margin-right:0.3rem;font-weight:600}.chatlog__reply-content{overflow:hidden;text-overflow:ellipsis}.chatlog__reply-link{cursor:pointer}.chatlog__reply-link *{display:inline;pointer-events:none}.chatlog__reply-link .chatlog__markdown-quote{display:inline}.chatlog__reply-link .chatlog__markdown-pre{display:inline}.chatlog__reply-link:hover{color:#ffffff}.chatlog__reply-link:hover *:not(.chatlog__markdown-spoiler){color:inherit}.chatlog__reply-edited-timestamp{margin-left:0.25rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__forwarded{display:flex;flex-direction:column;margin-bottom:0.15rem;padding:0.5rem;border-left:4px solid #4f545c;border-radius:4px;background-color:rgba(46,48,54,0.3)}.chatlog__forwarded-header{display:flex;align-items:center;margin-bottom:0.25rem;color:#b5b6b8;font-size:0.75rem;font-weight:600}.chatlog__forwarded-icon{width:16px;height:16px;margin-right:0.25rem}.chatlog__forwarded-content{color:#dcddde;font-size:0.95rem}.chatlog__forwarded-attachments{margin-top:0.3rem}.chatlog__forwarded-attachment{max-width:300px;max-height:200px;border-radius:3px}.chatlog__forwarded-timestamp{margin-top:0.25rem;color:#a3a6aa;font-size:0.75rem}.chatlog__system-notification-icon{width:18px;height:18px}.chatlog__system-notification-author{font-weight:500;color:#ffffff}.chatlog__system-notification-content{color:#96989d}.chatlog__system-notification-link{font-weight:500;color:#ffffff}.chatlog__system-notification-timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__system-notification-timestamp a{color:inherit}.chatlog__header{margin-bottom:0.1rem}.chatlog__author{font-weight:500;color:#ffffff}.chatlog__author-tag{position:relative;top:-0.1rem;margin-left:0.3rem;padding:0.05rem 0.3rem;border-radius:3px;background-color:#5865F2;color:#ffffff;font-size:0.625rem;font-weight:500;line-height:1.3}.chatlog__timestamp{margin-left:0.3rem;color:#a3a6aa;font-size:0.75rem;font-weight:500;direction:ltr;unicode-bidi:bidi-override}.chatlog__timestamp a{color:inherit}.chatlog__content{padding-right:1rem;font-size:0.95rem;word-wrap:break-word}.chatlog__edited-timestamp{margin-left:0.15rem;color:#a3a6aa;font-size:0.75rem;font-weight:500}.chatlog__attachment{position:relative;width:fit-content;margin-top:0.3rem;border-radius:3px;overflow:hidden}.chatlog__attachment--hidden{cursor:pointer;box-shadow:0 0 1px 1px rgba(0,0,0,0.1)}.chatlog__attachment--hidden *{pointer-events:none}.chatlog__attachment-spoiler-caption{display:none;position:absolute;left:50%;top:50%;z-index:999;padding:0.4rem 0.8rem;border-radius:20px;transform:translate(-50%,-50%);background-color:rgba(0,0,0,0.9);color:#dcddde;font-size:0.9rem;font-weight:600;letter-spacing:0.05rem}.chatlog__attachment--hidden .chatlog__attachment-spoiler-caption{display:block}.chatlog__attachment--hidden:hover .chatlog__attachment-spoiler-caption{color:#fff}.chatlog__attachment-media{max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__attachment--hidden .chatlog__attachment-media{filter:blur(44px)}.chatlog__attachment-generic{max-width:520px;width:100%;height:40px;padding:10px;border:1px solid #292b2f;border-radius:3px;background-color:#2f3136;overflow:hidden}.chatlog__attachment--hidden .chatlog__attachment-generic{filter:blur(44px)}.chatlog__attachment-generic-icon{float:left;width:30px;height:100%;margin-right:10px}.chatlog__attachment-generic-size{color:#72767d;font-size:12px}.chatlog__attachment-generic-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.chatlog__embed{display:flex;margin-top:0.3rem;max-width:520px}.chatlog__embed-color-pill{flex-shrink:0;width:0.25rem;border-top-left-radius:3px;border-bottom-left-radius:3px}.chatlog__embed-color-pill--default{background-color:#202225}.chatlog__embed-content-container{display:flex;flex-direction:column;padding:0.5rem 0.6rem;border:1px solid rgba(46,48,54,0.6);border-top-right-radius:3px;border-bottom-right-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-content{display:flex;width:100%}.chatlog__embed-text{flex:1}.chatlog__embed-author-container{display:flex;margin-bottom:0.5rem;align-items:center}.chatlog__embed-author-icon{width:20px;height:20px;margin-right:0.5rem;border-radius:50%}.chatlog__embed-author{color:#ffffff;font-size:0.875rem;font-weight:600;direction:ltr;unicode-bidi:bidi-override}.chatlog__embed-author-link{color:#ffffff}.chatlog__embed-title{margin-bottom:0.5rem;color:#ffffff;font-size:0.875rem;font-weight:600}.chatlog__embed-description{color:#dcddde;font-weight:500;font-size:0.85rem}.chatlog__embed-fields{display:flex;flex-wrap:wrap;gap:0 0.5rem}.chatlog__embed-field{flex:0;min-width:100%;max-width:506px;padding-top:0.6rem;font-size:0.875rem}.chatlog__embed-field--inline{flex:1;flex-basis:auto;min-width:50px}.chatlog__embed-field-name{margin-bottom:0.2rem;color:#ffffff;font-weight:600}.chatlog__embed-field-value{color:#dcddde;font-weight:500}.chatlog__embed-thumbnail{flex:0;max-width:80px;max-height:80px;margin-left:1.2rem;border-radius:3px}.chatlog__embed-images{display:grid;margin-top:0.6rem;grid-template-columns:repeat(2,1fr);gap:0.25rem}.chatlog__embed-images--single{display:block}.chatlog__embed-image{object-fit:cover;object-position:center;max-width:500px;max-height:400px;width:100%;height:100%;border-radius:3px}.chatlog__embed-footer{margin-top:0.6rem;color:#dcddde}.chatlog__embed-footer-icon{width:20px;height:20px;margin-right:0.2rem;border-radius:50%;vertical-align:middle}.chatlog__embed-footer-text{vertical-align:middle;font-size:0.75rem;font-weight:500}.chatlog__embed-invite-container{min-width:320px;padding:0.6rem 0.7rem;border:1px solid rgba(46,48,54,0.6);border-radius:3px;background-color:rgba(46,48,54,0.3)}.chatlog__embed-invite-title{margin:0 0 0.8rem 0;color:#b9bbbe;font-size:0.75rem;font-weight:700;text-transform:uppercase}.chatlog__embed-invite{display:flex}.chatlog__embed-invite-guild-icon{width:50px;height:50px;border-radius:0.85rem}.chatlog__embed-invite-info{margin-left:1rem}.chatlog__embed-invite-guild-name{color:#ffffff;font-weight:600}.chatlog__embed-invite-guild-name a{color:inherit}.chatlog__embed-invite-channel-icon{width:18px;height:18px;vertical-align:bottom}.chatlog__embed-invite-channel-name{font-size:0.9rem;font-weight:600}.chatlog__embed-generic-image{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-video{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-generic-gifv{object-fit:contain;object-position:left;max-width:45vw;max-height:500px;vertical-align:top;border-radius:3px}.chatlog__embed-spotify{border:0}.chatlog__embed-twitch{border:0}.chatlog__embed-youtube-container{margin-top:0.6rem}.chatlog__embed-youtube-thumbnail{max-width:400px;max-height:225px;border-radius:3px;cursor:pointer}.chatlog__sticker{width:180px;height:180px}.chatlog__sticker--media{max-width:100%;max-height:100%}.chatlog__reactions{display:flex}.chatlog__reaction{display:flex;margin:0.35rem 0.1rem 0.1rem 0;padding:0.125rem 0.375rem;border:1px solid transparent;border-radius:8px;background-color:#2f3136;align-items:center}.chatlog__reaction:hover{border:1px solid hsla(0,0%,100%,.2);background-color:transparent}.chatlog__reaction-count{min-width:9px;margin-left:0.35rem;color:#b9bbbe;font-size:0.875rem}.chatlog__reaction:hover .chatlog__reaction-count{color:#dcddde}.chatlog__markdown{max-width:100%;line-height:1.3;overflow-wrap:break-word}.chatlog__markdown h1{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.5rem;line-height:1}.chatlog__markdown h2{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1.25rem;line-height:1}.chatlog__markdown h3{margin:1rem 0 0.5rem;color:#f2f3f5;font-size:1rem;line-height:1}.chatlog__markdown h1:first-child,h2:first-child,h3:first-child{margin-top:0.5rem}.chatlog__markdown ul,ol{margin:0 0 0 1rem;padding:0}.chatlog__markdown-preserve{white-space:pre-wrap}.chatlog__markdown-spoiler{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__markdown-spoiler--hidden{cursor:pointer;background-color:#202225;color:rgba(0,0,0,0)}.chatlog__markdown-spoiler--hidden:hover{background-color:rgba(32,34,37,0.8)}.chatlog__markdown-spoiler--hidden::selection{color:rgba(0,0,0,0)}.chatlog__markdown-quote{display:flex;margin:0.05rem 0}.chatlog__markdown-quote-border{margin-right:0.5rem;border:2px solid #4f545c;border-radius:3px}.chatlog__markdown-pre{background-color:#2f3136;font-family:"Consolas","Courier New",Courier,monospace;font-size:0.85rem;text-decoration:inherit}.chatlog__markdown-pre--multiline{display:block;margin-top:0.25rem;padding:0.5rem;border:2px solid #282b30;border-radius:5px;color:#b9bbbe}.chatlog__markdown-pre--multiline.hljs{background-color:#2f3136;color:#b9bbbe}.chatlog__markdown-pre--inline{display:inline-block;padding:2px;border-radius:3px}.chatlog__markdown-mention{border-radius:3px;padding:0 2px;background-color:rgba(88,101,242,.3);color:#dee0fc;font-weight:500}.chatlog__markdown-mention:hover{background-color:#5865f2;color:#ffffff}.chatlog__markdown-timestamp{background-color:rgba(255,255,255,0.1);padding:0 2px;border-radius:3px}.chatlog__emoji{width:1.325rem;height:1.325rem;margin:0 0.06rem;vertical-align:-0.4rem}.chatlog__emoji--small{width:1rem;height:1rem}.chatlog__emoji--large{width:2.8rem;height:2.8rem}.postamble{padding:1.25rem}.postamble__entry{color:#ffffff}</style><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e=>hljs.highlightBlock(e));});</script><script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script><script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e=>{const anim=lottie.loadAnimation({container:e,renderer:'svg',loop:true,autoplay:true,path:e.getAttribute('data-source')});anim.addEventListener('data_failed',()=>e.innerHTML='<strong>[Sticker cannot be rendered]</strong>');});});</script><script>function scrollToMessage(event,id){const element=document.getElementById('chatlog__message-container-'+id);if(!element)
+return;event.preventDefault();element.classList.add('chatlog__message-container--highlighted');window.scrollTo({top:element.getBoundingClientRect().top-document.body.getBoundingClientRect().top-(window.innerHeight/2),behavior:'smooth'});window.setTimeout(()=>element.classList.remove('chatlog__message-container--highlighted'),2000);}
+function showSpoiler(event,element){if(!element)
+return;if(element.classList.contains('chatlog__attachment--hidden')){event.preventDefault();element.classList.remove('chatlog__attachment--hidden');}
+if(element.classList.contains('chatlog__markdown-spoiler--hidden')){event.preventDefault();element.classList.remove('chatlog__markdown-spoiler--hidden');}}</script><svg style=display:none xmlns=http://www.w3.org/2000/svg><defs><symbol id=attachment-icon viewBox="0 0 720 960"><path fill=#f4f5fb d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z /><path fill=#7789c4 d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z /><path fill=#f4f5fb d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z /><path fill=#7789c4 d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z /></symbol><symbol id=join-icon viewBox="0 0 18 18"><path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" /></symbol><symbol id=leave-icon viewBox="0 0 18 18"><path fill=#ed4245 d="m3.8 8 3.6-3.6-1.4-1.4-6 6 6 6 1.4-1.4-3.6-3.6h14.2v-2" /></symbol><symbol id=call-icon viewBox="0 0 18 18"><path fill=#3ba55c fill-rule=evenodd d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" /></symbol><symbol id=pencil-icon viewBox="0 0 18 18"><path fill=#99aab5 d="m0 14.25v3.75h3.75l11.06-11.06-3.75-3.75zm17.71-10.21c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75z" /></symbol><symbol id=pin-icon viewBox="0 0 18 18"><path fill=#b9bbbe d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" /></symbol><symbol id=channel-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z" /></symbol><symbol id=thread-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z" /><path fill=#b9bbbe d="M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z" /></symbol><symbol id=forward-icon viewBox="0 0 24 24"><path fill=#b9bbbe d="M13 4L21 12L13 20V15C8 15 4 17 1 22C2 16 6 10 13 9V4Z" /></symbol></defs></svg><body><div class=preamble><div class=preamble__guild-icon-container><img class=preamble__guild-icon src="https://cdn.discordapp.com/icons/1460871612143370313/8aca7e86bde2defd7161b986db869ec3.png?size=512" alt="Guild icon" loading=lazy></div><div class=preamble__entries-container><div class=preamble__entry>Veilocity</div><div class=preamble__entry>Text Channels / mongolia</div></div></div>
+<div class="chatlog">
+
+<div class=chatlog__message-group><div id=chatlog__message-container-1546326686621241414 class=chatlog__message-container data-message-id=1546326686621241414><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, September 6, 2026 9:10 PM"><a href=#chatlog__message-container-1546326686621241414>9/6/2026 9:10 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Резонансоос хяналт руу <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚠️"
+    title="warning"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> 04/01/2026 - Гүрж</strong>
+
+Энэ видео нь миний зарим сошиал медиа лайвуудаас ажигласан хор хөнөөлтэй нэгэн хэв маягийг тайлбарлаж байна — мөн эргээд бодоход, миний амьдралын янз бүрийн мөчүүдэд ч энэ хэв маяг ажиглагдаж байжээ.
+
+Энэ нь ихэвчлэн резонанс буюу нийцэл, ижил мэдрэмжээс эхэлдэг: хуваалцсан туршлага, танил үг хэллэг эсвэл үнэн мэт санагдах ойлголт. Гэвч оролцоо эхэлмэгц тэрхүү нийцлийг урвуулан хяналтын хэрэгсэл болгож болно. Харьяалагдах мэдрэмж нөхцөлтэй болдог. Асуулт тавихыг шийтгэдэг. Ойлголтын оронд дуулгавартай байдал орж ирдэг.
+
+Цаг хугацаа өнгөрөх тусам энэ бүтэц зөвхөн түүнийг удирдаж буй хүмүүсээр бус, тухайн өгүүлэмжийг давтан түгээж, нийцэн дагахыг урамшуулж, тусгаарлалтыг улам нэмэгдүүлдэг оролцогчдоор ч бэхждэг. Эрх мэдэл төвд байгаа хүмүүст ашигтай байдаг бол бусад нь үнэхээр харьяалагдахгүй атлаа хяналтад ордог.
+
+Энэ үзэгдэл эртнээс танигдсан. Сударт ийнхүү анхааруулсан байдаг:
+
+“Харь үндэстнүүдийн хаад тэднийг захирдаг бөгөөд тэдний дээр эрх мэдэл хэрэгжүүлэгчид өөрсдийгөө буян үйлдэгчид гэж нэрлэдэг.”
+— <strong>Лук 22:25–26</strong>
+
+Хамгийн туйлын хэлбэртээ энэ хэв маяг нь өөрийгөө сүйтгэхийг зугтах гарц мэтээр дүрслэх хүртэл даамжирдаг.
+
+Энэ бол философи биш.
+Энэ бол сүнслэг байдал биш.
+Энэ бол хор хөнөөлтэй сэтгэлзүйн хэв маяг.
+
+Үнэн өөрийгөө сүйтгэхийг шаарддаггүй.
+Амьдрал бол үндсэн баримжаа хэвээр үлдэнэ.
+
+#РезонансоосХяналтРуу #АлбадлагынХяналт #АйдастСуурилсанЭрхМэдэл #КультБүлгийнДинамик #БүлгийнСэтгэлгээ #СэтгэлзүйнХэвМаяг #ШүүмжлэлтСэтгэлгээ #СэтгэцийнЭрүүлМэндийнМэдлэг #ЗөвшөөрөлгүйЭрхМэдэл #ЯлганТанихЧадвар #ОюунУхаанааХамгаал #АмьдралыгДэмжих #СэрэлтЭсвэлХяналт #СошиалМедиаМэдлэг
+
+<a href="https://vimeo.com/1224479891?share=copy">https://vimeo.com/1224479891?share=copy</a></span> <span class=chatlog__edited-timestamp title="Sunday, September 6, 2026 9:30 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546326680988287068/Resonance_to_Control-Mongolian_M_caption.mp4?ex=6acb8ab2&amp;is=6aca3932&amp;hm=6feb717aaafa0a4770facdf369cc35b6412152a51a56001ddad0f793cd0d871e&amp;" alt="Video attachment" title="Video: Resonance_to_Control-Mongolian_M_caption.mp4 (125 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546326685203439636/Resonance_to_Control-Mongolian_Mongolia.srt?ex=6acb8ab3&amp;is=6aca3933&amp;hm=ef7df3576290f44d8575de14c3e52c8e9a48300891208ba8e22c3be48d691f57&amp;"> Resonance_to_Control-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>6.98 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546326686016995378/Resonance_to_Control-Mongolian_Mon_audio.mp3?ex=6acb8ab3&amp;is=6aca3933&amp;hm=271ca56351d489f6e69e56a6a73de964e71bc96525748e2282aa5e8296a05066&amp;" alt="Audio attachment" title="Audio: Resonance_to_Control-Mongolian_Mon_audio.mp3 (2.66 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546333541938372619 class=chatlog__message-container data-message-id=1546333541938372619><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Sunday, September 6, 2026 9:37 PM"><a href=#chatlog__message-container-1546333541938372619>9/6/2026 9:37 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Хууль бус байдал гэж үнэндээ энэ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127795;"
+    title="deciduous_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f333.svg"> 05/11/2025 - Турк</strong>
+
+Хэрэв үнэн төлбөргүйгээр оршин тогтнож чадахгүй бол шударга ёс аль хэдийн нуран унасан гэсэн үг.
+
+Зарчимд бус, ашиг хонжоонд тулгуурласан тогтолцооны тухай эргэцүүлэл — мөн хууль өөрийн гэрчийг мартвал юу болдог тухай.
+
+#үнэн #шударгаЁс #сэрэхүй #итгэл #хууль #авлига #шүүх #сүнслэгЭргэцүүлэл #эвдэрсэнТогтолцоо #мөнгөөрЯлах #ухамсрынСэрэлт #үнэнийгХэл #шударгаЗан
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1224484813?share=copy">https://vimeo.com/1224484813?share=copy</a></span> <span class=chatlog__edited-timestamp title="Sunday, September 6, 2026 9:40 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546333539136442509/This_Is_What_Lawlessness_Truly_I_caption.mp4?ex=6acb9115&amp;is=6aca3f95&amp;hm=67813eba0ea5d9fb5d1ef8fe599c18af6653c601ee8e95e13937f5fed7e3a2c6&amp;" alt="Video attachment" title="Video: This_Is_What_Lawlessness_Truly_I_caption.mp4 (28.37 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546333540688470026/This_Is_What_Lawlessness_Truly_Is-Mongol.srt?ex=6acb9115&amp;is=6aca3f95&amp;hm=6595f7e496071eee8bc90666b928a78785f706594d95b872f3c59b94141fbaa9&amp;"> This_Is_What_Lawlessness_Truly_Is-Mongol.srt </a></div><div class=chatlog__attachment-generic-size>1.37 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546333541418270820/This_Is_What_Lawlessness_Truly_Is-_audio.mp3?ex=6acb9115&amp;is=6aca3f95&amp;hm=73854edaa929cbfb17a238f53f6b75c962e6be32c835c3e2f74dcb6c99b73e32&amp;" alt="Audio attachment" title="Audio: This_Is_What_Lawlessness_Truly_Is-_audio.mp3 (626.77 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546512825672011828 class=chatlog__message-container data-message-id=1546512825672011828><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, September 7, 2026 9:29 AM"><a href=#chatlog__message-container-1546512825672011828>9/7/2026 9:29 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>“Амар амгалан та нартай хамт байх болтугай… мөн таны сүнстэй хамт.” <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 30/09/2025 - Албани</strong>
+
+Гэхдээ би үүнийг хэлэхэд эдгээр үг үнэхээр ямар нөлөө үзүүлдэг вэ? Та тэдгээрийг зүгээр л сонсож байна уу, эсвэл дотроо мэдэрч байна уу? Амар амгаланг зөвхөн үгээр хэлэх бус, амьдралдаа бүрэн дүүрэн хэрэгжүүлэхийн тулд та амьдралдаа — дотоод болон гадаад ертөнцдөө — юуг өөрчилж чадах вэ?
+
+Бид шууд нүүр тулах нь таагүй санагддаг учраас анхаарлаа сарниулахын тулд түр зуурын туршлага, мэдрэмжүүдэд хэтэрхий олон удаа хоргоддог. Гэвч Есүсийн гайхамшиг чухам энд оршдог: Тэр бидэнд өөрсдийгөө Бурханд даатгаснаар амар амгалан, шударга ёс, зөвт байдлыг хэрхэн нийцүүлж болохыг харуулдаг.
+
+Гэсэн хэдий ч энд маш нарийн зааг бий. Сүм заримдаа өөрийгөө үгүйсгэхийг сургаж ирсэн ч энэ нь зөв зам биш. Харин бид ганцаараа үүрч чадахгүй зүйлсээ Бурханд даатгахын зэрэгцээ өөрсдийн мөн чанар, хэн болохоо үгүйсгэхгүй байх тухай юм.
+
+Энэ тэнцвэрийг олох нь Тэнгэрийн Хаанчлалыг дэлхий дээр тогтоох түлхүүр юм. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#АмарАмгаланТаНартайХамтБайг #ИтгэлийнЗам #ЕсүсАварна #АмьдИтгэл #ДэлхийДээрхДиваажин #ДотоодХаанчлал #ХристийнTikTok #БурхандДаатгах #ИтгэлДэхТэнцвэр #ХристтэйХамтАлхах
+
+<a href="https://vimeo.com/1224622733?share=copy">https://vimeo.com/1224622733?share=copy</a></span> <span class=chatlog__edited-timestamp title="Monday, September 7, 2026 11:38 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546512818956935218/Peace_be_with_you-Mongolian_Mong_caption.mp4?ex=6acb8f4c&amp;is=6aca3dcc&amp;hm=05d2e62cff074f5c764aa8fdecc810d2c428ce8a65db64709b5803d11af3a23c&amp;" alt="Video attachment" title="Video: Peace_be_with_you-Mongolian_Mong_caption.mp4 (97.2 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546512824933552231/Peace_be_with_you-Mongolian_Mongolia.srt?ex=6acb8f4e&amp;is=6aca3dce&amp;hm=49cd2f62086de81b747022ef654da6f77c26b1d7dd99f220faf7938879d824f5&amp;"> Peace_be_with_you-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>3.6 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546512825273548832/Peace_be_with_you-Mongolian_Mongol_audio.mp3?ex=6acb8f4e&amp;is=6aca3dce&amp;hm=a4e86bee98d63a8d9bbf572e448115918bb6aefc9320edd9860ee485e11008ff&amp;" alt="Audio attachment" title="Audio: Peace_be_with_you-Mongolian_Mongol_audio.mp3 (1.88 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546523353752281211 class=chatlog__message-container data-message-id=1546523353752281211><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, September 7, 2026 10:11 AM"><a href=#chatlog__message-container-1546523353752281211>9/7/2026 10:11 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Тайтгарал бол зэвсэг <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127917;"
+    title="performing_arts"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3ad.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚔️"
+    title="crossed_swords"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2694.svg"> 08/01/2026 - Гүрж</strong>
+
+Тайтгарлыг тайвшруулахын тулд ч ашиглаж болно — эсвэл хянахын тулд ч ашиглаж болно.
+
+Энэхүү эргэцүүлэл нь айдас, тогтолцоо болон хуурамч бат итгэл хүмүүсийг хэрхэн дуулгавартай байлгадаг, мөн төөрөгдөл нуран унах үед юу үлддэгийг авч үзнэ.
+
+Би аль нэг талын байр суурийг хамгаалж, хариулт санал болгох гэсэнгүй — зөвхөн тайтгарал хэмжүүр байхаа болих үед юу ил болж харагддагийг ажиглаж байна.
+
+#ухамсар #нийцэл #зарчимчбайдал #тодорхойбайдал #үнэн #ухамсартэргэцүүлэл #өөрийнхариуцлага #өөрийнсонголт #хяналтаасилүүамарТайван #амьдралынтуршлага #шүүмжлэлтсэтгэлгээ #дотоодажил #гэрч #өөрийнэрхмэдэл #сэрэлт
+
+<a href="https://vimeo.com/1224649787?share=copy">https://vimeo.com/1224649787?share=copy</a></span> <span class=chatlog__edited-timestamp title="Monday, September 7, 2026 11:34 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546523334353879201/Comfort_Is_the_Weapon-Mongolian__caption.mp4?ex=6acb9917&amp;is=6aca4797&amp;hm=72d4405788a3dbc2f01f50490cccd0d072b45307b0606077c9640a53e1795088&amp;" alt="Video attachment" title="Video: Comfort_Is_the_Weapon-Mongolian__caption.mp4 (296.59 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546523352519417947/Comfort_Is_the_Weapon-Mongolian_Mongolia.srt?ex=6acb991c&amp;is=6aca479c&amp;hm=2dac4951c329fe01b5773aaa089ea731c8d1f9067784a0ecd78ffec9dcec7c17&amp;"> Comfort_Is_the_Weapon-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>14.88 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546523352984981594/Comfort_Is_the_Weapon-Mongolian_Mo_audio.mp3?ex=6acb991c&amp;is=6aca479c&amp;hm=bf3b0c76d10a0c2c769c07793f6fab83cc0f5993ba302179fd0162addb91368d&amp;" alt="Audio attachment" title="Audio: Comfort_Is_the_Weapon-Mongolian_Mo_audio.mp3 (5.69 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546551389906534481 class=chatlog__message-container data-message-id=1546551389906534481><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, September 7, 2026 12:03 PM"><a href=#chatlog__message-container-1546551389906534481>9/7/2026 12:03 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Сексийн тухай ярилцъя, хонгор минь (тэр дууг мэднэ дээ) <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127926;"
+    title="notes"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3b6.svg"> 09/03/2026 - Гүрж</strong>
+
+Эрэгтэйлэг болон эмэгтэйлэг энерги нь бид амьдрал болон харилцаагаа хэрхэн авч явахад чухал үүрэг гүйцэтгэдэг. Үе удмаар эдгээр энергийг соёлын нөлөөгөөр урьдчилан тогтсон, таамаглаж болох дүрүүдэд хуваарилж ирсэн бөгөөд ихэнхдээ гаднах төрх байдалд үндэслэдэг байв.
+
+Гэвч хүн төрөлхтөн хувьсан хөгжсөн. Одоо бидний өмнө байгаа асуулт бол: бид хуучин хэв маягаа үргэлжлүүлэн давтах уу — эсвэл жинхэнэ мөн чанар, ухамсарт байдлаар дамжуулан тэнцвэрээ дахин олох уу?
+
+#СексийнТухайЯрилцъя #ЭнергийнУхамсар #ОрчинҮеийнҮерхэл #ТачаалаасЦааш #ЭрэгтэйлэгЭмэгтэйлэг #ЖинхэнэХолбоо #УхамсартАмьдрал #СоёлынНөхцөлдүүлэлт #ДотоодАжил #ЭнергийнТэнцвэр #Ухамсар #ҮнэнийгЭрэлхийлэхүй #ОрчинҮеийнМистик #СэрэмжтэйБай #ГүнБодол
+
+<a href="https://vimeo.com/1224657027?share=copy">https://vimeo.com/1224657027?share=copy</a></span> <span class=chatlog__edited-timestamp title="Monday, September 7, 2026 3:37 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546551383870808175/Lets_Talk_About_Sex-Mongolian_Mo_caption.mp4?ex=6acbb337&amp;is=6aca61b7&amp;hm=1f60722a5f9afc302d2cffc157713210c2addccb8457613d43d954e2d8a6a693&amp;" alt="Video attachment" title="Video: Lets_Talk_About_Sex-Mongolian_Mo_caption.mp4 (87.74 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546551389235318854/Lets_Talk_About_Sex-Mongolian_Mongolia.srt?ex=6acbb338&amp;is=6aca61b8&amp;hm=dcd1f9d608738ce87cfb8d708801b36de485721508d6179eceacacd461090f6e&amp;"> Lets_Talk_About_Sex-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>6.42 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546551389629448262/Lets_Talk_About_Sex-Mongolian_Mong_audio.mp3?ex=6acbb338&amp;is=6aca61b8&amp;hm=b076c346e622fb9cb8e69b0dedea7cd9313d99b7f0e1a63b81957bd5fcc95532&amp;" alt="Audio attachment" title="Audio: Lets_Talk_About_Sex-Mongolian_Mong_audio.mp3 (2.36 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546610266387521546 class=chatlog__message-container data-message-id=1546610266387521546><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, September 7, 2026 3:57 PM"><a href=#chatlog__message-container-1546610266387521546>9/7/2026 3:57 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127905;"
+    title="ferris_wheel"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3a1.svg"> Хүрдийг эвдэж, өөрийн замаа ол <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="☀️"
+    title="sunny"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2600.svg"> 25/09/2025 - Албани</strong>
+
+Энэ эргэлт эцэс төгсгөлгүй үргэлжилнэ — та өөрөө буухаар сонгох хүртэл. Бүтээлч сэтгэлгээ бол түлхүүр.
+
+#Хүрд #МөчлөгийгЭвд #ВанАмьдралынЭрхЧөлөө #НарныЭрчимХүчтэйАмьдрал #ХамгийнБагаХэрэгцээ #ИнфляцаасГар #МөчлөгЭвдэгч #ӨөртөөЭзэнБайх #ӨөрийнНөхцөлөөрАмьдрах #АмарАмаргаланТаНартайХамтБайг
+
+<a href="https://vimeo.com/1224710805?share=copy">https://vimeo.com/1224710805?share=copy</a></span> <span class=chatlog__edited-timestamp title="Monday, September 7, 2026 4:44 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546610264680693841/Break_the_Wheel-Mongolian_Mongol_caption.mp4?ex=6acbea0d&amp;is=6aca988d&amp;hm=f4b1ac7850f37b2313eeedd42d1d878649704fc1b3ad0e07df334d4b4156ac77&amp;" alt="Video attachment" title="Video: Break_the_Wheel-Mongolian_Mongol_caption.mp4 (28.59 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546610265720889465/Break_the_Wheel-Mongolian_Mongolia.srt?ex=6acbea0d&amp;is=6aca988d&amp;hm=cf80b0eb406e25e0796f237c9942a35b0f3d0ea0ac9bc1c6cd71742d9e50a236&amp;"> Break_the_Wheel-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>2.17 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546610266094043166/Break_the_Wheel-Mongolian_Mongolia_audio.mp3?ex=6acbea0e&amp;is=6aca988e&amp;hm=087dcbca5c71cf9249dd0ad290f7bd6586b07aa572d749c30164bfb1db78f22a&amp;" alt="Audio attachment" title="Audio: Break_the_Wheel-Mongolian_Mongolia_audio.mp3 (859.27 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546648364987322428 class=chatlog__message-container data-message-id=1546648364987322428><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, September 7, 2026 6:28 PM"><a href=#chatlog__message-container-1546648364987322428>9/7/2026 6:28 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Хүмүүс бол жинхэнэ баялаг <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128173;"
+    title="thought_balloon"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4ad.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 23/03/2026 - Гүрж</strong>
+
+Дэлхий дахины зөрчил мөргөлдөөнөөс нэг алхам хойш сууснаас хойш би нэг зүйлийг маш тодорхой ойлгосон: хүмүүс бол жинхэнэ баялаг. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128161;"
+    title="bulb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"> Гэсэн хэдий ч айдас, өсөн нэмэгдэж буй амьжиргааны зардал, хязгаарлалтууд энэ баялгийг үл мэдэг байдлаар “хязгаарлаж”, нэг газраас нөгөөд шилжүүлж байгааг бид харсаар байна.
+
+Хэрэв энх тайван, аюулгүй байдал, баталгаатай амьдрал гэрээс <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127969;"
+    title="house_with_garden"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3e1.svg"> — гэр бүлийн хүрээнээс — эхэлдэг юм бол яагаад ийм олон хүнийг амлалт, цалин хөлс эсвэл хойшлуулсан урамшууллаар дамжуулан үүнийг өөр газраас эрэлхийлэхэд түлхдэг юм бэ?
+
+Энд нэг зөрчил байна. Бид хүмүүс хамгийн чухал гэж хэлдэг… гэтэл тогтолцоонууд тэднийг хор хөнөөл рүү тараан байрлуулсаар байна.
+
+Магадгүй бид аль хэдийн юу болохоо танин мэдэж — түүнийгээ хамгаалах цаг болсон байх. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#Үнэн #Ухамсар #ХүмүүсБолБаялаг #Сэрцгээ #ГэрБүлНэгдүгээрт #ЭнхТайванГэрээсЭхэлнэ #СүнслэгСэрэлт #ХарахӨнцгийнӨөрчлөлт #СистемийнСэтгэлгээ #ОрчинҮеийнЕртөнц #БатСуурьтайБай #ШулууханЯриа
+
+<a href="https://vimeo.com/1224731929?share=copy">https://vimeo.com/1224731929?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 11:51 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546648360004489276/People_Are_the_Real_Wealth-Mongo_caption.mp4?ex=6acc0d88&amp;is=6acabc08&amp;hm=324c899a0227d61eea6db7f5cfbfb3d0dc91554b1f5283afeb31bc0fdacea522&amp;" alt="Video attachment" title="Video: People_Are_the_Real_Wealth-Mongo_caption.mp4 (91.82 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546648364345466920/People_Are_the_Real_Wealth-Mongolian_Mon.srt?ex=6acc0d89&amp;is=6acabc09&amp;hm=79f3f3526f1cbf5c3cfd569da90d406886e655dc8fb9d2d2155ca9660fcf3faa&amp;"> People_Are_the_Real_Wealth-Mongolian_Mon.srt </a></div><div class=chatlog__attachment-generic-size>5.56 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546648364689662033/People_Are_the_Real_Wealth-Mongoli_audio.mp3?ex=6acc0d89&amp;is=6acabc09&amp;hm=99de0b7034cd8416cdd60549105305a8db68859baa58080016578d904b2175db&amp;" alt="Audio attachment" title="Audio: People_Are_the_Real_Wealth-Mongoli_audio.mp3 (2.18 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546666202380902412 class=chatlog__message-container data-message-id=1546666202380902412><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Monday, September 7, 2026 7:39 PM"><a href=#chatlog__message-container-1546666202380902412>9/7/2026 7:39 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>CTRL <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"> + ALT <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> + DELETE <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128190;"
+    title="floppy_disk"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4be.svg"> — Харилцаа бүрийн код 24/10/2025 - Турк</strong>
+
+Харилцаа холбоо бүр биднийг ялгаатай болгодог зүйлсийг биширч гайхахаас эхэлдэг. Гэвч дараа нь хянах, өөрчлөх хүсэл төрж, эсэргүүцэлтэй тулгарахад — устгах хүсэл бий болдог.
+
+Гэвч сүнс хэзээ ч өөр нэгний засаж, алдаа арилгах ёстой зүйл байгаагүй. Тэр аль хэдийн төгс бус атлаа төгс.
+
+Бид хэн нэгний мөн чанарыг дахин бичихийг оролдох тэр мөчид оршихуйн хамгийн эртний сургаалтай тэмцэлддэг: “Өөрийгөө тань.”
+
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> Хайрлана гэдэг засварлах гэсэн үг биш.
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128161;"
+    title="bulb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4a1.svg"> Танина гэдэг эзэмших гэсэн үг биш.
+<img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128187;"
+    title="computer"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4bb.svg"> Холбогдоно гэдэг хянах гэсэн үг биш.
+
+#CtrlAltDelete #ӨөрийгөөТань #ДижиталСүнслэгБайдал #УхамсартХарилцаа #ИтгэлтНислэг #Veilocity111 #СүнслэгСэрэлт #УхамсраарЭдгэрэх #ТөгсБусАтлааТөгс #ӨөрийгөөНээх #AIбаСүнс #ДахинЭхлүүлэх #ФилософиTok #ОрчинҮеийнМэргэнУхаан #ДотоодКод
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1224738249?share=copy">https://vimeo.com/1224738249?share=copy</a></span> <span class=chatlog__edited-timestamp title="Monday, September 7, 2026 7:41 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546666199142895756/The_Code_of_Every_Relationship-M_caption.mp4?ex=6acb7565&amp;is=6aca23e5&amp;hm=b079619490ac4f7ce9e4fa2895823eac597bc92e20ff2381f50354118711693a&amp;" alt="Video attachment" title="Video: The_Code_of_Every_Relationship-M_caption.mp4 (52.47 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546666201852157982/The_Code_of_Every_Relationship-Mongolian.srt?ex=6acb7566&amp;is=6aca23e6&amp;hm=2c64e03a8beaa130ecac219b48765e7a5f1abe9dcfd3c5c57d04ca37ceb91771&amp;"> The_Code_of_Every_Relationship-Mongolian.srt </a></div><div class=chatlog__attachment-generic-size>2.34 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546666202133303467/The_Code_of_Every_Relationship-Mon_audio.mp3?ex=6acb7566&amp;is=6aca23e6&amp;hm=b91390c68942b92a4380fbb2626833eebdc6abcc23b523e32f00caea513bda47&amp;" alt="Audio attachment" title="Audio: The_Code_of_Every_Relationship-Mon_audio.mp3 (1.07 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546873709774512258 class=chatlog__message-container data-message-id=1546873709774512258><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 9:23 AM"><a href=#chatlog__message-container-1546873709774512258>9/8/2026 9:23 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>ХУУЛЬ БА ЭРЧИМ ХҮЧ — Та юуг тэтгэж байна вэ? <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128267;"
+    title="battery"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f50b.svg"> 16/05/2026 - Жоржиа</strong>
+
+Хууль бол зүгээр нэг дүрэм биш - энэ бол бүтэц юм.
+Мөн бүтэц бүр оршин тогтнохын тулд энерги шаарддаг.
+
+Асуулт нь энерги байгаа эсэхэд биш...
+Энэ нь түүнийг хэрхэн гаргаж авдагт оршино.
+
+Эрчим хүчийг авахад бүтэц нь гаждаг.
+
+Эрчим хүчийг санал болгоход бүтэц нь тэгшилдэг.
+
+Таны гэр, таны орчин, таны харилцаа холбоо —
+эдгээр нь бүгд орон сууц юм.
+
+Зөвхөн физик орон зай биш, харин энергийн савнууд юм.
+
+Тэгэхээр жинхэнэ асуулт нь:
+
+Та ямар төрлийн энергид амьдарч байна вэ... мөн тэтгэж байна вэ?
+
+#Эрчим хүч #Оюун санааны #Ухамсар #Үнэн #Ухамсар #Хууль #Сэтгэлгээ #Өөрийгөө танин мэдэхүй #Харааны хэтийн төлөв #Хурд хот #fyp #foryou
+
+<a href="https://vimeo.com/1224927679?share=copy">https://vimeo.com/1224927679?share=copy</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 9:47 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546873707480350771/LAW__ENERGY__What_Are_You_Sustai_caption.mp4?ex=6acb8de7&amp;is=6aca3c67&amp;hm=b8c761b6f2327fe6ec36748065f77b3382500148278dad5a01e7b4ab85147332&amp;" alt="Video attachment" title="Video: LAW__ENERGY__What_Are_You_Sustai_caption.mp4 (20.25 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546873709007085588/LAW__ENERGY__What_Are_You_Sustaining-Mon.srt?ex=6acb8de7&amp;is=6aca3c67&amp;hm=b9bfb060ac3ad25abc9e487eb3a215843657fd28b0003cd02e4b4e1a500cb9f6&amp;"> LAW__ENERGY__What_Are_You_Sustaining-Mon.srt </a></div><div class=chatlog__attachment-generic-size>891 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546873709422444565/LAW__ENERGY__What_Are_You_Sustaini_audio.mp3?ex=6acb8de7&amp;is=6aca3c67&amp;hm=505819e6e8a1c0f203e45f155bb61303876ac9558e04ef0db39428c5c15b0c47&amp;" alt="Audio attachment" title="Audio: LAW__ENERGY__What_Are_You_Sustaini_audio.mp3 (445.64 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546886786041643019 class=chatlog__message-container data-message-id=1546886786041643019><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 10:15 AM"><a href=#chatlog__message-container-1546886786041643019>9/8/2026 10:15 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Тэр Дугуйн дээгүүр босов <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128259;"
+    title="arrows_clockwise"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f503.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> “Тэднийг уучлаач, Эцэг минь…” 2025/10/29 - Албани</strong>
+
+Есүс эдгээр үгсийг хэлэхийн тулд,
+Тэрээр аль хэдийн үйлийн үрийн давталтаас давсан байсан -
+хариу үйлээс, хуурмаг байдлаас давсан.
+Уучлал бол сул дорой байдал биш... энэ бол хэт туйлшрал юм. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg">
+
+#ЕсүсийнСургаал #СүнслэгСэрэлт #Уучлал #ХристийнУхамсар #ҮрийнЦикл #СайнМэдээгээрСэрэх #ТэнгэрлэгМэргэнУхаан #ДээдЧичиргээ #ХаранхуйгаасДээгүүрГэрэл #ДотоодАмарАмар #ИтгэлАялал #ДээшӨгсөх
+
+<a href="https://vimeo.com/1224944037?share=copy">https://vimeo.com/1224944037?share=copy</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 10:31 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546886781222395904/He_Rose_Above_the_Wheel-Mongolia_caption.mp4?ex=6acb9a14&amp;is=6aca4894&amp;hm=c3fe76b2a67a23cabf7547cd646c2ba5866535b1fe0385182d00a78d912febd4&amp;" alt="Video attachment" title="Video: He_Rose_Above_the_Wheel-Mongolia_caption.mp4 (71.16 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546886785215369356/He_Rose_Above_the_Wheel-Mongolian_Mongol.srt?ex=6acb9a15&amp;is=6aca4895&amp;hm=ed3af382acd6f1a2e95ca091d60a69e4828a1451ef184416df4d0406dcb3937c&amp;"> He_Rose_Above_the_Wheel-Mongolian_Mongol.srt </a></div><div class=chatlog__attachment-generic-size>3.39 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546886785714364546/He_Rose_Above_the_Wheel-Mongolian__audio.mp3?ex=6acb9a15&amp;is=6aca4895&amp;hm=ebefcecba39b8209a10843c245641f88110440e387b8927d437682eabd530c11&amp;" alt="Audio attachment" title="Audio: He_Rose_Above_the_Wheel-Mongolian__audio.mp3 (1.53 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546892110949785660 class=chatlog__message-container data-message-id=1546892110949785660><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 10:36 AM"><a href=#chatlog__message-container-1546892110949785660>9/8/2026 10:36 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Legal Gaslight <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚖️"
+    title="scales"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2696.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129504;"
+    title="brain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f9e0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 2025/12/02 - VOID</strong>
+
+&#39;Дэмжлэг&#39; гэсэн эелдэг хэлний ард таны бодит байдлыг дахин зурдаг гар нуугдаж байна.
+Хамгаалах гэж мэдэгдэж байгаа ч өөрийн нүднээс толин тусгалыг хулгайлдаг систем.
+Legal gaslight бол чимээгүй хулгайч юм —
+агентлагийг үг нэг нэгээр нь булааж авдаг.
+
+#LegalGaslight #gaslighting #legalabuse #authorityabuse #powerdynamics #systemicgaslighting #selfagence #truthspeaking #mentalhealthawareness #injusticeexposed #consciousawareness #healingjourney #selfsovereignty #stephencooke #falsesafety #socialcommentary
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1224949268?share=copy">https://vimeo.com/1224949268?share=copy</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 10:41 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546892109146230874/Legal_Gaslight-Mongolian_Mongoli_caption.mp4?ex=6acb9f0a&amp;is=6aca4d8a&amp;hm=efde5b683869f957bef075d563b49c371806b40cc19ab4f9da4aaca2b7bb823e&amp;" alt="Video attachment" title="Video: Legal_Gaslight-Mongolian_Mongoli_caption.mp4 (18.05 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546892110261653504/Legal_Gaslight-Mongolian_Mongolia.srt?ex=6acb9f0a&amp;is=6aca4d8a&amp;hm=69384e228e37105a29d3c905d9dedfe2e5b8132dd276bf7c93e2d337fab0984e&amp;"> Legal_Gaslight-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>1.15 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546892110601527357/Legal_Gaslight-Mongolian_Mongolia_audio.mp3?ex=6acb9f0b&amp;is=6aca4d8b&amp;hm=005bac4c01668a1ccde9e70065fb15ea26a8bdcb6e9e582dcde80c8ba7ee0208&amp;" alt="Audio attachment" title="Audio: Legal_Gaslight-Mongolian_Mongolia_audio.mp3 (425.02 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546983098854674504 class=chatlog__message-container data-message-id=1546983098854674504><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 4:38 PM"><a href=#chatlog__message-container-1546983098854674504>9/8/2026 4:38 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>“Дэлхийтэй тэмцэх”-ээс урагшлах хөдөлгөөн рүү <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚔️"
+    title="crossed_swords"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2694.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> Нийтийн уншлага <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 02/04/2026 – Гүрж</strong>
+
+Энэ удаагийнх эмх замбараагүй байдлыг туулж, тодорхой байдал руу шилжиж байгаа мэт санагдлаа.
+
+Эхэндээ бүх зүйлтэй тэмцэж байгаа тэр мэдрэмжээс эхэлнэ… чи дэлхийн эсрэг ганцаараа байгаа мэт… цохилт бүрийг хүлээн авч, ачаа үүрсээр — эцэст нь тэр бүхэн өмнөх шигээ өвтгөхөө больдог. Яг л: “Нуруунд минь сэлмүүд зоолттой… гэхдээ одоо тэд зүгээр л шүдний чигчлүүр.”
+
+Тэгээд нэг хэсэг зогсоно… алсыг харан, аяархан: “Миний хүмүүс хаана байна?” гэж асууна.
+Ганцаардсандаа биш — харин өөрт чинь тохирохоо больсон зүйлсээс аль хэдийн өсөж гарсан учраас.
+
+Үүний дараа үнэн рүү шилжих өөрчлөлт ирнэ. Бага жүжиглэнэ. Бага хүч гаргана.
+“Нүцгэн… тийм ээ… хувцас өмсөх чинь дэндүү их ажил.”
+Зүгээр л үнэнч байдал. Зүгээр л өөрөөрөө байх.
+
+Тэгээд бүр чин сэтгэлийн, жинхэнэ, бүрэн дүүрэн, чамтай нийцсэн зүйл санал болгосон ч — эргэлзэх тэр мөч байсаар… яг л: “Би үүнийг яахаа мэдэхгүй байна.”
+
+Энэ бүхний дунд нэг зүйлийг ойлгож эхэлнэ: тулаан бүрийг хийх шаардлагагүй байсан… ялалт бүр ч үнэ цэнтэй байгаагүй.
+
+Гэхдээ ямар ч байсан — хөдөлгөөн эргэн ирнэ. Ухаарал араас нь дагана.
+Тэр гал ч дахин асна.
+
+Хүчээр биш. Ямар нэг зүйл батлахын тулд биш.
+Зүгээр л… аяндаа.
+
+“Эдгээрийн талаар жаахан судалгаа хийвэл зүгээр юм шиг…”
+Эсвэл чи хаашаа явж байгаагаа аль хэдийн яг таг мэдэж байгаа ч юм билүү.
+
+Сэтгэлд чинь нийцэж байвал өөртөө аваарай <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg">
+
+#таро #нийтийнуншлага #сүнслэгсэрэлт #дотоодажил #сүүдрийнажил #үнэн #нийцэл #энергийншинэчлэл #сэрэлт #сүнслэгаялал #veilocity #fyp #чамд
+
+<a href="https://vimeo.com/1225060093?share=copy">https://vimeo.com/1225060093?share=copy</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 5:05 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546983093133516891/Fighting_the_World_to_Forward_Mo_caption.mp4?ex=6acbf3c6&amp;is=6acaa246&amp;hm=80f32dcc3060f9cfcb13c56c1412ddc04223ebe15a666b778626c8e0d84e2220&amp;" alt="Video attachment" title="Video: Fighting_the_World_to_Forward_Mo_caption.mp4 (90.89 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546983098162610237/Fighting_the_World_to_Forward_Motion-Mon.srt?ex=6acbf3c8&amp;is=6acaa248&amp;hm=a2cfbd163b60a6b8060a4ad4c1124d11a2311e86c8c3b7c6843f7d25bcf76937&amp;"> Fighting_the_World_to_Forward_Motion-Mon.srt </a></div><div class=chatlog__attachment-generic-size>3.06 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546983098552549387/Fighting_the_World_to_Forward_Moti_audio.mp3?ex=6acbf3c8&amp;is=6acaa248&amp;hm=ce135c20b50aabd50b8cd34e8730d96ff42ebdf92beace5856de932d4df2a6e3&amp;" alt="Audio attachment" title="Audio: Fighting_the_World_to_Forward_Moti_audio.mp3 (1.96 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1546996351534112890 class=chatlog__message-container data-message-id=1546996351534112890><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 5:31 PM"><a href=#chatlog__message-container-1546996351534112890>9/8/2026 5:31 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Бүтцийг юу тогтвортой байлгадаг вэ <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="➡️"
+    title="arrow_right"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/27a1.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128208;"
+    title="triangular_ruler"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4d0.svg"> 01/12/2025 - Жоржиа</strong>
+
+Итгэлгүй гэрч нуран унана.
+Гэрчгүй итгэл үнэмшил гацна.
+
+Тэднийг нэгтгэвэл,
+бүхэл бүтэц нь гуйвшгүй болно.
+
+#өөрийгөөухамсарлах #сэтгэлгээнийөөрчлөлт #тодорхой байдал #дотоодүйлс #өсөлтсөөрөхсэтгэлгээ #яруу найргийнмэргэн ухаан #хүнийтуршлага #сэрэх #ухамсар #сүнслэгөсөлт #оршихуй #амьдралынсургамж #нэгнийхууль #таталцлынхууль #үнэнийгэрэлхийлэгч #өөрийгөөтуйланэргэх #ойлголт #алсынүзэл #ухамсартайбайдал #хуульзүй #иргэнийнийгэм #бодлого #засаглал #шударгаёс #хүнийэрх #нийгмийнсистем #улс төрийнбодит байдал #үндэснийтөлөв #хуульбаамьдрал
+
+<a href="https://vimeo.com/1225072770?share=copy">https://vimeo.com/1225072770?share=copy</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 5:45 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546996349537620009/What_Keeps_a_Structure_Standing-_caption.mp4?ex=6acc001f&amp;is=6acaae9f&amp;hm=6be33af14f08bc0827c45026bbc67175e0ba9c8371105cd672d4fd0f04472293&amp;" alt="Video attachment" title="Video: What_Keeps_a_Structure_Standing-_caption.mp4 (18.75 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1546996350548316223/What_Keeps_a_Structure_Standing-Mongolia.srt?ex=6acc001f&amp;is=6acaae9f&amp;hm=721265c6540f85cccda816e388f96ca740646952466979fffa6a9fb6af3a6d8d&amp;"> What_Keeps_a_Structure_Standing-Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>1019 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1546996350967742555/What_Keeps_a_Structure_Standing-Mo_audio.mp3?ex=6acc001f&amp;is=6acaae9f&amp;hm=83f000ca5d92ace1c1dc516e0975212ea2f4409375331c912a5d71d029e391c6&amp;" alt="Audio attachment" title="Audio: What_Keeps_a_Structure_Standing-Mo_audio.mp3 (405.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547010480315433030 class=chatlog__message-container data-message-id=1547010480315433030><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Tuesday, September 8, 2026 6:27 PM"><a href=#chatlog__message-container-1547010480315433030>9/8/2026 6:27 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Truth Waits Behind the Mirror <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129694;"
+    title="mirror"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fa9e.svg"> 21/02/2026 - Georgia</strong>
+
+There’s danger in ignoring corruption.
+There’s also danger in staring at it too long.
+
+I’ve shared tools to download the Epstein files directly from the Justice source — because truth should be preserved at its origin, not filtered through narratives.
+
+If the source goes down, what replaces it?
+Speculation. Manipulation. Distortion.
+
+Archive responsibly.
+Examine clearly.
+Don’t let the mirror warp you.
+
+Google Download:
+<a href="https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing">https://drive.google.com/drive/folders/1XbZLq4RUyEnaSikcebfi0Bg5NLw3ck37?usp=sharing</a>
+
+Set 1
+<a href="https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g">https://mega.nz/folder/Gp4CEK6B#2ZhFBqEcdCrtpdU31tn4_g</a>
+Set 2
+<a href="https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g">https://mega.nz/folder/e5B1TSZB#qJ66rsM9dO4CL18yyT5C0g</a>
+Set 3
+<a href="https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w">https://mega.nz/folder/IqZ3WAqb#oz7IEqk90CCsrtz-IJx-6w</a>
+Set 4
+<a href="https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA">https://mega.nz/folder/Mr5QAR7A#DAjBrmFZPWRcU0tQhdsebA</a>
+Set 5
+<a href="https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg">https://mega.nz/folder/AvRynZIK#7bbd_CTY355iCHK8cvPWrg</a>
+Set 6
+<a href="https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA">https://mega.nz/folder/F3JzgApT#kLchzuG2Sh83Dl-6hvgegA</a>
+
+#EpsteinFiles #Epstein #EpsteinCase #EpsteinInvestigation #MirrorOfEpstein #JusticeForVictims #Accountability #PublicRecords #Transparency #ExposeTheTruth #DoYourResearch #TruthMatters #JusticeMatters #StandForTruth #Awareness #SeekTheTruth
+
+<a href="https://vimeo.com/1166815301">https://vimeo.com/1166815301</a>
+<a href="https://vimeo.com/1225082178">https://vimeo.com/1225082178</a></span> <span class=chatlog__edited-timestamp title="Tuesday, September 8, 2026 6:28 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547010471775838360/Man_in_the_Mirror.mp4?ex=6acc0d46&amp;is=6acabbc6&amp;hm=be6c7cfc82885d014286466a0edd366ba16cb19a5ebeaffa46cdbf384ccc5cba&amp;" alt="Video attachment" title="Video: Man_in_the_Mirror.mp4 (2.16 MB)"></video></div><div class=chatlog__attachment><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547010472400781383/The_Mirror_of_Evil.png?ex=6acc0d46&amp;is=6acabbc6&amp;hm=505cf5ab92e8560b88d7081850c243e2c8bf6599dfabe050ecb05659850a2fb0&amp;"> <img class=chatlog__attachment-media src="https://cdn.discordapp.com/attachments/1546323553811566692/1547010472400781383/The_Mirror_of_Evil.png?ex=6acc0d46&amp;is=6acabbc6&amp;hm=505cf5ab92e8560b88d7081850c243e2c8bf6599dfabe050ecb05659850a2fb0&amp;" alt="Image attachment" title="Image: The_Mirror_of_Evil.png (1.83 MB)" loading=lazy> </a></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547010474267250760/The_Mirror_of_Evil-Mongolian_Mon_caption.mp4?ex=6acc0d47&amp;is=6acabbc7&amp;hm=5a10f7cdffe8248fc64499d073e36e884c478bd085dc0ab28a4d95780706b74e&amp;" alt="Video attachment" title="Video: The_Mirror_of_Evil-Mongolian_Mon_caption.mp4 (69.16 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547010479744884866/The_Mirror_of_Evil-Mongolian_Mongolia.srt?ex=6acc0d48&amp;is=6acabbc8&amp;hm=415e6aa512a6700731150587a4e7219861ae0e9af5a79230cf461431220cd967&amp;"> The_Mirror_of_Evil-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>4.63 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547010480055394365/The_Mirror_of_Evil-Mongolian_Mongo_audio.mp3?ex=6acc0d48&amp;is=6acabbc8&amp;hm=27da0da70f42b6c703304d642e03cf871a3aef43fd65b2ea617956e78e62aafb&amp;" alt="Audio attachment" title="Audio: The_Mirror_of_Evil-Mongolian_Mongo_audio.mp3 (1.69 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547381823804543146 class=chatlog__message-container data-message-id=1547381823804543146><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, September 9, 2026 7:02 PM"><a href=#chatlog__message-container-1547381823804543146>9/9/2026 7:02 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128220;"
+    title="scroll"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4dc.svg"> Бидний цохисон чулуу <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="⚡"
+    title="zap"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/26a1.svg"> 13/10/2025 - Албани <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> </strong>
+
+Итгэл, хуурмаг байдал, мөнхийн Одоо цагийн тухай аман эргэцүүлэл.
+Энэ бол Бурхан оршин байгааг батлах тухай биш - энэ бол та бол нотолгоо гэдгийг санах тухай юм.
+Энэ түүх нь авардаг, учир нь доторх Сүнс нь хэлбэрийг нь маргахын оронд хичээлээр амьдардаг бүх хүмүүст амьсгалж, амьдардаг.
+
+#МөнхийнОдоо #Veilocity111 #Сэрэх #Итгэл #Үнэн #Зөгнөл #ХристийнУхамсар #Сургаалт зүйрлэл #ДотоодАмар Амгалан #АмьдҮг #ЯригдсанҮг #ГэрлийнҮр #БиднийЦохисон Чулуу #БурханДотоод #Нэгдмэл #ХэнБэ гэдгээСана
+
+<a href="https://vimeo.com/1225438918?share=copy">https://vimeo.com/1225438918?share=copy</a></span> <span class=chatlog__edited-timestamp title="Wednesday, September 9, 2026 7:13 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547381817286467614/The_Rock_We_StrikeS-Mongolian_Mo_caption.mp4?ex=6acb6cde&amp;is=6aca1b5e&amp;hm=6ab060d9920fadc446af67a7cee833af9dc514001a63dc37a53d8c82aa4361cf&amp;" alt="Video attachment" title="Video: The_Rock_We_StrikeS-Mongolian_Mo_caption.mp4 (143.05 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547381823125061773/The_Rock_We_StrikeS-Mongolian_Mongolia.srt?ex=6acb6cdf&amp;is=6aca1b5f&amp;hm=09aab126edf6225a739100c2ec13ddf999d91538de5d52273cbb58c0a11fc87d&amp;"> The_Rock_We_StrikeS-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>7.84 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547381823489704057/The_Rock_We_StrikeS-Mongolian_Mong_audio.mp3?ex=6acb6cdf&amp;is=6aca1b5f&amp;hm=6357f20c6e620a2598c0a441410551177ebc33ee0bfd3cd2af0686af8c64f524&amp;" alt="Audio attachment" title="Audio: The_Rock_We_StrikeS-Mongolian_Mong_audio.mp3 (3.25 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547391140901167238 class=chatlog__message-container data-message-id=1547391140901167238><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, September 9, 2026 7:39 PM"><a href=#chatlog__message-container-1547391140901167238>9/9/2026 7:39 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> “Буяны бизнес” <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128293;"
+    title="fire"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"> 17/10/2025 - Албани</strong>
+
+Бид ядууст үйлчилдэг гэж хэлдэг ч систем тэднийг ийм байлгаснаар ашиг олдог. Жинхэнэ үйлчлэл нь өөрийгөө үнэлэх эсвэл алга ташилтаар олддоггүй - энэ нь бусдыг бидэнгүйгээр зогсоход нь эрх мэдэл олгоход оршино. Бид бүгд машинаас бага хамааралтай байж сурах үед аюулгүйн тор эцэст нь хийх ёстой зүйлээ хийж чадна: хараат байдлыг хадгалах биш, аврах. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128591;"
+    title="pray"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f64f.svg">
+
+#Сэрэх #ҮнэнээрҮйлчлэх #ҮйлдвэржүүлэлтийгҮржүүлээгүйЭнэрэнгүйҮйлчлэл
+
+<a href="https://vimeo.com/1225441899?share=copy">https://vimeo.com/1225441899?share=copy</a></span> <span class=chatlog__edited-timestamp title="Wednesday, September 9, 2026 9:01 PM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547391138522988615/The_Business_of_Charity-Mongolia_caption.mp4?ex=6acb758c&amp;is=6aca240c&amp;hm=17593588f66575ec5b24c04269df939497b9b7e7457cd2f15fcb794aae4d4306&amp;" alt="Video attachment" title="Video: The_Business_of_Charity-Mongolia_caption.mp4 (43.32 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547391140465086574/The_Business_of_Charity-Mongolian_Mongol.srt?ex=6acb758d&amp;is=6aca240d&amp;hm=f16c1754cdbf72c273e73a4469853a105557474e40e2e356a83083adfe63351f&amp;"> The_Business_of_Charity-Mongolian_Mongol.srt </a></div><div class=chatlog__attachment-generic-size>2.37 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547391140930785320/The_Business_of_Charity-Mongolian__audio.mp3?ex=6acb758d&amp;is=6aca240d&amp;hm=bafd1549fd72289844c853d88f2bb534ee6737d3dcd90ed45c0d8a4289151a77&amp;" alt="Audio attachment" title="Audio: The_Business_of_Charity-Mongolian__audio.mp3 (984.52 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547413762825265172 class=chatlog__message-container data-message-id=1547413762825265172><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Wednesday, September 9, 2026 9:09 PM"><a href=#chatlog__message-container-1547413762825265172>9/9/2026 9:09 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Миний бодит байдалд хайрыг дүрслэх нь <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#129728;"
+    title="anatomical_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fac0.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128065;️"
+    title="eye"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f441.svg"> 2025/09/26 - Албани</strong>
+<code class="chatlog__markdown-pre chatlog__markdown-pre--multiline nohighlight"># Хөтөлбөр: Миний бодит байдалд хайрыг дүрслэх нь - 2025/09/26 - Албани
+
+# Динамик даалгаварт зориулагдсан хувьсагч
+хайр = Байхгүй
+
+# Даалгавар өгөхдөө миний байгаа бүхнийг хүндэтгэ
+хайр = &quot;өөрийгөө хүндэтгэх + үнэн + эрх чөлөө&quot;
+
+# Нийтлэг алдаа (үүнийг бүү хий):
+# хайр = &quot;хяналт&quot;
+# ❌ хайрыг биш, харин боолчлолыг бий болгодог
+
+# Миний орчинд хайрыг хэрэгжүүлдэг функц
+def render_love(love):
+if love == &quot;control&quot;:
+return &quot;Алдаа: гажуудал илэрсэн. Функц нь зорилгодоо үйлчлэхгүй байна.&quot;
+else:
+return f&quot;Хайрыг {хайр} гэж гүйцэтгэсэн — цэвэрхэн, чөлөөтэй, зэрэгцүүлсэн.&quot;
+
+# Хөтөлбөрийг ажиллуулах
+хэвлэх(render_love(love))
+
+#ХайрынКод #ДинамикДаалгавар #ХайрХяналтБиш #Эрх ЧөлөөнийФункц #ӨөрийгөөХүндэтгэх #ДотоодКод #СүнслэгКодлолт #ДавхцлыгТаслах #ҮнэнЭмхэтгэгч #Бүрэн ЭрхТуслахСкрипт #АмьдралКод #Эрх ЧөлөөнийТөлөөлөлдПрограмчлагдсан</code>
+<a href="https://vimeo.com/1225509483?share=copy">https://vimeo.com/1225509483?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 1:53 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547413760145100900/Rendering_Love_in_My_Reality1-Mo_caption.mp4?ex=6acb8a9d&amp;is=6aca391d&amp;hm=9164792b1bd507ca9fc6cc9f4ddb7035aa480a400ef624c158119496d90e94f6&amp;" alt="Video attachment" title="Video: Rendering_Love_in_My_Reality1-Mo_caption.mp4 (29.18 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547413762259157043/Rendering_Love_in_My_Reality1-Mongolian_.srt?ex=6acb8a9e&amp;is=6aca391e&amp;hm=45e9519a79120b3e31cb293e77d667b4cf259fe7588e8425f6082682a24b86c8&amp;"> Rendering_Love_in_My_Reality1-Mongolian_.srt </a></div><div class=chatlog__attachment-generic-size>3.41 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547413762573598821/Rendering_Love_in_My_Reality1-Mong_audio.mp3?ex=6acb8a9e&amp;is=6aca391e&amp;hm=88905ef2b846f67e9368fc4f8376cd6c55b210ac7d1e53de1ad0834fe93c63b8&amp;" alt="Audio attachment" title="Audio: Rendering_Love_in_My_Reality1-Mong_audio.mp3 (1.4 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547500890817298514 class=chatlog__message-container data-message-id=1547500890817298514><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 2:56 AM"><a href=#chatlog__message-container-1547500890817298514>9/10/2026 2:56 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> Энэрэнгүй сэтгэл Ядаргаа бол харгислал биш - Энэ бол эвдэрсэн системийн шинж тэмдэг <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 2025/12/22 - Жоржиа</strong>
+
+Энэ мэтгэлцээн хүмүүс санаа тавьдаг учраас бий болсон - тэд зүгээр л нэг өвдөлтөд өөр өөрөөр хариу үйлдэл үзүүлдэг.
+
+Зарим нь уй гашуу, яаралтай байдлаас; зарим нь ядаргаа, энэрэнгүй сэтгэлийн ядаргаанаас. Хоёулаа хүн.
+
+Асуудал нь бусдын зовлонг ойлгох сэтгэлд биш - энэ бол зовлонг шалтгааныг нь шийдэлгүйгээр эргэлдүүлдэг систем юм.
+
+Буяны үйлс нь нэр төрийг хадгалж, чөлөөлөлтөд хүргэх ёстой бөгөөд удаан хугацааны хамаарал эсвэл хуваагдал биш юм.
+
+Зорилго нь энгийн: тогтвортой байдал, нэр төр, туслах нь цаашид өвдөлтийг дамжуулах шаардлагагүй болсон дэлхий ертөнц.
+
+#Нэр төрДээрБуяныХамгийнДуу #ЭнэрэнгүйЯдаргаа #ХүнийНэр төр #СистемийнАлдаа #ЦиклийгТөгсгөх #ШудрагаҮйлчилгээгээрТуслах #ЭнхАмгаланГүйцэтгэлБишГүйцэтгэл #ЧөлөөлөлтБишГазарХамаарал #СистемЭдгээх #ХамтынАсрамж #БүтцийнӨөрчлөлт #Нэр төрөөрШудрагаҮйлдэл #ХамтдааИлүүИлүүСайханХий
+
+<a href="https://vimeo.com/1225521736?share=copy">https://vimeo.com/1225521736?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 3:02 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547500886035669012/Compassion_Fatigue-Mongolian_Mon_caption.mp4?ex=6acbdbc2&amp;is=6aca8a42&amp;hm=5c1c7c661ffffbb541a1c53bd165fafb1a625e3bef5bc2072d15ed361efb3cd8&amp;" alt="Video attachment" title="Video: Compassion_Fatigue-Mongolian_Mon_caption.mp4 (96.09 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547500890099814441/Compassion_Fatigue-Mongolian_Mongolia.srt?ex=6acbdbc3&amp;is=6aca8a43&amp;hm=d75f03abf0eb249f4694ba56732fb7d195365d23e3db904a9156926bfd08f9de&amp;"> Compassion_Fatigue-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>5.87 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547500890477297684/Compassion_Fatigue-Mongolian_Mongo_audio.mp3?ex=6acbdbc3&amp;is=6aca8a43&amp;hm=4f9ce89f6ae246a6d16a6dc6cd2b9da78756389de2105c40e2de02b35159df90&amp;" alt="Audio attachment" title="Audio: Compassion_Fatigue-Mongolian_Mongo_audio.mp3 (2.24 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547506786238603304 class=chatlog__message-container data-message-id=1547506786238603304><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 3:19 AM"><a href=#chatlog__message-container-1547506786238603304>9/10/2026 3:19 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Амар амгаланг эзэмш <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128656;"
+    title="minibus"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f690.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 26/08/2025 - Албани</strong>
+
+Тэд бидэнд амар амгаланг олох зүйл,
+хотууд, системүүд болон гарын үсэг зурсан хүмүүст даатгасан зүйл гэж хэлсэн. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127961;️"
+    title="cityscape"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f3d9.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128395;️"
+    title="pen_fountain"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f58b.svg">
+Гэвч хана хумигдаж, үнийн өсөлтийн хооронд хаа нэгтээ хяналт чимээгүйхэн алга болсон.
+
+Фургон өөр хэмнэлийг заадаг.
+
+Өөрийн гараар хадгалагддаг амар амгалан.
+Өөрийнх учраас тэлдэг орон зай. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127807;"
+    title="herb"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f33f.svg">
+
+Дэвжих стратеги байхгүй.
+Химийн тайван байдал байхгүй.
+Зөвшөөрөл шаардлагагүй.
+
+Зүгээр л хаана амрахаа,
+хэзээ хөдлөхөө,
+юуг хамгаалахаа сонгох чимээгүй хүч. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128273;"
+    title="key"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f511.svg">
+
+Энэ бол зугтах биш - энэ бол нөхөн сэргээлт.
+
+Дэлхий ертөнцөөс зугтах биш,
+харин эрх мэдэл рүүгээ буцаж орох.
+
+Өөрийн орон зайг эзэмш.
+Хэмнэлээ эзэмш.
+
+Өөрийн амар амгаланг эзэмш. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127748;"
+    title="sunrise_over_mountains"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f304.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg">
+
+#ВанАмьдрал #МинималистАмьдрал #СанхүүгийнЭрх Чөлөө #КемперВанАмьдрал #ГэрVansVs #НүүдэлчинАмьдрал #ДугуйтайАмьдрал #ӨргүйАмьдрал #Эрх ЧөлөөтэйАмьдралынХэв маяг #ӨөрийнЗагаарАмьдрах #ДугуйтайЖижигГэр #СистемээсСарна #СүлжээнээсЧөлөөтАмьдрал #АялалЭрх Чөлөө #ШинэчлэхХэмжээгБагасгах
+
+<a href="https://vimeo.com/1225523998?share=copy">https://vimeo.com/1225523998?share=copy</a></span> <span class=chatlog__edited-timestamp title="Thursday, September 10, 2026 3:25 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547506781880586240/I_dont_own_a_house_I_own_my_peac_caption.mp4?ex=6acbe140&amp;is=6aca8fc0&amp;hm=d597d666833e2bdf984e33906998e9176df95e3d750dbb7fc8fcd06311dc6454&amp;" alt="Video attachment" title="Video: I_dont_own_a_house_I_own_my_peac_caption.mp4 (69.94 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547506785160663081/I_dont_own_a_house_I_own_my_peace-Mongol.srt?ex=6acbe140&amp;is=6aca8fc0&amp;hm=6219c74fbea47ceab467630074ba97c4e7ac7e409b049563658521094486607a&amp;"> I_dont_own_a_house_I_own_my_peace-Mongol.srt </a></div><div class=chatlog__attachment-generic-size>3.79 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547506785945129020/I_dont_own_a_house_I_own_my_peace-_audio.mp3?ex=6acbe141&amp;is=6aca8fc1&amp;hm=7da0372b8faa0b14709751f63318bec4eb0e8c0d1c7fa696742ad9d056a149d4&amp;" alt="Audio attachment" title="Audio: I_dont_own_a_house_I_own_my_peace-_audio.mp3 (1.54 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547511505057222717 class=chatlog__message-container data-message-id=1547511505057222717><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 3:38 AM"><a href=#chatlog__message-container-1547511505057222717>9/10/2026 3:38 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Төгсгөлгүй Ажил Энх Тайванийг Саатуулдаг ♾️ 08/09/2025 - Албани</strong>
+
+Энэ даалгавар дуусдаг.
+Тэгээд дуусахад амар амгалан аяндаа ирдэг.
+Энэ бол шударга ажил
+ба хаалтгүйгээр хүчин чармайлт зарцуулдаг системүүдийн хоорондох ялгаа юм -
+инфляци нь хөдөлмөрийг ёроолгүй худаг болгон хувиргадаг бөгөөд энх тайван төгсгөлгүй хойшлогддог.
+
+#ТөгсгөлгүйАжил #Энх ТайванийгСаатуулдаг #ШударгаАжил #ХаалттайАжил #СистемийнУс Оруулга #ИнфляцийнБодит байдал #ЁроолгүйХудаг #ХөдөлмөрийнҮнэ Цэнэ #АмралтБүхНэгХүн #Энх ТайванБайгалийн #БүтээмжээсДээш #ХүнийҮнэ Цэнэ #Эдийн засгийн тусгал #ЧимээгүйҮнэн #Ухамсар
+
+<a href="https://vimeo.com/1225530926?share=copy">https://vimeo.com/1225530926?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 11:49 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547511501882003466/Accountability-Mongolian_Mongoli_caption.mp4?ex=6acbe5a5&amp;is=6aca9425&amp;hm=630f139ea602485395aca9db9b3af10d54587d18d6c7833a46c36c55e2fdf25a&amp;" alt="Video attachment" title="Video: Accountability-Mongolian_Mongoli_caption.mp4 (71.72 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547511504465559643/Accountability-Mongolian_Mongolia.srt?ex=6acbe5a6&amp;is=6aca9426&amp;hm=ed785068951940f0b025d025c62f1f8a19174d3817ffcf7c211952cbd6b700bf&amp;"> Accountability-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>1.09 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547511504780402708/Accountability-Mongolian_Mongolia_audio.mp3?ex=6acbe5a6&amp;is=6aca9426&amp;hm=b7a9ff5198a7537b5422763445f338b10320decc6ab0d07b367e6ac216343049&amp;" alt="Audio attachment" title="Audio: Accountability-Mongolian_Mongolia_audio.mp3 (738.14 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547600027592032306 class=chatlog__message-container data-message-id=1547600027592032306><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 9:29 AM"><a href=#chatlog__message-container-1547600027592032306>9/10/2026 9:29 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Төгсгөлгүй — зүгээр л идэвхжилүүд нээгдэж байна <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"> 08/02/2026 - Жоржиа</strong>
+
+#идэвхжүүлэлт #сүнслэгсэрэлт #шинээхлэл #хувиргалтынаялал #дотоодөсөлт #бурханлагцаг хугацаа #сэтгэлийнзам #эдгэрэлтийнаялал #ухамсар #дээдсэрэлт #гэрлийнзам #бурханлагцаг хугацаа #нэгхаалгаанээгдэх #дахинтөрөлтэнгийнэнерги
+
+<a href="https://vimeo.com/1225619447?share=copy">https://vimeo.com/1225619447?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 11:50 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547600023955710042/No_endings_just_activations-Mong_caption.mp4?ex=6acb8f56&amp;is=6aca3dd6&amp;hm=5a734ebd65a3682ba33da69519c5527d2fd05cb0581c44b53850ec197b2fdcb1&amp;" alt="Video attachment" title="Video: No_endings_just_activations-Mong_caption.mp4 (66.14 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547600026828677191/No_endings_just_activations-Mongolian_Mo.srt?ex=6acb8f57&amp;is=6aca3dd7&amp;hm=c508f72f5bf0af9accf36d73e05a98ececdba16d01b59232bf2923c0fe99b876&amp;"> No_endings_just_activations-Mongolian_Mo.srt </a></div><div class=chatlog__attachment-generic-size>2.14 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547600027193708775/No_endings_just_activations-Mongol_audio.mp3?ex=6acb8f57&amp;is=6aca3dd7&amp;hm=ddd2f89363572fdac03d987a805cd5e75797d588568a72e298b049af241739ed&amp;" alt="Audio attachment" title="Audio: No_endings_just_activations-Mongol_audio.mp3 (1.03 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547759395331510282 class=chatlog__message-container data-message-id=1547759395331510282><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Thursday, September 10, 2026 8:03 PM"><a href=#chatlog__message-container-1547759395331510282>9/10/2026 8:03 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>UNO Reverse <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127876;"
+    title="christmas_tree"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f384.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 04/12/2025 - Жоржиа</strong>
+
+Энэ баярын үеэр асуудлаас зугтахын оронд тодорхой байдлыг сонгоорой.
+
+#баяр #баярынүе #сэтгэцийнэрүүлменд #өөрийгөөхайрлах #хилхязгаар #эдгэрлийнзамнал #дотоодамарамгалан #хөгжлийнсэтгэлгээ #сайнсайханбайдал #үнэнийгхэлэхүй #санамж #зулсарынбаяр2025 #шинэжил2025 #гэрэлбахайр #олоннийтийндэмжлэг</span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 3:53 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547759393737539594/UNO_Reverse-Mongolian_Mongolia_caption.mp4?ex=6acb7b03&amp;is=6aca2983&amp;hm=c7bf315c34b344dd0b932a1c1187b68379b3335387cb92b05a7cbc274f4878a3&amp;" alt="Video attachment" title="Video: UNO_Reverse-Mongolian_Mongolia_caption.mp4 (21.63 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547759394651906128/UNO_Reverse-Mongolian_Mongolia.srt?ex=6acb7b03&amp;is=6aca2983&amp;hm=cc649a0dc02b82738567db95d894142c4fc6c589c764602950c1e47aa9e654f5&amp;"> UNO_Reverse-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>906 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547759395033845891/UNO_Reverse-Mongolian_Mongolia_audio.mp3?ex=6acb7b03&amp;is=6aca2983&amp;hm=52488d90a7d615fe776f22092a588d00205ebf6d2c2ce6879e0fa1c84e66eaa8&amp;" alt="Audio attachment" title="Audio: UNO_Reverse-Mongolian_Mongolia_audio.mp3 (438.89 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547844065255497738 class=chatlog__message-container data-message-id=1547844065255497738><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 1:39 AM"><a href=#chatlog__message-container-1547844065255497738>9/11/2026 1:39 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> ​​Мартахуйн төөрөгдөл <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg"> 06/10/2025 - Албани</strong>
+
+Мэдлэг хэмээх бэлгийн тухай эргэцүүлэл — энэ бол хүний ​​зүрх сэтгэлд сүүдэр тусгагч, төгсгөлгүй олон хонгилоос бүрдсэн сүлжээ юм. Мэргэн ухаан хэмээн өргөн баригдсан зүйл нь Мартахуйн төөрөгдөл болон хувирч, олон хүн тэнд бүдчин төөрчээ; гэвч зарим нь гэртээ харих замыг заагч гэрлийг одоо ч санасаар байна. <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128156;"
+    title="purple_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f49c.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg">
+
+#СүнслэгЭргэцүүлэл #ЯрууҮнэн #ТэнгэрлэгЯриа #ГэрэлБаСүүдэр #Сэрэлт #Мартахуй #СүнслэгТэмцэл #Зүйрлэл #ДээдУхамсар #АйдасБаИтгэл #ДотоодГэрэл #СэтгэлийнАялал #МэргэнУхаан #ХайрБаГэрэл #ДээдОршихуй
+
+<a href="https://vimeo.com/1225848488?share=copy">https://vimeo.com/1225848488?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 2:14 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547844063976357938/The_Maze_of_Forgetfulness-Mongol_caption.mp4?ex=6acbc9de&amp;is=6aca785e&amp;hm=412e1d76275e581c3608ab668e4514e66d78757ff7ea500c8c62f275fa3a3b98&amp;" alt="Video attachment" title="Video: The_Maze_of_Forgetfulness-Mongol_caption.mp4 (8.8 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547844064559374436/The_Maze_of_Forgetfulness-Mongolian_Mong.srt?ex=6acbc9de&amp;is=6aca785e&amp;hm=1c336c7a1d0570f876f8e29d32d7eafcca0a0e037ef4745e94e246cf3fb3c0bb&amp;"> The_Maze_of_Forgetfulness-Mongolian_Mong.srt </a></div><div class=chatlog__attachment-generic-size>438 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547844064878268426/The_Maze_of_Forgetfulness-Mongolia_audio.mp3?ex=6acbc9de&amp;is=6aca785e&amp;hm=b94fa91d7fd17ca883f0aa710a1f7cf78c9ce3d30bec275d0eec64f69b83d599&amp;" alt="Audio attachment" title="Audio: The_Maze_of_Forgetfulness-Mongolia_audio.mp3 (201.89 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547862588334018642 class=chatlog__message-container data-message-id=1547862588334018642><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 2:53 AM"><a href=#chatlog__message-container-1547862588334018642>9/11/2026 2:53 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128024;"
+    title="elephant"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f418.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128148;"
+    title="broken_heart"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f494.svg"> Зааны тугалын уйлаан… <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 22/09/2025 - Албани</strong>
+
+Бүх гинж төмрөөр хийгдээгүй байдаг. Зарим нь ичгүүрээр, зарим нь чимээгүй байдлаар, зарим нь цаасан дээрх гарын үсгээр бүтдэг. Гэвч гинж бүр гэм зэмгүй нэгнийг уйлахад хүргэдэг. Өөрийн загалмайг үүрээрэй.
+
+#ЗаануудыгАваръя #ДалдҮнэн #ГэрБүлийнШүүх #СэтгэцийнЭрүүлМэндэдХалдах #ШударгаЁс #СонгогдсонНэгэн #ХаргислалыгЗогсооё #ИлХрагдахҮнэн #ГинжийгТасчьХая
+
+<a href="https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html">https://realityonairplanemode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html</a>
+
+<a href="https://vimeo.com/1225855347?share=copy">https://vimeo.com/1225855347?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 3:02 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547862584869265468/Baby_Elephant-Mongolian_Mongolia_caption.mp4?ex=6acbdb1e&amp;is=6aca899e&amp;hm=3991f6930b133aeba9d66b716df7dbd969464116850eb4301d179b6643d9492f&amp;" alt="Video attachment" title="Video: Baby_Elephant-Mongolian_Mongolia_caption.mp4 (37.94 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547862587398692944/Baby_Elephant-Mongolian_Mongolia.srt?ex=6acbdb1e&amp;is=6aca899e&amp;hm=f4d8a6ae5d608b8a9feff57a26e0100d50fe69b14f53748929808d4d498fb3c1&amp;"> Baby_Elephant-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>2.49 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547862588254199898/Baby_Elephant-Mongolian_Mongolia_audio.mp3?ex=6acbdb1e&amp;is=6aca899e&amp;hm=a45aa1b93c4acfbe84e7ab18a584bdcec996fbcaa30d9a48b77b1f59eb1bbf10&amp;" alt="Audio attachment" title="Audio: Baby_Elephant-Mongolian_Mongolia_audio.mp3 (1.02 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1547883661292994560 class=chatlog__message-container data-message-id=1547883661292994560><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, September 11, 2026 4:17 AM"><a href=#chatlog__message-container-1547883661292994560>9/11/2026 4:17 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Би бол Би <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✝️"
+    title="cross"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/271d.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 17/08/2025 - Албани</strong>
+
+Бид бол толгойд эргэлдэх тэрхүү бодлын дуу хоолой биш — үүнийг Библи бидэнд харуулдаг.
+
+Есүс | Ешуа бидэнд ийнхүү харуулж байна: Хүний мөн чанар нь түр зуурын бодлоор бус, харин үйлдлээр илэрдэг. Уруу таталт дуугарч болох ч тэр нь таны хэн болохыг тодорхойлохгүй. Түүнийг ардаа орхиход Бурханы үнэн л үлддэг.
+
+#Ешуа #СайнМэдээнийҮнэн #ИтгэлийнАялал #БиблийнМэргэнУхаан #СүнслэгТэмцэл #БурханыХаанчлал #ХристэдОлсонМөнЧанар #Гэмшил #ТаныБодолБиш #Есүс
+
+<a href="https://vimeo.com/1225873205?share=copy">https://vimeo.com/1225873205?share=copy</a></span> <span class=chatlog__edited-timestamp title="Friday, September 11, 2026 4:23 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547883657237102672/We_are_not_the_voice_in_our_head_caption.mp4?ex=6acbeebe&amp;is=6aca9d3e&amp;hm=ff1f35cbe02e507c13f201ddc2b1d5a737ca1f3aaac557c7afd5e18828019e87&amp;" alt="Video attachment" title="Video: We_are_not_the_voice_in_our_head_caption.mp4 (105.31 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1547883660441817088/We_are_not_the_voice_in_our_heads-Mongol.srt?ex=6acbeebe&amp;is=6aca9d3e&amp;hm=925298c52a6dc303d738a35e3a30499cbae76a4106cdf8f6ee621ecf9b3b4de7&amp;"> We_are_not_the_voice_in_our_heads-Mongol.srt </a></div><div class=chatlog__attachment-generic-size>4.43 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1547883660924026910/We_are_not_the_voice_in_our_heads-_audio.mp3?ex=6acbeebf&amp;is=6aca9d3f&amp;hm=d6ca65ac8ca7682ee304e09195b9cc17be1ac8caa4b882e5bc429ee5251c9edf&amp;" alt="Audio attachment" title="Audio: We_are_not_the_voice_in_our_heads-_audio.mp3 (2.29 MB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1548226470877335635 class=chatlog__message-container data-message-id=1548226470877335635><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, September 12, 2026 2:59 AM"><a href=#chatlog__message-container-1548226470877335635>9/12/2026 2:59 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Галын доорх мэргэн ухаан <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"> 02/12/2025 - Жоржиа</strong>
+
+Ойлголт хоцорсон үед уур хилэн нэмэгддэг.
+Итгэл таныг тодорхой байдал ирэх хүртэл авч явдаг.
+
+#уурмыг_мэргэн_боловсрол #өөрийгөө_таних #ялгаварлан_гадуурхах #итгэлийн_аялал #дотоод_хүч #эдгэрэлтийн_аялал #сэтгэл_сэтгэл_оюун_ойлголт #сэрэх #хил_хязгаар #ариун_би_хувь #зөн_зөн_бие #өсөлт_сэтгэлгээ #орчин_мистик #сэтгэл_зүй #оршин_байгаа #үнэн_хайгчид #стефенкүк
+
+<a href="https://vimeo.com/1226143752?share=copy">https://vimeo.com/1226143752?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 3:08 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1548226468792766484/The_Wisdom_Beneath_the_Flame-Mon_caption.mp4?ex=6acbdc82&amp;is=6aca8b02&amp;hm=6304eb0cdab9d60abfcb911bf8565b3310c22ec7b70ad3e90e92b09baf0a125a&amp;" alt="Video attachment" title="Video: The_Wisdom_Beneath_the_Flame-Mon_caption.mp4 (24.92 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1548226470269157496/The_Wisdom_Beneath_the_Flame-Mongolian_M.srt?ex=6acbdc83&amp;is=6aca8b03&amp;hm=ec93ad48c7960b4c46babf40a661179b5fe16357a8edc5b11c191d2fcb110139&amp;"> The_Wisdom_Beneath_the_Flame-Mongolian_M.srt </a></div><div class=chatlog__attachment-generic-size>1.48 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1548226470604836934/The_Wisdom_Beneath_the_Flame-Mongo_audio.mp3?ex=6acbdc83&amp;is=6aca8b03&amp;hm=0b51bc5c12009ee3848d8d9091a8c4cf24b275d93c2b1004591e44bc5430d0d3&amp;" alt="Audio attachment" title="Audio: The_Wisdom_Beneath_the_Flame-Mongo_audio.mp3 (612.52 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1548324433024786563 class=chatlog__message-container data-message-id=1548324433024786563><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Saturday, September 12, 2026 9:28 AM"><a href=#chatlog__message-container-1548324433024786563>9/12/2026 9:28 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="✨"
+    title="sparkles"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2728.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127744;"
+    title="cyclone"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f300.svg"> ​​Худаг бол аялал <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127793;"
+    title="seedling"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f331.svg"><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#127757;"
+    title="earth_africa"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f30d.svg"> 17/10/2025- Албани</strong>
+
+Нийгэм бидэнд хайрцаг буюу хязгаар, хаалт, өмчлөлийн тухай ойлголтыг зааж, үүнийгээ &quot;амжилт&quot; гэж нэрлэдэг. Гэвч хайрцаг нь сүнс бус, харин &quot;би&quot;-г (эгог) тэжээдэг. Бурханыг хайрцагт багтаах боломжгүй; тэгэхийг оролдох нь зөвхөн өөрсдийн ойлголт гэж боддог зүйлийнхээ эргэн тойронд таг тавихтай л адил хэрэг юм. Үнэндээ бид тагнаас нь эхлэн худгийн гүн рүү — амьдрал, итгэл үнэмшил, туршлагын гүн рүү — аялдаг бөгөөд тэнд л утга учир тасралтгүй урсдаг.
+
+#ЭнэХайрцагБиш #ХудагБолАялал #ҮзэлБодлынӨөрчлөлт #ЭгоБаСүнс #ДалдГүн #АнхааралтайАжигла #ДотоодАялал
+
+<a href="https://vimeo.com/1226190879?share=copy">https://vimeo.com/1226190879?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, September 12, 2026 9:44 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1548324431905038487/The_Well_Is_the_Journey-Mongolia_caption.mp4?ex=6acb8eff&amp;is=6aca3d7f&amp;hm=6c1cadc5c70cec12ed5eb0b467d3bc05fa6539ed71474b6b1f1654d279f21559&amp;" alt="Video attachment" title="Video: The_Well_Is_the_Journey-Mongolia_caption.mp4 (1.79 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1548324432299167824/The_Well_Is_the_Journey-Mongolian_Mongol.srt?ex=6acb8eff&amp;is=6aca3d7f&amp;hm=88751d4436fa471e74c01a98d787b1e831db71cf46350da145b18ec2d5f14b58&amp;"> The_Well_Is_the_Journey-Mongolian_Mongol.srt </a></div><div class=chatlog__attachment-generic-size>95 bytes</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1548324432689496155/The_Well_Is_the_Journey-Mongolian__audio.mp3?ex=6acb8eff&amp;is=6aca3d7f&amp;hm=3e2c03568f4acb2a22192ea65d44f1efcb9dc8150efb3446922787c36cf35a75&amp;" alt="Audio attachment" title="Audio: The_Well_Is_the_Journey-Mongolian__audio.mp3 (61.64 KB)"></audio></div></div></div></div></div>
+<div class=chatlog__message-group><div id=chatlog__message-container-1558322909498314914 class=chatlog__message-container data-message-id=1558322909498314914><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src=https://cdn.discordapp.com/embed/avatars/4.png alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span> <span class=chatlog__timestamp title="Friday, October 9, 2026 11:38 PM"><a href=#chatlog__message-container-1558322909498314914>10/9/2026 11:38 PM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong><img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128181;"
+    title="dollar"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f4b5.svg"> Баг зүүсэн дарангуйлал <img
+    loading="lazy"
+    class="chatlog__emoji "
+    alt="&#128330;️"
+    title="dove"
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f54a.svg"> 04/10/2025 - Албани</strong>
+
+Улс төрийн эрх мэдлийг үргэлж гавьяа зүтгэлээр олж авдаггүй, ихэнхдээ худалдаж авдаг.
+Үүнийг уур бухимдлаар бус, харин бодит байдлыг ухамсарласан өнцгөөс хэлж байна.
+
+Жинхэнэ өөрчлөлтөд хүчирхийлэл, үймээн самуун шаардлагагүй. Түүх бидэнд илүү тайван замуудыг зааж өгдөг: оюун санааны бат бөх шийдэмгий байдал, мацаг барих, тууштай байх, мөн тав тухтай байдлаас илүү үнэнийг сонгох явдал юм.
+
+Та мөнгөнд (долларт) бус, Бурханд илүү их найдах тусам мөнгөний танд үзүүлэх нөлөө, хяналт сулардаг.
+
+Бид долларын өмнө өвдөг сөгдөхөө больсон тэр өдөр түүний ноёрхол төгсгөл болно.
+
+Дуулгавартай байдлаа татан ав — тэгвэл тэрхүү эзэнт гүрэн өөрийн жин дор нуран унах болно.
+
+#АрдчиллынХуурамчДүрЭсгэлт #ДолларБолЭзэн #ЭрхЧөлөөнийТөлөөхМацаг #АймшгаасИлүүИтгэл #БурхандНайд #ОюунСанааныЭрхЧөлөө #ХөшгийгНээ #ДарангуйллаасИлүүҮнэн #АмьдралынШинэЗам #ДолларыгЭсэргүүц
+
+<a href="https://vimeo.com/1234576849?share=copy">https://vimeo.com/1234576849?share=copy</a></span> <span class=chatlog__edited-timestamp title="Saturday, October 10, 2026 12:02 AM">(edited)</span></div><div class=chatlog__attachment><video class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1558322903647526984/Tyranny_in_Disguise-Mongolian_Mo_caption.mp4?ex=6acbad8c&amp;is=6aca5c0c&amp;hm=6f52c1eacd02fa005097769a9b723a85d0558a82a6e9fd8b271b9d301ca58b09&amp;" alt="Video attachment" title="Video: Tyranny_in_Disguise-Mongolian_Mo_caption.mp4 (81.03 MB)"></video></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a href="https://cdn.discordapp.com/attachments/1546323553811566692/1558322908768636958/Tyranny_in_Disguise-Mongolian_Mongolia.srt?ex=6acbad8d&amp;is=6aca5c0d&amp;hm=9b197d23f854d7f9c2dcb2bda6b77a188ae6950a390d115ef887b977a98b7c86&amp;"> Tyranny_in_Disguise-Mongolian_Mongolia.srt </a></div><div class=chatlog__attachment-generic-size>5.06 KB</div></div></div><div class=chatlog__attachment><audio class=chatlog__attachment-media controls><source src="https://cdn.discordapp.com/attachments/1546323553811566692/1558322909334994944/Tyranny_in_Disguise-Mongolian_Mong_audio.mp3?ex=6acbad8d&amp;is=6aca5c0d&amp;hm=de67352910d53f6a45470f31f124dd118c0f85c3683a7285cc5d42ffb9025810&amp;" alt="Audio attachment" title="Audio: Tyranny_in_Disguise-Mongolian_Mong_audio.mp3 (2.04 MB)"></audio></div></div></div></div></div>
+
+</div>
+<div class=postamble><div class=postamble__entry>Exported 28 message(s)</div><div class=postamble__entry>Timezone: UTC-5</div></div>
