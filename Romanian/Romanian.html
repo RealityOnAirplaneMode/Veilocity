@@ -907,6 +907,50 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!chatlog) return;
   document.body.id = "top";
 
+  // Reliable first-click navigation for internal report anchors (Firefox).
+  const SCROLL_OFFSET = 18;
+  let navigationToken = 0;
+
+  function findHashTarget(hash) {
+    if (!hash || hash === "#") return null;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); }
+    catch { id = hash.slice(1); }
+    return document.getElementById(id) ||
+      Array.from(document.getElementsByName(id))[0] || null;
+  }
+
+  function robustHashScroll(hash) {
+    const target = findHashTarget(hash);
+    if (!target) return;
+    const token = ++navigationToken;
+    const correct = () => {
+      if (token !== navigationToken || !target.isConnected) return;
+      const top = target.getBoundingClientRect().top + window.scrollY - SCROLL_OFFSET;
+      window.scrollTo({ top: Math.max(0, top), behavior: "instant" });
+    };
+    correct();
+    requestAnimationFrame(correct);
+    setTimeout(correct, 250);
+    setTimeout(correct, 750);
+  }
+
+  document.addEventListener("click", event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || event.defaultPrevented || event.button !== 0 ||
+        event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const hash = link.getAttribute("href");
+    if (!findHashTarget(hash)) return;
+    event.preventDefault();
+    history.pushState(null, "", hash);
+    robustHashScroll(hash);
+  });
+
+  window.addEventListener("popstate", () => {
+    if (location.hash) robustHashScroll(location.hash);
+  });
+  if (location.hash) setTimeout(() => robustHashScroll(location.hash), 80);
+
   const groups = Array.from(chatlog.querySelectorAll(".chatlog__message-group"));
 
   function extractContentDate(group) {
@@ -1469,7 +1513,7 @@ document.addEventListener("DOMContentLoaded", () => {
         radial-gradient(circle at top right, rgba(216, 106, 60, 0.12), transparent 28%),
         linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%) !important;
       color: var(--text) !important;
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
     }
 
     body {

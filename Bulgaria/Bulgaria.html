@@ -2309,7 +2309,7 @@ Uma dan&#231;a, uma ora&#231;&#227;o, um sussurro de verdade… Eu te amo, Chris
     class="chatlog__emoji "
     alt="&#127890;"
     title="school_satchel"
-    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f392.svg"> 04/07/2026 - Германия <img
+    src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f392.svg"> 04/07/2025 - Германия <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#127465;&#127466;"
@@ -2330,7 +2330,7 @@ Uma dan&#231;a, uma ora&#231;&#227;o, um sussurro de verdade… Eu te amo, Chris
 
 ⁠германия #Франкфурт #Кемпер #ЖивотСМини #АктуализацияНаЖивота #НовоНачало #ЗапочванеОтново #Вяра #Устойчивост #Пътуване #ДокументаленФилм #ЛичноПътуване #Минимализъм #Отпускане #Преход #Приключение #Надежда #ПътуванеНаЖивота #СлънчеваЕнергия #КолаТърф
 
-<a href="https://vimeo.com/1209953507">https://vimeo.com/1209953507</a></span><span class=chatlog__edited-timestamp title="Tuesday, July 14, 2026 2:50 PM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Leaving_It_All_Behind-Bulgarian_Bulgaria.srt </a></div><div class=chatlog__attachment-generic-size>7.92 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1526911064284069902 class=chatlog__message-container data-message-id=1526911064284069902><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, July 15, 2026 7:19 AM"><a href=#chatlog__message-container-1526911064284069902>7/15/2026 7:19 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Денят, в който духът ми се завърна <img
+<a href="https://vimeo.com/1209953507">https://vimeo.com/1209953507</a></span><span class=chatlog__edited-timestamp title="Monday, October 12, 2026 11:32 AM">(edited)</span></div><div class=chatlog__attachment></div><div class=chatlog__attachment><div class=chatlog__attachment-generic><svg class=chatlog__attachment-generic-icon><use href=#attachment-icon /></svg><div class=chatlog__attachment-generic-name><a> Leaving_It_All_Behind-Bulgarian_Bulgaria.srt </a></div><div class=chatlog__attachment-generic-size>7.92 KB</div></div></div><div class=chatlog__attachment></div></div></div></div></div><div class=chatlog__message-group><div id=chatlog__message-container-1526911064284069902 class=chatlog__message-container data-message-id=1526911064284069902><div class=chatlog__message><div class=chatlog__message-aside><img class=chatlog__avatar src= alt=Avatar loading=lazy></div><div class=chatlog__message-primary><div class=chatlog__header><span class=chatlog__author title=dadventuressteve data-user-id=1264035953933156432>Veilocity</span><span class=chatlog__timestamp title="Wednesday, July 15, 2026 7:19 AM"><a href=#chatlog__message-container-1526911064284069902>7/15/2026 7:19 AM</a></span></div><div class="chatlog__content chatlog__markdown"><span class=chatlog__markdown-preserve><strong>Денят, в който духът ми се завърна <img
     loading="lazy"
     class="chatlog__emoji "
     alt="&#128330;️"
@@ -3115,6 +3115,50 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!chatlog) return;
   document.body.id = "top";
 
+  // Reliable first-click navigation for internal report anchors (Firefox).
+  const SCROLL_OFFSET = 18;
+  let navigationToken = 0;
+
+  function findHashTarget(hash) {
+    if (!hash || hash === "#") return null;
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); }
+    catch { id = hash.slice(1); }
+    return document.getElementById(id) ||
+      Array.from(document.getElementsByName(id))[0] || null;
+  }
+
+  function robustHashScroll(hash) {
+    const target = findHashTarget(hash);
+    if (!target) return;
+    const token = ++navigationToken;
+    const correct = () => {
+      if (token !== navigationToken || !target.isConnected) return;
+      const top = target.getBoundingClientRect().top + window.scrollY - SCROLL_OFFSET;
+      window.scrollTo({ top: Math.max(0, top), behavior: "instant" });
+    };
+    correct();
+    requestAnimationFrame(correct);
+    setTimeout(correct, 250);
+    setTimeout(correct, 750);
+  }
+
+  document.addEventListener("click", event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || event.defaultPrevented || event.button !== 0 ||
+        event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    const hash = link.getAttribute("href");
+    if (!findHashTarget(hash)) return;
+    event.preventDefault();
+    history.pushState(null, "", hash);
+    robustHashScroll(hash);
+  });
+
+  window.addEventListener("popstate", () => {
+    if (location.hash) robustHashScroll(location.hash);
+  });
+  if (location.hash) setTimeout(() => robustHashScroll(location.hash), 80);
+
   const groups = Array.from(chatlog.querySelectorAll(".chatlog__message-group"));
 
   function extractContentDate(group) {
@@ -3677,7 +3721,7 @@ document.addEventListener("DOMContentLoaded", () => {
         radial-gradient(circle at top right, rgba(216, 106, 60, 0.12), transparent 28%),
         linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%) !important;
       color: var(--text) !important;
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
     }
 
     body {
