@@ -357,6 +357,18 @@ VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/ENGLISH%20-
 
 ----------------------------------------------------------------------------------------------------
 
+## Ethiopia ##
+
+FILE:
+English/English.html
+
+VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Ethiopia/Ethiopia.html
+
+VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Ethiopia/Ethiopia.html
+
+
+----------------------------------------------------------------------------------------------------
+
 ## FRENCH ##
 
 FILE:
