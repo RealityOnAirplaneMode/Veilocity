@@ -15,6 +15,7 @@ create-pages:
     - cp -r Danish public/ || true
     - cp -r Dutch public/ || true
     - cp -r English public/ || true
+    - cp -r Ethiopia public/ || true
     - cp -r French public/ || true
     - cp -r Georgia public/ || true
     - cp -r German public/ || true
