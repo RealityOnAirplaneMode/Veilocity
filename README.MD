@@ -222,6 +222,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Afrikaans/Afrika
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Afrikaans/Afrikaans.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/English/Afrikaans/Afrikaans.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -233,6 +235,8 @@ Albania/Albania.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Albania/Albania.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Albania/Albania.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Albania/Albania.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -246,6 +250,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Arabic/Arabic.ht
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Arabic/Arabic.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Arabic/Arabic.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -257,6 +263,8 @@ Bosnia/Bosnia.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Bosnia/Bosnia.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Bosnia/Bosnia.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Bosnia/Bosnia.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -270,6 +278,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Bulgaria/Bulgari
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Bulgaria/Bulgaria.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Bulgaria/Bulgaria.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -281,6 +291,8 @@ Cantonese/Cantonese.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Cantonese/Cantonese.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Cantonese/Cantonese.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Cantonese/Cantonese.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -294,6 +306,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/court-of-illusio
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/court-of-illusions-trafficking/ENGLISH%20-%20Court.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -305,6 +319,8 @@ Czech-Republic/Czech-Republic.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Czech-Republic/Czech-Republic.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Czech-Republic/Czech-Republic.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Czech-Republic/Czech-Republic.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -318,6 +334,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Danish/Danish.ht
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Danish/Danish.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Danish/Danish.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -329,6 +347,8 @@ Dutch/Dutch.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Dutch/Dutch.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Dutch/Dutch.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Dutch/Dutch.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -342,7 +362,11 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/English/English.
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/English/English.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/English/English.html
 
+https://github.com/TruthUnbent/veilocity
+
+https://TruthUnbent/.github.io
 ----------------------------------------------------------------------------------------------------
 
 ## ENGLISH - COURT ##
@@ -353,6 +377,8 @@ ENGLISH - Court/ENGLISH - Court.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/ENGLISH%20-%20Court/ENGLISH%20-%20Court.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/ENGLISH%20-%20Court/ENGLISH%20-%20Court.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/English/ENGLISH%20-%20Court/ENGLISH%20-%20Court.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -366,6 +392,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Ethiopia/Ethiopi
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Ethiopia/Ethiopia.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Ethiopia/Ethiopia.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -377,6 +405,8 @@ French/French.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/French/French.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/French/French.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/French/French.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -390,6 +420,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Georgia/Georgia.
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Georgia/Georgia.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Georgia/Georgia.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -401,6 +433,8 @@ German/German.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/German/German.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/German/German.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/German/German.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -414,6 +448,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Greece/Greece.ht
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Greece/Greece.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Greece/Greece.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -425,6 +461,8 @@ Hebrew/Hebrew.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Hebrew/Hebrew.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Hebrew/Hebrew.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Hebrew/Hebrew.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -438,6 +476,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Hindi/Hindi.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Hindi/Hindi.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Hindi/Hindi.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -449,6 +489,8 @@ Iceland/Iceland.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Iceland/Iceland.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Iceland/Iceland.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Iceland/Iceland.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -462,6 +504,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Indonesian/Indon
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Indonesian/Indonesian.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Indonesian/Indonesian.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -473,6 +517,8 @@ Iran/Iran.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Iran/Iran.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Iran/Iran.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Iran/Iran.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -486,6 +532,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Italy/Italy.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Italy/Italy.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Italy/Italy.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -497,6 +545,8 @@ Japan/Japan.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Japan/Japan.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Japan/Japan.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Japan/Japan.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -510,6 +560,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Korea/Korea.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Korea/Korea.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Korea/Korea.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -521,6 +573,8 @@ Mandarin/Mandarin.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Mandarin/Mandarin.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Mandarin/Mandarin.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Mandarin/Mandarin.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -536,6 +590,7 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Mongolia/Mongoli
 
 VIEW 2 (Mirror 2): https://realityonairplanemode.github.io/Veilocity/Mongolia/Mongolia.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Mongolia/Mongolia.html
 
 ----------------------------------------------------------------------------------------------------
 
@@ -547,6 +602,8 @@ Nepal/Nepal.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Nepal/Nepal.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Nepal/Nepal.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Nepal/Nepal.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -560,6 +617,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Norwegian/Norweg
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Norwegian/Norwegian.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Norwegian/Norwegian.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -571,6 +630,8 @@ Philippines/Philippines.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Philippines/Philippines.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Philippines/Philippines.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Philippines/Philippines.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -584,6 +645,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Polish/Polish.ht
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Polish/Polish.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Polish/Polish.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -595,6 +658,8 @@ Portuguese-Brazil/Portuguese-Brazil.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Portuguese-Brazil/Portuguese-Brazil.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Portuguese-Brazil/Portuguese-Brazil.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Portuguese-Brazil.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -608,6 +673,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Romanian/Romania
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Romanian/Romanian.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Romanian/Romanian.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -619,6 +686,8 @@ Russian/Russian.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Russian/Russian.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Russian/Russian.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Russian/Russian.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -632,6 +701,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Slovenian/Sloven
 
 VIEW 2 (Mirror 2): https://realityonairplanemode.github.io/Veilocity/Slovenian/Slovenian.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Slovenian/Slovenian.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -643,6 +714,8 @@ Spanish/Spanish.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Spanish/Spanish.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Spanish/Spanish.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Spanish/Spanish.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -656,6 +729,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Sweden/Sweden.ht
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Sweden/Sweden.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Sweden/Sweden.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -667,6 +742,8 @@ Taiwan/Taiwan.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Taiwan/Taiwan.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Taiwan/Taiwan.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Taiwan/Taiwan.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -680,6 +757,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Thailand/Thailan
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Thailand/Thailand.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Thailand/Thailand.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -691,6 +770,8 @@ Turkey/Turkey.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Turkey/Turkey.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Turkey/Turkey.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Turkey/Turkey.html
 
 
 ----------------------------------------------------------------------------------------------------
@@ -704,6 +785,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Ukraine/Ukraine.
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Ukraine/Ukraine.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Ukraine/Ukraine.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -716,6 +799,8 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Vietnam/Vietnam.
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Vietnam/Vietnam.html
 
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Vietnam/Vietnam.html
+
 
 ----------------------------------------------------------------------------------------------------
 
@@ -727,6 +812,8 @@ Zulu/Zulu.html
 VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Zulu/Zulu.html
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Zulu/Zulu.html
+
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Zulu/Zulu.html
 
 
 ----------------------------------------------------------------------------------------------------
