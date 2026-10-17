@@ -659,7 +659,7 @@ VIEW 1 (Mirror 1): https://committothetimeline-70ca38.gitlab.io/Portuguese-Brazi
 
 VIEW 2 (Mirror 2): https://RealityOnAirplaneMode.github.io/Veilocity/Portuguese-Brazil/Portuguese-Brazil.html
 
-VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Portuguese-Brazil.html
+VIEW 3 (Mirror 2): https://truthunbent.github.io/veilocity/Portuguese-Brazil/Portuguese-Brazil.html
 
 
 ----------------------------------------------------------------------------------------------------
