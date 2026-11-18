@@ -100,6 +100,34 @@ SUPPORT_CSS = r'''.support-sidebar{background:#fff4e6;border:1px solid #efd5b9;b
 SUPPORT_JS = r'''<script id="veilocity-support-script">(()=>{async function copy(id){const v=document.getElementById(id).textContent;try{if(!navigator.clipboard?.writeText)throw Error();await navigator.clipboard.writeText(v);return true}catch(e){const t=document.createElement('textarea');t.value=v;t.style.position='fixed';t.style.opacity='0';document.body.append(t);t.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}t.remove();return ok}}const status=document.getElementById('support-status');document.getElementById('copy-btc')?.addEventListener('click',async()=>{status.textContent=await copy('support-btc')?'Bitcoin address copied.':'Select and copy the address above.'});document.getElementById('copy-paypal')?.addEventListener('click',async()=>{const ok=await copy('support-paypal');status.textContent=ok?'PayPal address copied.':'Select and copy the PayPal address above.';})})();</script>'''
 
 
+LOGO2_CSS = r'''/* Veilocity secondary badge: top-right of main content */
+.content{position:relative}
+.veilocity-logo2{position:absolute;top:4px;right:4px;width:clamp(68px,9.75vw,128px);height:auto;object-fit:contain;clip-path:circle(49% at 50% 50%);z-index:1;filter:drop-shadow(0 5px 8px #55412e25)}
+.content>header{padding-right:clamp(85px,12vw,145px);min-height:100px}
+@media(max-width:760px){.veilocity-logo2{width:80px;top:0;right:0}.content>header{padding-right:95px;min-height:90px}}
+@media(max-width:430px){.veilocity-logo2{width:62px}.content>header{padding-right:75px;min-height:70px}}
+'''
+
+
+def update_logo2(index_path: Path) -> None:
+    """Add/update optional logo2 without disturbing the existing page."""
+    html = index_path.read_text(encoding='utf-8')
+    html = re.sub(r'<img\b[^>]*\bid=["\']veilocity-logo2["\'][^>]*>', '', html, flags=re.I)
+    html = re.sub(r'/\* Veilocity secondary badge: top-right of main content \*/.*?(?=</style>)', '', html, flags=re.S)
+    html = html.replace('</style>', '\n'+LOGO2_CSS+'\n</style>', 1)
+    # Relative asset works with file:// and local offline servers.
+    if (index_path.parent / 'logo2.png').is_file():
+        badge = '<img id="veilocity-logo2" class="veilocity-logo2" src="logo2.png" alt="Veilocity circular badge">'
+        html, n = re.subn(r'(<section\s+class="content"[^>]*>)', lambda m: m.group(1)+badge, html, count=1)
+        if not n:
+            print('WARNING: Main content section not found; logo2 not inserted.')
+        else:
+            print('LOGO2: top-right badge enabled.')
+    else:
+        print('LOGO2: optional logo2.png not present in archive root; badge omitted.')
+    index_path.write_text(html, encoding='utf-8')
+
+
 def update_existing_index(index_path: Path) -> bool:
     """Move support into the existing left sidebar, reusing the existing logo."""
     import re
@@ -186,6 +214,7 @@ def build(root: Path, write_index: bool = False) -> None:
         print("Wrote index.html (default offline landing page).")
     else:
         update_existing_index(index_path)
+    update_logo2(index_path)
     print(f"LANDING PAGE PATH: {index_path}")
     print(f"COURT HTML EXISTS: {(root / COURT_FOLDER / COURT_HTML).is_file()}")
     print(f"COURT BUTTON IN INDEX: {'court-link-wrap' in index_path.read_text(encoding='utf-8')}")
