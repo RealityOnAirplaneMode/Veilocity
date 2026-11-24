@@ -105,47 +105,36 @@ Ark [Country] vXXX/
 
 ## Downloads (Full Archive)
 
-### Google Drive
+### MEGA — Recommended (More Current)
 
-VOL 1  
-https://drive.google.com/drive/folders/1-ITJtqt2EpUfz6eDd1i8JW6zalth44Ed?usp=sharing  
+The **VeilocityAndroid with English Bundle** offers a simple starting point: its `Arkhive` folder already includes the **English** and **Court of Illusions** content. On Android, copy the `Arkhive` folder to `/sdcard/Arkhive/`, select that archive root in VeilocityAndroid, and grant folder access. Additional country archives can be downloaded separately and placed alongside the existing folders. Preserve the original folder structure and refresh the app after adding content.
 
-VOL 2  
-https://drive.google.com/drive/folders/1LvNDBOHu1XhjR5HB8NWBv1wcKUYrqBlO?usp=sharing  
+| Download | Included content | Link |
+|---|---|---|
+| VeilocityAndroid with English Bundle | English and Court content pre-included | [Download on MEGA](https://mega.nz/folder/PHglWQgS#3tiuOKGQWo_W3ViS2na04Q) |
+| VeilocityAndroid & PC Offline Frontend | Android and PC offline frontend | [Download on MEGA](https://mega.nz/folder/IVo13S6D#noNLsVue5xmSCg9wbaaZAA) |
+| Court of Illusions — 11/11/2026 | Standalone Court archive | [Download on MEGA](https://mega.nz/folder/cUllmLKB#LZAmfGupLr4RnC6HARe6Iw) |
+| VOL 1 | Arabic, Bosnia, Bulgaria | [Download on MEGA](https://mega.nz/folder/DvZk3LDD#jlR6em7WKG1MuIvETs9-Dg) |
+| VOL 2 | French, German, Taiwan-Mandarin | [Download on MEGA](https://mega.nz/folder/e6hGRJrT#aowV_WD5DXNNabhuLRNKgA) |
+| VOL 3 | Ethiopia, Korean, Türkiye, Ukrainian | [Download on MEGA](https://mega.nz/folder/2vpRiL7Y#GH2nJQz6dCg_cNeXGaP_6w) |
+| VOL 4 | Iran, Japan, Polish | [Download on MEGA](https://mega.nz/folder/Gu4HUZra#JIl85Uuev52Enbu6_M9iaA) |
+| VOL 5 | English, Hebrew, Slovenia | [Download on MEGA](https://mega.nz/folder/8zhCUbAb#CNPaxsmqwrBGiL6VTZm1Pg) |
+| VOL 6 | Afrikaans, Greece, Hindi, Iceland | [Download on MEGA](https://mega.nz/folder/EqhjRZQD#REsKXwwW-UtJmTqSrX2EXg) |
+| VOL 7 | Cantonese, Danish, Thailand | [Download on MEGA](https://mega.nz/folder/IYMEVYgR#TXgEEP5kBlgGURh5hmRJgw) |
+| VOL 8 | Dutch, Italy, Vietnam | [Download on MEGA](https://mega.nz/folder/uvZB1ZwR#lCamVpOHDmKRObZ0MWeYnQ) |
+| VOL 9 | Nepal, Sweden, Taiwan, Zulu | [Download on MEGA](https://mega.nz/folder/hAUlFC6Q#E4SHZy0hFOXgFFfUPHy_Xg) |
+| VOL 10 | Japan, Norwegian, Russia | [Download on MEGA](https://mega.nz/folder/G5gjGSjI#SYwDWOSt3Dx27Np0iy3Diw) |
+| VOL 11 | Court of Illusions, Czech Republic, Georgia, Mongolia, Portuguese (Brazil), Romania | [Download on MEGA](https://mega.nz/folder/IYEVjCyD#AHtyxit0-0K7odi1tRZR8Q) |
+| VOL 12 | Albania, Spanish, Ukrainian | [Download on MEGA](https://mega.nz/folder/KoRSFLbK#BKiOgAo7XFqp2eIC8V1W1w) |
+| VOL 13 | Mongolia, Philippines, Romania, Sweden | [Download on MEGA](https://mega.nz/folder/wJY2VJSY#KUqFBlrvW_TwZgim0XaeyQ) |
 
----
+### Google Drive — Older Copies
 
-### MEGA
+**Note:** The Google Drive archives are **not as current as the MEGA downloads above**. Use MEGA for the latest available collections.
 
-VOL 1  
-https://mega.nz/folder/DvZk3LDD#jlR6em7WKG1MuIvETs9-Dg  
-
-VOL 2  
-https://mega.nz/folder/e6hGRJrT#aowV_WD5DXNNabhuLRNKgA  
-
-VOL 3  
-https://mega.nz/folder/2vpRiL7Y#GH2nJQz6dCg_cNeXGaP_6w  
-
-VOL 4  
-https://mega.nz/folder/Gu4HUZra#JIl85Uuev52Enbu6_M9iaA  
-
-VOL 5  
-https://mega.nz/folder/8zhCUbAb#CNPaxsmqwrBGiL6VTZm1Pg 
-
-VOL 6  
-https://mega.nz/folder/EqhjRZQD#REsKXwwW-UtJmTqSrX2EXg  
-
-VOL 7  
-https://mega.nz/folder/IYMEVYgR#TXgEEP5kBlgGURh5hmRJgw
-
-VOL 8  
-https://mega.nz/folder/uvZB1ZwR#lCamVpOHDmKRObZ0MWeYnQ  
-
-VOL 9  
-https://mega.nz/folder/hAUlFC6Q#E4SHZy0hFOXgFFfUPHy_Xg
-
-VOL 10
-https://mega.nz/folder/G5gjGSjI#SYwDWOSt3Dx27Np0iy3Diw  
+- **Court of Illusions — 11/11/2026:** [Open Google Drive](https://drive.google.com/drive/folders/10nZ6r3ow37llZDy6O6JXmwQ1Y30JDtvU?usp=sharing)
+- **Archive download:** [Open Google Drive](https://drive.google.com/drive/folders/1-ITJtqt2EpUfz6eDd1i8JW6zalth44Ed?usp=sharing)
+- **Legacy Google Drive VOL 2 (previously listed):** [Open Google Drive](https://drive.google.com/drive/folders/1LvNDBOHu1XhjR5HB8NWBv1wcKUYrqBlO?usp=sharing)
 
 ---
 
