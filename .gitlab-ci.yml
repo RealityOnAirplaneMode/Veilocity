@@ -72,6 +72,7 @@ create-pages:
 
     # Root-level logo
     - cp ./logo.png public/logo.png
+    - cp ./logo2.png public/logo2.png
 
   pages:
     publish: public
