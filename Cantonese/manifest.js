@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Cantonese"] = {
   "flag": "Cantonese Flag.png",
   "primary_html": "Cantonese.html",
   "description": "Cantonese portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Cantonese Flag.png",
-    "Cantonese.html",
-    "Cantonese.html.bak"
+    "Cantonese.html"
   ]
 };

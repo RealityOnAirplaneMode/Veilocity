@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Bulgaria"] = {
   "flag": "Bulgaria Flag.png",
   "primary_html": "Bulgaria.html",
   "description": "Bulgaria portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Bulgaria Flag.png",
-    "Bulgaria.html",
-    "Bulgaria.html.bak"
+    "Bulgaria.html"
   ]
 };

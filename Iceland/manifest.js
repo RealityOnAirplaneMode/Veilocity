@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Iceland"] = {
   "flag": "Iceland Flag.png",
   "primary_html": "Iceland.html",
   "description": "Iceland portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Iceland Flag.png",
-    "Iceland.html",
-    "Iceland.html.bak"
+    "Iceland.html"
   ]
 };

@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Romanian"] = {
   "flag": "Romania Flag.png",
   "primary_html": "Romanian.html",
   "description": "Romanian portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Romania Flag.png",
-    "Romanian.html",
-    "Romanian.html.bak"
+    "Romanian.html"
   ]
 };

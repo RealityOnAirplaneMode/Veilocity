@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Italy"] = {
   "flag": "Italian Flag.png",
   "primary_html": "Italy.html",
   "description": "Italy portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Italian Flag.png",
-    "Italy.html",
-    "Italy.html.bak"
+    "Italy.html"
   ]
 };

@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Bosnia"] = {
   "flag": "Bosnia Flag.png",
   "primary_html": "Bosnia.html",
   "description": "Bosnia portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Bosnia Flag.png",
-    "Bosnia.html",
-    "Bosnia.html.bak"
+    "Bosnia.html"
   ]
 };

@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Slovenian"] = {
   "flag": "Slovenia Flag.png",
   "primary_html": "Slovenian.html",
   "description": "Slovenian portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Slovenia Flag.png",
-    "Slovenian.html",
-    "Slovenian.html.bak"
+    "Slovenian.html"
   ]
 };

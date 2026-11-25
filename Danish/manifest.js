@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Danish"] = {
   "flag": "Danish Flag.png",
   "primary_html": "Danish.html",
   "description": "Danish portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Danish Flag.png",
-    "Danish.html",
-    "Danish.html.bak"
+    "Danish.html"
   ]
 };

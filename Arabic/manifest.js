@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Arabic"] = {
   "flag": "Arabic Flag.png",
   "primary_html": "Arabic.html",
   "description": "Arabic portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Arabic Flag.png",
-    "Arabic.html",
-    "Arabic.html.bak"
+    "Arabic.html"
   ]
 };

@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Thailand"] = {
   "flag": "Thailand Flag.png",
   "primary_html": "Thailand.html",
   "description": "Thailand portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Thailand Flag.png",
-    "Thailand.html",
-    "Thailand.html.bak"
+    "Thailand.html"
   ]
 };

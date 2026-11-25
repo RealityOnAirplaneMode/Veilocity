@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Greece"] = {
   "flag": "Greece Flag.png",
   "primary_html": "Greece.html",
   "description": "Greece portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Greece Flag.png",
-    "Greece.html",
-    "Greece.html.bak"
+    "Greece.html"
   ]
 };

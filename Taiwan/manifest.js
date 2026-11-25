@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Taiwan"] = {
   "flag": "Taiwan Flag.png",
   "primary_html": "Taiwan.html",
   "description": "Taiwan portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Taiwan Flag.png",
-    "Taiwan.html",
-    "Taiwan.html.bak"
+    "Taiwan.html"
   ]
 };

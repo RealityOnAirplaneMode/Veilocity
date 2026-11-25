@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Mandarin"] = {
   "flag": "Mandarin Flag.png",
   "primary_html": "Mandarin.html",
   "description": "Mandarin portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Mandarin Flag.png",
-    "Mandarin.html",
-    "Mandarin.html.bak"
+    "Mandarin.html"
   ]
 };

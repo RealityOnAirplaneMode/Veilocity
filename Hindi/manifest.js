@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Hindi"] = {
   "flag": "Hindi Flag.png",
   "primary_html": "Hindi.html",
   "description": "Hindi portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Hindi Flag.png",
-    "Hindi.html",
-    "Hindi.html.bak"
+    "Hindi.html"
   ]
 };

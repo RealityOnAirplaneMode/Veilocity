@@ -6,10 +6,9 @@ window.VEILOCITY_MANIFESTS["Sweden"] = {
   "flag": "Sweden Flag.png",
   "primary_html": "Sweden.html",
   "description": "Sweden portable archive",
-  "item_count": 3,
+  "item_count": 2,
   "files": [
     "Sweden Flag.png",
-    "Sweden.html",
-    "Sweden.html.bak"
+    "Sweden.html"
   ]
 };
