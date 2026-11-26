@@ -2156,6 +2156,8 @@ Accordingly, <strong>the absence of vehicle registration in the purchaser&#39;s 
 </div>
 <div class=postamble><div class=postamble__entry>Exported 319 message(s)</div><div class=postamble__entry>Timezone: UTC-5</div></div>
 
+
+
 <script id="report-chatlog-enhancer">
 document.addEventListener("DOMContentLoaded", () => {
   const chatlog = document.querySelector(".chatlog");
@@ -2393,35 +2395,45 @@ The evidence I have released records what happened.
     return normalizeWhitespace(clone.textContent || "");
   }
 
-  function extractContentDate(group) {
-    const text = collectRenderableTextFromNode(group);
-    if (!text) return null;
-
-    let match = text.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/);
-    if (match) {
-      const day = Number(match[1]);
-      const month = Number(match[2]) - 1;
-      const year = Number(match[3]);
-      return new Date(year, month, day);
+  // v29: attachment dates take priority over title and description dates.
+  function firstHistoricalDate(text) {
+    const months = "January|February|March|April|May|June|July|August|September|October|November|December";
+    const pattern = new RegExp(`\\b(?:([0-9]{4})[-_.]([0-9]{1,2})[-_.]([0-9]{1,2})|([0-9]{1,2})[./_-]([0-9]{1,2})[./_-]([0-9]{4})|([0-9]{1,2})(?:\\s*[–—-]\\s*[0-9]{1,2})?[\\s_-]+(${months})[\\s_-]+([0-9]{4}))\\b`, "gi");
+    // Underscores are common filename separators; normalize them for word boundaries.
+    text = String(text || "").replace(/_/g, "-");
+    for (const m of text.matchAll(pattern)) {
+      const y = Number(m[1] || m[6] || m[9]);
+      const month = m[8] ? MONTHS[m[8].toLowerCase()] : Number(m[2] || m[5]) - 1;
+      const day = Number(m[3] || m[4] || m[7]);
+      const date = new Date(y, month, day);
+      if (date.getFullYear() === y && date.getMonth() === month && date.getDate() === day) return date;
     }
-
-    match = text.match(/\b(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})\b/i);
-    if (match) {
-      const day = Number(match[1]);
-      const month = MONTHS[match[2].toLowerCase()];
-      const year = Number(match[3]);
-      return new Date(year, month, day);
-    }
-
-    match = text.match(/\b(\d{1,2})[–-](\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})\b/i);
-    if (match) {
-      const day = Number(match[1]);
-      const month = MONTHS[match[3].toLowerCase()];
-      const year = Number(match[4]);
-      return new Date(year, month, day);
-    }
-
     return null;
+  }
+
+  function resolveChronology(group) {
+    const strong = group.querySelector(".chatlog__content strong");
+    const content = group.querySelector(".chatlog__content");
+    const fullText = collectRenderableTextFromNode(content || group);
+    const title = strong ? strong.textContent : fullText.split("\n")[0];
+    const copy = group.cloneNode(true);
+    const copiedTitle = copy.querySelector(".chatlog__content strong");
+    if (copiedTitle) copiedTitle.remove();
+    const description = collectRenderableTextFromNode(copy);
+    let date;
+    for (const el of group.querySelectorAll(".chatlog__attachment a, .chatlog__attachment img, .chatlog__attachment video, .chatlog__attachment audio, .chatlog__attachment source, .chatlog__attachment-generic a")) {
+      for (const value of [el.getAttribute("download"), el.getAttribute("href"), el.getAttribute("src"), el.getAttribute("alt"), el.getAttribute("title"), el.textContent]) {
+        if (!value) continue;
+        const filename = decodeFilenamePart(value === el.getAttribute("href") || value === el.getAttribute("src") ? value.split(/[?#]/)[0].split("/").pop() : value);
+        date = firstHistoricalDate(filename);
+        if (date) return { date, source: "attachment" };
+      }
+    }
+    date = firstHistoricalDate(title);
+    if (date) return { date, source: "title" };
+    date = firstHistoricalDate(description);
+    if (date) return { date, source: "description" };
+    return { date: getDiscordDateFromGroup(group), source: "discord" };
   }
 
   function buildTitleFromText(text) {
@@ -2812,17 +2824,14 @@ The evidence I have released records what happened.
   groups = splitGroupsByMessageContainers(groups);
   groups = mergeAttachmentOnlyContinuations(groups);
 
-  // Sort by the actual Discord message timestamp (oldest -> newest), not by
-  // dates written inside the message body. This preserves 4:25 AM before 4:33 AM, etc.
+  const chronology = new Map(groups.map((group, index) => [group, {
+    ...resolveChronology(group), posted: getDiscordDateFromGroup(group), index
+  }]));
   groups.sort((a, b) => {
-    const dateA = getDiscordDateFromGroup(a);
-    const dateB = getDiscordDateFromGroup(b);
-
-    if (!dateA && !dateB) return 0;
-    if (!dateA) return 1;
-    if (!dateB) return -1;
-
-    return dateA.getTime() - dateB.getTime();
+    const x = chronology.get(a), y = chronology.get(b);
+    const day = d => d ? new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() : Infinity;
+    return (day(x.date) - day(y.date)) ||
+      ((x.posted ? x.posted.getTime() : Infinity) - (y.posted ? y.posted.getTime() : Infinity)) || x.index - y.index;
   });
 
   chatlog.replaceChildren(...groups);
@@ -2913,6 +2922,12 @@ The evidence I have released records what happened.
       group.prepend(anchorMarker);
     }
     anchorMarker.id = `${anchorId}-marker`;
+    const number = document.createElement("div");
+    number.className = "report-entry-number";
+    number.textContent = `#${index + 1}`;
+    number.setAttribute("aria-label", `Chronological entry ${index + 1}`);
+    group.insertBefore(number, anchorMarker.nextSibling);
+    group.dataset.chronologySource = chronology.get(group).source;
 
     if (header) {
       let titleRow = header.querySelector(".chatlog__title-row");
@@ -2960,7 +2975,7 @@ The evidence I have released records what happened.
     // Keep summary text only as metadata for the Table of Contents.
     // Do not append a duplicate summary block to the post body.
     const summaryText = summarizeText(summarySourceBeforeChanges, 400, 500);
-    const discordPostedDate = getDiscordDateFromGroup(group);
+    const discordPostedDate = chronology.get(group).posted;
     const discordPostedLabel = formatDiscordPostedDate(discordPostedDate);
 
     // Preserve the existing title exactly as generated (including any date already
@@ -3031,6 +3046,19 @@ The evidence I have released records what happened.
     }
 
 
+
+    .report-entry-number {
+      display: table !important;
+      margin: 0 0 8px 0 !important;
+      padding: 4px 10px !important;
+      border: 1px solid var(--line-strong) !important;
+      border-radius: 8px !important;
+      color: var(--accent-3) !important;
+      font-size: 0.85rem !important;
+      font-weight: 700 !important;
+      font-variant-numeric: tabular-nums;
+      line-height: 1.3 !important;
+    }
 
     .report-anchor-marker {
       display: block !important;
@@ -4015,25 +4043,9 @@ The evidence I have released records what happened.
           : (group.id ? `#${group.id}-marker` : "");
         const summary = group.dataset.summary || "";
 
-        // TOC ordering deliberately ignores the Discord-posted timestamp.
-        // Instead, use the first date applicable to the entry's actual content
-        // (including the preserved title/content text).
-        const contentDate = extractContentDate(group);
-
-        return {
-          title,
-          href,
-          summary,
-          contentDate: contentDate ? contentDate.getTime() : null
-        };
+        return { title, href, summary, number: i + 1 };
       })
-      .filter(item => item.title && item.href.startsWith("#") && item.title !== "Untitled Entry")
-      .sort((a, b) => {
-        if (a.contentDate === null && b.contentDate === null) return 0;
-        if (a.contentDate === null) return 1;
-        if (b.contentDate === null) return -1;
-        return a.contentDate - b.contentDate;
-      });
+      .filter(item => item.title && item.href.startsWith("#"));
 
     if (reportItems.length) {
       const tocBlock = document.createElement("div");
@@ -4053,7 +4065,7 @@ The evidence I have released records what happened.
         const a = document.createElement("a");
         a.className = "toc-item-title";
         a.href = item.href;
-        a.textContent = item.title;
+        a.textContent = `#${item.number} — ${item.title}`;
 
         const summary = document.createElement("div");
         summary.className = "toc-item-summary";
