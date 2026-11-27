@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Iran"] = {
   "flag": "Iran Flag.png",
   "primary_html": "Iran.html",
   "description": "Iran portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Iran Flag.png",
-    "Iran.html"
+    "Iran.html",
+    "Iran.html.bak"
   ]
 };

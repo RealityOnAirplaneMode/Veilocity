@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Zulu"] = {
   "flag": "Zulu Flag.png",
   "primary_html": "Zulu.html",
   "description": "Zulu portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Zulu Flag.png",
-    "Zulu.html"
+    "Zulu.html",
+    "Zulu.html.bak"
   ]
 };

@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Afrikaans"] = {
   "flag": "Afrikaans Flag.png",
   "primary_html": "Afrikaans.html",
   "description": "Afrikaans portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Afrikaans Flag.png",
-    "Afrikaans.html"
+    "Afrikaans.html",
+    "Afrikaans.html.bak"
   ]
 };

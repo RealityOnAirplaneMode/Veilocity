@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Mongolia"] = {
   "flag": "Mongolia Flag.png",
   "primary_html": "Mongolia.html",
   "description": "Mongolia portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Mongolia Flag.png",
-    "Mongolia.html"
+    "Mongolia.html",
+    "Mongolia.html.bak"
   ]
 };

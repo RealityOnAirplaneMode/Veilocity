@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Korea"] = {
   "flag": "Korea Flag.png",
   "primary_html": "Korea.html",
   "description": "Korea portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Korea Flag.png",
-    "Korea.html"
+    "Korea.html",
+    "Korea.html.bak"
   ]
 };

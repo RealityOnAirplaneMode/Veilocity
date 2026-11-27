@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Czech-Republic"] = {
   "flag": "Czech-Republic Flag.png",
   "primary_html": "Czech-Republic.html",
   "description": "Czech-Republic portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Czech-Republic Flag.png",
-    "Czech-Republic.html"
+    "Czech-Republic.html",
+    "Czech-Republic.html.bak"
   ]
 };

@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Philippines"] = {
   "flag": "Philippines Flag.png",
   "primary_html": "Philippines.html",
   "description": "Philippines portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Philippines Flag.png",
-    "Philippines.html"
+    "Philippines.html",
+    "Philippines.html.bak"
   ]
 };

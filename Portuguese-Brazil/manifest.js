@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Portuguese-Brazil"] = {
   "flag": "Portuguese Flag.png",
   "primary_html": "Portuguese-Brazil.html",
   "description": "Portuguese-Brazil portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Portuguese Flag.png",
-    "Portuguese-Brazil.html"
+    "Portuguese-Brazil.html",
+    "Portuguese-Brazil.html.bak"
   ]
 };

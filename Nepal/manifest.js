@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Nepal"] = {
   "flag": "Nepal Flag.png",
   "primary_html": "Nepal.html",
   "description": "Nepal portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Nepal Flag.png",
-    "Nepal.html"
+    "Nepal.html",
+    "Nepal.html.bak"
   ]
 };

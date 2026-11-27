@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Albania"] = {
   "flag": "Albania Flag.png",
   "primary_html": "Albania.html",
   "description": "Albania portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Albania Flag.png",
-    "Albania.html"
+    "Albania.html",
+    "Albania.html.bak"
   ]
 };

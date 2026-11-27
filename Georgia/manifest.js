@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Georgia"] = {
   "flag": "Georgia Flag.png",
   "primary_html": "Georgia.html",
   "description": "Georgia portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Georgia Flag.png",
-    "Georgia.html"
+    "Georgia.html",
+    "Georgia.html.bak"
   ]
 };

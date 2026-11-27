@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Japan"] = {
   "flag": "Japan Flag.png",
   "primary_html": "Japan.html",
   "description": "Japan portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Japan Flag.png",
-    "Japan.html"
+    "Japan.html",
+    "Japan.html.bak"
   ]
 };

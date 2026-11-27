@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Ethiopia"] = {
   "flag": "Ethiopia Flag.png",
   "primary_html": "Ethiopia.html",
   "description": "Ethiopia portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Ethiopia Flag.png",
-    "Ethiopia.html"
+    "Ethiopia.html",
+    "Ethiopia.html.bak"
   ]
 };

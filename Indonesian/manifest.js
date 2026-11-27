@@ -6,9 +6,10 @@ window.VEILOCITY_MANIFESTS["Indonesian"] = {
   "flag": "Indonesian Flag.png",
   "primary_html": "Indonesian.html",
   "description": "Indonesian portable archive",
-  "item_count": 2,
+  "item_count": 3,
   "files": [
     "Indonesian Flag.png",
-    "Indonesian.html"
+    "Indonesian.html",
+    "Indonesian.html.bak"
   ]
 };
